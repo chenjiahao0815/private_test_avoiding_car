@@ -136,12 +136,8 @@ start 定位_map_odom static_transform_publisher ros2 run tf2_ros static_transfo
 export ROBOT_LOCALIZER_MODE=3D
 # launch 会用这个覆盖参数文件里的 max_vel_x 和平滑器上限。容器环境是 0.5，这里改成 1。
 export MAX_LINEAR_VEL=1.0
-# 这台容器的 Gazebo 订阅 /cmd_vel。compose 已设则沿用；未设时用 cmd_vel。
-# 不要改成没人订阅的 cmd_vel_nav_ 或另一台机器上的 cmd_vel_nav。
-if [ -z "${COLLISION_MONITOR_CMD_VEL_OUT_TOPIC:-}" ]; then
-  export COLLISION_MONITOR_CMD_VEL_OUT_TOPIC=cmd_vel
-fi
-export COLLISION_MONITOR_CMD_VEL_OUT_TOPIC
+# 这套仿真里的 Gazebo 只订阅 /cmd_vel。容器环境里如果是 cmd_vel_nav_，车不会动。
+export COLLISION_MONITOR_CMD_VEL_OUT_TOPIC=cmd_vel
 NAV_ARGS=(x_pose:="$SPAWN_X" y_pose:="$SPAWN_Y" yaw:="$SPAWN_YAW" rviz_config_file:="$INFO/view.rviz" headless:=True)
 if [ "$WORLD" != "-" ]; then
   export TB3_WORLD="$WORLD"
@@ -152,20 +148,22 @@ wait_for "导航节点激活" 240 nav_ready
 # launch 启动时会改写安装目录的导航参数文件，节点已经读完，立刻改回原样。
 restore_param
 
-echo "[启动 2/3] 通过性、找点、右边沿路径、贴边、避车行为树（无曲线版本，不起道路拟合）"
+echo "[启动 2/3] 通过性、找点、右边沿路径、贴边、避车行为树（矩形双侧，不起道路拟合）"
 source /root/avoid_ws/install/setup.bash
 start 通过性_robot_avoidance robot_avoidance ros2 run robot_avoidance robot_avoidance --ros-args \
   --params-file /root/avoid_ws/install/robot_avoidance/share/robot_avoidance/params/config.yaml \
   -p use_sim_time:=true -p car_avoidance_demonstration:=false
-# 停靠朝向是长边法线，车身垂直于长边，外侧距离要大于半个车长才能整车停出通道。
-start 找点_find_parking_space find_parking_space ros2 run find_free_space find_parking_space --ros-args \
-  --params-file /root/avoid_ws/install/find_free_space/share/find_free_space/params/config.yaml \
-  -p use_sim_time:=true -p outside_min:=1.1 -p outside_max:=1.4 -p enable_dual_side:=$DUAL_FIND
 start 右边沿路径_compute_right_edge_path compute_right_edge_path ros2 run garage_utils \
   compute_right_edge_path_server_node --ros-args \
   --params-file /root/avoid_ws/install/garage_utils/share/garage_utils/params/config.yaml \
   -p use_sim_time:=true
 start 贴边_welt_model welt_model ros2 run welt_model welt_model --ros-args -p use_sim_time:=true
+# 矩形双侧找点和行为树单独编在 avoid_rect_ws，盖住容器里的曲线版。
+# 通过性、右边沿、贴边已经按原来的环境拉起来，不再换它们的消息库。
+source /root/avoid_rect_ws/install/setup.bash
+start 找点_find_parking_space find_parking_space ros2 run find_free_space find_parking_space --ros-args \
+  --params-file /root/avoid_rect_ws/install/find_free_space/share/find_free_space/params/config.yaml \
+  -p use_sim_time:=true -p outside_min:=1.1 -p outside_max:=1.4 -p enable_dual_side:=$DUAL_FIND
 sleep 3
 start 避车行为树_garage_navigator garage_navigator ros2 launch garage_navigator navigation_launch.py use_sim_time:=true
 wait_for "避车行为树激活" 120 lifecycle_active /bt_garage_navigator

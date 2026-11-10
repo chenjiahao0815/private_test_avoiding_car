@@ -1,0 +1,135 @@
+[INFO] [1794331078.809482461] [find_free_space_action_server]: find_free_space_action_server started.
+[INFO] [1794331078.809714115] [find_free_space_action_server]: topic_name_global_costmap: /global_costmap/costmap_raw
+[INFO] [1794331078.809732416] [find_free_space_action_server]: topic_name_footprint: /global_costmap/published_footprint
+[INFO] [1794331078.809737992] [find_free_space_action_server]: search_radius_min: 3.000000
+[INFO] [1794331078.809748754] [find_free_space_action_server]: search_radius_max: 3.300000
+[INFO] [1794331078.809753834] [find_free_space_action_server]: search_radius_extra_dis: 2.000000
+[INFO] [1794331078.809758596] [find_free_space_action_server]: search_point_interval: 0.150000
+[INFO] [1794331078.809763930] [find_free_space_action_server]: outside_min: 1.100000
+[INFO] [1794331078.809769626] [find_free_space_action_server]: outside_max: 1.400000
+[INFO] [1794331078.809774927] [find_free_space_action_server]: check_service_max_time: 1.000000
+[INFO] [1794331078.809779780] [find_free_space_action_server]: show_global_costmap_raw_cv2: 0
+[INFO] [1794331078.809784673] [find_free_space_action_server]: show_global_costmap_raw_colored_cv2: 0
+[INFO] [1794331078.809789442] [find_free_space_action_server]: external_point_max_distance: 8.000000
+[INFO] [1794331078.809794849] [find_free_space_action_server]: point_free_check_radius: 0.200000
+[INFO] [1794331078.809799858] [find_free_space_action_server]: footprint_sweep_long_step: 999.000000
+[INFO] [1794331078.809805772] [find_free_space_action_server]: footprint_sweep_short_step: 999.000000
+[INFO] [1794331078.809811071] [find_free_space_action_server]: max_robot_pose_age: 1.000000
+[INFO] [1794331078.809815703] [find_free_space_action_server]: robot_pose_wait_timeout: 1.500000
+[INFO] [1794331078.889450439] [find_free_space_action_server]: robot_width: 1.020, footprint_vertices (local): [(0.935, 0.510), (0.935, -0.510), (-0.935, -0.510), (-0.935, 0.510)]
+[INFO] [1794331104.692904517] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331104.696536081] [find_free_space_action_server]: 禁扫区[0]: (13.000, 14.900), (47.000, 14.900), (47.000, 18.450), (13.000, 18.450)
+[INFO] [1794331104.696577124] [find_free_space_action_server]: 收到禁扫区: 1个区域
+[INFO] [1794331104.696957164] [find_free_space_action_server]: 收到避车停车点: 0个
+[INFO] [1794331105.146390175] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331105.146458819] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331105.146471836] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331105.146478092] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331105.146482629] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331106.171740094] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331106.322526119] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331106.322613973] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331106.322636853] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331106.322643574] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331106.322648079] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331107.341769929] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331107.542612361] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331107.542681209] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331107.542695431] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331107.542727527] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331107.542750305] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331108.571723491] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331108.723238814] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331108.723318499] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331108.723332219] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331108.723337809] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331108.723341533] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331109.751805241] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331109.754259669] [find_free_space_action_server]: 收到避车停车点: 0个
+[INFO] [1794331109.952678079] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331109.952751204] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331109.952764932] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331109.952771097] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331109.952775913] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331110.981815601] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331111.133097228] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331111.133171462] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331111.133202983] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331111.133208893] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331111.133212714] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331112.151800680] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331112.353227076] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331112.353289466] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331112.353303098] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331112.353309638] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331112.353314271] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331113.381877802] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331113.533013541] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331113.533078734] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331113.533092849] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331113.533099206] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331113.533103408] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331114.561838227] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331114.762873993] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331114.762945363] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331114.762959083] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331114.762965014] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331114.762969460] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331115.781897378] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331115.784692840] [find_free_space_action_server]: 收到避车停车点: 0个
+[INFO] [1794331115.933336974] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331115.933402180] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331115.933414766] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331115.933420484] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331115.933439760] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331116.951792921] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331117.153250259] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331117.153429257] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331117.153446052] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331117.153474512] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331117.153479377] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331118.171859322] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331118.322751887] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331118.322825010] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331118.322841010] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331118.322863805] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331118.322868256] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331119.351708047] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331119.552534031] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331119.552602239] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331119.552615718] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331119.552621958] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331119.552626471] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331120.581846402] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331120.732683784] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331120.732748283] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331120.732760508] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331120.732781687] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331120.732785507] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331121.761878448] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331121.764760098] [find_free_space_action_server]: 收到避车停车点: 0个
+[INFO] [1794331121.963638458] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331121.963699695] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331121.963713676] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331121.963731883] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331121.963736407] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331122.991729056] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331123.142515404] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331123.142620267] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331123.142637119] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331123.142643946] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331123.142660026] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331124.161875292] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331124.363006772] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331124.363071836] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331124.363085106] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331124.363091459] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331124.363096108] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331125.381902936] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794331125.384446454] [find_free_space_action_server]: 禁扫区[0]: (13.000, 14.900), (47.000, 14.900), (47.000, 18.450), (13.000, 18.450)
+[INFO] [1794331125.533558206] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794331125.533618858] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794331125.533632124] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794331125.533651319] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[ERROR] [1794331125.533655773] [find_free_space_action_server]: 没有可用曲线（通道下标没有对应的道路模型）
+[INFO] [1794331127.704493368] [rclcpp]: signal_handler(signum=2)

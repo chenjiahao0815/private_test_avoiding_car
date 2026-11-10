@@ -1,0 +1,37 @@
+{
+  "case": "左贴边_右边禁行_左边找到",
+  "title": "贴左边开，右边整段禁行，直接在左边找到",
+  "expect": {
+    "park": "left",
+    "approve_side": 1,
+    "right_edge": false,
+    "give_up": null,
+    "far_wait": false,
+    "find_log": null,
+    "min_wait": 3.0
+  },
+  "no_go": [
+    "右全"
+  ],
+  "timeline": [],
+  "dual": true,
+  "定位": {
+    "map_pose": [
+      16.501,
+      20.25,
+      0.001
+    ],
+    "gazebo_error": 0.0
+  },
+  "通道": {
+    "vertices": 4,
+    "no_go": [
+      "右全"
+    ]
+  },
+  "行驶": {
+    "trigger_s": 14.0,
+    "length": 30.0
+  },
+  "result": "FAIL 240 秒内没有等到：机器人开到弧长 s=14.0"
+}

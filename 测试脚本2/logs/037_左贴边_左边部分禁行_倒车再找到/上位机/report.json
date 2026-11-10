@@ -1,0 +1,111 @@
+{
+  "case": "左贴边_左边部分禁行_倒车再找到",
+  "title": "右边整段禁行，左边近处也禁，倒车到远处的空档再停左边",
+  "expect": {
+    "park": "left",
+    "approve_side": 1,
+    "right_edge": true,
+    "give_up": null,
+    "far_wait": false,
+    "find_log": null,
+    "min_wait": 3.0
+  },
+  "no_go": [
+    "右全",
+    "左近处"
+  ],
+  "timeline": [],
+  "dual": true,
+  "定位": {
+    "map_pose": [
+      16.501,
+      20.25,
+      0.001
+    ],
+    "gazebo_error": 0.0
+  },
+  "通道": {
+    "vertices": 4,
+    "no_go": [
+      "右全",
+      "左近处"
+    ]
+  },
+  "行驶": {
+    "trigger_s": 14.0,
+    "length": 30.0
+  },
+  "来车": {
+    "robot": [
+      29.601,
+      20.25,
+      0.001
+    ],
+    "robot_s": 14.6,
+    "robot_offset_from_center": 0.25,
+    "car": [
+      35.506,
+      19.55,
+      3.142
+    ],
+    "car_s": 20.51
+  },
+  "通过性": {
+    "passable": false
+  },
+  "靠右": {
+    "seconds_after_avoid": 2.3,
+    "poses": 16
+  },
+  "停靠": {
+    "robot": [
+      19.049,
+      22.692,
+      -3.1
+    ],
+    "target": [
+      18.931,
+      22.6,
+      3.142
+    ],
+    "distance": 0.15,
+    "yaw_vs_corridor_tangent_deg": 2.4,
+    "where": {
+      "along": -10.55,
+      "lateral": 2.69,
+      "side": "左",
+      "in_corridor": false
+    },
+    "heading": "逆行驶方向",
+    "seconds": 35.9
+  },
+  "行为树时间线": [
+    [
+      1.06,
+      "commit"
+    ],
+    [
+      2.39,
+      "arm"
+    ],
+    [
+      8.05,
+      "unsuppress"
+    ],
+    [
+      11.87,
+      "approve"
+    ]
+  ],
+  "批准时 side": 1,
+  "时间线": {
+    "first": {
+      "commit": 1.06,
+      "arm": 2.39,
+      "unsuppress": 8.05,
+      "approve": 11.87
+    },
+    "approve_side": 1,
+    "problems": []
+  }
+}

@@ -95,10 +95,12 @@ class Scene:
         self.end_s = self.path.length - END_MARGIN
 
     def lane(self, s):
-        return self.path.offset(s, -(HALF_WIDTH - ROBOT_LANE))
+        sign = 1.0 if self.case.get("hug") == "left" else -1.0
+        return self.path.offset(s, sign * (HALF_WIDTH - ROBOT_LANE))
 
     def car_at(self, s):
-        x, y, heading = self.path.offset(s, CAR_LANE)
+        sign = -1.0 if self.case.get("hug") == "left" else 1.0
+        x, y, heading = self.path.offset(s, sign * CAR_LANE)
         return x, y, heading + math.pi
 
     def corridor_heading(self, x, y, near_s, window):
@@ -554,7 +556,8 @@ def run_ros(args):
             trigger = self.scene.case["trigger_s"]
             handle = self.send_lane(START_S + GOAL_SPACING)
             result = handle.get_result_async()
-            self.log("行驶", "沿通道右侧车道向前开", trigger_s=trigger, length=round(self.scene.path.length, 1))
+            side_name = "左侧" if self.scene.case.get("hug") == "left" else "右侧"
+            self.log("行驶", f"沿通道{side_name}车道向前开", trigger_s=trigger, length=round(self.scene.path.length, 1))
             last = [START_S]
 
             def reached():
@@ -702,9 +705,9 @@ def run_ros(args):
             if self.right_edge_path is None and diff >= math.pi / 2.0:
                 raise Fail("停靠后车头逆着行驶方向，机器人掉头了")
             if expect["park"] == "right" and where["lateral"] > 0:
-                raise Fail("应停右侧（近侧），机器人却停在了左侧")
+                raise Fail("应停行驶方向右侧，机器人却停在了左侧")
             if expect["park"] == "left" and where["lateral"] < 0:
-                raise Fail("应停左侧（远侧），机器人却停在了右侧")
+                raise Fail("应停行驶方向左侧，机器人却停在了右侧")
             self.check_timeline()
             return result, states
 

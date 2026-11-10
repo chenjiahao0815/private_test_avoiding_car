@@ -1,0 +1,903 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-11-10-17-42-43-392366-DESKTOP-GNILBFM-307785
+[INFO] [launch]: Default logging verbosity is set to INFO
+/root/avoid_rect_ws/install/garage_navigator/share/garage_navigator/params/dsf_nav2_for_ad_4_exhibition.yaml
+[INFO] [bt_garage_navigator-1]: process started with pid [307789]
+[INFO] [lifecycle_manager-2]: process started with pid [307791]
+[lifecycle_manager-2] [INFO] [1794332563.441495037] [lifecycle_manager_garage_avoidance]: Creating
+[lifecycle_manager-2] [INFO] [1794332563.444054146] [lifecycle_manager_garage_avoidance]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[bt_garage_navigator-1] [INFO] [1794332563.450882799] [bt_garage_navigator]: 
+[bt_garage_navigator-1] 	bt_garage_navigator lifecycle node launched. 
+[bt_garage_navigator-1] 	Waiting on external lifecycle transitions to activate
+[bt_garage_navigator-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_garage_navigator-1] [INFO] [1794332563.451008117] [bt_garage_navigator]: Creating
+[lifecycle_manager-2] [INFO] [1794332563.482266558] [lifecycle_manager_garage_avoidance]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-2] [INFO] [1794332563.482312463] [lifecycle_manager_garage_avoidance]: [34m[1mConfiguring bt_garage_navigator[0m[0m
+[bt_garage_navigator-1] [INFO] [1794332563.497246593] [bt_garage_navigator]: Configuring
+[bt_garage_navigator-1] [INFO] [1794332563.499984113] [bt_garage_navigator]: GARAGE_ENABLE_DUAL_SIDE_AVOIDANCE=true xml=/root/avoid_rect_ws/install/garage_navigator/share/garage_navigator/behavior_trees/garage_vehicle_avoidance_dual_side.xml clear=3 busy=4 max_wait=15 suppress=5
+[bt_garage_navigator-1] [INFO] [1794332563.547389372] [bt_garage_navigator]: Action /find_car_avoidance_point_action is on line.
+[bt_garage_navigator-1] [INFO] [1794332563.547481560] [bt_garage_navigator]: Action /compute_right_edge_path_action_server is on line.
+[bt_garage_navigator-1] [INFO] [1794332563.547547148] [bt_garage_navigator]: Action  /welt_model_node is on line.
+[bt_garage_navigator-1] [INFO] [1794332563.547601905] [bt_garage_navigator]: Action /wait is on line.
+[lifecycle_manager-2] [INFO] [1794332563.581968843] [lifecycle_manager_garage_avoidance]: [34m[1mActivating bt_garage_navigator[0m[0m
+[bt_garage_navigator-1] [INFO] [1794332563.582252098] [bt_garage_navigator]: Activating
+[bt_garage_navigator-1] [INFO] [1794332563.582505024] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: action name: welt_model_node
+[bt_garage_navigator-1] [INFO] [1794332563.584162672] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: WaitForCarsGone: topic=/car_information, idle_timeout=15.0, max_wait=60.0
+[bt_garage_navigator-1] [INFO] [1794332563.584659691] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: WaitForFarSide: topic=/car_information_all clear=3.0 busy=4.0 max_wait=15.0 stale=1.0
+[bt_garage_navigator-1] [INFO] [1794332563.584965564] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: action name: find_car_avoidance_point_action
+[bt_garage_navigator-1] [INFO] [1794332563.587021741] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: action name: find_car_avoidance_point_action
+[bt_garage_navigator-1] [INFO] [1794332563.589973695] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: action name: find_car_avoidance_point_action
+[bt_garage_navigator-1] [INFO] [1794332563.591939677] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: action name: compute_right_edge_path_action_server
+[bt_garage_navigator-1] [WARN] [1794332563.600001254] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794332563.605428653] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794332563.607560387] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794332563.611987939] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794332563.618998347] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794332563.623800487] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794332563.626363077] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794332563.630090949] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [INFO] [1794332563.630627676] [bt_garage_navigator]: Creating bond (bt_garage_navigator) to lifecycle manager.
+[lifecycle_manager-2] [INFO] [1794332563.734256090] [lifecycle_manager_garage_avoidance]: Server bt_garage_navigator connected with bond.
+[lifecycle_manager-2] [INFO] [1794332563.734296125] [lifecycle_manager_garage_avoidance]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-2] [INFO] [1794332563.734302366] [lifecycle_manager_garage_avoidance]: [34m[1mCreating bond timer...[0m[0m
+[bt_garage_navigator-1] [INFO] [1794332586.424557746] [bt_garage_navigator]: Loading BT from file: 
+[bt_garage_navigator-1] [INFO] [1794332586.424610671] [bt_garage_navigator]: Begin to execute garage_vehicle_avoidance program.
+[bt_garage_navigator-1] [INFO] [1794332586.684973646] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 找点返回 side=2 (26.56, 17.25) enable_far_side=1
+[bt_garage_navigator-1] [INFO] [1794332586.685054045] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 记下远侧等待起点
+[bt_garage_navigator-1] [INFO] [1794332586.694918720] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 开始远侧等待
+[bt_garage_navigator-1] [INFO] [1794332586.694959942] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 远侧等待：有车=1 数据新鲜=1 无车累计=0.0 有车累计=0.0 已等=0.0
+[bt_garage_navigator-1] [INFO] [1794332587.694931574] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 远侧等待：有车=1 数据新鲜=1 无车累计=0.0 有车累计=1.0 已等=1.0
+[bt_garage_navigator-1] [INFO] [1794332587.904947071] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 找点返回 side=2 (26.56, 17.25) enable_far_side=1
+[bt_garage_navigator-1] [INFO] [1794332588.705056170] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 远侧等待：有车=1 数据新鲜=1 无车累计=0.0 有车累计=2.0 已等=2.0
+[bt_garage_navigator-1] [INFO] [1794332589.084955547] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 找点返回 side=2 (26.56, 17.25) enable_far_side=1
+[bt_garage_navigator-1] [INFO] [1794332589.714869636] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 远侧等待：有车=1 数据新鲜=1 无车累计=0.0 有车累计=3.0 已等=3.0
+[bt_garage_navigator-1] [INFO] [1794332590.304996227] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 找点返回 side=2 (26.56, 17.25) enable_far_side=1
+[bt_garage_navigator-1] [WARN] [1794332590.695118710] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 连续 4.0 秒检测到动态车
+[bt_garage_navigator-1] [WARN] [1794332590.695161241] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 放弃远侧，改走靠右
+[bt_garage_navigator-1] [INFO] [1794332590.695183343] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 进入靠右路径，先屏蔽远侧找点
+[bt_garage_navigator-1] [INFO] [1794332591.514894411] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: path size: 16
+[bt_garage_navigator-1] [INFO] [1794332591.514933600] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: goal size: 16
+[bt_garage_navigator-1] [INFO] [1794332591.515371923] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: teb plan received, poses=156 length=15.500 m
+[bt_garage_navigator-1] [INFO] [1794332591.515419464] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: odom vx=-0.0000 m/s
+[bt_garage_navigator-1] [INFO] [1794332591.515439451] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: mission changed (tail_fp=56e27eb57f20ba5d), reload queue size=16
+[bt_garage_navigator-1] [INFO] [1794332591.515705930] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: enable_backward=false (forward)
+[bt_garage_navigator-1] [INFO] [1794332591.515835321] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: init gpp window z=[0,15] mission_goals=16
+[bt_garage_navigator-1] [INFO] [1794332591.515848711] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: terminal goal z=15 entered gpp window, freeze stamps
+[bt_garage_navigator-1] [INFO] [1794332591.515856384] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 29.561209, 20.800000, 0.000000
+[bt_garage_navigator-1] [INFO] [1794332591.515861693] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 28.561209, 20.800000, 1.000000
+[bt_garage_navigator-1] [INFO] [1794332591.515865461] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332591.515869230] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332591.515872825] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332591.515876458] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332591.515879961] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332591.515883420] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332591.515887091] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332591.515890637] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332591.515894201] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332591.515912451] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332591.515916981] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332591.515920638] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332591.515924381] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332591.515928002] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332591.615005130] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 靠右跟踪开始，5.0 秒内不采纳远侧点
+[bt_garage_navigator-1] [INFO] [1794332591.615075752] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: FollowPathAction: input_goals not provided, using path poses as goals
+[bt_garage_navigator-1] [INFO] [1794332591.624946346] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=0
+[bt_garage_navigator-1] [INFO] [1794332591.625033726] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 28.561209, 20.800000, 1.000000
+[bt_garage_navigator-1] [INFO] [1794332591.625043993] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332591.625048910] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332591.625052924] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332591.625056757] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332591.625060279] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332591.625064055] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332591.625067424] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332591.625071431] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332591.625074969] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332591.625079285] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332591.625083243] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332591.625087186] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332591.625090827] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332591.625094819] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332591.725301889] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=1
+[bt_garage_navigator-1] [INFO] [1794332591.725433094] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332591.725445399] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332591.725449806] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332591.725470858] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332591.725475194] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332591.725478763] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332591.725482249] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332591.725485873] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332591.725489562] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332591.725495293] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332591.725499426] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332591.725503222] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332591.725507305] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332591.725510984] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332591.834916623] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332591.834953642] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332591.834959059] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332591.834962671] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332591.834966127] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332591.834969657] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332591.834973273] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332591.834977030] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332591.834980839] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332591.834985465] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332591.834989542] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332591.834993539] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332591.834997517] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332591.835001403] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332591.935229409] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332591.935264013] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332591.935306062] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332591.935310578] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332591.935314489] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332591.935318274] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332591.935321816] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332591.935325543] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332591.935329324] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332591.935333640] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332591.935337742] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332591.935341788] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332591.935345542] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332591.935349538] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332592.044915497] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332592.044955719] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332592.044961029] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332592.044964960] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332592.044968780] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332592.044973037] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332592.044976894] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332592.044980849] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332592.044984499] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332592.044988848] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332592.044992941] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332592.044996859] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332592.045010200] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332592.045016691] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332592.145337096] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332592.145381657] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332592.145388079] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332592.145392063] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332592.145395790] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332592.145399620] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332592.145403347] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332592.145407093] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332592.145410659] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332592.145415042] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332592.145418912] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332592.145422995] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332592.145426550] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332592.145430159] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332592.254966911] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332592.255005078] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332592.255012629] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332592.255016370] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332592.255019933] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332592.255023676] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332592.255027203] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332592.255030968] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332592.255034662] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332592.255038971] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332592.255042834] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332592.255046780] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332592.255050370] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332592.255081640] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332592.355605435] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332592.355671125] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332592.355685890] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332592.355696151] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332592.355705472] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332592.355714508] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332592.355723897] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332592.355733250] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332592.355742366] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332592.355752336] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332592.355793754] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332592.355807941] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332592.355818637] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332592.355828384] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332592.464952648] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332592.464993218] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332592.464998545] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332592.465002494] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332592.465006164] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332592.465010105] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332592.465013871] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332592.465017513] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332592.465021129] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332592.465025245] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332592.465028859] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332592.465053947] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332592.465058274] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332592.465062066] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332592.565325440] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332592.565357289] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332592.565371135] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332592.565378659] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332592.565383794] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332592.565387561] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332592.565391313] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332592.565395158] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332592.565398810] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332592.565403581] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332592.565407341] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332592.565411163] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332592.565414785] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332592.565418497] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332592.675157464] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332592.675198170] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332592.675203658] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332592.675207745] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332592.675211609] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332592.675215414] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332592.675219066] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332592.675222662] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332592.675226210] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332592.675230810] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332592.675272221] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332592.675280427] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332592.675285140] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332592.675289408] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332592.785156007] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332592.785227903] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332592.785240362] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332592.785250601] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332592.785259293] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332592.785268209] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332592.785276856] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332592.785285639] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332592.785294746] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332592.785304832] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332592.785314151] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332592.785322789] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332592.785331626] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332592.785340451] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332592.895012874] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332592.895083117] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332592.895088498] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332592.895092220] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332592.895096320] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332592.895100055] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332592.895103965] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332592.895110008] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332592.895140188] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332592.895145354] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332592.895149328] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332592.895153236] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332592.895156959] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332592.895160626] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332593.004918908] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332593.004951965] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332593.004957070] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332593.004961264] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332593.004964778] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332593.004968641] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332593.004972618] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332593.004976341] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332593.004979987] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332593.004984173] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332593.004988616] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332593.004992662] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332593.004996495] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332593.005001063] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332593.114922776] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332593.114961249] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332593.114966465] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332593.114970238] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332593.114974492] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332593.114978228] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332593.114981990] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332593.115018649] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332593.115022784] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332593.115027181] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332593.115031134] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332593.115034849] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332593.115038598] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332593.115042372] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332593.225035279] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332593.225079742] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332593.225085131] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332593.225089097] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332593.225093106] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332593.225096933] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332593.225100399] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332593.225104192] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332593.225107975] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332593.225112331] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332593.225116172] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332593.225119868] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332593.225123427] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332593.225127714] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332593.334918969] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332593.334956871] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332593.334961895] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332593.334965606] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332593.334969296] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332593.335009463] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332593.335017657] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332593.335023057] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332593.335027606] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332593.335032823] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332593.335036697] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332593.335040352] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332593.335044051] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332593.335047940] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332593.445098272] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332593.445145885] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332593.445152434] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332593.445156175] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332593.445159849] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332593.445163884] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332593.445167634] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332593.445171662] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332593.445175563] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332593.445179995] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332593.445183833] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332593.445187774] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332593.445191531] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332593.445195211] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332593.554943075] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332593.554982161] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332593.554987660] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332593.554991310] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332593.555022781] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332593.555027731] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332593.555031424] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332593.555035168] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332593.555038916] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332593.555043425] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332593.555047569] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332593.555051532] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332593.555055150] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332593.555058827] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332593.665109776] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332593.665163088] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332593.665168585] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332593.665172714] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332593.665176600] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332593.665180606] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332593.665184727] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332593.665237349] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332593.665279098] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332593.665285665] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332593.665290136] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332593.665294079] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332593.665298166] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332593.665301926] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332593.775080434] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332593.775113151] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332593.775142076] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332593.775146676] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332593.775150173] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332593.775154062] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332593.775157644] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332593.775161229] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332593.775165114] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332593.775169602] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332593.775173449] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332593.775177479] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332593.775181315] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332593.775185018] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332593.885091207] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332593.885140330] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332593.885145929] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332593.885150048] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332593.885153605] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332593.885157710] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332593.885161229] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332593.885165100] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332593.885168653] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332593.885173378] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332593.885177300] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332593.885181201] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332593.885184944] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332593.885188567] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332593.994976594] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332593.995051274] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332593.995057320] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332593.995061070] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332593.995064864] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332593.995068511] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332593.995072165] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332593.995076011] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332593.995080029] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332593.995084604] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332593.995088884] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332593.995093230] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332593.995096975] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332593.995100675] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332594.104922932] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332594.104962751] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332594.104967948] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332594.104971989] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332594.104976222] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332594.104979797] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332594.104983438] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332594.104987111] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332594.104990857] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332594.104995143] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332594.104998913] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332594.105002814] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332594.105006488] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332594.105043491] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332594.214966893] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332594.215007047] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332594.215012184] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332594.215016026] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332594.215019938] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332594.215023821] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332594.215027675] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332594.215031359] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332594.215035176] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332594.215040372] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332594.215044311] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332594.215048068] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332594.215051750] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332594.215055493] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332594.324950506] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332594.324990690] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332594.324996160] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332594.324999948] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332594.325003563] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332594.325007436] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332594.325011178] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332594.325015016] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332594.325018654] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332594.325023671] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332594.325028735] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332594.325032422] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332594.325062318] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332594.325066200] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332594.434979350] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332594.435030782] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332594.435036286] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332594.435040223] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332594.435044366] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332594.435048198] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332594.435051915] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332594.435055931] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332594.435059585] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332594.435063938] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332594.435067930] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332594.435071758] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332594.435075272] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332594.435078930] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332594.545051510] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332594.545095323] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332594.545100697] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332594.545104776] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332594.545108712] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332594.545112707] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332594.545116346] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332594.545120158] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332594.545124546] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332594.545128777] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332594.545172949] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332594.545177439] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332594.545181059] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332594.545184951] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332594.654992008] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332594.655033550] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332594.655040196] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332594.655043884] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332594.655047789] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332594.655051568] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332594.655055169] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332594.655059152] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332594.655062807] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332594.655066897] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332594.655070665] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332594.655074441] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332594.655078131] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332594.655082071] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332594.764948315] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332594.764989525] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332594.764995631] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332594.764999556] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332594.765003218] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332594.765006928] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332594.765010623] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332594.765014261] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332594.765017953] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332594.765051956] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332594.765056037] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332594.765059692] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332594.765063513] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332594.765067350] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332594.875484665] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332594.875516828] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332594.875521763] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332594.875525518] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332594.875529012] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332594.875532659] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332594.875536282] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332594.875540032] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332594.875543598] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332594.875548251] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332594.875552269] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332594.875556662] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332594.875560365] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332594.875563955] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332594.985211438] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332594.985276865] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332594.985283226] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332594.985287619] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332594.985291735] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332594.985295823] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332594.985299612] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332594.985327079] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332594.985331754] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332594.985336394] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332594.985340591] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332594.985344659] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332594.985348411] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332594.985352145] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332595.094968898] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332595.095009700] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332595.095015444] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332595.095019355] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332595.095023182] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332595.095027003] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332595.095030665] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332595.095034641] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332595.095038426] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332595.095042663] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332595.095046716] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332595.095050683] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332595.095054350] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332595.095058121] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332595.204934737] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332595.204975101] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332595.204980940] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332595.204984785] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332595.204988461] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332595.204992230] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332595.205045119] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332595.205050119] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332595.205053723] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332595.205057896] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332595.205061624] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332595.205065647] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332595.205069281] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332595.205072916] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332595.314995389] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332595.315051888] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332595.315056947] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332595.315060859] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332595.315064748] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332595.315068316] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332595.315072003] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332595.315075726] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332595.315079369] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332595.315083998] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332595.315087846] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332595.315091473] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332595.315095119] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332595.315098897] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332595.425044859] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332595.425107418] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332595.425113313] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332595.425117398] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332595.425145193] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332595.425149436] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332595.425153107] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332595.425157633] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332595.425161258] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332595.425165788] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332595.425169592] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332595.425173417] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332595.425177043] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332595.425180600] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332595.534926705] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332595.534963008] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332595.534968087] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332595.534971821] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332595.534975900] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332595.534979679] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332595.534983447] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332595.534987268] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332595.534991031] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332595.534995212] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332595.534999063] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332595.535002717] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332595.535006264] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332595.535010192] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332595.644977155] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332595.645021058] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332595.645026264] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332595.645059179] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332595.645063392] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332595.645067033] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332595.645070876] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332595.645074564] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332595.645078361] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332595.645082588] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332595.645086605] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332595.645090395] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332595.645094518] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332595.645098270] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332595.754975878] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332595.755015433] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332595.755020726] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332595.755024603] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332595.755028150] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332595.755031847] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332595.755035600] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332595.755039271] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332595.755042848] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332595.755047036] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332595.755050958] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332595.755054717] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332595.755058319] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332595.755061954] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332595.864928972] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332595.864992389] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332595.864997891] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332595.865002442] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332595.865006350] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332595.865009918] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332595.865014018] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332595.865017689] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332595.865021241] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332595.865025921] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332595.865029746] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332595.865033601] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332595.865037317] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332595.865040963] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332595.974971271] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332595.975009593] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332595.975014736] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332595.975018663] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332595.975022489] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332595.975026355] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332595.975030012] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332595.975033638] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332595.975037318] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332595.975041832] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332595.975045840] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332595.975049615] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332595.975053420] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332595.975057157] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332596.084972545] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332596.085016782] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332596.085022367] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332596.085026280] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332596.085030232] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332596.085034665] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332596.085038769] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332596.085042570] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332596.085046150] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332596.085050445] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332596.085054426] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332596.085058138] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332596.085061763] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332596.085065376] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332596.195198420] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332596.195239282] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332596.195245198] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332596.195249209] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332596.195252795] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332596.195256520] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332596.195259894] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332596.195263593] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332596.195267258] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332596.195271757] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332596.195275726] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332596.195279499] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332596.195283264] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332596.195313033] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332596.305066788] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332596.305143441] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332596.305150322] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332596.305154384] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332596.305158076] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332596.305161673] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332596.305165462] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332596.305169209] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332596.305172896] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332596.305177454] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332596.305181546] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332596.305185299] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332596.305189079] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332596.305192684] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332596.415013292] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332596.415051421] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332596.415056881] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332596.415060877] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332596.415064813] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332596.415068838] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332596.415072600] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332596.415076395] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332596.415080129] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332596.415084484] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332596.415089214] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332596.415125035] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332596.415129407] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332596.415133158] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332596.524895428] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: teb plan received, poses=148 length=14.611 m
+[bt_garage_navigator-1] [INFO] [1794332596.524948739] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: odom vx=-0.0014 m/s
+[bt_garage_navigator-1] [INFO] [1794332596.525048309] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332596.525058104] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332596.525062754] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332596.525066800] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332596.525070761] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332596.525074502] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332596.525078918] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332596.525082901] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332596.525086582] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332596.525090934] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332596.525094920] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332596.525098661] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332596.525102340] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332596.525106265] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332596.634926279] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332596.634964512] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332596.634969752] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332596.634973581] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332596.634977270] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332596.634981186] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332596.634985440] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332596.634989211] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332596.635022026] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332596.635026485] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332596.635030571] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332596.635034454] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332596.635038128] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332596.635041855] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332596.744936940] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332596.744975019] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332596.744980441] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332596.744984262] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332596.744988105] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332596.744992253] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332596.744996067] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332596.744999832] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332596.745003435] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332596.745007856] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332596.745012530] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332596.745016438] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332596.745020228] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332596.745023965] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332596.854980156] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332596.855024535] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332596.855030552] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332596.855034350] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332596.855038202] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332596.855041881] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332596.855107738] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332596.855112968] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332596.855116910] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332596.855121486] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332596.855125474] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332596.855129395] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332596.855133348] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332596.855137039] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332596.965065687] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332596.965120241] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332596.965125835] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332596.965129587] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332596.965133355] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332596.965137222] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332596.965141136] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332596.965144816] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332596.965148369] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332596.965153020] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332596.965156833] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332596.965160817] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332596.965164713] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332596.965168591] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332597.074975995] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332597.075020021] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332597.075026237] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332597.075030229] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332597.075033916] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332597.075062207] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332597.075066292] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332597.075070076] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332597.075074072] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332597.075078315] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332597.075082323] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332597.075086382] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332597.075090147] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332597.075093795] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332597.185424315] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332597.185484276] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332597.185497375] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332597.185508147] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332597.185517482] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332597.185526297] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332597.185535236] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332597.185544687] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332597.185553594] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332597.185575995] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332597.185595235] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332597.185606959] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332597.185617217] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332597.185626877] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332597.284922230] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 远侧屏蔽结束，恢复远侧找点
+[bt_garage_navigator-1] [INFO] [1794332597.286499896] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332597.286547316] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332597.286610875] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332597.286624638] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332597.286634623] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332597.286644201] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332597.286653245] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332597.286662629] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332597.286671753] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332597.286682589] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332597.286691982] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332597.286701358] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332597.286710334] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332597.286719958] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332597.395729188] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 27.561209, 20.800000, 2.000000
+[bt_garage_navigator-1] [INFO] [1794332597.395838537] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 26.561209, 20.800000, 3.000000
+[bt_garage_navigator-1] [INFO] [1794332597.395880448] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 25.561209, 20.800000, 4.000000
+[bt_garage_navigator-1] [INFO] [1794332597.395886437] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 24.561209, 20.800000, 5.000000
+[bt_garage_navigator-1] [INFO] [1794332597.395890710] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 23.561209, 20.800000, 6.000000
+[bt_garage_navigator-1] [INFO] [1794332597.395894304] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 22.561209, 20.800000, 7.000000
+[bt_garage_navigator-1] [INFO] [1794332597.395898124] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 21.561209, 20.800000, 8.000000
+[bt_garage_navigator-1] [INFO] [1794332597.395902061] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 20.561209, 20.800000, 9.000000
+[bt_garage_navigator-1] [INFO] [1794332597.395905698] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 19.561209, 20.800000, 10.000000
+[bt_garage_navigator-1] [INFO] [1794332597.395909890] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 18.561209, 20.800000, 11.000000
+[bt_garage_navigator-1] [INFO] [1794332597.395913885] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 17.561209, 20.800000, 12.000000
+[bt_garage_navigator-1] [INFO] [1794332597.395917715] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 16.561209, 20.800000, 13.000000
+[bt_garage_navigator-1] [INFO] [1794332597.395921447] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.561209, 20.800000, 14.000000
+[bt_garage_navigator-1] [INFO] [1794332597.395925022] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: output_goals: 15.000000, 20.800000, 15.000000
+[bt_garage_navigator-1] [INFO] [1794332597.494846843] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 找点返回 side=2 (24.56, 17.25) enable_far_side=1
+[bt_garage_navigator-1] [INFO] [1794332597.494918738] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 记下远侧等待起点
+[bt_garage_navigator-1] [INFO] [1794332597.504884761] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 开始远侧等待
+[bt_garage_navigator-1] [INFO] [1794332597.504921209] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 远侧等待：有车=0 数据新鲜=1 无车累计=0.0 有车累计=0.0 已等=0.0
+[bt_garage_navigator-1] [INFO] [1794332598.514893281] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 远侧等待：有车=0 数据新鲜=1 无车累计=1.0 有车累计=0.0 已等=1.0
+[bt_garage_navigator-1] [INFO] [1794332598.664971325] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 找点返回 side=2 (24.56, 17.25) enable_far_side=1
+[bt_garage_navigator-1] [INFO] [1794332599.524946197] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 远侧等待：有车=0 数据新鲜=1 无车累计=2.0 有车累计=0.0 已等=2.0
+[bt_garage_navigator-1] [INFO] [1794332599.874990143] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 找点返回 side=2 (24.56, 17.25) enable_far_side=1
+[bt_garage_navigator-1] [INFO] [1794332600.514939788] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 连续 3.0 秒没有动态车，等下一次找点确认远侧点
+[bt_garage_navigator-1] [INFO] [1794332600.534956933] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 远侧等待：有车=0 数据新鲜=1 无车累计=3.0 有车累计=0.0 已等=3.0
+[bt_garage_navigator-1] [INFO] [1794332601.094968782] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 找点返回 side=2 (24.56, 17.25) enable_far_side=1
+[bt_garage_navigator-1] [INFO] [1794332601.095034621] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 远侧点确认通过：找点发出时已连续无车
+[bt_garage_navigator-1] [INFO] [1794332601.095043984] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 批准停靠点 (24.56, 17.25) side=2
+[bt_garage_navigator-1] [INFO] [1794332623.055016603] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332624.154794029] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332625.154797730] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332626.164773925] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332627.174928080] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332628.184917834] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332629.194810625] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332630.194860166] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332631.204815659] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332632.215065799] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332633.224793373] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332634.234791698] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332635.234951362] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332636.244818630] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332637.254809406] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332638.264792078] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332639.264826488] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332640.274831743] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332641.284819911] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794332656.284951654] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 连续 15.0 秒没有检测到车，避车等待结束
+[bt_garage_navigator-1] [INFO] [1794332656.294806544] [bt_garage_navigator]: goalCompleted callback
+[bt_garage_navigator-1] [INFO] [1794332656.295051717] [bt_garage_navigator]: Goal succeeded
+[bt_garage_navigator-1] [INFO] [1794332686.959834334] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-2] [INFO] [1794332686.960289265] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-2] [INFO] [1794332686.961142937] [lifecycle_manager_garage_avoidance]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_garage_avoidance)
+[lifecycle_manager-2] [INFO] [1794332686.961180655] [lifecycle_manager_garage_avoidance]: [34m[1mTerminating bond timer...[0m[0m
+[bt_garage_navigator-1] [INFO] [1794332686.961975518] [bt_garage_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_garage_navigator)
+[bt_garage_navigator-1] [INFO] [1794332686.962064365] [bt_garage_navigator]: Deactivating
+[bt_garage_navigator-1] [INFO] [1794332686.962099476] [bt_garage_navigator]: Destroying bond (bt_garage_navigator) to lifecycle manager.
+[bt_garage_navigator-1] [INFO] [1794332686.975215717] [bt_garage_navigator]: Cleaning up
+[bt_garage_navigator-1] [WARN] [1794332686.979230391] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() called for welt_model_node - forcing immediate cancellation
+[bt_garage_navigator-1] [INFO] [1794332686.979297573] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() completed for welt_model_node
+[bt_garage_navigator-1] [WARN] [1794332686.979326283] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() called for find_car_avoidance_point_action - forcing immediate cancellation
+[bt_garage_navigator-1] [INFO] [1794332686.979337996] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() completed for find_car_avoidance_point_action
+[bt_garage_navigator-1] [WARN] [1794332686.979351038] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() called for find_car_avoidance_point_action - forcing immediate cancellation
+[bt_garage_navigator-1] [INFO] [1794332686.979360129] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() completed for find_car_avoidance_point_action
+[bt_garage_navigator-1] [WARN] [1794332686.979372853] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() called for find_car_avoidance_point_action - forcing immediate cancellation
+[bt_garage_navigator-1] [INFO] [1794332686.979381889] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() completed for find_car_avoidance_point_action
+[bt_garage_navigator-1] [WARN] [1794332686.979400651] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() called for compute_right_edge_path_action_server - forcing immediate cancellation
+[bt_garage_navigator-1] [INFO] [1794332686.979413049] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() completed for compute_right_edge_path_action_server
+[lifecycle_manager-2] [INFO] [1794332687.137162653] [lifecycle_manager_garage_avoidance]: Destroying lifecycle_manager_garage_avoidance
+[bt_garage_navigator-1] [INFO] [1794332687.208052816] [bt_garage_navigator]: Completed Cleaning up
+[bt_garage_navigator-1] [INFO] [1794332687.208273723] [bt_garage_navigator]: Destroying bond (bt_garage_navigator) to lifecycle manager.
+[bt_garage_navigator-1] [INFO] [1794332687.213645341] [bt_garage_navigator]: Destroying
+[INFO] [lifecycle_manager-2]: process has finished cleanly [pid 307791]
+[INFO] [bt_garage_navigator-1]: process has finished cleanly [pid 307789]

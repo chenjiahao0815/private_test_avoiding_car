@@ -1,0 +1,138 @@
+{
+  "case": "左贴边_远侧无车",
+  "title": "左边整段禁行，右边空着且没有动态车，等满 3 秒后停右边",
+  "expect": {
+    "park": "right",
+    "approve_side": 2,
+    "right_edge": false,
+    "give_up": null,
+    "far_wait": true,
+    "find_log": null,
+    "min_wait": 3.0
+  },
+  "no_go": [
+    "左全"
+  ],
+  "timeline": [],
+  "dual": true,
+  "定位": {
+    "map_pose": [
+      16.501,
+      20.25,
+      0.001
+    ],
+    "gazebo_error": 0.0
+  },
+  "通道": {
+    "vertices": 4,
+    "no_go": [
+      "左全"
+    ]
+  },
+  "行驶": {
+    "trigger_s": 14.0,
+    "length": 30.0
+  },
+  "来车": {
+    "robot": [
+      29.561,
+      20.25,
+      0.001
+    ],
+    "robot_s": 14.56,
+    "robot_offset_from_center": 0.25,
+    "car": [
+      35.506,
+      19.55,
+      3.142
+    ],
+    "car_s": 20.51
+  },
+  "通过性": {
+    "passable": false
+  },
+  "找点": {
+    "target": [
+      26.561,
+      17.25,
+      -0.0
+    ],
+    "z": 10.0,
+    "where": {
+      "along": -3.0,
+      "lateral": -2.75,
+      "side": "右",
+      "in_corridor": false
+    }
+  },
+  "停靠": {
+    "robot": [
+      26.711,
+      17.242,
+      -0.005
+    ],
+    "target": [
+      26.561,
+      17.25,
+      -0.0
+    ],
+    "distance": 0.15,
+    "yaw_vs_corridor_tangent_deg": 0.3,
+    "where": {
+      "along": -2.85,
+      "lateral": -2.76,
+      "side": "右",
+      "in_corridor": false
+    },
+    "heading": "顺行驶方向",
+    "seconds": 24.1
+  },
+  "行为树时间线": [
+    [
+      0.27,
+      "far_start"
+    ],
+    [
+      3.28,
+      "clear"
+    ],
+    [
+      3.84,
+      "confirm"
+    ],
+    [
+      3.84,
+      "approve"
+    ]
+  ],
+  "批准时 side": 2,
+  "时间线": {
+    "first": {
+      "far_found": 0.27,
+      "far_start": 0.27,
+      "clear": 3.28,
+      "confirm": 3.84,
+      "approve": 3.84
+    },
+    "approve_side": 2,
+    "problems": []
+  },
+  "避车结束": {
+    "wait_seconds": 14.9,
+    "feedback_states": [
+      0,
+      1,
+      2
+    ],
+    "reason": "goal completed."
+  },
+  "恢复行驶": {
+    "robot": [
+      43.242,
+      20.243,
+      -0.072
+    ],
+    "distance": 0.258
+  },
+  "result": "PASS"
+}

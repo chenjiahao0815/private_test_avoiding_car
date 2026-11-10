@@ -122,7 +122,7 @@ NO_GO = {
 RELEASE = [("right_edge", 1.0, "dynamic", "none")]
 
 
-def _case(name, title, label, no_go=(), timeline=(), trigger_s=14.0, dual=True, **expect):
+def _case(name, title, label, no_go=(), timeline=(), trigger_s=14.0, dual=True, hug="right", **expect):
     full = {"park": "any", "approve_side": "any", "right_edge": False, "give_up": None,
             "far_wait": None, "find_log": None, "min_wait": 3.0}
     full.update(expect)
@@ -138,6 +138,7 @@ def _case(name, title, label, no_go=(), timeline=(), trigger_s=14.0, dual=True, 
         "no_go": list(no_go),
         "timeline": list(timeline),
         "dual": dual,
+        "hug": hug,
         "expect": full,
     }
 
@@ -185,6 +186,85 @@ def _build():
           "dual side off", no_go=["near"], dual=False,
           park="any", right_edge=True, far_wait=False)
 
+    # 贴左边行驶。通道仍是这条矩形：北是行驶方向的左边（近侧），南是右边（远侧）。
+    # 找点在身后：近侧大约 3~6.6 m，远侧大约 3~3.3 m。倒车掉头后仍贴着北边往起点开，
+    # 所以左边继续是近侧，马上能收；右边仍是远侧，要等动态车，而且倒车跟踪开始 5 秒内不收。
+    def left(x0, x1):
+        return _band(x0, x1, False)
+
+    def right(x0, x1):
+        return _band(x0, x1, True)
+
+    NO_GO["左全"] = left(X0 - 2.0, X1 + 2.0)
+    NO_GO["右全"] = right(X0 - 2.0, X1 + 2.0)
+    # 盖住触发点身后的近侧搜索框，再往起点留出空档，倒车开过去才能看见。
+    NO_GO["左近处"] = left(20.0, X1 + 2.0)
+    NO_GO["右近处"] = right(24.0, X1 + 2.0)
+    # 右边中间留一个车位：触发点身后 3 m 附近是空的，再往前、再往后都禁。
+    NO_GO["右车位前"] = right(29.0, X1 + 2.0)
+    NO_GO["右车位后"] = right(X0 - 2.0, 24.5)
+    # 车位改到更靠起点的地方，一开始的远侧框够不着，倒车经过才进搜索框。
+    NO_GO["右后车位前"] = right(24.0, X1 + 2.0)
+    NO_GO["右后车位后"] = right(X0 - 2.0, 14.0)
+    # 只盖近侧最近的一截，两倍长度还能找到更远处。
+    NO_GO["左最近"] = left(25.8, 27.8)
+
+    def left_case(name, title, label, **kwargs):
+        kwargs.setdefault("hug", "left")
+        _case(name, title, label, **kwargs)
+
+    left_case("左贴边_右边禁行_左边找到", "贴左边开，右边整段禁行，直接在左边找到", "hug left, right blocked",
+              no_go=["右全"], park="left", approve_side=1, far_wait=False)
+    left_case("左贴边_左边部分禁行_倒车再找到", "右边整段禁行，左边近处也禁，倒车到远处的空档再停左边",
+              "hug left, left opens behind", no_go=["右全", "左近处"],
+              park="left", approve_side=1, right_edge=True, far_wait=False)
+    left_case("左贴边_右边部分禁行_倒车再找到", "左边整段禁行，右边近处禁、远处空，倒车确认后再停右边",
+              "hug left, right opens behind", no_go=["左全", "右近处"],
+              park="right", approve_side=2, right_edge=True, far_wait=True)
+    left_case("左贴边_右边车位_直接找到", "两边都禁，右边身后留一个车位，前后被占，直接停这个车位",
+              "hug left, right stall now", no_go=["左全", "右车位前", "右车位后"],
+              park="right", approve_side=2, far_wait=True)
+    left_case("左贴边_右边车位_倒车找到", "右边车位更靠后，近处找不到，倒车经过并确认后停进车位",
+              "hug left, right stall behind", no_go=["左全", "右后车位前", "右后车位后"],
+              park="right", approve_side=2, right_edge=True, far_wait=True)
+    left_case("左贴边_近侧直接收_对面有车", "右边禁行，左边能停；动态车一直在，贴近的左边仍然马上收下",
+              "hug left, near despite cars", no_go=["右全"],
+              timeline=[("avoid", 0.0, "dynamic", "busy")],
+              park="left", approve_side=1, far_wait=False)
+    left_case("左贴边_近侧加长后找到", "左边只堵住最近一截，两倍范围里找到更远的左边点",
+              "hug left, near extended", no_go=["右全", "左最近"],
+              park="left", approve_side=1, far_wait=False)
+    left_case("左贴边_远侧无车", "左边整段禁行，右边空着且没有动态车，等满 3 秒后停右边",
+              "hug left, far clear", no_go=["左全"],
+              park="right", approve_side=2, far_wait=True)
+    left_case("左贴边_远侧持续有车", "左边禁行，右边有位置但动态车一直在，约 4 秒后放弃并倒车",
+              "hug left, far busy", no_go=["左全"],
+              timeline=[("avoid", 0.0, "dynamic", "busy")] + RELEASE,
+              park="any", right_edge=True, give_up="busy", far_wait=True)
+    left_case("左贴边_远侧车断续", "左边禁行，动态车断断续续，等满 15 秒放弃并倒车",
+              "hug left, far flicker", no_go=["左全"],
+              timeline=[("avoid", 0.0, "dynamic", "flicker")] + RELEASE,
+              park="any", right_edge=True, give_up="timeout", far_wait=True)
+    left_case("左贴边_远侧话题断流", "左边禁行，远侧等待时收不到动态车话题，等满 15 秒放弃并倒车",
+              "hug left, far silent", no_go=["左全"],
+              timeline=[("avoid", 0.0, "dynamic", "silent")] + RELEASE,
+              park="any", right_edge=True, give_up="timeout", far_wait=True)
+    left_case("左贴边_确认前来车", "右边可以停，无车满 2 秒时来一辆车，3 秒计时清零后再确认",
+              "hug left, car before confirm", no_go=["左全"],
+              timeline=[("point", 2.0, "dynamic", "busy"), ("point", 3.0, "dynamic", "none")],
+              park="right", approve_side=2, far_wait=True, min_wait=5.7)
+    left_case("左贴边_等待中近侧放开", "正在等右边，左边禁行撤掉后，下一次找点直接停左边",
+              "hug left, near opens while waiting", no_go=["左全"],
+              timeline=[("avoid", 0.0, "dynamic", "flicker"), ("point", 1.0, "no_go", [])],
+              park="left", approve_side=1, far_wait=True)
+    left_case("左贴边_两侧都堵", "左右都禁，一个点都没有，倒车走完",
+              "hug left, both blocked", no_go=["左全", "右全"],
+              park="none", approve_side=None, right_edge=True, far_wait=False)
+    left_case("左贴边_倒车五秒后才收远侧", "先两侧都堵去倒车，倒车后放开右边，5 秒屏蔽结束并确认后才停右边",
+              "hug left, far after suppress", no_go=["左全", "右全"],
+              timeline=[("right_edge", 1.0, "no_go", ["左全"])],
+              park="right", approve_side=2, right_edge=True, far_wait=True)
+
 
 _build()
 
@@ -203,12 +283,14 @@ def check():
     for case in CASES.values():
         path, polygon = case["path"], case["polygon"]
         problems = []
-        lane = lambda s: path.offset(s, -(HALF_WIDTH - ROBOT_LANE))[:2]  # noqa: E731
+        sign = 1.0 if case.get("hug") == "left" else -1.0
+        lane = lambda s, sign=sign: path.offset(s, sign * (HALF_WIDTH - ROBOT_LANE))[:2]  # noqa: E731
         for s in (1.5, case["trigger_s"], path.length - 1.5):
             if not _inside(lane(s), polygon):
                 problems.append(f"车道点 s={s:.1f} 不在通道内")
         car_s = min(case["trigger_s"] + case["car_ahead"], path.length - 2.5)
-        if not _inside(path.offset(car_s, 0.45)[:2], polygon):
+        car_sign = -sign
+        if not _inside(path.offset(car_s, car_sign * 0.45)[:2], polygon):
             problems.append("来车不在通道内")
         names = list(case["no_go"]) + [n for t in case["timeline"] if t[2] == "no_go" for n in t[3]]
         for n in names:

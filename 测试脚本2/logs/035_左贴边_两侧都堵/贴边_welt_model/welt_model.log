@@ -1,0 +1,20 @@
+[INFO] [1794333261.094461803] [welt_model_node]: 贴边action started.
+[INFO] [1794333261.100153383] [welt_model_node]: =========== LIST PARAMS ===========
+[INFO] [1794333261.100201491] [welt_model_node]: width_extend: 0.150000
+[INFO] [1794333261.100212306] [welt_model_node]: move_predict_far: 1.500000
+[INFO] [1794333261.100218023] [welt_model_node]: move_predict_near: 0.300000
+[INFO] [1794333261.100223113] [welt_model_node]: welt_timeout: 60.000000
+[INFO] [1794333261.100228917] [welt_model_node]: moving_timeout: 30.000000
+[INFO] [1794333261.100234065] [welt_model_node]: stop_timeout: 2.000000
+[INFO] [1794333261.100238532] [welt_model_node]: linear_velocity_far: 0.500000
+[INFO] [1794333261.100246818] [welt_model_node]: linear_velocity_near: 0.300000
+[INFO] [1794333261.100251577] [welt_model_node]: angular_velocity: 0.200000
+[INFO] [1794333261.100256433] [welt_model_node]: angular_velocity_min: 0.030000
+[INFO] [1794333261.100260965] [welt_model_node]: goal_tolerance: 0.200000
+[INFO] [1794333261.100265794] [welt_model_node]: angle_tolerance: 0.050000
+[INFO] [1794333261.100270502] [welt_model_node]: moving_to_goal_angle_threshold: 0.200000
+[INFO] [1794333261.100275607] [welt_model_node]: collision_check_resolution: 0.100000
+[INFO] [1794333261.100280540] [welt_model_node]: fix_inside_goal_rotation_threshold: 15.000000
+[INFO] [1794333261.100285911] [welt_model_node]: check_collision_rotation_threshold: 15.000000
+[INFO] [1794333364.959308428] [rclcpp]: signal_handler(signum=2)
+[WARN] [1794333364.969303115] [tf2_buffer]: Detected time source change. Clearing TF buffer.
