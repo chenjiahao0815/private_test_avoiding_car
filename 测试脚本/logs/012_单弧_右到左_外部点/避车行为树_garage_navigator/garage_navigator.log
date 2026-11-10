@@ -1,0 +1,79 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-11-09-16-34-36-340574-DESKTOP-GNILBFM-151164
+[INFO] [launch]: Default logging verbosity is set to INFO
+/root/avoid_ws/install/garage_navigator/share/garage_navigator/params/dsf_nav2_for_ad_4_exhibition.yaml
+[INFO] [bt_garage_navigator-1]: process started with pid [151168]
+[INFO] [lifecycle_manager-2]: process started with pid [151170]
+[lifecycle_manager-2] [INFO] [1794242076.390862199] [lifecycle_manager_garage_avoidance]: Creating
+[lifecycle_manager-2] [INFO] [1794242076.394303029] [lifecycle_manager_garage_avoidance]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[bt_garage_navigator-1] [INFO] [1794242076.396743483] [bt_garage_navigator]: 
+[bt_garage_navigator-1] 	bt_garage_navigator lifecycle node launched. 
+[bt_garage_navigator-1] 	Waiting on external lifecycle transitions to activate
+[bt_garage_navigator-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_garage_navigator-1] [INFO] [1794242076.396918740] [bt_garage_navigator]: Creating
+[lifecycle_manager-2] [INFO] [1794242076.406216174] [lifecycle_manager_garage_avoidance]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-2] [INFO] [1794242076.406359288] [lifecycle_manager_garage_avoidance]: [34m[1mConfiguring bt_garage_navigator[0m[0m
+[bt_garage_navigator-1] [INFO] [1794242076.449592812] [bt_garage_navigator]: Configuring
+[bt_garage_navigator-1] [INFO] [1794242076.498097229] [bt_garage_navigator]: Action /find_car_avoidance_point_action is on line.
+[bt_garage_navigator-1] [INFO] [1794242076.498193780] [bt_garage_navigator]: Action /compute_right_edge_path_action_server is on line.
+[bt_garage_navigator-1] [INFO] [1794242076.498245495] [bt_garage_navigator]: Action  /welt_model_node is on line.
+[bt_garage_navigator-1] [INFO] [1794242076.498289786] [bt_garage_navigator]: Action /wait is on line.
+[lifecycle_manager-2] [INFO] [1794242076.534531456] [lifecycle_manager_garage_avoidance]: [34m[1mActivating bt_garage_navigator[0m[0m
+[bt_garage_navigator-1] [INFO] [1794242076.534684323] [bt_garage_navigator]: Activating
+[bt_garage_navigator-1] [INFO] [1794242076.534930565] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: action name: find_car_avoidance_point_action
+[bt_garage_navigator-1] [INFO] [1794242076.536805996] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: action name: compute_right_edge_path_action_server
+[bt_garage_navigator-1] [WARN] [1794242076.545158857] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794242076.549715908] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794242076.553359346] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794242076.558140513] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794242076.564238782] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794242076.569526424] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794242076.572009415] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794242076.576419505] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [INFO] [1794242076.576519835] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: action name: welt_model_node
+[bt_garage_navigator-1] [INFO] [1794242076.578650309] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: WaitForCarsGone: topic=/car_information, idle_timeout=15.0, max_wait=-1.0
+[bt_garage_navigator-1] [INFO] [1794242076.579494702] [bt_garage_navigator]: Creating bond (bt_garage_navigator) to lifecycle manager.
+[lifecycle_manager-2] [INFO] [1794242076.682383294] [lifecycle_manager_garage_avoidance]: Server bt_garage_navigator connected with bond.
+[lifecycle_manager-2] [INFO] [1794242076.682452889] [lifecycle_manager_garage_avoidance]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-2] [INFO] [1794242076.682460845] [lifecycle_manager_garage_avoidance]: [34m[1mCreating bond timer...[0m[0m
+[bt_garage_navigator-1] [INFO] [1794242099.403459321] [bt_garage_navigator]: Loading BT from file: 
+[bt_garage_navigator-1] [INFO] [1794242099.403554803] [bt_garage_navigator]: Begin to execute garage_vehicle_avoidance program.
+[bt_garage_navigator-1] [INFO] [1794242126.093890841] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242127.183810043] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242128.203902001] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242129.213818217] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242130.223817747] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242131.243937852] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242132.253844862] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242133.263898564] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242134.283847972] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242135.303962808] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242136.313826392] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242137.333856764] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242138.343974813] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242139.353822121] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242140.373848653] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242141.383885641] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242142.393825563] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 避车等待期间仍检测到 1 辆车，重置计时
+[bt_garage_navigator-1] [INFO] [1794242158.003977854] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 连续 15.0 秒没有检测到车，避车等待结束
+[bt_garage_navigator-1] [INFO] [1794242158.013794362] [bt_garage_navigator]: goalCompleted callback
+[bt_garage_navigator-1] [INFO] [1794242158.013944408] [bt_garage_navigator]: Goal succeeded
+[bt_garage_navigator-1] [INFO] [1794242186.998437300] [rclcpp]: signal_handler(signum=2)
+[bt_garage_navigator-1] [INFO] [1794242186.998715864] [bt_garage_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_garage_navigator)
+[lifecycle_manager-2] [INFO] [1794242186.998454992] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-2] [INFO] [1794242186.998664926] [lifecycle_manager_garage_avoidance]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_garage_avoidance)
+[lifecycle_manager-2] [INFO] [1794242186.998689075] [lifecycle_manager_garage_avoidance]: [34m[1mTerminating bond timer...[0m[0m
+[bt_garage_navigator-1] [INFO] [1794242186.998803027] [bt_garage_navigator]: Deactivating
+[bt_garage_navigator-1] [INFO] [1794242186.998838604] [bt_garage_navigator]: Destroying bond (bt_garage_navigator) to lifecycle manager.
+[bt_garage_navigator-1] [INFO] [1794242187.009171619] [bt_garage_navigator]: Cleaning up
+[bt_garage_navigator-1] [WARN] [1794242187.011810994] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() called for find_car_avoidance_point_action - forcing immediate cancellation
+[bt_garage_navigator-1] [INFO] [1794242187.011862301] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() completed for find_car_avoidance_point_action
+[bt_garage_navigator-1] [WARN] [1794242187.011876532] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() called for compute_right_edge_path_action_server - forcing immediate cancellation
+[bt_garage_navigator-1] [INFO] [1794242187.011882279] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() completed for compute_right_edge_path_action_server
+[bt_garage_navigator-1] [WARN] [1794242187.011904457] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() called for welt_model_node - forcing immediate cancellation
+[bt_garage_navigator-1] [INFO] [1794242187.011912819] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() completed for welt_model_node
+[lifecycle_manager-2] [INFO] [1794242187.184955087] [lifecycle_manager_garage_avoidance]: Destroying lifecycle_manager_garage_avoidance
+[bt_garage_navigator-1] [INFO] [1794242187.218775709] [bt_garage_navigator]: Completed Cleaning up
+[bt_garage_navigator-1] [INFO] [1794242187.218888785] [bt_garage_navigator]: Destroying bond (bt_garage_navigator) to lifecycle manager.
+[bt_garage_navigator-1] [INFO] [1794242187.222465427] [bt_garage_navigator]: Destroying
+[INFO] [lifecycle_manager-2]: process has finished cleanly [pid 151170]
+[INFO] [bt_garage_navigator-1]: process has finished cleanly [pid 151168]

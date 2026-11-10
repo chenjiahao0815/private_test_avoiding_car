@@ -1,0 +1,94 @@
+{
+  "case": "S形_右到左",
+  "title": "S 形弯（振幅 4 m，波长 30 m），右到左",
+  "mode": "external",
+  "定位": {
+    "map_pose": [
+      43.498,
+      19.469,
+      -2.457
+    ],
+    "gazebo_error": 0.0
+  },
+  "拟合": {
+    "vertices": 242,
+    "samples": [
+      71,
+      71
+    ],
+    "lengths": [
+      34.72,
+      34.72
+    ]
+  },
+  "行驶": {
+    "trigger_s": 18.0,
+    "length": 34.7
+  },
+  "来车": {
+    "robot": [
+      29.373,
+      21.223,
+      2.448
+    ],
+    "robot_s": 18.62,
+    "robot_offset_from_center": 0.54,
+    "car": [
+      23.892,
+      23.367,
+      6.011
+    ],
+    "car_s": 24.51
+  },
+  "通过性": {
+    "passable": false
+  },
+  "找点": {
+    "target": [
+      33.466,
+      20.779,
+      0.902
+    ],
+    "external_in_corridor": false,
+    "where": {
+      "along": -3.5,
+      "lateral": -2.8,
+      "side": "右",
+      "in_corridor": false
+    }
+  },
+  "停靠": {
+    "robot": [
+      33.392,
+      20.903,
+      0.854
+    ],
+    "distance": 0.144,
+    "yaw_vs_target": "一致",
+    "where": {
+      "along": -3.37,
+      "lateral": -2.85,
+      "side": "右",
+      "in_corridor": false
+    },
+    "seconds": 28.3
+  },
+  "避车结束": {
+    "wait_seconds": 14.9,
+    "feedback_states": [
+      0,
+      1,
+      2
+    ],
+    "reason": "goal completed."
+  },
+  "恢复行驶": {
+    "robot": [
+      15.885,
+      21.415,
+      -2.467
+    ],
+    "distance": 0.084
+  },
+  "result": "PASS"
+}

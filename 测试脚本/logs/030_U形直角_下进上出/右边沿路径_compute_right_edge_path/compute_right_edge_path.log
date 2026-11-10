@@ -1,0 +1,20 @@
+[INFO] [1794244932.824702562] [compute_right_edge_path_action_server]: compute_right_edge_path_action_server constructor.
+[INFO] [1794244932.824894719] [compute_right_edge_path_action_server]: ------------ list params ------------ 
+[INFO] [1794244932.824903196] [compute_right_edge_path_action_server]: dist_thr: 4.000000
+[INFO] [1794244932.824907988] [compute_right_edge_path_action_server]: path_topic_name: garage_path
+[INFO] [1794244932.824912887] [compute_right_edge_path_action_server]: robot_x_test: -1.000000
+[INFO] [1794244932.824916281] [compute_right_edge_path_action_server]: robot_y_test: 21.500000
+[INFO] [1794244932.824921289] [compute_right_edge_path_action_server]: test: false
+[INFO] [1794244932.824925674] [compute_right_edge_path_action_server]: strict_mode: true
+[INFO] [1794244932.824945071] [compute_right_edge_path_action_server]: offset_min: 0.700000
+[INFO] [1794244932.824951190] [compute_right_edge_path_action_server]: resolution: 1.000000
+[INFO] [1794244932.824966730] [compute_right_edge_path_action_server]: allow_inverse: false
+[INFO] [1794244932.824981489] [compute_right_edge_path_action_server]: ------------------------------------- 
+[INFO] [1794244974.616773712] [compute_right_edge_path_action_server]: Received goal with 1 polygons
+[INFO] [1794244974.617022311] [compute_right_edge_path_action_server]:  [generate_model] GenerateModel constructor.
+[INFO] [1794244974.617108023] [compute_right_edge_path_action_server]:  [shortest_path_search] ShortestPathSearch constructor.
+[INFO] [1794244974.617129924] [compute_right_edge_path_action_server]:  [generate_path] GeneratePath constructor.
+[ERROR] [1794244974.617239554] [compute_right_edge_path_action_server]: catch std::exception: Every polygon shall have 4 points.
+[INFO] [1794244974.617327840] [compute_right_edge_path_action_server]: [靠边路径] 原计划 0 点，已检查 0 点，返回 0 点，横向尝试 0 次，耗时 0.340 ms，结果=Every polygon shall have 4 points.
+[INFO] [1794244975.916092742] [rclcpp]: signal_handler(signum=2)
+[ros2run]: Segmentation fault

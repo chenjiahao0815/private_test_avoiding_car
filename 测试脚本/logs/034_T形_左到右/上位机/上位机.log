@@ -1,0 +1,9 @@
+用例：T形_左到右（T 形路口（支路朝下），沿横路行驶，左到右），模式：自搜索停靠点
+[定位] 机器人在通道起点  {"map_pose": [16.501, 19.45, 0.001], "gazebo_error": 0.0}
+[拟合] 通道拟合成功  {"vertices": 8, "samples": [99, 61], "lengths": [49.0, 30.0]}
+[行驶] 沿通道右侧车道向前开  {"trigger_s": 18.0, "length": 30.0}
+[来车] 前方来车，上位机取消导航  {"robot": [33.695, 19.45, -0.004], "robot_s": 18.7, "robot_offset_from_center": 0.55, "car": [39.52, 20.45, 3.142], "car_s": 24.52}
+[通过性] 机器人原地挡路  {"passable": false}
+[找点] 行为树自搜索到停靠点  {"target": [32.75, 17.695, 1.571], "z": 10.0, "where": {"along": -0.95, "lateral": -2.3, "side": "右", "in_corridor": false}}
+[停靠] 机器人已停在停靠点  {"robot": [32.879, 17.743, 1.536], "distance": 0.137, "yaw_vs_target": "一致", "yaw_vs_corridor_tangent_deg": 88.0, "heading": "顺行驶方向", "where": {"along": -0.82, "lateral": -2.26, "side": "右", "in_corridor": false}, "seconds": 19.2}
+FAIL 停靠车头和通道切线夹角 88°，超过 35°

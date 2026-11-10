@@ -1,0 +1,94 @@
+{
+  "case": "L形圆弯_上进左出",
+  "title": "L 形圆角弯（半径 6 m），上进左出",
+  "mode": "auto",
+  "定位": {
+    "map_pose": [
+      37.45,
+      32.499,
+      -1.57
+    ],
+    "gazebo_error": 0.0
+  },
+  "拟合": {
+    "vertices": 350,
+    "samples": [
+      93,
+      84
+    ],
+    "lengths": [
+      45.78,
+      41.07
+    ]
+  },
+  "行驶": {
+    "trigger_s": 19.0,
+    "length": 43.4
+  },
+  "来车": {
+    "robot": [
+      36.31,
+      14.916,
+      -2.135
+    ],
+    "robot_s": 19.74,
+    "robot_offset_from_center": 0.7,
+    "car": [
+      31.908,
+      11.55,
+      6.283
+    ],
+    "car_s": 25.52
+  },
+  "通过性": {
+    "passable": false
+  },
+  "找点": {
+    "target": [
+      35.399,
+      18.22,
+      1.562
+    ],
+    "z": 10.0,
+    "where": {
+      "along": -3.96,
+      "lateral": -2.6,
+      "side": "右",
+      "in_corridor": false
+    }
+  },
+  "停靠": {
+    "robot": [
+      35.315,
+      18.089,
+      1.529
+    ],
+    "distance": 0.156,
+    "yaw_vs_target": "一致",
+    "where": {
+      "along": -3.83,
+      "lateral": -2.69,
+      "side": "右",
+      "in_corridor": false
+    },
+    "seconds": 34.1
+  },
+  "避车结束": {
+    "wait_seconds": 15.0,
+    "feedback_states": [
+      0,
+      1,
+      2
+    ],
+    "reason": "goal completed."
+  },
+  "恢复行驶": {
+    "robot": [
+      15.643,
+      12.572,
+      -2.634
+    ],
+    "distance": 0.144
+  },
+  "result": "PASS"
+}

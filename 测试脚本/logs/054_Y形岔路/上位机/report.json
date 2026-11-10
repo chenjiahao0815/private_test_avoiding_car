@@ -1,0 +1,96 @@
+{
+  "case": "Y形岔路",
+  "title": "Y 形岔路，驶入左上支，右下支留空",
+  "mode": "auto",
+  "定位": {
+    "map_pose": [
+      11.5,
+      17.45,
+      0.001
+    ],
+    "gazebo_error": 0.0
+  },
+  "拟合": {
+    "vertices": 9,
+    "samples": [
+      102,
+      181
+    ],
+    "lengths": [
+      49.92,
+      88.5
+    ]
+  },
+  "行驶": {
+    "trigger_s": 16.0,
+    "length": 44.0
+  },
+  "来车": {
+    "robot": [
+      26.56,
+      17.497,
+      0.045
+    ],
+    "robot_s": 16.56,
+    "robot_offset_from_center": 0.5,
+    "car": [
+      31.613,
+      20.833,
+      3.708
+    ],
+    "car_s": 22.51
+  },
+  "通过性": {
+    "passable": false
+  },
+  "找点": {
+    "target": [
+      23.56,
+      15.4,
+      3.142
+    ],
+    "z": 10.0,
+    "where": {
+      "along": -3.0,
+      "lateral": -2.6,
+      "side": "右",
+      "in_corridor": false
+    }
+  },
+  "停靠": {
+    "robot": [
+      23.695,
+      15.362,
+      3.109
+    ],
+    "distance": 0.14,
+    "yaw_vs_target": "一致",
+    "yaw_vs_corridor_tangent_deg": 1.9,
+    "heading": "逆行驶方向",
+    "where": {
+      "along": -2.87,
+      "lateral": -2.64,
+      "side": "右",
+      "in_corridor": false
+    },
+    "seconds": 54.4
+  },
+  "避车结束": {
+    "wait_seconds": 15.0,
+    "feedback_states": [
+      0,
+      1,
+      2
+    ],
+    "reason": "goal completed."
+  },
+  "恢复行驶": {
+    "robot": [
+      48.758,
+      30.626,
+      0.735
+    ],
+    "distance": 0.291
+  },
+  "result": "PASS"
+}

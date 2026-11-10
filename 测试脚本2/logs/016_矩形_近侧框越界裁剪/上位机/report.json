@@ -1,0 +1,118 @@
+{
+  "case": "矩形_近侧框越界裁剪",
+  "title": "机器人离通道起点很近，加大的近侧框越过短边，裁掉越界部分后照样找到",
+  "expect": {
+    "park": "right",
+    "approve_side": 1,
+    "right_edge": false,
+    "give_up": null,
+    "far_wait": false,
+    "find_log": "裁到",
+    "min_wait": 3.0
+  },
+  "no_go": [],
+  "timeline": [],
+  "dual": true,
+  "定位": {
+    "map_pose": [
+      16.501,
+      19.75,
+      0.001
+    ],
+    "gazebo_error": 0.0
+  },
+  "通道": {
+    "vertices": 4,
+    "no_go": []
+  },
+  "行驶": {
+    "trigger_s": 6.0,
+    "length": 30.0
+  },
+  "来车": {
+    "robot": [
+      21.561,
+      19.751,
+      0.001
+    ],
+    "robot_s": 6.56,
+    "robot_offset_from_center": 0.25,
+    "car": [
+      27.506,
+      20.45,
+      3.142
+    ],
+    "car_s": 12.51
+  },
+  "通过性": {
+    "passable": false
+  },
+  "找点": {
+    "target": [
+      18.511,
+      17.25,
+      -0.0
+    ],
+    "z": 10.0,
+    "where": {
+      "along": -3.05,
+      "lateral": -2.75,
+      "side": "右",
+      "in_corridor": false
+    }
+  },
+  "停靠": {
+    "robot": [
+      18.646,
+      17.221,
+      -0.007
+    ],
+    "target": [
+      18.511,
+      17.25,
+      -0.0
+    ],
+    "distance": 0.138,
+    "yaw_vs_corridor_tangent_deg": 0.4,
+    "where": {
+      "along": -2.91,
+      "lateral": -2.78,
+      "side": "右",
+      "in_corridor": false
+    },
+    "heading": "顺行驶方向",
+    "seconds": 23.6
+  },
+  "行为树时间线": [
+    [
+      0.91,
+      "approve"
+    ]
+  ],
+  "批准时 side": 1,
+  "时间线": {
+    "first": {
+      "approve": 0.91
+    },
+    "approve_side": 1,
+    "problems": []
+  },
+  "避车结束": {
+    "wait_seconds": 14.9,
+    "feedback_states": [
+      0,
+      1,
+      2
+    ],
+    "reason": "goal completed."
+  },
+  "恢复行驶": {
+    "robot": [
+      43.242,
+      19.767,
+      -0.041
+    ],
+    "distance": 0.259
+  },
+  "result": "PASS"
+}

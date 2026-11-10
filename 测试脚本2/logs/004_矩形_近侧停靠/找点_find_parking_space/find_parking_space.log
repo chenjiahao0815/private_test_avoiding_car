@@ -1,0 +1,79 @@
+[INFO] [1794311750.840647107] [find_free_space_action_server]: find_free_space_action_server started.
+[INFO] [1794311750.858696434] [find_free_space_action_server]: topic_name_global_costmap: /global_costmap/costmap_raw
+[INFO] [1794311750.858915078] [find_free_space_action_server]: service_name_check_car_passble: /check_car_passable
+[INFO] [1794311750.859086679] [find_free_space_action_server]: topic_name_footprint: /global_costmap/published_footprint
+[INFO] [1794311750.866063665] [find_free_space_action_server]: search_interval: 0.5
+[INFO] [1794311750.866458953] [find_free_space_action_server]: search_radius_min: 3.0
+[INFO] [1794311750.866697468] [find_free_space_action_server]: search_radius_max: 3.3
+[INFO] [1794311750.866862717] [find_free_space_action_server]: search_radius_extra_dis: 2.0
+[INFO] [1794311750.867026336] [find_free_space_action_server]: outside_min: 1.1
+[INFO] [1794311750.867184261] [find_free_space_action_server]: outside_max: 1.4
+[INFO] [1794311750.867344139] [find_free_space_action_server]: inside_step: 0.1
+[INFO] [1794311750.867500035] [find_free_space_action_server]: check_service_max_time: 1.0
+[INFO] [1794311750.867705914] [find_free_space_action_server]: show_global_costmap_raw_cv2: False
+[INFO] [1794311750.867879115] [find_free_space_action_server]: show_global_costmap_raw_colored_cv2: False
+[INFO] [1794311750.868038296] [find_free_space_action_server]: inward_offset: 0.0
+[INFO] [1794311750.868195596] [find_free_space_action_server]: max_inward_offset: 1.5
+[INFO] [1794311750.868352169] [find_free_space_action_server]: search_point_interval: 0.15
+[INFO] [1794311750.868511219] [find_free_space_action_server]: footprint_sweep_long_step: 999.0  # 默认999.0=不启用扫掠检查
+[INFO] [1794311750.873081309] [find_free_space_action_server]: footprint_sweep_short_step: 999.0 # 默认999.0=只扫两条长边
+[INFO] [1794311750.873949557] [find_free_space_action_server]: external_point_max_distance: 8.0
+[INFO] [1794311750.874502416] [find_free_space_action_server]: point_free_check_radius: 0.2
+[INFO] [1794311750.874915760] [find_free_space_action_server]: stop_in_place_min_dist: 2.0
+[INFO] [1794311750.875272353] [find_free_space_action_server]: max_robot_pose_age: 1.0
+[INFO] [1794311750.875524715] [find_free_space_action_server]: robot_pose_wait_timeout: 1.5
+[INFO] [1794311750.875713411] [find_free_space_action_server]: enable_dual_side: True
+/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/qos.py:307: UserWarning: DurabilityPolicy.RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL is deprecated. Use DurabilityPolicy.TRANSIENT_LOCAL instead.
+  warnings.warn(
+[INFO] [1794311751.034129120] [find_free_space_action_server]: robot_width: 1.320, footprint_vertices (local): [(0.925, 0.660), (0.925, -0.660), (-0.925, -0.660), (-0.925, 0.660)]
+[INFO] [1794311782.648080369] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794311782.678717373] [find_free_space_action_server]: 收到禁扫区: 0个区域
+[INFO] [1794311782.680412647] [find_free_space_action_server]: 收到避车停车点: 0个
+[INFO] [1794311783.082517474] [find_free_space_action_server]: enable_dual_side=True, enable_far_side=True
+[INFO] [1794311783.082820919] [find_free_space_action_server]: polygons: [geometry_msgs.msg.Polygon(points=[geometry_msgs.msg.Point32(x=15.0, y=18.5, z=0.0), geometry_msgs.msg.Point32(x=45.0, y=18.5, z=0.0), geometry_msgs.msg.Point32(x=45.0, y=21.5, z=0.0), geometry_msgs.msg.Point32(x=15.0, y=21.5, z=0.0)])]
+[INFO] [1794311783.087335463] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794311783.092797413] [find_free_space_action_server]: 机器人在通道内，使用当前通道: 
+[[15.  18.5]
+ [45.  18.5]
+ [45.  21.5]
+ [15.  21.5]]
+[INFO] [1794311783.093050524] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500),(45.000, 18.500),(45.000, 21.500),(15.000, 21.500)]
+[INFO] [1794311783.093355114] [find_free_space_action_server]: 寻找停靠点...
+[INFO] [1794311783.097215902] [find_free_space_action_server]: origin_x: -5.000
+[INFO] [1794311783.097442128] [find_free_space_action_server]: origin_y: -5.000
+[INFO] [1794311783.106791160] [find_free_space_action_server]: resolution: 0.050
+[INFO] [1794311783.108090010] [find_free_space_action_server]: width: 1400
+[INFO] [1794311783.110833372] [find_free_space_action_server]: height: 1000
+[INFO] [1794311783.125736081] [find_free_space_action_server]: 寻找最近的边界...
+[INFO] [1794311783.126657379] [find_free_space_action_server]: nearest_boundary: [(15.000, 18.500), (45.000, 18.500)]
+[INFO] [1794311783.126882914] [find_free_space_action_server]: k_radian: 3.142, k_degree: 180.000
+[INFO] [1794311783.127074497] [find_free_space_action_server]: robot: (29.541, 19.757)
+[INFO] [1794311783.127238754] [find_free_space_action_server]: car: (35.506, 20.450)
+[INFO] [1794311783.148346296] [find_free_space_action_server]: 获取当前格子数量和地图的边长 footprint 覆盖栅格数=1064, 分辨率=0.050m, footprint_vertices=[(0.925, 0.660), (0.925, -0.660), (-0.925, -0.660), (-0.925, 0.660)]
+[INFO] [1794311783.148824765] [find_free_space_action_server]: k: 3.142, car_robot_k: -3.026, k_diff: 0.116
+[INFO] [1794311783.154115113] [find_free_space_action_server]: k: 3.142, k_robot: 0.002, k_diff2: 3.140
+[INFO] [1794311783.155376241] [find_free_space_action_server]: 话题无有效外部停车点，使用自搜索
+[INFO] [1794311783.157769825] [find_free_space_action_server]: 近侧：沿边 3.00~6.60 m，k=3.142，k_diff2=3.140
+[INFO] [1794311783.158002849] [find_free_space_action_server]: 近侧：在机器人后方避车
+[INFO] [1794311783.158194950] [find_free_space_action_server]: 近侧：通道宽度 3.000
+[INFO] [1794311783.158354813] [find_free_space_action_server]: 近侧：搜索偏移 offset_min=1.10, offset_max=1.40
+[INFO] [1794311783.173316193] [find_free_space_action_server]: 近侧 find_vertices: [(22.941, 17.100),(26.541, 17.100),(26.541, 17.400),(22.941, 17.400)]
+[INFO] [1794311783.180094248] [find_free_space_action_server]: 近侧：候选点 48 个
+[INFO] [1794311783.223356096] [find_free_space_action_server]: 服务检查 result=True, time=0.021s
+[INFO] [1794311783.223663500] [find_free_space_action_server]: 近侧找到避让点 (26.39, 17.25)，side=1
+[INFO] [1794311783.223944615] [find_free_space_action_server]: 成功找到避让点: x=26.391, y=17.250, z=10.000, yaw=180.000°
+[INFO] [1794311783.224795319] [find_free_space_action_server]: 找点结果 side=1
+[INFO] [1794311783.229135735] [find_free_space_action_server]: 成功找到避让点*****: x=26.391, y=17.250, z=10.000, yaw=180.000°
+Traceback (most recent call last):
+  File "/root/avoid_ws/install/find_free_space/lib/find_free_space/find_parking_space", line 33, in <module>
+    sys.exit(load_entry_point('find-free-space==0.0.0', 'console_scripts', 'find_parking_space')())
+  File "/root/avoid_ws/install/find_free_space/lib/python3.10/site-packages/find_free_space/find_car_avoidance_point.py", line 2220, in main
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 126, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[ros2run]: Process exited with failure 1

@@ -1,0 +1,79 @@
+{
+  "case": "U形直角_下进上出",
+  "title": "U 形直角掉头（开口朝右），下进上出",
+  "mode": "external",
+  "定位": {
+    "map_pose": [
+      40.499,
+      14.55,
+      -3.141
+    ],
+    "gazebo_error": 0.0
+  },
+  "拟合": {
+    "vertices": 8,
+    "samples": [
+      109,
+      133
+    ],
+    "lengths": [
+      54.0,
+      66.0
+    ]
+  },
+  "行驶": {
+    "trigger_s": 27.0,
+    "length": 57.9
+  },
+  "来车": {
+    "robot": [
+      18.412,
+      18.614,
+      1.723
+    ],
+    "robot_s": 27.54,
+    "robot_offset_from_center": 0.41,
+    "car": [
+      17.827,
+      24.74,
+      4.271
+    ],
+    "car_s": 33.51
+  },
+  "通过性": {
+    "passable": false
+  },
+  "找点": {
+    "target": [
+      20.779,
+      16.624,
+      2.111
+    ],
+    "external_in_corridor": false,
+    "where": {
+      "along": -6.32,
+      "lateral": -2.62,
+      "side": "右",
+      "in_corridor": false
+    }
+  },
+  "停靠": {
+    "robot": [
+      20.789,
+      16.765,
+      2.32
+    ],
+    "distance": 0.141,
+    "yaw_vs_target": "相差 180 度",
+    "yaw_vs_corridor_tangent_deg": 42.9,
+    "heading": "顺行驶方向",
+    "where": {
+      "along": -6.33,
+      "lateral": -2.76,
+      "side": "右",
+      "in_corridor": false
+    },
+    "seconds": 19.4
+  },
+  "result": "FAIL 停靠车头和通道切线夹角 43°，超过 35°"
+}

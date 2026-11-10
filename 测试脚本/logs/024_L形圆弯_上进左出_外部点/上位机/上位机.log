@@ -1,0 +1,12 @@
+用例：L形圆弯_上进左出（L 形圆角弯（半径 6 m），上进左出），模式：外部停靠点
+[定位] 机器人在通道起点  {"map_pose": [37.45, 32.499, -1.57], "gazebo_error": 0.0}
+[拟合] 通道拟合成功  {"vertices": 350, "samples": [93, 84], "lengths": [45.78, 41.07]}
+[行驶] 沿通道右侧车道向前开  {"trigger_s": 19.0, "length": 43.4}
+[来车] 前方来车，上位机取消导航  {"robot": [36.322, 14.945, -2.132], "robot_s": 19.68, "robot_offset_from_center": 0.71, "car": [31.92, 11.55, 6.283], "car_s": 25.5}
+[通过性] 机器人原地挡路  {"passable": false}
+[找点] 上位机下发外部停靠点  {"target": [35.197, 17.878, -1.591], "external_in_corridor": false, "where": {"along": -3.5, "lateral": -2.8, "side": "右", "in_corridor": false}}
+[停靠] 机器人已停在停靠点  {"robot": [35.116, 17.761, -1.593], "distance": 0.142, "yaw_vs_target": "一致", "yaw_vs_corridor_tangent_deg": 2.3, "heading": "顺行驶方向", "where": {"along": -3.26, "lateral": -2.87, "side": "右", "in_corridor": false}, "seconds": 19.4}
+[车离开] 车开出通道，上位机不再发车辆
+[避车结束] 避车动作成功  {"wait_seconds": 15.0, "feedback_states": [0, 1, 2], "reason": "goal completed."}
+[恢复行驶] 到达终点  {"robot": [15.646, 12.551, -3.06], "distance": 0.146}
+PASS 避车全流程完成

@@ -1,0 +1,96 @@
+{
+  "case": "T形_右到左",
+  "title": "T 形路口（支路朝下），沿横路行驶，右到左",
+  "mode": "external",
+  "定位": {
+    "map_pose": [
+      43.499,
+      20.55,
+      -3.141
+    ],
+    "gazebo_error": 0.0
+  },
+  "拟合": {
+    "vertices": 8,
+    "samples": [
+      99,
+      61
+    ],
+    "lengths": [
+      49.0,
+      30.0
+    ]
+  },
+  "行驶": {
+    "trigger_s": 18.0,
+    "length": 30.0
+  },
+  "来车": {
+    "robot": [
+      26.409,
+      20.55,
+      3.139
+    ],
+    "robot_s": 18.59,
+    "robot_offset_from_center": 0.55,
+    "car": [
+      20.484,
+      19.55,
+      6.283
+    ],
+    "car_s": 24.52
+  },
+  "通过性": {
+    "passable": false
+  },
+  "找点": {
+    "target": [
+      29.909,
+      22.8,
+      3.142
+    ],
+    "external_in_corridor": false,
+    "where": {
+      "along": -3.5,
+      "lateral": -2.8,
+      "side": "右",
+      "in_corridor": false
+    }
+  },
+  "停靠": {
+    "robot": [
+      29.765,
+      22.847,
+      3.132
+    ],
+    "distance": 0.151,
+    "yaw_vs_target": "一致",
+    "yaw_vs_corridor_tangent_deg": 0.5,
+    "heading": "顺行驶方向",
+    "where": {
+      "along": -3.36,
+      "lateral": -2.85,
+      "side": "右",
+      "in_corridor": false
+    },
+    "seconds": 20.5
+  },
+  "避车结束": {
+    "wait_seconds": 14.9,
+    "feedback_states": [
+      0,
+      1,
+      2
+    ],
+    "reason": "goal completed."
+  },
+  "恢复行驶": {
+    "robot": [
+      16.607,
+      20.554,
+      -3.097
+    ],
+    "distance": 0.107
+  },
+  "result": "PASS"
+}

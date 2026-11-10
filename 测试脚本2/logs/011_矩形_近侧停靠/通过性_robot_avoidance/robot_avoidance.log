@@ -1,0 +1,293 @@
+[INFO] [1794313012.715349377] [robot_avoidance_node]: robot_avoidance_node started...
+[INFO] [1794313012.781245728] [robot_avoidance_node]: car_avoidance_demonstration: false
+[ERROR] [1794313012.825749036] [robot_avoidance_node]: Failed to get robot footprint
+[ERROR] [1794313012.825797566] [robot_avoidance_node]: Failed to get robot footprint, Using default robot width: 1.200000
+[INFO] [1794313023.474877647] [robot_avoidance_node]: 收到/garage_polygons话题!
+[INFO] [1794313023.474929524] [robot_avoidance_node]: 通道size: 1
+[INFO] [1794313023.474935963] [robot_avoidance_node]: 开始生成通道角度信息
+[INFO] [1794313023.474951015] [robot_avoidance_node]: 通道角度信息生成结束。
+[INFO] [1794313023.474955009] [robot_avoidance_node]: 角度值: 0.000000
+[INFO] [1794313046.463784143] [robot_avoidance_node]: Received request for service /check_car_passable
+[INFO] [1794313046.463863618] [robot_avoidance_node]: 寻找的避让点位置：29.541185,19.746501
+[INFO] [1794313046.463886023] [robot_avoidance_node]: 车子长宽：4.500000, 1.800000, 设置长宽：4.500000, 1.800000
+[INFO] [1794313046.463894733] [robot_avoidance_node]: 开始检测避让点是否可以通行...
+[INFO] [1794313046.463900857] [robot_avoidance_node]: 当前处于正常避车模式
+[INFO] [1794313046.463920101] [robot_avoidance_node]: Begin check passableness. Data source: service
+[INFO] [1794313046.463946049] [robot_avoidance_node]: 前摄像头看见车
+[INFO] [1794313046.463952169] [robot_avoidance_node]: robot_x: 29.541185, robot_y: 19.746501, robot_theta: -0.000196
+[INFO] [1794313046.463958750] [robot_avoidance_node]: car_x: 35.506379, car_y: 20.450000
+[INFO] [1794313046.463963669] [robot_avoidance_node]: car_length: 4.500000, car_width: 2.300000
+[INFO] [1794313046.463977662] [robot_avoidance_node]: get current polygon: [ (15.000000, 18.500000),(45.000000, 18.500000),(45.000000, 21.500000),(15.000000, 21.500000) ]
+[INFO] [1794313046.463989822] [robot_avoidance_node]: get current polygon: [ (15.000000, 18.500000),(45.000000, 18.500000),(45.000000, 21.500000),(15.000000, 21.500000) ]
+[INFO] [1794313046.464016644] [robot_avoidance_node]: publish topic /car_pose
+[INFO] [1794313046.466456115] [robot_avoidance_node]: get robot footprint success.
+[INFO] [1794313046.466557182] [robot_avoidance_node]: 当前机器人footprint: [ (1.160000, 0.659999), (1.160000, -0.660001), (-0.690001, -0.660000), (-0.690000, 0.660000), ]
+[INFO] [1794313046.466567581] [robot_avoidance_node]: 当前机器人footprint_map: [ (30.701315, 20.406267), (30.701050, 19.086267), (28.851049, 19.086639), (28.851315, 20.406639), ]
+[INFO] [1794313046.466602006] [robot_avoidance_node]: get current polygon: [ (15.000000, 18.500000),(45.000000, 18.500000),(45.000000, 21.500000),(15.000000, 21.500000) ]
+[INFO] [1794313046.466617746] [robot_avoidance_node]: 机器人的footprint和当前通道相临, 继续判断避让点是否在岔路口
+[INFO] [1794313046.466626045] [robot_avoidance_node]: 该避让点不在岔路口.
+[INFO] [1794313046.466691272] [robot_avoidance_node]: extend_to_car: 2.00, extend_to_robot: 2.00, distance_robot_to_car: 5.965194, robot_to_short_side_distance: 14.541185
+[INFO] [1794313046.466698728] [robot_avoidance_node]: target_point (29.541185, 18.500000)
+[INFO] [1794313046.466707944] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.466803485] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.467603561] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.468208845] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.468422092] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.469955347] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.469997455] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.470147628] [robot_avoidance_node]: target_point (29.541185, 18.600000)
+[INFO] [1794313046.470165620] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.470216972] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.470232092] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.470242529] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.470252955] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.470276454] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.470288466] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.470439859] [robot_avoidance_node]: target_point (29.541185, 18.700001)
+[INFO] [1794313046.470459106] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.470471313] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.470489432] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.470504647] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.470514202] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.470535931] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.470548491] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.470971223] [robot_avoidance_node]: target_point (29.541185, 18.799999)
+[INFO] [1794313046.470995176] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.471007388] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.471029819] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.471041119] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.471049776] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.471197869] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.471215334] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.471813458] [robot_avoidance_node]: target_point (29.541185, 18.900000)
+[INFO] [1794313046.471835529] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.471846891] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.472309682] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.473674064] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.473734662] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.473926659] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.473952476] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.474215558] [robot_avoidance_node]: target_point (29.541185, 19.000000)
+[INFO] [1794313046.474239754] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.474252443] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.474419371] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.474718915] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.474758953] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.474993254] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.475015494] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.476808791] [robot_avoidance_node]: target_point (29.541185, 19.100000)
+[INFO] [1794313046.477256218] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.478015565] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.478044344] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.478056380] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.478066589] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.478105130] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.478118351] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.478544094] [robot_avoidance_node]: target_point (29.541185, 19.200001)
+[INFO] [1794313046.478567157] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.478580331] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.478597913] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.478608813] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.478617952] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.478644401] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.478655834] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.478786147] [robot_avoidance_node]: target_point (29.541185, 19.299999)
+[INFO] [1794313046.478799339] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.478808266] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.478818613] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.478827565] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.478846798] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.478884256] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.478907777] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.479093806] [robot_avoidance_node]: target_point (29.541185, 19.400000)
+[INFO] [1794313046.479122220] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.479146244] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.479161977] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.479171910] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.479181018] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.479230226] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.479245333] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.479356043] [robot_avoidance_node]: target_point (29.541185, 19.500000)
+[INFO] [1794313046.479368773] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.479379945] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.479390616] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.479399923] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.479408453] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.479575361] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.480218949] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.481438861] [robot_avoidance_node]: target_point (29.541185, 19.600000)
+[INFO] [1794313046.481784566] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.481817150] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.483257792] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.483289780] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.483301751] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.485022982] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.485072908] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.486174264] [robot_avoidance_node]: target_point (29.541185, 19.700001)
+[INFO] [1794313046.486212458] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.486229302] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.486244046] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.486254657] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.486287730] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.486313482] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.486327125] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.486693768] [robot_avoidance_node]: target_point (29.541185, 19.799999)
+[INFO] [1794313046.486714330] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.486726921] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.486742940] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.486755095] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.486768117] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.486789505] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.486801783] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.487535796] [robot_avoidance_node]: target_point (29.541185, 19.900000)
+[INFO] [1794313046.487558077] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.487569254] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.487583873] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.487595615] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.487604394] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.487626144] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.487637193] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.488412897] [robot_avoidance_node]: target_point (29.541185, 20.000000)
+[INFO] [1794313046.488435270] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.488446593] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.488566176] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.488589193] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.488598496] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.488701917] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.488720617] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.489097112] [robot_avoidance_node]: target_point (29.541185, 20.100000)
+[INFO] [1794313046.489119413] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.489131538] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.489679116] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.489695983] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.489922872] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.490409287] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.490435142] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.490901484] [robot_avoidance_node]: target_point (29.541185, 20.200001)
+[INFO] [1794313046.490929946] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.491071505] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.491095020] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.491105927] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.491240310] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.491295649] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.491311629] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.491566027] [robot_avoidance_node]: target_point (29.541185, 20.299999)
+[INFO] [1794313046.491583953] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.491739357] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.491755804] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.491765368] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.491774084] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.492275959] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.492305459] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.493250426] [robot_avoidance_node]: target_point (29.541185, 20.400000)
+[INFO] [1794313046.493316230] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.493338680] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.493909565] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.494220511] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.494245373] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.494470355] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.494493492] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.494777952] [robot_avoidance_node]: target_point (29.541185, 20.500000)
+[INFO] [1794313046.494798408] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.494810047] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.494832042] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.494844757] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.494853933] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.494900931] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.494933112] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.495136327] [robot_avoidance_node]: target_point (29.541185, 20.600000)
+[INFO] [1794313046.495166598] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.495181036] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.495195136] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.495205446] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.495214923] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.495272460] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.495289045] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.495422763] [robot_avoidance_node]: target_point (29.541185, 20.700001)
+[INFO] [1794313046.495452239] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.496362993] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.496400044] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.497164884] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.497192253] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.497218939] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.497233660] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.498534180] [robot_avoidance_node]: target_point (29.541185, 20.799999)
+[INFO] [1794313046.498635931] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.498665775] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.498688875] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.498701603] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.498714279] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.498760274] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.498837170] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.502119434] [robot_avoidance_node]: target_point (29.541185, 20.900000)
+[INFO] [1794313046.502395050] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.502456986] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.502499057] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.502523644] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.502542142] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.502610824] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.502646964] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.506210081] [robot_avoidance_node]: target_point (29.541185, 21.000000)
+[INFO] [1794313046.506361784] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.506394107] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.506420583] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.506434785] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.506446384] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.506509736] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.506528118] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.507064038] [robot_avoidance_node]: target_point (29.541185, 21.100000)
+[INFO] [1794313046.507247287] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.507741102] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.508117619] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.508762555] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.508942643] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.509295441] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.509344809] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.510564082] [robot_avoidance_node]: target_point (29.541185, 21.200001)
+[INFO] [1794313046.510611060] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.510632331] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.510648898] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.510660293] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.510670968] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.510697779] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.510711882] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.511061914] [robot_avoidance_node]: target_point (29.541185, 21.299999)
+[INFO] [1794313046.511086998] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.511100326] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.511125021] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.511136323] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.511146091] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.511232175] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.511270982] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.511482897] [robot_avoidance_node]: target_point (29.541185, 21.400000)
+[INFO] [1794313046.511504112] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.511516187] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.511630896] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.512313082] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.512414939] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.512452784] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.512534479] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.513240581] [robot_avoidance_node]: target_point (29.541185, 21.500000)
+[INFO] [1794313046.513268337] [robot_avoidance_node]: publish topic /car_path_start_point
+[INFO] [1794313046.513287413] [robot_avoidance_node]: publish topic /car_path_end_point
+[INFO] [1794313046.513303071] [robot_avoidance_node]: pub /car_path_rect_start msg.
+[INFO] [1794313046.513314486] [robot_avoidance_node]: pub /car_path_rect_end msg.
+[INFO] [1794313046.513324954] [robot_avoidance_node]: pub /car_path_rect msg.
+[INFO] [1794313046.513370780] [robot_avoidance_node]: pub /avoidance_point_footprint msg.
+[INFO] [1794313046.513389092] [robot_avoidance_node]: 机器人的footprint和当前行驶路径框相交,汽车不可通过
+[INFO] [1794313046.513853114] [robot_avoidance_node]: 没有找到可行路径
+[INFO] [1794313046.513879991] [robot_avoidance_node]: *********检测避让点是否可以通行所耗时间: 0.000000 seconds
+[INFO] [1794313047.860260636] [robot_avoidance_node]: Received request for service /check_car_passable
+[INFO] [1794313047.860326727] [robot_avoidance_node]: 寻找的避让点位置：26.541214,17.250000
+[INFO] [1794313047.860336577] [robot_avoidance_node]: 车子长宽：4.500000, 1.800000, 设置长宽：4.500000, 1.800000
+[INFO] [1794313047.860342951] [robot_avoidance_node]: 开始检测避让点是否可以通行...
+[INFO] [1794313047.860357827] [robot_avoidance_node]: 当前处于正常避车模式
+[INFO] [1794313047.860364816] [robot_avoidance_node]: Begin check passableness. Data source: service
+[INFO] [1794313047.860371748] [robot_avoidance_node]: 前摄像头看见车
+[INFO] [1794313047.860376344] [robot_avoidance_node]: robot_x: 26.541214, robot_y: 17.250000, robot_theta: -0.000000
+[INFO] [1794313047.860382643] [robot_avoidance_node]: car_x: 35.506379, car_y: 20.450000
+[INFO] [1794313047.860388873] [robot_avoidance_node]: car_length: 4.500000, car_width: 2.300000
+[INFO] [1794313047.860399532] [robot_avoidance_node]: get current polygon: [ (15.000000, 18.500000),(45.000000, 18.500000),(45.000000, 21.500000),(15.000000, 21.500000) ]
+[INFO] [1794313047.860422200] [robot_avoidance_node]: robot is not in any polygon, return true.
+[INFO] [1794313047.860427780] [robot_avoidance_node]: *********检测避让点是否可以通行所耗时间: 0.000000 seconds
+[INFO] [1794313135.888401657] [rclcpp]: signal_handler(signum=2)

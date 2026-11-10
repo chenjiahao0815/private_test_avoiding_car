@@ -1,0 +1,96 @@
+{
+  "case": "U形圆弯_上进下出",
+  "title": "U 形掉头弯（开口朝右，半径 6 m），上进下出",
+  "mode": "external_no_yaw",
+  "定位": {
+    "map_pose": [
+      40.499,
+      26.55,
+      -3.141
+    ],
+    "gazebo_error": 0.0
+  },
+  "拟合": {
+    "vertices": 474,
+    "samples": [
+      110,
+      129
+    ],
+    "lengths": [
+      54.14,
+      63.56
+    ]
+  },
+  "行驶": {
+    "trigger_s": 25.0,
+    "length": 58.8
+  },
+  "来车": {
+    "robot": [
+      16.86,
+      23.805,
+      -2.266
+    ],
+    "robot_s": 25.6,
+    "robot_offset_from_center": 0.4,
+    "car": [
+      16.782,
+      18.113,
+      1.922
+    ],
+    "car_s": 31.51
+  },
+  "通过性": {
+    "passable": false
+  },
+  "找点": {
+    "target": [
+      18.977,
+      28.263,
+      null
+    ],
+    "external_in_corridor": false,
+    "where": {
+      "along": -3.5,
+      "lateral": -2.8,
+      "side": "右",
+      "in_corridor": false
+    }
+  },
+  "停靠": {
+    "robot": [
+      18.838,
+      28.21,
+      0.393
+    ],
+    "distance": 0.149,
+    "yaw_vs_target": "上位机未给朝向",
+    "yaw_vs_corridor_tangent_deg": 2.4,
+    "heading": "逆行驶方向",
+    "where": {
+      "along": -3.37,
+      "lateral": -2.8,
+      "side": "右",
+      "in_corridor": false
+    },
+    "seconds": 30.5
+  },
+  "避车结束": {
+    "wait_seconds": 15.0,
+    "feedback_states": [
+      0,
+      1,
+      2
+    ],
+    "reason": "goal completed."
+  },
+  "恢复行驶": {
+    "robot": [
+      40.382,
+      13.454,
+      -0.039
+    ],
+    "distance": 0.118
+  },
+  "result": "PASS"
+}

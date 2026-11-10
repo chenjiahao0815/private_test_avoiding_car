@@ -1,0 +1,45 @@
+[INFO] [1794245475.265205548] [find_free_space_action_server]: find_free_space_action_server started.
+[INFO] [1794245475.265479339] [find_free_space_action_server]: topic_name_global_costmap: /global_costmap/costmap_raw
+[INFO] [1794245475.265491746] [find_free_space_action_server]: topic_name_footprint: /global_costmap/published_footprint
+[INFO] [1794245475.265496567] [find_free_space_action_server]: search_radius_min: 3.000000
+[INFO] [1794245475.265507631] [find_free_space_action_server]: search_radius_max: 3.300000
+[INFO] [1794245475.265512687] [find_free_space_action_server]: search_radius_extra_dis: 2.000000
+[INFO] [1794245475.265517989] [find_free_space_action_server]: search_point_interval: 0.150000
+[INFO] [1794245475.265523802] [find_free_space_action_server]: outside_min: 1.100000
+[INFO] [1794245475.265527890] [find_free_space_action_server]: outside_max: 1.400000
+[INFO] [1794245475.265531168] [find_free_space_action_server]: check_service_max_time: 1.000000
+[INFO] [1794245475.265534387] [find_free_space_action_server]: show_global_costmap_raw_cv2: 0
+[INFO] [1794245475.265537927] [find_free_space_action_server]: show_global_costmap_raw_colored_cv2: 0
+[INFO] [1794245475.265541184] [find_free_space_action_server]: external_point_max_distance: 8.000000
+[INFO] [1794245475.265544919] [find_free_space_action_server]: point_free_check_radius: 0.200000
+[INFO] [1794245475.265550246] [find_free_space_action_server]: footprint_sweep_long_step: 999.000000
+[INFO] [1794245475.265555831] [find_free_space_action_server]: footprint_sweep_short_step: 999.000000
+[INFO] [1794245475.265560500] [find_free_space_action_server]: max_robot_pose_age: 1.000000
+[INFO] [1794245475.265565230] [find_free_space_action_server]: robot_pose_wait_timeout: 1.500000
+[INFO] [1794245475.316246948] [find_free_space_action_server]: robot_width: 1.020, footprint_vertices (local): [(0.935, 0.510), (0.935, -0.510), (-0.935, -0.510), (-0.935, 0.510)]
+[INFO] [1794245483.911671771] [find_free_space_action_server]: 收到 /garage_road_models，revision 1，数量 1
+[INFO] [1794245483.912605559] [find_free_space_action_server]: 收到 /garage_road_models，revision 1，数量 1
+[INFO] [1794245506.021451032] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794245506.025701919] [find_free_space_action_server]: 收到避车停车点: 1个
+[INFO] [1794245506.025762357] [find_free_space_action_server]: 外部停车点没有发 yaw，将使用避让方向自行计算
+[WARN] [1794245508.527719474] [find_free_space_action_server]: 等待禁扫区超时，本次任务不拦截禁扫区
+[INFO] [1794245508.527787551] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794245508.527814230] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794245508.527842678] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(15.000, 18.500), (28.500, 18.500), (28.500, 9.000), (31.500, 9.000), (31.500, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794245508.527850337] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500), (28.500, 18.500), (28.500, 9.000), (31.500, 9.000), (31.500, 18.500), (45.000, 18.500), (45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794245508.527873415] [find_free_space_action_server]: 选用避车长边 A，垂足弧长 37.618，距离 0.950
+[INFO] [1794245508.527879486] [find_free_space_action_server]: robot: (33.618, 19.450)
+[INFO] [1794245508.527884105] [find_free_space_action_server]: car: (39.512, 20.450)
+[INFO] [1794245508.527947387] [find_free_space_action_server]: 搜索沿弧长减小远离来车，车头沿侧边从 start 到 end
+[INFO] [1794245508.529435372] [find_free_space_action_server]: 外部停车点过滤后剩余: 1个
+[INFO] [1794245508.529481124] [find_free_space_action_server]: 尝试外部停车点，共1个
+[INFO] [1794245508.530198681] [find_free_space_action_server]: 候选点(30.12,17.20) 服务检查 result=0, time=0.001s
+[INFO] [1794245508.530243750] [find_free_space_action_server]: 候选点(30.12,17.20) 服务检查不通过
+[INFO] [1794245508.530286092] [find_free_space_action_server]: 有外部停车点，但是所有外部停车点在筛选判断以后均不满足，回退自搜索
+[INFO] [1794245508.530292094] [find_free_space_action_server]: 寻找停靠点...
+[INFO] [1794245508.530299083] [find_free_space_action_server]: 在机器人后方避车
+[INFO] [1794245508.530398065] [find_free_space_action_server]: 一共4个候选避让点
+[INFO] [1794245508.537243668] [find_free_space_action_server]: 候选点(32.75,17.62) 服务检查 result=1, time=0.007s
+[INFO] [1794245508.537840050] [find_free_space_action_server]: 成功找到避让点: x=32.750, y=17.618, z=10.000, yaw=90.000°
+[INFO] [1794245508.537966111] [find_free_space_action_server]: 成功找到避让点*****: x=32.750, y=17.618, z=10.000, yaw=90.000°
+[INFO] [1794245526.346881621] [rclcpp]: signal_handler(signum=2)

@@ -1,0 +1,79 @@
+{
+  "case": "T形_左到右",
+  "title": "T 形路口（支路朝下），沿横路行驶，左到右",
+  "mode": "external",
+  "定位": {
+    "map_pose": [
+      16.501,
+      19.45,
+      0.001
+    ],
+    "gazebo_error": 0.0
+  },
+  "拟合": {
+    "vertices": 8,
+    "samples": [
+      99,
+      61
+    ],
+    "lengths": [
+      49.0,
+      30.0
+    ]
+  },
+  "行驶": {
+    "trigger_s": 18.0,
+    "length": 30.0
+  },
+  "来车": {
+    "robot": [
+      33.618,
+      19.45,
+      -0.003
+    ],
+    "robot_s": 18.62,
+    "robot_offset_from_center": 0.55,
+    "car": [
+      39.512,
+      20.45,
+      3.142
+    ],
+    "car_s": 24.51
+  },
+  "通过性": {
+    "passable": false
+  },
+  "找点": {
+    "target": [
+      32.75,
+      17.618,
+      1.571
+    ],
+    "z": 10.0,
+    "where": {
+      "along": -0.87,
+      "lateral": -2.38,
+      "side": "右",
+      "in_corridor": false
+    }
+  },
+  "停靠": {
+    "robot": [
+      32.878,
+      17.671,
+      1.55
+    ],
+    "distance": 0.138,
+    "yaw_vs_target": "一致",
+    "yaw_vs_corridor_tangent_deg": 88.8,
+    "heading": "顺行驶方向",
+    "where": {
+      "along": -0.74,
+      "lateral": -2.33,
+      "side": "右",
+      "in_corridor": false
+    },
+    "seconds": 19.1
+  },
+  "result": "FAIL 停靠车头和通道切线夹角 89°，超过 35°"
+}

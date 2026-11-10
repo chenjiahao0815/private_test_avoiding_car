@@ -1,0 +1,94 @@
+{
+  "case": "单弧_左到右",
+  "title": "单段圆弧（向上拱，半径 22 m），左到右",
+  "mode": "external",
+  "定位": {
+    "map_pose": [
+      18.92,
+      16.367,
+      0.538
+    ],
+    "gazebo_error": 0.0
+  },
+  "拟合": {
+    "vertices": 218,
+    "samples": [
+      52,
+      59
+    ],
+    "lengths": [
+      25.06,
+      28.69
+    ]
+  },
+  "行驶": {
+    "trigger_s": 13.0,
+    "length": 26.9
+  },
+  "来车": {
+    "robot": [
+      30.236,
+      19.397,
+      -0.012
+    ],
+    "robot_s": 13.68,
+    "robot_offset_from_center": 0.6,
+    "car": [
+      36.117,
+      19.6,
+      2.864
+    ],
+    "car_s": 19.51
+  },
+  "通过性": {
+    "passable": false
+  },
+  "找点": {
+    "target": [
+      27.178,
+      16.991,
+      -1.418
+    ],
+    "external_in_corridor": false,
+    "where": {
+      "along": -3.5,
+      "lateral": -2.8,
+      "side": "右",
+      "in_corridor": false
+    }
+  },
+  "停靠": {
+    "robot": [
+      27.312,
+      16.957,
+      -1.379
+    ],
+    "distance": 0.139,
+    "yaw_vs_target": "一致",
+    "where": {
+      "along": -3.34,
+      "lateral": -2.85,
+      "side": "右",
+      "in_corridor": false
+    },
+    "seconds": 29.1
+  },
+  "避车结束": {
+    "wait_seconds": 14.9,
+    "feedback_states": [
+      0,
+      1,
+      2
+    ],
+    "reason": "goal completed."
+  },
+  "恢复行驶": {
+    "robot": [
+      40.985,
+      16.404,
+      -0.595
+    ],
+    "distance": 0.102
+  },
+  "result": "PASS"
+}

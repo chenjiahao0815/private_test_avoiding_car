@@ -1,0 +1,5 @@
+[INFO] [1794241053.677841884] [static_transform_publisher_EVOGQHcklAiAtfUy]: Spinning until stopped - publishing transform
+translation: ('-0.580000', '2.940000', '0.000000')
+rotation: ('0.000000', '0.000000', '-0.033494', '0.999439')
+from 'map' to 'odom'
+[INFO] [1794241167.474782240] [rclcpp]: signal_handler(signum=2)

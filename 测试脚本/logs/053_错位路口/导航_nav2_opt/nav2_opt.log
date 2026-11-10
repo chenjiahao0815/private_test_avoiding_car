@@ -1,0 +1,778 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-11-10-01-34-37-906182-DESKTOP-230CIAL-31394
+[INFO] [launch]: Default logging verbosity is set to INFO
+============================================================
+环境变量配置:
+============================================================
+  ROBOT_VERSION = mk33
+  ROBOT_LOCALIZER_MODE = 3D
+  DABAI_DCW_NUMBER = (未设置)
+  USE_AURORA_CAMERA = (未设置)
+  USE_GARAGE_AVOIDANCE = (未设置)
+  MAX_LINEAR_VEL = 1.0
+  MAX_LINEAR_ACC = (未设置)
+  LAUNCH_RGB_CAMERA_FRONT = false
+  IGNORE_HEIGHT_ABOVE = 0.2
+  COLLISION_MONITOR_CMD_VEL_OUT_TOPIC = cmd_vel
+  TB3_WORLD = /tmp/avoid_field/avoid_field.world
+  GAZEBO_OR_FAKE = gazebo
+============================================================
+根据ROBOT_VERSION (mk33) 选择参数文件：outdoor_cleaner_qp_2.yaml
+根据ROBOT_VERSION (mk33) 版本名称：outdoor_robot_qp_2
+GAZEBO_OR_FAKE=gazebo，默认 use_sim_time=True
+配置已更新！设置最大线速度、最大减速度为：1.0
+未设置MAX_LINEAR_ACC，使用默认配置。
+配置已更新！设置贴边参考线点云裁剪高度为：0.2
+配置已更新！设置cmd_vel_nav_ctr话题名称为：cmd_vel
+使用 Gazebo 仿真 + fake_sensor_publisher 定位！use_sim_time=True，publish_clock=False，Gazebo 不发布 odom/odom_tf
+Not set MULTI_ROBOT_MODE: True/False ! Use collision_monitor_cmd_vel_nav_topic default value cmd_vel_nav !
+Not set MULTI_ROBOT_MODE: True/False ! Use collision_monitor_cmd_vel_nav_topic default value cmd_vel_nav !
+Not set MULTI_ROBOT_MODE: True/False ! Use collision_monitor_cmd_vel_nav_topic default value cmd_vel_nav !
+============================================================
+环境变量配置:
+============================================================
+  ROBOT_VERSION = mk33
+  LASER_MIN_ANGLE = (未设置)
+  LASER_MAX_ANGLE = (未设置)
+  LASER_MIN_RANGE = (未设置)
+  LASER_MAX_RANGE = (未设置)
+  WR_LIDAR_IP = 192.168.0.10
+  LINEAR_SCALE = (未设置)
+  ANGLE_SCALE = (未设置)
+  ROBOT_LOCALIZATION_PUBLISH_TRANSFORM = True
+  ROBOT_LOCALIZITION_USE_2D_MODE = True
+  LASER_SCAN = (未设置)
+  USE_CURB_OR_WALL = (未设置)
+  MULTI_ROBOT_MODE = (未设置)
+  FRONT_DEPTH_CAMERA_SERIAL_PORT = (未设置)
+  RIGHT_DEPTH_CAMERA_SERIAL_PORT = (未设置)
+  BACK_DEPTH_CAMERA_SERIAL_PORT = (未设置)
+  LEFT_DEPTH_CAMERA_SERIAL_PORT = (未设置)
+  OPTIMIZE_DEPTH_CAMERA_POSE = False
+============================================================
+param_use_sim_time 参数值为: True，使用仿真时间
+使用默认2D激光雷达IP：192.168.0.10
+根据ROBOT_VERSION (mk33) 选择URDF：mk33.urdf, 串口型号：S1
+URDF 模型路径: /capella/share/capella_ros_launcher/urdf/turtlebot3_waffle.urdf
+URDF 模型 文件大小发生变化，当前大小：8515 字节，继续观察...
+URDF 模型 文件大小稳定第 1/3 次，当前大小：8515 字节
+URDF 模型 文件大小稳定第 2/3 次，当前大小：8515 字节
+URDF 模型 文件大小稳定第 3/3 次，当前大小：8515 字节
+URDF 模型 文件已存在且大小稳定：/capella/share/capella_ros_launcher/urdf/turtlebot3_waffle.urdf，大小：8515 字节
+[INFO] [map_server-1]: process started with pid [31417]
+[INFO] [amcl-2]: process started with pid [31419]
+[INFO] [lifecycle_manager-3]: process started with pid [31421]
+[INFO] [controller_server-4]: process started with pid [31425]
+[INFO] [smoother_server-5]: process started with pid [31435]
+[INFO] [planner_server-6]: process started with pid [31437]
+[INFO] [behavior_server-7]: process started with pid [31439]
+[INFO] [bt_navigator-8]: process started with pid [31441]
+[INFO] [waypoint_follower-9]: process started with pid [31452]
+[INFO] [velocity_smoother-10]: process started with pid [31454]
+[INFO] [collision_monitor-11]: process started with pid [31460]
+[INFO] [lifecycle_manager-12]: process started with pid [31470]
+[INFO] [collision_recover_node-13]: process started with pid [31475]
+[INFO] [path_check-14]: process started with pid [31484]
+[INFO] [robot_state_publisher-15]: process started with pid [31487]
+[INFO] [joint_state_publisher-16]: process started with pid [31491]
+[INFO] [search_poses_near_edge_node-17]: process started with pid [31505]
+[INFO] [gzserver-18]: process started with pid [31534]
+[INFO] [gzclient-19]: process started with pid [31560]
+[INFO] [spawn_entity.py-20]: process started with pid [31578]
+[INFO] [fake_sensor_publisher-21]: process started with pid [31584]
+[INFO] [rviz2-22]: process started with pid [31586]
+[map_server-1] [INFO] [1794274483.749709349] [map_server]: 
+[map_server-1] 	map_server lifecycle node launched. 
+[map_server-1] 	Waiting on external lifecycle transitions to activate
+[map_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-1] [INFO] [1794274483.749789206] [map_server]: Creating
+[map_server-1] [INFO] [1794274483.749932431] [map_server]: Configuring
+[map_server-1] [INFO] [1794274483.749963957] [map_io]: Loading yaml file: /tmp/avoid_field/avoid_field.yaml
+[map_server-1] [INFO] [1794274483.750910963] [map_io]: resolution: 0.05
+[map_server-1] [INFO] [1794274483.750923991] [map_io]: origin[0]: -5
+[map_server-1] [INFO] [1794274483.750926404] [map_io]: origin[1]: -5
+[map_server-1] [INFO] [1794274483.750928391] [map_io]: origin[2]: 0
+[map_server-1] [INFO] [1794274483.750930633] [map_io]: free_thresh: 0.25
+[map_server-1] [INFO] [1794274483.750932801] [map_io]: occupied_thresh: 0.65
+[map_server-1] [INFO] [1794274483.750935738] [map_io]: mode: trinary
+[map_server-1] [INFO] [1794274483.750938527] [map_io]: negate: 0
+[map_server-1] [INFO] [1794274483.755413069] [map_io]: Loading image_file: /tmp/avoid_field/avoid_field.pgm
+[amcl-2] [INFO] [1794274483.673571758] [amcl]: 
+[amcl-2] 	amcl lifecycle node launched. 
+[amcl-2] 	Waiting on external lifecycle transitions to activate
+[amcl-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-2] [INFO] [1794274483.673897700] [amcl]: Creating
+[lifecycle_manager-3] [INFO] [1794274483.695724860] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-3] [INFO] [1794274483.696714535] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-3] [INFO] [1794274483.743128537] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-3] [INFO] [1794274483.743180958] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[controller_server-4] [INFO] [1794274483.896901598] [controller_server]: 
+[controller_server-4] 	controller_server lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-5] [INFO] [1794274483.752464146] [smoother_server]: 
+[smoother_server-5] 	smoother_server lifecycle node launched. 
+[smoother_server-5] 	Waiting on external lifecycle transitions to activate
+[smoother_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-5] [INFO] [1794274483.753983645] [smoother_server]: Creating smoother server
+[planner_server-6] [INFO] [1794274483.879290526] [planner_server]: 
+[planner_server-6] 	planner_server lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1794274483.915111047] [planner_server]: Creating
+[bt_navigator-8] [INFO] [1794274483.853038628] [bt_navigator]: 
+[bt_navigator-8] 	bt_navigator lifecycle node launched. 
+[bt_navigator-8] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-8] [INFO] [1794274483.853155922] [bt_navigator]: Creating
+[collision_monitor-11] [INFO] [1794274483.889223549] [collision_monitor]: 
+[collision_monitor-11] 	collision_monitor lifecycle node launched. 
+[collision_monitor-11] 	Waiting on external lifecycle transitions to activate
+[collision_monitor-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-12] [INFO] [1794274483.915264365] [lifecycle_manager_navigation]: Creating
+[robot_state_publisher-15] [INFO] [1794274483.922811786] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-15] [INFO] [1794274483.922868100] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-15] [INFO] [1794274483.922874811] [robot_state_publisher]: got segment base_scan
+[robot_state_publisher-15] [INFO] [1794274483.922878157] [robot_state_publisher]: got segment camera_depth_frame
+[robot_state_publisher-15] [INFO] [1794274483.922881350] [robot_state_publisher]: got segment camera_depth_optical_frame
+[robot_state_publisher-15] [INFO] [1794274483.922884684] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-15] [INFO] [1794274483.922887852] [robot_state_publisher]: got segment camera_rgb_frame
+[robot_state_publisher-15] [INFO] [1794274483.922890812] [robot_state_publisher]: got segment camera_rgb_optical_frame
+[robot_state_publisher-15] [INFO] [1794274483.922893951] [robot_state_publisher]: got segment caster_back_left_link
+[robot_state_publisher-15] [INFO] [1794274483.922896873] [robot_state_publisher]: got segment caster_back_right_link
+[robot_state_publisher-15] [INFO] [1794274483.922899887] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-15] [INFO] [1794274483.922902884] [robot_state_publisher]: got segment ultrasonic_sensor_link
+[robot_state_publisher-15] [INFO] [1794274483.922905701] [robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-15] [INFO] [1794274483.922908796] [robot_state_publisher]: got segment wheel_right_link
+[waypoint_follower-9] [INFO] [1794274483.960758200] [waypoint_follower]: 
+[waypoint_follower-9] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-9] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-9] [INFO] [1794274483.961148625] [waypoint_follower]: Creating
+[lifecycle_manager-12] [INFO] [1794274483.961585439] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-4] [INFO] [1794274483.962146827] [controller_server]: Creating controller server
+[velocity_smoother-10] [INFO] [1794274483.964364137] [velocity_smoother]: 
+[velocity_smoother-10] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-10] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1794274484.001163284] [global_costmap.global_costmap]: 
+[planner_server-6] 	global_costmap lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1794274484.006957167] [global_costmap.global_costmap]: Creating Costmap
+[behavior_server-7] [INFO] [1794274484.005186037] [behavior_server]: 
+[behavior_server-7] 	behavior_server lifecycle node launched. 
+[behavior_server-7] 	Waiting on external lifecycle transitions to activate
+[behavior_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-4] [INFO] [1794274484.061824256] [local_costmap.local_costmap]: 
+[controller_server-4] 	local_costmap lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-4] [INFO] [1794274484.072161628] [local_costmap.local_costmap]: Creating Costmap
+[lifecycle_manager-12] [INFO] [1794274484.074784523] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-12] [INFO] [1794274484.074824781] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[search_poses_near_edge_node-17] [INFO] [1794274484.094395647] [search_poses_near_edge]: ---------- show all the parameters ----------
+[search_poses_near_edge_node-17] [INFO] [1794274484.094515435] [search_poses_near_edge]: mission_poses_topic_: mission_poses
+[search_poses_near_edge_node-17] [INFO] [1794274484.094523263] [search_poses_near_edge]: edge_reference_paths_topic_: /edge_reference_paths
+[search_poses_near_edge_node-17] [INFO] [1794274484.094528325] [search_poses_near_edge]: edge_reference_paths_no_collision_check_topic_: /edge_reference_paths_no_collision_check
+[search_poses_near_edge_node-17] [INFO] [1794274484.094533019] [search_poses_near_edge]: paired_mission_and_reference_path_topic_: paired_mission_and_reference_path
+[search_poses_near_edge_node-17] [INFO] [1794274484.094536657] [search_poses_near_edge]: paired_paths_marker_topic_: paired_mission_and_reference_markers
+[search_poses_near_edge_node-17] [INFO] [1794274484.094540518] [search_poses_near_edge]: all_edge_reference_paths_marker_topic_: all_edge_reference_paths_markers
+[search_poses_near_edge_node-17] [INFO] [1794274484.094544085] [search_poses_near_edge]: marker_line_width_m_: 0.080000
+[search_poses_near_edge_node-17] [INFO] [1794274484.094555052] [search_poses_near_edge]: split_angle_threshold_deg_: 15.000000
+[search_poses_near_edge_node-17] [INFO] [1794274484.094559924] [search_poses_near_edge]: match_angle_threshold_deg_: 15.000000
+[search_poses_near_edge_node-17] [INFO] [1794274484.094563489] [search_poses_near_edge]: match_distance_threshold_m_: 1.300000
+[search_poses_near_edge_node-17] [INFO] [1794274484.094567156] [search_poses_near_edge]: min_segment_length_m_: 1.000000
+[search_poses_near_edge_node-17] [INFO] [1794274484.094570611] [search_poses_near_edge]: sample_step_m_: 0.300000
+[search_poses_near_edge_node-17] [INFO] [1794274484.094574245] [search_poses_near_edge]: min_match_arc_length_m_: 0.800000
+[search_poses_near_edge_node-17] [INFO] [1794274484.094584258] [search_poses_near_edge]: min_coverage_ratio_: 0.700000
+[search_poses_near_edge_node-17] [INFO] [1794274484.094587703] [search_poses_near_edge]: match_expand_m_: 0.600000
+[search_poses_near_edge_node-17] [INFO] [1794274484.094591384] [search_poses_near_edge]: overlap_epsilon_m_: 0.300000
+[search_poses_near_edge_node-17] [INFO] [1794274484.094594816] [search_poses_near_edge]: ---------- show all the parameters ----------
+[controller_server-4] [INFO] [1794274484.113988194] [controller_server]: Configuring controller interface
+[controller_server-4] [INFO] [1794274484.121385337] [controller_server]: getting goal checker plugins..
+[controller_server-4] [INFO] [1794274484.123989099] [controller_server]: Controller frequency set to 10.0000Hz
+[controller_server-4] [INFO] [1794274484.124058226] [local_costmap.local_costmap]: Configuring
+[controller_server-4] [INFO] [1794274484.168016034] [local_costmap.local_costmap]: Using plugin "static_layer"
+[fake_sensor_publisher-21] [INFO] [1794274484.204675876] [fake_sensor_publisher]: Virtual localization started: frames map->odom->base_footprint | odom_rate=50.0Hz cmd_vel_timeout=0.25s max_integration_dt=0.20s publish_clock=false publish_odom_tf=false publish_map_odom_tf=false publish_odom_topic=false status_log_period=5.0s jump_warn(xy=0.50m yaw=0.50rad)
+[fake_sensor_publisher-21] [INFO] [1794274484.204877655] [fake_sensor_publisher]: Subscribed: /cmd_vel, /initialpose | Publishing: /odom + TF (map->odom co-published with odom->base, same stamp). Integration dt and cmd_vel timeout use steady_clock (immune to ROS time jumps).
+[fake_sensor_publisher-21] [INFO] [1794274484.225174831] [fake_sensor_publisher]: [status] stamp=0.000 steady_dt_raw=0.0200 dt_used=0.0200 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=1 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=0 jump_warn=0
+[controller_server-4] [INFO] [1794274484.241397184] [local_costmap.local_costmap]: Subscribing to the map topic (/map) with transient local durability
+[controller_server-4] [INFO] [1794274484.242307531] [local_costmap.local_costmap]: Initialized plugin "static_layer"
+[controller_server-4] [INFO] [1794274484.242341538] [local_costmap.local_costmap]: Using plugin "spatio_temporal_voxel_layer"
+[collision_recover_node-13] [INFO] [1794274484.265639926] [collision_recover_node]: collision_recover_node (teb_costmap_obstacles-based) initialized
+[rviz2-22] QStandardPaths: runtime directory '/mnt/wslg/runtime-dir' is not owned by UID 0, but a directory permissions 0777 owned by UID 1000 GID 1000
+[controller_server-4] [INFO] [1794274484.438827397] [local_costmap.local_costmap]: spatio_temporal_voxel_layer being initialized as SpatioTemporalVoxelLayer!
+[controller_server-4] [INFO] [1794274484.438905484] [local_costmap.local_costmap]: spatio_temporal_voxel_layer's global frame is map.
+[controller_server-4] [INFO] [1794274484.453941533] [local_costmap.local_costmap]: spatio_temporal_voxel_layer loaded parameters from parameter server.
+[controller_server-4] [INFO] [1794274484.470855366] [local_costmap.local_costmap]: spatio_temporal_voxel_layer created underlying voxel grid.
+[controller_server-4] [INFO] [1794274484.472492392] [ignore_polygon_manager]: ignore_width=50, ignore_range=5.20, debug_mode=1, ignore_height_above=0.20
+[controller_server-4] [INFO] [1794274484.476633962] [ignore_polygon_manager]: Subscribed to edge_reference_paths_no_collision_check
+[controller_server-4] [INFO] [1794274484.477308665] [ignore_polygon_manager]: Debug mode enabled: publishing collision points to 'local_costmap/spatio_temporal_voxel_layer/collision_points' topic
+[controller_server-4] [INFO] [1794274484.477327977] [local_costmap.local_costmap]: spatio_temporal_voxel_layer ignore polygon manager created.
+[controller_server-4] [INFO] [1794274484.483130340] [local_costmap.local_costmap]: Voxel filter activated.
+[map_server-1] [INFO] [1794274484.493681448] [map_io]: Read map /tmp/avoid_field/avoid_field.pgm: 1400 X 1000 map @ 0.05 m/cell
+[controller_server-4] [INFO] [1794274484.495550469] [local_costmap.local_costmap]: Voxel filter activated.
+[controller_server-4] [INFO] [1794274484.503534399] [local_costmap.local_costmap]: Voxel filter activated.
+[controller_server-4] [INFO] [1794274484.520936243] [local_costmap.local_costmap]: Voxel filter activated.
+[controller_server-4] [INFO] [1794274484.533001839] [local_costmap.local_costmap]: Voxel filter activated.
+[controller_server-4] [INFO] [1794274484.547666492] [local_costmap.local_costmap]: Voxel filter activated.
+[controller_server-4] [INFO] [1794274484.560259738] [local_costmap.local_costmap]: Voxel filter activated.
+[controller_server-4] [INFO] [1794274484.561577761] [local_costmap.local_costmap]: spatio_temporal_voxel_layer initialization complete!
+[controller_server-4] [INFO] [1794274484.561607739] [local_costmap.local_costmap]: Initialized plugin "spatio_temporal_voxel_layer"
+[controller_server-4] [INFO] [1794274484.561613315] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-4] [INFO] [1794274484.564875651] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-4] [INFO] [1794274484.564906604] [local_costmap.local_costmap]: Using costmap filter "keepout_filter"
+[controller_server-4] [INFO] [1794274484.575061418] [local_costmap.local_costmap]: Initialized costmap filter "keepout_filter"
+[controller_server-4] [INFO] [1794274484.575095421] [local_costmap.local_costmap]: Using costmap filter "inflation_layer"
+[controller_server-4] [INFO] [1794274484.575545852] [local_costmap.local_costmap]: Initialized costmap filter "inflation_layer"
+[controller_server-4] [INFO] [1794274484.586432692] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-4] [INFO] [1794274484.589012301] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-4] [INFO] [1794274484.595009064] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[lifecycle_manager-3] [INFO] [1794274484.599455417] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-2] [INFO] [1794274484.604244401] [amcl]: Configuring
+[amcl-2] [INFO] [1794274484.604389837] [amcl]: initTransforms
+[amcl-2] [INFO] [1794274484.617059758] [amcl]: initPubSub
+[controller_server-4] [INFO] [1794274484.621560614] [controller_server]: Created controller : FollowPath of type teb_local_planner::TebLocalPlannerROS
+[amcl-2] [INFO] [1794274484.625717760] [amcl]: Subscribed to map topic.
+[lifecycle_manager-3] [INFO] [1794274484.634482365] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-1] [INFO] [1794274484.656522455] [map_server]: Activating
+[controller_server-4] [INFO] [1794274484.666957190] [TEBLocalPlanner]: Footprint model 'polygon' loaded for trajectory optimization.
+[controller_server-4] [INFO] [1794274484.666995969] [controller_server]: 初始化: 全局路径前视距离 (max_global_plan_lookahead_dist) 5.00 m, max_vel_x: 1.00
+[controller_server-4] [INFO] [1794274484.667030079] [controller_server]: 已启用多拓扑并行规划 (distinctive topologies)
+[amcl-2] [INFO] [1794274484.732801225] [amcl]: Received a 1400 X 1000 map @ 0.050 m/pix
+[map_server-1] [INFO] [1794274484.732989199] [map_server]: Creating bond (map_server) to lifecycle manager.
+[controller_server-4] [INFO] [1794274484.746091716] [local_costmap.local_costmap]: StaticLayer: Resizing static layer to 1400 X 1000 at 0.050000 m/pix
+[lifecycle_manager-3] [INFO] [1794274484.867954479] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-3] [INFO] [1794274484.868032292] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-2] [INFO] [1794274484.946335713] [amcl]: Activating
+[amcl-2] [INFO] [1794274484.946378673] [amcl]: Creating bond (amcl) to lifecycle manager.
+[controller_server-4] [INFO] [1794274484.998746627] [controller_server]: 代价地图转换插件库路径: /capella/lib/libcostmap_converter.so
+[controller_server-4] [INFO] [1794274484.999010637] [controller_server]: CostmapToPolygonsDBSMCCH parameters loaded: cluster_max_distance=0.20, cluster_min_pts=1, cluster_max_pts=100, convex_hull_min_pt_separation=0.10, global_frame=map
+[controller_server-4] [INFO] [1794274485.052089318] [controller_server]: 已加载代价地图转换插件: costmap_converter::CostmapToPolygonsDBSMCCH
+[controller_server-4] [INFO] [1794274485.071938243] [controller_server]: TEB 独立订阅动态障碍话题 /dynamic_obstacles（PATH 停车门控，不并入 obstacles）
+[lifecycle_manager-3] [INFO] [1794274485.069220121] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-3] [INFO] [1794274485.069304822] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-3] [INFO] [1794274485.069318620] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[controller_server-4] [INFO] [1794274485.084481145] [controller_server]: TEB 已订阅 /vehicle_poses_around 话题
+[controller_server-4] [INFO] [1794274485.089098245] [controller_server]: TEB 已订阅 /nav/speed_limit 话题
+[controller_server-4] [INFO] [1794274485.103194077] [controller_server]: 狭窄通道: TEB 已订阅 /narrow_passages，forward_drive 正常=100.00，窄通道=1.00，Marker 话题 teb_narrow_passages_markers
+[controller_server-4] [INFO] [1794274485.108163794] [controller_server]: TEB 已订阅 /enable_backward，true 时强制倒车友好参数
+[controller_server-4] [INFO] [1794274485.108490715] [controller_server]: /backward_mode 已发布: false (前进)
+[controller_server-4] [INFO] [1794274485.108509115] [controller_server]: TEB 已发布 /backward_mode（几何倒车检测 / 双弧失败 latch），arc_length_ratio=0.30 backward_check_duration=1.00 backward_check_num=2 dual_arc_publish=0
+[controller_server-4] [INFO] [1794274485.108818074] [controller_server]: TEB 订阅前向 LaserScan 贴边 protrusion 检测，话题：/front_scan
+[controller_server-4] [INFO] [1794274485.108992088] [controller_server]: TEB 创建 /teb_vehicle_scan_grid 话题
+[controller_server-4] [INFO] [1794274485.181290400] [controller_server]: TEB 创建发布话题 /teb_selected_wall_line、/teb_monitor_corridor_markers、/teb_protruding_obstacle_markers、/teb_corner_approach_footprint_markers、/teb_collision_footprint_markers、/teb_near_horizon_debug、/teb_path_wait_debug、/edge_distance、/teb_transformed_path、/teb_global_plan
+[controller_server-4] [INFO] [1794274485.183948482] [controller_server]: 已创建 static_layer 参数客户端
+[controller_server-4] [INFO] [1794274485.190186839] [controller_server]: 已创建局部/全局代价地图 footprint 参数客户端
+[controller_server-4] [INFO] [1794274485.226238176] [controller_server]: Controller Server has FollowPath  controllers available.
+[controller_server-4] [INFO] [1794274485.278557316] [controller_server]: Subscribed velocity gate topics: /is_pipes_and_wires_in_path, /backward_mode, /cleaning_tool_fully_retracted
+[controller_server-4] [INFO] [1794274485.278720220] [controller_server]: /backward_mode: false (forward)
+[controller_server-4] [INFO] [1794274485.280680558] [controller_server]: 已保存局部代价地图 footprint: [[1.15, 0.7], [1.15, -0.7], [-0.68, -0.7], [-0.68, 0.7]]
+[lifecycle_manager-12] [INFO] [1794274485.300647413] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-5] [INFO] [1794274485.301536870] [smoother_server]: Configuring smoother server
+[smoother_server-5] [INFO] [1794274485.330071365] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-5] [INFO] [1794274485.332561603] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-12] [INFO] [1794274485.349651722] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-6] [INFO] [1794274485.349867316] [planner_server]: Configuring
+[spawn_entity.py-20] [INFO] [1794274485.451280990] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-20] [INFO] [1794274485.454530047] [spawn_entity]: Loading entity XML from file /capella/share/capella_ros_launcher/worlds/model.sdf
+[spawn_entity.py-20] [INFO] [1794274485.459475433] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-20] [INFO] [1794274485.460973617] [spawn_entity]: Waiting for service /spawn_entity
+[planner_server-6] [INFO] [1794274485.501416983] [ignore_polygon_manager]: ignore_width=50, ignore_range=5.20, debug_mode=1, ignore_height_above=0.20
+[planner_server-6] [INFO] [1794274485.504362249] [ignore_polygon_manager]: Subscribed to edge_reference_paths_no_collision_check
+[planner_server-6] [INFO] [1794274485.506505811] [ignore_polygon_manager]: Debug mode enabled: publishing collision points to 'global_costmap/spatio_temporal_voxel_layer/collision_points' topic
+[planner_server-6] [INFO] [1794274485.695286556] [planner_server]: Created global planner plugin GridBased of type nav2_smac_planner/SmacPlannerHybrid
+[planner_server-6] [INFO] [1794274485.695355261] [planner_server]: Configuring GridBased of type SmacPlannerHybrid
+[planner_server-6] [INFO] [1794274485.708228075] [planner_server]: Even sized heuristic lookup table size set 400.000000, increasing size by 1 to make odd
+[controller_server-4] [INFO] [1794274485.728178173] [controller_server]: 已保存全局代价地图 footprint: [[1.15, 0.65], [1.15, -0.65], [-0.68, -0.65], [-0.68, 0.65]]
+[rviz2-22] [INFO] [1794274487.074077557] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-22] [INFO] [1794274487.074169032] [rviz2]: OpenGl version: 4.2 (GLSL 4.2)
+[rviz2-22] [INFO] [1794274487.143541922] [rviz2]: Stereo is NOT SUPPORTED
+[gzserver-18] XDG_RUNTIME_DIR (/mnt/wslg/runtime-dir) is not owned by us (uid 0), but by uid 1000! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+[gzserver-18] ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+[gzserver-18] ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+[gzserver-18] ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+[gzserver-18] ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+[gzserver-18] ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+[gzserver-18] ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+[gzserver-18] ALSA lib conf.c:5705:(snd_config_expand) Evaluate error: No such file or directory
+[gzserver-18] ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+[gzserver-18] AL lib: (EE) ALCplaybackAlsa_open: Could not open playback device 'default': No such file or directory
+[gzserver-18] [INFO] [1794274487.984439003] [gazebo_ros_state]: Publishing states of gazebo models at [/model_states]
+[gzserver-18] [INFO] [1794274487.984894252] [gazebo_ros_state]: Publishing states of gazebo links at [/link_states]
+[spawn_entity.py-20] [INFO] [1794274487.991049792] [spawn_entity]: Calling service /spawn_entity
+[rviz2-22] [INFO] [1794274488.337652273] [rviz2]: Trying to create a map of size 1400 x 1000 using 1 swatches
+[rviz2-22] [ERROR] [1794274488.394897408] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-22] active samplers with a different type refer to the same texture image unit
+[gzserver-18] [INFO] [1794274488.565134197] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[fake_sensor_publisher-21] [INFO] [1794274489.244970355] [fake_sensor_publisher]: [status] stamp=0.100 steady_dt_raw=0.0202 dt_used=0.0202 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=252 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=250 jump_warn=0
+[gzserver-18] [INFO] [1794274490.947500042] [intel_realsense_r200_depth_driver]: Publishing camera info to [/intel_realsense_r200_depth/camera_info]
+[gzserver-18] [INFO] [1794274490.951596347] [intel_realsense_r200_depth_driver]: Publishing depth camera info to [/intel_realsense_r200_depth/depth/camera_info]
+[gzserver-18] [INFO] [1794274490.957871963] [intel_realsense_r200_depth_driver]: Publishing pointcloud to [/intel_realsense_r200_depth/points]
+[spawn_entity.py-20] [INFO] [1794274490.975428934] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [turtlebot3_waffle]
+[gzserver-18] [INFO] [1794274490.979332393] [range]: missing <radiation_type>, defaulting to infrared
+[gzserver-18] [INFO] [1794274491.191955907] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.287000m]
+[gzserver-18] [INFO] [1794274491.192053153] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-18] [INFO] [1794274491.200293202] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-18] [INFO] [1794274491.211897387] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-18] [INFO] [1794274491.220539818] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-18] [INFO] [1794274491.220590770] [turtlebot3_diff_drive]: Publishing wheel transforms between [base_footprint], [wheel_left_joint] and [wheel_right_joint]
+[gzserver-18] [INFO] [1794274491.276899751] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-18] [INFO] [1794274491.283878741] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[INFO] [spawn_entity.py-20]: process has finished cleanly [pid 31578]
+[amcl-2] [INFO] [1794274491.559125804] [amcl]: createLaserObject
+[fake_sensor_publisher-21] [WARN] [1794274494.207232962] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=2.000 last_pub=2.000; bump publish stamp. count=479
+[collision_recover_node-13] [INFO] [1794274494.231763825] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-21] [INFO] [1794274494.245037963] [fake_sensor_publisher]: [status] stamp=2.000 steady_dt_raw=0.0202 dt_used=0.0202 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=502 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=481 jump_warn=0
+[amcl-2] [WARN] [1794274494.524637666] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-21] [WARN] [1794274497.186490212] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=4.000 last_pub=4.000; bump publish stamp. count=608
+[collision_recover_node-13] [INFO] [1794274497.231910656] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794274497.564797439] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-21] [INFO] [1794274499.245777722] [fake_sensor_publisher]: [status] stamp=5.200 steady_dt_raw=0.0210 dt_used=0.0210 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=752 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=699 jump_warn=0
+[fake_sensor_publisher-21] [WARN] [1794274500.367443996] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=6.000 last_pub=6.000; bump publish stamp. count=747
+[collision_recover_node-13] [INFO] [1794274500.432278179] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794274500.847502451] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-21] [WARN] [1794274503.504777909] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=8.000 last_pub=8.000; bump publish stamp. count=884
+[collision_recover_node-13] [INFO] [1794274503.631884981] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794274504.143739529] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-21] [INFO] [1794274504.264780570] [fake_sensor_publisher]: [status] stamp=8.500 steady_dt_raw=0.0200 dt_used=0.0200 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=1003 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=917 jump_warn=0
+[fake_sensor_publisher-21] [WARN] [1794274506.484773092] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=10.000 last_pub=10.000; bump publish stamp. count=1013
+[collision_recover_node-13] [INFO] [1794274506.632444271] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794274507.195345715] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-21] [INFO] [1794274509.265616436] [fake_sensor_publisher]: [status] stamp=11.900 steady_dt_raw=0.0205 dt_used=0.0205 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=1253 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=1133 jump_warn=0
+[fake_sensor_publisher-21] [WARN] [1794274509.344704004] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=12.000 last_pub=12.000; bump publish stamp. count=1136
+[collision_recover_node-13] [INFO] [1794274509.631824023] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794274510.377330083] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1794274511.244780450] [planner_server]: 狭窄通道: 已预计算 DUBIN / REEDS_SHEPP 两套距离启发式缓存 (lookup_dim=401, angle_bins=72)
+[planner_server-6] [INFO] [1794274511.302435632] [planner_server]: 狭窄通道: 已订阅 /narrow_passages，默认非窄通道模式(DUBIN)
+[planner_server-6] [INFO] [1794274511.302519275] [planner_server]: 已订阅 /enable_backward，true 时强制 REEDS_SHEPP 倒车规划
+[planner_server-6] [INFO] [1794274511.302542802] [planner_server]: Configured plugin GridBased of type SmacPlannerHybrid with maximum iterations 5000000, max on approach iterations 1000, and allowing unknown traversal. Tolerance 0.50.Using motion model: Dubin.
+[planner_server-6] [INFO] [1794274511.303054247] [planner_server]: [FastPath] configured: goal_occupied_tolerance=1.00 goal_search_resolution=0.20 straight_check_length_ratio=1.00 straight_path_resolution=0.20 stretch=true rotate=true corridor_intrusion_tol=0.300 corner_sweep_scale=1.20 corner_snap_tol=1.50 corner_snap=true planner_ids=1
+[planner_server-6] [INFO] [1794274511.333762080] [planner_server]: [PlanDbg] configured publish_planning_debug=false keep_mode=session footprint_stride=0
+[planner_server-6] [INFO] [1794274511.333856493] [planner_server]: Planner Server has GridBased  planners available. enable_straight_expand=true near_dist=5.00 near_yaw=1.57 via_heading_tol=0.79 via_trim_len=1.00 via_span=2 colinear_deg=135.0 corner_deg=135.0 short_edge=2.00 sweep_k=1.20 corner_snap_tol=1.50 corner_snap=true stretch=true rotate=true debug=false
+[lifecycle_manager-12] [INFO] [1794274511.395655998] [lifecycle_manager_navigation]: [34m[1mConfiguring collision_monitor[0m[0m
+[collision_monitor-11] [INFO] [1794274511.398756772] [collision_monitor]: Configuring
+[collision_monitor-11] [INFO] [1794274511.446782841] [collision_monitor]: [FootprintApproach]: Creating Polygon
+[collision_monitor-11] [INFO] [1794274511.458093903] [ignore_polygon_manager]: ignore_width=50, ignore_range=5.20, debug_mode=1, ignore_height_above=0.20
+[collision_monitor-11] [INFO] [1794274511.464294844] [ignore_polygon_manager]: Subscribed to edge_reference_paths_no_collision_check
+[collision_monitor-11] [INFO] [1794274511.466945529] [ignore_polygon_manager]: Debug mode enabled: publishing collision points to 'collision_monitor/collision_points' topic
+[collision_monitor-11] [INFO] [1794274511.473557581] [collision_monitor]: [dabai_camera1]: Creating PointCloud
+[collision_monitor-11] [INFO] [1794274511.473982879] [collision_monitor]: [dabai_camera2]: Creating PointCloud
+[collision_monitor-11] [INFO] [1794274511.474134747] [collision_monitor]: [dabai_camera3]: Creating PointCloud
+[collision_monitor-11] [INFO] [1794274511.474286547] [collision_monitor]: [dabai_camera4]: Creating PointCloud
+[collision_monitor-11] [INFO] [1794274511.474409528] [collision_monitor]: [scan_close_filter_points]: Creating PointCloud
+[lifecycle_manager-12] [INFO] [1794274511.497700189] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-7] [INFO] [1794274511.502246532] [behavior_server]: Configuring
+[behavior_server-7] [INFO] [1794274511.539471312] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-7] [INFO] [1794274511.547874895] [behavior_server]: Configuring spin
+[behavior_server-7] [INFO] [1794274511.577998206] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-7] [INFO] [1794274511.580259355] [behavior_server]: Configuring backup
+[behavior_server-7] [INFO] [1794274511.581060144] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-7] [INFO] [1794274511.581601248] [behavior_server]: Configuring drive_on_heading
+[behavior_server-7] [INFO] [1794274511.582222447] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-7] [INFO] [1794274511.594190339] [behavior_server]: Configuring assisted_teleop
+[behavior_server-7] [INFO] [1794274511.615024970] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-7] [INFO] [1794274511.615658670] [behavior_server]: Configuring wait
+[lifecycle_manager-12] [INFO] [1794274511.638962949] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-8] [INFO] [1794274511.644635427] [bt_navigator]: Configuring
+[lifecycle_manager-12] [INFO] [1794274511.933031170] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-9] [INFO] [1794274511.933426296] [waypoint_follower]: Configuring
+[waypoint_follower-9] [INFO] [1794274511.968475530] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-12] [INFO] [1794274511.998769451] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-10] [INFO] [1794274511.999059340] [velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-12] [INFO] [1794274512.023530473] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-4] [INFO] [1794274512.024661189] [controller_server]: Activating
+[controller_server-4] [INFO] [1794274512.024788466] [local_costmap.local_costmap]: Activating
+[controller_server-4] [INFO] [1794274512.024813904] [local_costmap.local_costmap]: Checking transform
+[controller_server-4] [INFO] [1794274512.025049635] [local_costmap.local_costmap]: start
+[controller_server-4] [INFO] [1794274512.025080531] [local_costmap.local_costmap]: spatio_temporal_voxel_layer was activated.
+[controller_server-4] [INFO] [1794274512.075134438] [local_costmap.local_costmap]: KeepoutFilter: Subscribing to "/nav/keepout/info" topic for filter info...
+[controller_server-4] [WARN] [1794274512.229991972] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794274512.232227289] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[rviz2-22] [INFO] [1794274512.298060173] [rviz2]: Trying to create a map of size 200 x 200 using 1 swatches
+[lifecycle_manager-12] [INFO] [1794274512.351780925] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-12] [INFO] [1794274512.351912732] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-5] [INFO] [1794274512.355455865] [smoother_server]: Activating
+[smoother_server-5] [INFO] [1794274512.356116526] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794274512.486253772] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-12] [INFO] [1794274512.487073567] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-6] [INFO] [1794274512.490989259] [planner_server]: Activating
+[fake_sensor_publisher-21] [WARN] [1794274512.644790003] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=14.000 last_pub=14.000; bump publish stamp. count=1281
+[planner_server-6] [WARN] [1794274512.745933688] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[planner_server-6] [INFO] [1794274512.866284956] [planner_server]: Activating plugin GridBased of type SmacPlannerHybrid
+[planner_server-6] [INFO] [1794274512.876199691] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794274513.012562751] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-12] [INFO] [1794274513.012832129] [lifecycle_manager_navigation]: [34m[1mActivating collision_monitor[0m[0m
+[collision_monitor-11] [INFO] [1794274513.013977567] [collision_monitor]: Activating
+[collision_monitor-11] [INFO] [1794274513.014199394] [collision_monitor]: Creating bond (collision_monitor) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794274513.144645258] [lifecycle_manager_navigation]: Server collision_monitor connected with bond.
+[lifecycle_manager-12] [INFO] [1794274513.145118845] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-7] [INFO] [1794274513.150125450] [behavior_server]: Activating
+[behavior_server-7] [INFO] [1794274513.150160294] [behavior_server]: Activating spin
+[behavior_server-7] [INFO] [1794274513.150172229] [behavior_server]: Activating backup
+[behavior_server-7] [INFO] [1794274513.150180230] [behavior_server]: Activating drive_on_heading
+[behavior_server-7] [INFO] [1794274513.150189676] [behavior_server]: Activating assisted_teleop
+[behavior_server-7] [INFO] [1794274513.150200428] [behavior_server]: Activating wait
+[behavior_server-7] [INFO] [1794274513.150247799] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[rviz2-22] [INFO] [1794274513.193540716] [rviz2]: Trying to create a map of size 1400 x 1000 using 1 swatches
+[collision_recover_node-13] [INFO] [1794274513.237253213] [collision_recover_node]: No obstacles received, do not check for collision.
+[lifecycle_manager-12] [INFO] [1794274513.278329544] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-12] [INFO] [1794274513.278428746] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-8] [INFO] [1794274513.280897726] [bt_navigator]: Activating
+[bt_navigator-8] [INFO] [1794274513.812161619] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794274513.921062287] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-12] [INFO] [1794274513.921146999] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-9] [INFO] [1794274513.921833347] [waypoint_follower]: Activating
+[waypoint_follower-9] [INFO] [1794274513.925383435] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794274514.034766282] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-12] [INFO] [1794274514.034889147] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-10] [INFO] [1794274514.039743186] [velocity_smoother]: Activating
+[velocity_smoother-10] [INFO] [1794274514.039950587] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794274514.159443476] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-12] [INFO] [1794274514.159495169] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-12] [INFO] [1794274514.159503791] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[amcl-2] [WARN] [1794274514.256117416] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-21] [INFO] [1794274514.284801978] [fake_sensor_publisher]: [status] stamp=14.800 steady_dt_raw=0.0200 dt_used=0.0200 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=1504 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=1355 jump_warn=0
+[controller_server-4] [WARN] [1794274516.039206897] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-21] [WARN] [1794274516.426524092] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=16.000 last_pub=16.000; bump publish stamp. count=1450
+[planner_server-6] [WARN] [1794274516.495279706] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794274516.831835080] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794274517.681767323] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794274519.030273891] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-21] [INFO] [1794274519.287238019] [fake_sensor_publisher]: [status] stamp=17.800 steady_dt_raw=0.0224 dt_used=0.0224 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=1754 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=1575 jump_warn=0
+[fake_sensor_publisher-21] [WARN] [1794274519.484776163] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=18.000 last_pub=18.000; bump publish stamp. count=1583
+[planner_server-6] [WARN] [1794274519.494687323] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794274519.831867011] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794274520.994584382] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794274522.230705840] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-21] [WARN] [1794274522.824838252] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=20.000 last_pub=20.000; bump publish stamp. count=1730
+[planner_server-6] [WARN] [1794274522.912098479] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794274523.431843320] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-21] [INFO] [1794274524.305933077] [fake_sensor_publisher]: [status] stamp=20.600 steady_dt_raw=0.0205 dt_used=0.0205 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=2005 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=1798 jump_warn=0
+[amcl-2] [WARN] [1794274524.975147805] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794274526.231229969] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-21] [WARN] [1794274526.689069274] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=22.000 last_pub=22.000; bump publish stamp. count=1902
+[planner_server-6] [WARN] [1794274526.695890300] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794274527.032977799] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794274528.905886975] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-21] [INFO] [1794274529.326692020] [fake_sensor_publisher]: [status] stamp=23.300 steady_dt_raw=0.0219 dt_used=0.0219 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=2255 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=2021 jump_warn=0
+[controller_server-4] [WARN] [1794274530.038382796] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-21] [WARN] [1794274530.424779729] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=24.000 last_pub=24.000; bump publish stamp. count=2069
+[planner_server-6] [WARN] [1794274530.496165738] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794274530.834903191] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794274532.540934270] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794274533.632988777] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-21] [WARN] [1794274533.824746985] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=26.000 last_pub=26.000; bump publish stamp. count=2219
+[planner_server-6] [WARN] [1794274533.893838454] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794274534.231785335] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-21] [INFO] [1794274534.345151280] [fake_sensor_publisher]: [status] stamp=26.300 steady_dt_raw=0.0203 dt_used=0.0203 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=2506 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=2242 jump_warn=0
+[amcl-2] [WARN] [1794274536.089668340] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[robot_state_publisher-15] [INFO] [1794274536.435611540] [rclcpp]: signal_handler(signum=2)
+[rviz2-22] [INFO] [1794274536.435877667] [rclcpp]: signal_handler(signum=2)
+[behavior_server-7] [INFO] [1794274536.436999829] [rclcpp]: signal_handler(signum=2)
+[behavior_server-7] [INFO] [1794274536.437581662] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-7] [INFO] [1794274536.437742501] [behavior_server]: Deactivating
+[behavior_server-7] [INFO] [1794274536.437811422] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794274536.437029997] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-12] [INFO] [1794274536.437977375] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-12] [INFO] [1794274536.438045003] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[amcl-2] [INFO] [1794274536.437199742] [rclcpp]: signal_handler(signum=2)
+[amcl-2] [INFO] [1794274536.437399894] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[amcl-2] [INFO] [1794274536.437557248] [amcl]: Deactivating
+[amcl-2] [INFO] [1794274536.437613607] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[planner_server-6] [INFO] [1794274536.438232107] [rclcpp]: signal_handler(signum=2)
+[planner_server-6] [INFO] [1794274536.438412590] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-6] [INFO] [1794274536.438506650] [planner_server]: Deactivating
+[collision_monitor-11] [INFO] [1794274536.439200682] [rclcpp]: signal_handler(signum=2)
+[collision_monitor-11] [INFO] [1794274536.439562614] [collision_monitor]: Running Nav2 LifecycleNode rcl preshutdown (collision_monitor)
+[fake_sensor_publisher-21] [INFO] [1794274536.440295164] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-10] [INFO] [1794274536.441466362] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-10] [INFO] [1794274536.441608123] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-10] [INFO] [1794274536.441664302] [velocity_smoother]: Deactivating
+[velocity_smoother-10] [INFO] [1794274536.441679994] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[controller_server-4] [INFO] [1794274536.441806172] [rclcpp]: signal_handler(signum=2)
+[controller_server-4] [INFO] [1794274536.441861221] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-4] [INFO] [1794274536.441917213] [controller_server]: Deactivating
+[controller_server-4] [INFO] [1794274536.441988026] [local_costmap.local_costmap]: Deactivating
+[controller_server-4] [INFO] [1794274536.442011455] [local_costmap.local_costmap]: spatio_temporal_voxel_layer was deactivated.
+[collision_recover_node-13] [INFO] [1794274536.443738922] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-3] [INFO] [1794274536.444899047] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-3] [INFO] [1794274536.444959627] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+[lifecycle_manager-3] [INFO] [1794274536.444990921] [lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
+[smoother_server-5] [INFO] [1794274536.446141726] [rclcpp]: signal_handler(signum=2)
+[smoother_server-5] [INFO] [1794274536.446191521] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-5] [INFO] [1794274536.446234103] [smoother_server]: Deactivating
+[smoother_server-5] [INFO] [1794274536.446275772] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[path_check-14] [INFO] [1794274536.446749443] [rclcpp]: signal_handler(signum=2)
+[map_server-1] [INFO] [1794274536.460097778] [rclcpp]: signal_handler(signum=2)
+[map_server-1] [INFO] [1794274536.460270427] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[map_server-1] [INFO] [1794274536.460325486] [map_server]: Deactivating
+[map_server-1] [INFO] [1794274536.460336695] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[map_server-1] [INFO] [1794274536.522752448] [map_server]: Cleaning up
+[map_server-1] [INFO] [1794274536.522916041] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[search_poses_near_edge_node-17] [INFO] [1794274536.468079860] [rclcpp]: signal_handler(signum=2)
+[path_check-14] [WARN] [1794274536.470898512] [tf2_buffer]: Detected time source change. Clearing TF buffer.
+[waypoint_follower-9] [INFO] [1794274536.474278133] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-9] [INFO] [1794274536.476289481] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-9] [INFO] [1794274536.476347807] [waypoint_follower]: Deactivating
+[waypoint_follower-9] [INFO] [1794274536.476360846] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[waypoint_follower-9] [INFO] [1794274536.507309253] [waypoint_follower]: Cleaning up
+[bt_navigator-8] [INFO] [1794274536.475335528] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-8] [INFO] [1794274536.481716728] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-8] [INFO] [1794274536.481786874] [bt_navigator]: Deactivating
+[bt_navigator-8] [INFO] [1794274536.481804117] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[velocity_smoother-10] [INFO] [1794274536.481928327] [velocity_smoother]: Cleaning up
+[velocity_smoother-10] [INFO] [1794274536.481970082] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[smoother_server-5] [INFO] [1794274536.486595841] [smoother_server]: Cleaning up
+[amcl-2] [INFO] [1794274536.487964154] [amcl]: Cleaning up
+[collision_monitor-11] [INFO] [1794274536.494977423] [collision_monitor]: Deactivating
+[collision_monitor-11] [INFO] [1794274536.495018703] [collision_monitor]: Destroying bond (collision_monitor) to lifecycle manager.
+[behavior_server-7] [INFO] [1794274536.533492179] [behavior_server]: Cleaning up
+[planner_server-6] [INFO] [1794274536.538160843] [planner_server]: Deactivating plugin GridBased of type SmacPlannerHybrid
+[planner_server-6] [INFO] [1794274536.538224742] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[bt_navigator-8] [INFO] [1794274536.564667496] [bt_navigator]: Cleaning up
+[planner_server-6] [INFO] [1794274536.580306606] [planner_server]: Cleaning up
+[collision_monitor-11] [INFO] [1794274536.585304008] [collision_monitor]: Cleaning up
+[collision_monitor-11] [INFO] [1794274536.585399118] [collision_monitor]: [FootprintApproach]: Destroying Polygon
+[collision_monitor-11] [INFO] [1794274536.585411346] [collision_monitor]: [dabai_camera1]: Destroying PointCloud
+[collision_monitor-11] [INFO] [1794274536.585427128] [collision_monitor]: [dabai_camera2]: Destroying PointCloud
+[collision_monitor-11] [INFO] [1794274536.585433392] [collision_monitor]: [dabai_camera3]: Destroying PointCloud
+[collision_monitor-11] [INFO] [1794274536.585438144] [collision_monitor]: [dabai_camera4]: Destroying PointCloud
+[collision_monitor-11] [INFO] [1794274536.585442056] [collision_monitor]: [scan_close_filter_points]: Destroying PointCloud
+[joint_state_publisher-16] Traceback (most recent call last):
+[joint_state_publisher-16]   File "/opt/ros/humble/lib/joint_state_publisher/joint_state_publisher", line 33, in <module>
+[joint_state_publisher-16]     sys.exit(load_entry_point('joint-state-publisher==2.4.0', 'console_scripts', 'joint_state_publisher')())
+[joint_state_publisher-16]   File "/opt/ros/humble/lib/python3.10/site-packages/joint_state_publisher/joint_state_publisher.py", line 466, in main
+[joint_state_publisher-16]     rclpy.spin(jsp)
+[joint_state_publisher-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 222, in spin
+[joint_state_publisher-16]     executor.spin_once()
+[joint_state_publisher-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[joint_state_publisher-16]     self._spin_once_impl(timeout_sec)
+[joint_state_publisher-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[joint_state_publisher-16]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[joint_state_publisher-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[controller_server-4] [INFO] [1794274536.646698355] [controller_server]: [ControllerServer] publishing velocity: (linear.x:0.000000, angular.z:0.000000)
+[controller_server-4] [INFO] [1794274536.646745327] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [search_poses_near_edge_node-17]: process has finished cleanly [pid 31505]
+[INFO] [collision_recover_node-13]: process has finished cleanly [pid 31475]
+[joint_state_publisher-16]     return next(self._cb_iter)
+[joint_state_publisher-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 612, in _wait_for_ready_callbacks
+[joint_state_publisher-16]     raise ExternalShutdownException()
+[joint_state_publisher-16] rclpy.executors.ExternalShutdownException
+[waypoint_follower-9] [INFO] [1794274536.675686985] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[waypoint_follower-9] [INFO] [1794274536.743918716] [waypoint_follower]: Destroying
+[velocity_smoother-10] [INFO] [1794274536.678258043] [velocity_smoother]: Destroying
+[controller_server-4] [INFO] [1794274536.696941498] [controller_server]: Cleaning up
+[INFO] [fake_sensor_publisher-21]: process has finished cleanly [pid 31584]
+[behavior_server-7] [INFO] [1794274536.707548963] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[INFO] [lifecycle_manager-3]: process has finished cleanly [pid 31421]
+[INFO] [amcl-2]: process has finished cleanly [pid 31419]
+[INFO] [velocity_smoother-10]: process has finished cleanly [pid 31454]
+[collision_monitor-11] [INFO] [1794274536.717398011] [collision_monitor]: Destroying bond (collision_monitor) to lifecycle manager.
+[amcl-2] [INFO] [1794274536.770609059] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[map_server-1] [INFO] [1794274536.774495626] [map_server]: Destroying
+[smoother_server-5] [INFO] [1794274536.796645779] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[amcl-2] [INFO] [1794274536.828822602] [amcl]: Destroying
+[lifecycle_manager-3] [INFO] [1794274536.840189618] [lifecycle_manager_localization]: Destroying lifecycle_manager_localization
+[smoother_server-5] [INFO] [1794274536.890926189] [smoother_server]: Destroying
+[collision_monitor-11] [INFO] [1794274537.011015358] [collision_monitor]: Destroying
+[controller_server-4] [INFO] [1794274537.041096228] [local_costmap.local_costmap]: Cleaning up
+[behavior_server-7] [INFO] [1794274537.062165100] [behavior_server]: Destroying
+[lifecycle_manager-12] [INFO] [1794274537.184496171] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[planner_server-6] [INFO] [1794274537.242362240] [planner_server]: Cleaning up plugin GridBased of type SmacPlannerHybrid
+[planner_server-6] [INFO] [1794274537.242563372] [planner_server]: Destroying plugin GridBased of type SmacPlannerHybrid
+[planner_server-6] [INFO] [1794274537.297959450] [planner_server]: [FastPath] cleanup
+[controller_server-4] [INFO] [1794274537.355082522] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[planner_server-6] [INFO] [1794274537.378459780] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[INFO] [smoother_server-5]: process has finished cleanly [pid 31435]
+[INFO] [robot_state_publisher-15]: process has finished cleanly [pid 31487]
+[INFO] [map_server-1]: process has finished cleanly [pid 31417]
+[INFO] [path_check-14]: process has finished cleanly [pid 31484]
+[INFO] [waypoint_follower-9]: process has finished cleanly [pid 31452]
+[INFO] [collision_monitor-11]: process has finished cleanly [pid 31460]
+[controller_server-4] [INFO] [1794274537.448115828] [local_costmap.local_costmap]: Destroying
+[controller_server-4] [INFO] [1794274537.480744868] [controller_server]: Destroying
+[planner_server-6] [INFO] [1794274537.481570649] [planner_server]: Destroying
+[INFO] [lifecycle_manager-12]: process has finished cleanly [pid 31470]
+[INFO] [behavior_server-7]: process has finished cleanly [pid 31439]
+[bt_navigator-8] [INFO] [1794274537.540530303] [bt_navigator]: Completed Cleaning up
+[bt_navigator-8] [INFO] [1794274537.540596407] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[bt_navigator-8] [INFO] [1794274537.577965351] [bt_navigator]: Destroying
+[INFO] [planner_server-6]: process has finished cleanly [pid 31437]
+[INFO] [controller_server-4]: process has finished cleanly [pid 31425]
+[ERROR] [joint_state_publisher-16]: process has died [pid 31491, exit code 1, cmd '/opt/ros/humble/lib/joint_state_publisher/joint_state_publisher /capella/share/capella_ros_launcher/urdf/turtlebot3_waffle.urdf --ros-args --params-file /tmp/launch_params_gcah46bh'].
+[INFO] [bt_navigator-8]: process has finished cleanly [pid 31441]
+[INFO] [gzserver-18]: process has finished cleanly [pid 31534]
+[INFO] [amcl-2]: process started with pid [32149]
+[INFO] [velocity_smoother-10]: process started with pid [32151]
+[amcl-2] [INFO] [1794274539.397989309] [amcl]: 
+[amcl-2] 	amcl lifecycle node launched. 
+[amcl-2] 	Waiting on external lifecycle transitions to activate
+[amcl-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-2] [INFO] [1794274539.400217228] [amcl]: Creating
+[velocity_smoother-10] [INFO] [1794274539.401860815] [velocity_smoother]: 
+[velocity_smoother-10] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-10] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [smoother_server-5]: process started with pid [32173]
+[INFO] [robot_state_publisher-15]: process started with pid [32175]
+[INFO] [map_server-1]: process started with pid [32177]
+[INFO] [path_check-14]: process started with pid [32179]
+[INFO] [waypoint_follower-9]: process started with pid [32200]
+[INFO] [collision_monitor-11]: process started with pid [32202]
+[robot_state_publisher-15] [INFO] [1794274539.526944315] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-15] [INFO] [1794274539.527016984] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-15] [INFO] [1794274539.527023511] [robot_state_publisher]: got segment base_scan
+[robot_state_publisher-15] [INFO] [1794274539.527027075] [robot_state_publisher]: got segment camera_depth_frame
+[robot_state_publisher-15] [INFO] [1794274539.527030342] [robot_state_publisher]: got segment camera_depth_optical_frame
+[robot_state_publisher-15] [INFO] [1794274539.527033832] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-15] [INFO] [1794274539.527037295] [robot_state_publisher]: got segment camera_rgb_frame
+[robot_state_publisher-15] [INFO] [1794274539.527040457] [robot_state_publisher]: got segment camera_rgb_optical_frame
+[robot_state_publisher-15] [INFO] [1794274539.527609466] [robot_state_publisher]: got segment caster_back_left_link
+[robot_state_publisher-15] [INFO] [1794274539.527614925] [robot_state_publisher]: got segment caster_back_right_link
+[robot_state_publisher-15] [INFO] [1794274539.527618128] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-15] [INFO] [1794274539.527626209] [robot_state_publisher]: got segment ultrasonic_sensor_link
+[robot_state_publisher-15] [INFO] [1794274539.527634224] [robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-15] [INFO] [1794274539.527637413] [robot_state_publisher]: got segment wheel_right_link
+[INFO] [behavior_server-7]: process started with pid [32206]
+[smoother_server-5] [INFO] [1794274539.527246423] [smoother_server]: 
+[smoother_server-5] 	smoother_server lifecycle node launched. 
+[smoother_server-5] 	Waiting on external lifecycle transitions to activate
+[smoother_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-5] [INFO] [1794274539.536338991] [smoother_server]: Creating smoother server
+[map_server-1] [INFO] [1794274539.602953087] [map_server]: 
+[map_server-1] 	map_server lifecycle node launched. 
+[map_server-1] 	Waiting on external lifecycle transitions to activate
+[map_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-1] [INFO] [1794274539.603071035] [map_server]: Creating
+[waypoint_follower-9] [INFO] [1794274539.617369046] [waypoint_follower]: 
+[waypoint_follower-9] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-9] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-9] [INFO] [1794274539.618745302] [waypoint_follower]: Creating
+[collision_monitor-11] [INFO] [1794274539.668319310] [collision_monitor]: 
+[collision_monitor-11] 	collision_monitor lifecycle node launched. 
+[collision_monitor-11] 	Waiting on external lifecycle transitions to activate
+[collision_monitor-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[behavior_server-7] [INFO] [1794274539.680435404] [behavior_server]: 
+[behavior_server-7] 	behavior_server lifecycle node launched. 
+[behavior_server-7] 	Waiting on external lifecycle transitions to activate
+[behavior_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [planner_server-6]: process started with pid [32293]
+[INFO] [controller_server-4]: process started with pid [32304]
+[planner_server-6] [INFO] [1794274540.558666110] [planner_server]: 
+[planner_server-6] 	planner_server lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1794274540.559847175] [planner_server]: Creating
+[controller_server-4] [INFO] [1794274540.605171583] [controller_server]: 
+[controller_server-4] 	controller_server lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-4] [INFO] [1794274540.610969091] [controller_server]: Creating controller server
+[planner_server-6] [INFO] [1794274540.610115746] [global_costmap.global_costmap]: 
+[planner_server-6] 	global_costmap lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1794274540.610637151] [global_costmap.global_costmap]: Creating Costmap
+[INFO] [joint_state_publisher-16]: process started with pid [32318]
+[INFO] [bt_navigator-8]: process started with pid [32320]
+[controller_server-4] [INFO] [1794274540.636130884] [local_costmap.local_costmap]: 
+[controller_server-4] 	local_costmap lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-4] [INFO] [1794274540.638080964] [local_costmap.local_costmap]: Creating Costmap
+[bt_navigator-8] [INFO] [1794274540.693192782] [bt_navigator]: 
+[bt_navigator-8] 	bt_navigator lifecycle node launched. 
+[bt_navigator-8] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-8] [INFO] [1794274540.693290353] [bt_navigator]: Creating
+[ERROR] [rviz2-22]: process has died [pid 31586, exit code -11, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /capella/避车测试/logs/053_错位路口/运行信息/view.rviz --ros-args'].
+[INFO] [gzclient-19]: sending signal 'SIGINT' to process[gzclient-19]
+[INFO] [joint_state_publisher-16]: sending signal 'SIGINT' to process[joint_state_publisher-16]
+[INFO] [robot_state_publisher-15]: sending signal 'SIGINT' to process[robot_state_publisher-15]
+[INFO] [path_check-14]: sending signal 'SIGINT' to process[path_check-14]
+[INFO] [collision_monitor-11]: sending signal 'SIGINT' to process[collision_monitor-11]
+[INFO] [velocity_smoother-10]: sending signal 'SIGINT' to process[velocity_smoother-10]
+[INFO] [waypoint_follower-9]: sending signal 'SIGINT' to process[waypoint_follower-9]
+[INFO] [bt_navigator-8]: sending signal 'SIGINT' to process[bt_navigator-8]
+[INFO] [behavior_server-7]: sending signal 'SIGINT' to process[behavior_server-7]
+[INFO] [planner_server-6]: sending signal 'SIGINT' to process[planner_server-6]
+[INFO] [smoother_server-5]: sending signal 'SIGINT' to process[smoother_server-5]
+[INFO] [controller_server-4]: sending signal 'SIGINT' to process[controller_server-4]
+[INFO] [amcl-2]: sending signal 'SIGINT' to process[amcl-2]
+[INFO] [map_server-1]: sending signal 'SIGINT' to process[map_server-1]
+[joint_state_publisher-16] Traceback (most recent call last):
+[joint_state_publisher-16]   File "/opt/ros/humble/lib/joint_state_publisher/joint_state_publisher", line 33, in <module>
+[joint_state_publisher-16]     sys.exit(load_entry_point('joint-state-publisher==2.4.0', 'console_scripts', 'joint_state_publisher')())
+[joint_state_publisher-16]   File "/opt/ros/humble/lib/python3.10/site-packages/joint_state_publisher/joint_state_publisher.py", line 466, in main
+[joint_state_publisher-16]     rclpy.spin(jsp)
+[joint_state_publisher-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 222, in spin
+[joint_state_publisher-16]     executor.spin_once()
+[joint_state_publisher-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[joint_state_publisher-16]     self._spin_once_impl(timeout_sec)
+[joint_state_publisher-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[joint_state_publisher-16]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[joint_state_publisher-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[joint_state_publisher-16]     return next(self._cb_iter)
+[joint_state_publisher-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 612, in _wait_for_ready_callbacks
+[joint_state_publisher-16]     raise ExternalShutdownException()
+[joint_state_publisher-16] rclpy.executors.ExternalShutdownException
+[robot_state_publisher-15] [INFO] [1794274540.960582055] [rclcpp]: signal_handler(signum=2)
+[path_check-14] [INFO] [1794274540.971524275] [rclcpp]: signal_handler(signum=2)
+[path_check-14] [WARN] [1794274540.975397663] [tf2_buffer]: Detected time source change. Clearing TF buffer.
+[collision_monitor-11] [INFO] [1794274541.007840515] [rclcpp]: signal_handler(signum=2)
+[collision_monitor-11] [INFO] [1794274541.008060840] [collision_monitor]: Running Nav2 LifecycleNode rcl preshutdown (collision_monitor)
+[collision_monitor-11] [INFO] [1794274541.008123603] [collision_monitor]: Destroying bond (collision_monitor) to lifecycle manager.
+[collision_monitor-11] [INFO] [1794274541.012785516] [collision_monitor]: Destroying
+[velocity_smoother-10] [INFO] [1794274541.013077610] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-10] [INFO] [1794274541.013697021] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-10] [INFO] [1794274541.015347552] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[velocity_smoother-10] [INFO] [1794274541.021001135] [velocity_smoother]: Destroying
+[waypoint_follower-9] [INFO] [1794274541.029349742] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-9] [INFO] [1794274541.029438349] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-9] [INFO] [1794274541.029487378] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[waypoint_follower-9] [INFO] [1794274541.031653862] [waypoint_follower]: Destroying
+[bt_navigator-8] [INFO] [1794274541.060310716] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-8] [INFO] [1794274541.060447700] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-8] [INFO] [1794274541.061465456] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[bt_navigator-8] [INFO] [1794274541.070959034] [bt_navigator]: Destroying
+[behavior_server-7] [INFO] [1794274541.076284791] [rclcpp]: signal_handler(signum=2)
+[behavior_server-7] [INFO] [1794274541.076859654] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-7] [INFO] [1794274541.076906826] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[behavior_server-7] [INFO] [1794274541.079997570] [behavior_server]: Destroying
+[planner_server-6] [INFO] [1794274541.097355724] [rclcpp]: signal_handler(signum=2)
+[planner_server-6] [INFO] [1794274541.097437753] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-6] [INFO] [1794274541.097474063] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[smoother_server-5] [INFO] [1794274541.118488809] [rclcpp]: signal_handler(signum=2)
+[smoother_server-5] [INFO] [1794274541.118617708] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-5] [INFO] [1794274541.118669839] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[smoother_server-5] [INFO] [1794274541.121418189] [smoother_server]: Destroying
+[controller_server-4] [INFO] [1794274541.134918293] [rclcpp]: signal_handler(signum=2)
+[controller_server-4] [INFO] [1794274541.135005228] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-4] [INFO] [1794274541.135046364] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[amcl-2] [INFO] [1794274541.138610669] [rclcpp]: signal_handler(signum=2)
+[amcl-2] [INFO] [1794274541.138676254] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[amcl-2] [INFO] [1794274541.138711652] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[amcl-2] [INFO] [1794274541.140587273] [amcl]: Destroying
+[planner_server-6] [INFO] [1794274541.141202369] [planner_server]: Destroying
+[controller_server-4] [INFO] [1794274541.142564159] [local_costmap.local_costmap]: Destroying
+[map_server-1] [INFO] [1794274541.158036752] [rclcpp]: signal_handler(signum=2)
+[map_server-1] [INFO] [1794274541.158197676] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[map_server-1] [INFO] [1794274541.158244772] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[map_server-1] [INFO] [1794274541.170335151] [map_server]: Destroying
+[controller_server-4] [INFO] [1794274541.172645529] [controller_server]: Destroying
+[INFO] [path_check-14]: process has finished cleanly [pid 32179]
+[INFO] [robot_state_publisher-15]: process has finished cleanly [pid 32175]
+[INFO] [collision_monitor-11]: process has finished cleanly [pid 32202]
+[INFO] [velocity_smoother-10]: process has finished cleanly [pid 32151]
+[INFO] [waypoint_follower-9]: process has finished cleanly [pid 32200]
+[INFO] [bt_navigator-8]: process has finished cleanly [pid 32320]
+[INFO] [behavior_server-7]: process has finished cleanly [pid 32206]
+[ERROR] [joint_state_publisher-16]: process has died [pid 32318, exit code 1, cmd '/opt/ros/humble/lib/joint_state_publisher/joint_state_publisher /capella/share/capella_ros_launcher/urdf/turtlebot3_waffle.urdf --ros-args --params-file /tmp/launch_params_gcah46bh'].
+[INFO] [planner_server-6]: process has finished cleanly [pid 32293]
+[INFO] [smoother_server-5]: process has finished cleanly [pid 32173]
+[INFO] [controller_server-4]: process has finished cleanly [pid 32304]
+[INFO] [amcl-2]: process has finished cleanly [pid 32149]
+[INFO] [map_server-1]: process has finished cleanly [pid 32177]
+[ERROR] [gzclient-19]: process has died [pid 31560, exit code -11, cmd 'gzclient'].

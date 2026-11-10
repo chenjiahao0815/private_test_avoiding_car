@@ -1,0 +1,39 @@
+[INFO] [1794243486.182231928] [robot_avoidance_node]: robot_avoidance_node started...
+[INFO] [1794243486.194048530] [robot_avoidance_node]: car_avoidance_demonstration: false
+[INFO] [1794243486.194099805] [robot_avoidance_node]: nearest_side_search_radius: 10.000000
+[ERROR] [1794243486.206460576] [robot_avoidance_node]: Failed to get robot footprint
+[ERROR] [1794243486.206523130] [robot_avoidance_node]: Failed to get robot footprint, Using default robot width: 1.200000
+[INFO] [1794243494.868847299] [robot_avoidance_node]: 收到/garage_polygons，通道数量: 1
+[INFO] [1794243494.869118636] [robot_avoidance_node]: 收到/garage_road_models，revision 1，数量 1，frame map
+[INFO] [1794243494.870215043] [robot_avoidance_node]: 收到/garage_road_models，revision 1，数量 1，frame map
+[INFO] [1794243519.615353490] [robot_avoidance_node]: Received request for service /check_car_passable
+[INFO] [1794243519.615394283] [robot_avoidance_node]: 寻找的避让点位置：35.576732,12.700682
+[INFO] [1794243519.615401760] [robot_avoidance_node]: 车子长宽：4.500000, 1.800000, 设置长宽：4.500000, 1.800000
+[INFO] [1794243519.615406865] [robot_avoidance_node]: 开始检测避让点是否可以通行...
+[INFO] [1794243519.615411404] [robot_avoidance_node]: 当前处于正常避车模式
+[INFO] [1794243519.615415473] [robot_avoidance_node]: Begin check passableness. Data source: service
+[INFO] [1794243519.615428136] [robot_avoidance_node]: 前摄像头看见车
+[INFO] [1794243519.615431884] [robot_avoidance_node]: robot_x: 35.576732, robot_y: 12.700682, robot_theta: 0.557463
+[INFO] [1794243519.615437072] [robot_avoidance_node]: car_x: 37.550000, car_y: 18.081242
+[INFO] [1794243519.615441350] [robot_avoidance_node]: car_length: 4.500000, car_width: 2.300000
+[INFO] [1794243519.615451118] [robot_avoidance_node]: get current polygon, index 0, vertices 350
+[INFO] [1794243519.615457868] [robot_avoidance_node]: get current polygon, index 0, vertices 350
+[INFO] [1794243519.615461245] [robot_avoidance_node]: publish topic /car_pose
+[INFO] [1794243519.615608246] [robot_avoidance_node]: get robot footprint success.
+[INFO] [1794243519.615617212] [robot_avoidance_node]: 当前机器人footprint: [ (1.210001, 0.510000), (1.210001, -0.510000), (-0.660000, -0.510000), (-0.660000, 0.510000), ]
+[INFO] [1794243519.615624086] [robot_avoidance_node]: 当前机器人footprint_map: [ (36.334064, 13.773362), (36.873409, 12.907621), (35.286217, 11.918822), (34.746872, 12.784563), ]
+[INFO] [1794243519.615633153] [robot_avoidance_node]: get current polygon, index 0, vertices 350
+[INFO] [1794243519.615642795] [robot_avoidance_node]: 机器人的footprint和当前通道相临, 继续判断避让点是否在岔路口
+[INFO] [1794243519.615648400] [robot_avoidance_node]: 该避让点不在岔路口.
+[INFO] [1794243519.617095154] [robot_avoidance_node]: 横向候选 0 不可通过：与机器人轮廓相交，实际检查 0 个位姿，覆盖 [inf, -inf]，要求 [3.813, 7.813]
+[INFO] [1794243519.618035000] [robot_avoidance_node]: 横向候选 1 不可通过：与机器人轮廓相交，实际检查 0 个位姿，覆盖 [inf, -inf]，要求 [3.755, 7.755]
+[INFO] [1794243519.618984936] [robot_avoidance_node]: 横向候选 2 不可通过：与机器人轮廓相交，实际检查 0 个位姿，覆盖 [inf, -inf]，要求 [3.696, 7.696]
+[INFO] [1794243519.619944047] [robot_avoidance_node]: 横向候选 3 不可通过：与机器人轮廓相交，实际检查 0 个位姿，覆盖 [inf, -inf]，要求 [3.637, 7.637]
+[INFO] [1794243519.620877989] [robot_avoidance_node]: 横向候选 4 不可通过：与机器人轮廓相交，实际检查 0 个位姿，覆盖 [inf, -inf]，要求 [3.620, 7.620]
+[INFO] [1794243519.621814977] [robot_avoidance_node]: 横向候选 5 不可通过：与机器人轮廓相交，实际检查 0 个位姿，覆盖 [inf, -inf]，要求 [3.579, 7.579]
+[INFO] [1794243519.622728843] [robot_avoidance_node]: 横向候选 6 不可通过：与机器人轮廓相交，实际检查 0 个位姿，覆盖 [inf, -inf]，要求 [3.520, 7.520]
+[INFO] [1794243519.623668638] [robot_avoidance_node]: 横向候选 7 不可通过：与机器人轮廓相交，实际检查 0 个位姿，覆盖 [inf, -inf]，要求 [3.461, 7.461]
+[INFO] [1794243519.624629557] [robot_avoidance_node]: 横向候选 8 不可通过：与机器人轮廓相交，实际检查 0 个位姿，覆盖 [inf, -inf]，要求 [3.426, 7.426]
+[INFO] [1794243519.624656507] [robot_avoidance_node]: 未找到可通过路径
+[INFO] [1794243519.624667947] [robot_avoidance_node]: *********检测避让点是否可以通行所耗时间: 0.000000 seconds
+[INFO] [1794243621.566258652] [rclcpp]: signal_handler(signum=2)

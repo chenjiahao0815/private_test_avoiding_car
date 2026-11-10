@@ -1,0 +1,22 @@
+[INFO] [1794274837.865665725] [find_free_space_action_server]: find_free_space_action_server started.
+[INFO] [1794274837.890340314] [find_free_space_action_server]: topic_name_global_costmap: /global_costmap/costmap_raw
+[INFO] [1794274837.890399838] [find_free_space_action_server]: topic_name_footprint: /global_costmap/published_footprint
+[INFO] [1794274837.890405128] [find_free_space_action_server]: search_radius_min: 3.000000
+[INFO] [1794274837.890417195] [find_free_space_action_server]: search_radius_max: 3.300000
+[INFO] [1794274837.890421412] [find_free_space_action_server]: search_radius_extra_dis: 2.000000
+[INFO] [1794274837.890425832] [find_free_space_action_server]: search_point_interval: 0.150000
+[INFO] [1794274837.890430184] [find_free_space_action_server]: outside_min: 1.100000
+[INFO] [1794274837.890435842] [find_free_space_action_server]: outside_max: 1.400000
+[INFO] [1794274837.890439678] [find_free_space_action_server]: check_service_max_time: 1.000000
+[INFO] [1794274837.890443830] [find_free_space_action_server]: show_global_costmap_raw_cv2: 0
+[INFO] [1794274837.890447720] [find_free_space_action_server]: show_global_costmap_raw_colored_cv2: 0
+[INFO] [1794274837.890451311] [find_free_space_action_server]: external_point_max_distance: 8.000000
+[INFO] [1794274837.890455335] [find_free_space_action_server]: point_free_check_radius: 0.200000
+[INFO] [1794274837.890459127] [find_free_space_action_server]: footprint_sweep_long_step: 999.000000
+[INFO] [1794274837.890463581] [find_free_space_action_server]: footprint_sweep_short_step: 999.000000
+[INFO] [1794274837.890467404] [find_free_space_action_server]: max_robot_pose_age: 1.000000
+[INFO] [1794274837.890471133] [find_free_space_action_server]: robot_pose_wait_timeout: 1.500000
+[INFO] [1794274838.174625691] [find_free_space_action_server]: robot_width: 1.320, footprint_vertices (local): [(0.925, 0.660), (0.925, -0.660), (-0.925, -0.660), (-0.925, 0.660)]
+[INFO] [1794274850.253858671] [find_free_space_action_server]: 收到 /garage_road_models，revision 1，数量 1
+[INFO] [1794274850.280091618] [find_free_space_action_server]: 收到 /garage_road_models，revision 1，数量 1
+[INFO] [1794274853.093958151] [rclcpp]: signal_handler(signum=2)

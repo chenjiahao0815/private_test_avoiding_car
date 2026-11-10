@@ -1,0 +1,2 @@
+[INFO] [1794274850.274444641] [garage_road_model]: 道路 0 失败 多边形校验 多边形自交 用时 1.6 ms
+[INFO] [1794274853.096014336] [rclcpp]: signal_handler(signum=2)

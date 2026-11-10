@@ -1,0 +1,3 @@
+#!/bin/bash
+# S 形弯（振幅 4 m，波长 30 m），右到左。加 --external 测外部停靠点，加 --no-hold 跑完直接退出。
+exec "$(dirname "$0")/../运行用例.sh" S形_右到左 "$@"

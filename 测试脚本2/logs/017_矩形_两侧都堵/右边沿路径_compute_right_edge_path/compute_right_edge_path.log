@@ -1,0 +1,176 @@
+[INFO] [1794314003.976055952] [compute_right_edge_path_action_server]: compute_right_edge_path_action_server constructor.
+[INFO] [1794314003.976350270] [compute_right_edge_path_action_server]: ------------ list params ------------ 
+[INFO] [1794314003.976365076] [compute_right_edge_path_action_server]: dist_thr: 4.000000
+[INFO] [1794314003.976371437] [compute_right_edge_path_action_server]: path_topic_name: garage_path
+[INFO] [1794314003.976375216] [compute_right_edge_path_action_server]: robot_x_test: -1.000000
+[INFO] [1794314003.976379072] [compute_right_edge_path_action_server]: robot_y_test: 21.500000
+[INFO] [1794314003.976384112] [compute_right_edge_path_action_server]: test: false
+[INFO] [1794314003.976387627] [compute_right_edge_path_action_server]: strict_mode: true
+[INFO] [1794314003.976391415] [compute_right_edge_path_action_server]: offset: 0.800000
+[INFO] [1794314003.976395493] [compute_right_edge_path_action_server]: resolution: 1.000000
+[INFO] [1794314003.976399300] [compute_right_edge_path_action_server]: allow_inverse: false
+[INFO] [1794314003.976402778] [compute_right_edge_path_action_server]: ------------------------------------- 
+[INFO] [1794314038.649807933] [compute_right_edge_path_action_server]: init [ model_generator_, path_searcher_, path_generator_ ] .
+[INFO] [1794314038.650358522] [compute_right_edge_path_action_server]:  [generate_model] GenerateModel constructor.
+[INFO] [1794314038.650456612] [compute_right_edge_path_action_server]:  [shortest_path_search] ShortestPathSearch constructor.
+[INFO] [1794314038.650489630] [compute_right_edge_path_action_server]:  [generate_path] GeneratePath constructor.
+[INFO] [1794314038.650553671] [compute_right_edge_path_action_server]: Received goal request with 1 polygons, the pose of car (35.506393, 20.450000).
+[INFO] [1794314038.650626956] [compute_right_edge_path_action_server]: print polygons in origin goal.
+[INFO] [1794314038.650674537] [compute_right_edge_path_action_server]: polygon 0: [(15, 18.5), (45, 18.5), (45, 21.5), (15, 21.5)]
+[INFO] [1794314038.651304024] [compute_right_edge_path_action_server]: Begin to compute path following right edge.
+[INFO] [1794314038.651479849] [compute_right_edge_path_action_server]: robot need to turn around: true, allow inverse: false
+[INFO] [1794314038.651493926] [compute_right_edge_path_action_server]: robot_pose: (29.601286, 19.752336)
+[INFO] [1794314038.651592976] [compute_right_edge_path_action_server]: current_index: 0
+[INFO] [1794314038.652140633] [compute_right_edge_path_action_server]: print first enhanced rect info before cutting.
+[INFO] [1794314038.654459911] [compute_right_edge_path_action_server]: vertices 0: (15.000000, 18.500000, -3.041924)
+[INFO] [1794314038.654476980] [compute_right_edge_path_action_server]: vertices 1: (45.000000, 18.500000, -0.099669)
+[INFO] [1794314038.654483169] [compute_right_edge_path_action_server]: vertices 2: (45.000000, 21.500000, 0.099669)
+[INFO] [1794314038.654488941] [compute_right_edge_path_action_server]: vertices 3: (15.000000, 21.500000, 3.041924)
+[INFO] [1794314038.654494406] [compute_right_edge_path_action_server]: middle_long_line: (15.000000, 20.000000), (45.000000, 20.000000)
+[INFO] [1794314038.654622097] [compute_right_edge_path_action_server]: long line1 => [ (15.000000, 18.500000), (45.000000, 18.500000) ]
+[INFO] [1794314038.654630288] [compute_right_edge_path_action_server]: long line2 => [ (45.000000, 21.500000), (15.000000, 21.500000) ]
+[INFO] [1794314038.654637272] [compute_right_edge_path_action_server]: dot1: -177.153223, dot2: 177.153223
+[INFO] [1794314038.654645998] [compute_right_edge_path_action_server]: p1_selected: (15.000000, 18.500000)
+[INFO] [1794314038.654652438] [compute_right_edge_path_action_server]: p2_selected: (15.000000, 21.500000)
+[INFO] [1794314038.654659415] [compute_right_edge_path_action_server]: p3_selected: (29.601286, 18.500000)
+[INFO] [1794314038.654664878] [compute_right_edge_path_action_server]: p4_selected: (29.601286, 21.500000)
+[INFO] [1794314038.654701629] [compute_right_edge_path_action_server]: print polygons after cutting.
+[INFO] [1794314038.654739631] [compute_right_edge_path_action_server]: polygon 0: [(15, 18.5), (15, 21.5), (29.6013, 18.5), (29.6013, 21.5)]
+[INFO] [1794314038.654768404] [compute_right_edge_path_action_server]:  [generate_model] original rects size: 1
+[INFO] [1794314038.658638138] [compute_right_edge_path_action_server]:  [generate_model] rect 0 => [ (15, 18.5), (15, 21.5), (29.6013, 18.5), (29.6013, 21.5) ]
+[INFO] [1794314038.658752098] [compute_right_edge_path_action_server]:  [generate_model] Check rects.
+[INFO] [1794314038.658771283] [compute_right_edge_path_action_server]:  [generate_model] rects size: 1
+[INFO] [1794314038.658782680] [compute_right_edge_path_action_server]:  [generate_model] rect points size: 4
+[INFO] [1794314038.658805641] [compute_right_edge_path_action_server]:  [generate_model] Print rects
+[INFO] [1794314038.658810041] [compute_right_edge_path_action_server]:  [generate_model] original rects size: 1
+[INFO] [1794314038.658817975] [compute_right_edge_path_action_server]:  [generate_model] rect 0 => [ (15, 18.5), (15, 21.5), (29.6013, 18.5), (29.6013, 21.5) ]
+[INFO] [1794314038.658928907] [compute_right_edge_path_action_server]:  [generate_model] Enhanced rects size: 1
+[INFO] [1794314038.658949354] [compute_right_edge_path_action_server]:  [generate_model] rect 0 => [ (15, 18.5, -2.93895), (29.6013, 18.5, -0.202641), (29.6013, 21.5, 0.202641), (15, 21.5, 2.93895) ]
+[INFO] [1794314038.658954850] [compute_right_edge_path_action_server]:  [generate_model] middle_long_line: (15.0, 20.0), (29.6, 20.0)
+[INFO] [1794314038.658961172] [compute_right_edge_path_action_server]:  [generate_model] --------------------------
+[INFO] [1794314038.658966296] [compute_right_edge_path_action_server]:  [generate_model] Begin to generate model.
+[INFO] [1794314038.658997623] [compute_right_edge_path_action_server]:  [generate_model] generate edges...
+[INFO] [1794314038.659045695] [compute_right_edge_path_action_server]:  [generate_model] print edges before sort
+[INFO] [1794314038.659072441] [compute_right_edge_path_action_server]:  [generate_model] ===== print edges =====
+[INFO] [1794314038.659084461] [compute_right_edge_path_action_server]:  [generate_model] edge 0
+[INFO] [1794314038.659089787] [compute_right_edge_path_action_server]:  [generate_model] pt1 => index: 0, coord: (15.0, 20.0)
+[INFO] [1794314038.659094660] [compute_right_edge_path_action_server]:  [generate_model] pt2 => index: 1, coord: (29.6, 20.0)
+[INFO] [1794314038.659105451] [compute_right_edge_path_action_server]:  [generate_model] sort edges...
+[INFO] [1794314038.659167849] [compute_right_edge_path_action_server]:  [generate_model] robot(29.601286, 19.752336) edge_index: 0
+[INFO] [1794314038.659190446] [compute_right_edge_path_action_server]:  [generate_model] strict mode: true
+[INFO] [1794314038.659358020] [compute_right_edge_path_action_server]:  [generate_model] edges order =>  0 
+[INFO] [1794314038.659424390] [compute_right_edge_path_action_server]:  [generate_model] print edges after sort
+[INFO] [1794314038.659432787] [compute_right_edge_path_action_server]:  [generate_model] ===== print edges =====
+[INFO] [1794314038.659438093] [compute_right_edge_path_action_server]:  [generate_model] edge 0
+[INFO] [1794314038.659442621] [compute_right_edge_path_action_server]:  [generate_model] pt1 => index: 0, coord: (15.0, 20.0)
+[INFO] [1794314038.659447538] [compute_right_edge_path_action_server]:  [generate_model] pt2 => index: 1, coord: (29.6, 20.0)
+[INFO] [1794314038.659453848] [compute_right_edge_path_action_server]:  [generate_model] generate_points
+[INFO] [1794314038.659458208] [compute_right_edge_path_action_server]:  [generate_model] 
+[INFO] [1794314038.659461916] [compute_right_edge_path_action_server]:  [generate_model] ========== loop 0 ==========
+[INFO] [1794314038.659465667] [compute_right_edge_path_action_server]:  [generate_model] first loop, init points
+[INFO] [1794314038.659547299] [compute_right_edge_path_action_server]:  [generate_model] 
+[INFO] [1794314038.659553159] [compute_right_edge_path_action_server]:  [generate_model] ---------- print points info after loop 0 ----------
+[INFO] [1794314038.664894392] [compute_right_edge_path_action_server]:  [generate_model] index 0
+[INFO] [1794314038.664910314] [compute_right_edge_path_action_server]:  [generate_model] point: (15.0, 20.0)
+[INFO] [1794314038.664922385] [compute_right_edge_path_action_server]:  [generate_model] adjacent: [ 1 ]
+[INFO] [1794314038.664926810] [compute_right_edge_path_action_server]:  [generate_model] 
+[INFO] [1794314038.664932622] [compute_right_edge_path_action_server]:  [generate_model] index 1
+[INFO] [1794314038.664943926] [compute_right_edge_path_action_server]:  [generate_model] point: (29.6, 20.0)
+[INFO] [1794314038.664949017] [compute_right_edge_path_action_server]:  [generate_model] adjacent: [ 0 ]
+[INFO] [1794314038.664952521] [compute_right_edge_path_action_server]:  [generate_model] 
+[INFO] [1794314038.664992674] [compute_right_edge_path_action_server]: print result
+[INFO] [1794314038.664998187] [compute_right_edge_path_action_server]: points size: 2
+[INFO] [1794314038.665003047] [compute_right_edge_path_action_server]: ---------- points 0 ----------
+[INFO] [1794314038.665006767] [compute_right_edge_path_action_server]: index: 0
+[INFO] [1794314038.665504544] [compute_right_edge_path_action_server]: visited: false
+[INFO] [1794314038.665566292] [compute_right_edge_path_action_server]: coord: (15.000000, 20.000000)
+[INFO] [1794314038.665583408] [compute_right_edge_path_action_server]: adjacent: [ 1 ]
+[INFO] [1794314038.665593481] [compute_right_edge_path_action_server]: ---------- points 1 ----------
+[INFO] [1794314038.665598208] [compute_right_edge_path_action_server]: index: 1
+[INFO] [1794314038.665602567] [compute_right_edge_path_action_server]: visited: false
+[INFO] [1794314038.665606828] [compute_right_edge_path_action_server]: coord: (29.601286, 20.000000)
+[INFO] [1794314038.665613006] [compute_right_edge_path_action_server]: adjacent: [ 0 ]
+[INFO] [1794314038.665724307] [compute_right_edge_path_action_server]:  [shortest_path_search] 
+[INFO] [1794314038.665734255] [compute_right_edge_path_action_server]:  [shortest_path_search] === get_sub_path(-1, 1) ===
+[INFO] [1794314038.665789443] [compute_right_edge_path_action_server]:  [shortest_path_search] 
+[INFO] [1794314038.665798418] [compute_right_edge_path_action_server]:  [shortest_path_search] parent : -1
+[INFO] [1794314038.665803047] [compute_right_edge_path_action_server]:  [shortest_path_search] current: 1
+[INFO] [1794314038.665806705] [compute_right_edge_path_action_server]:  [shortest_path_search] child  : 0
+[INFO] [1794314038.665815066] [compute_right_edge_path_action_server]:  [shortest_path_search] 
+[INFO] [1794314038.665819752] [compute_right_edge_path_action_server]:  [shortest_path_search] === get_sub_path(1, 0) ===
+[INFO] [1794314038.665836049] [compute_right_edge_path_action_server]:  [shortest_path_search] 
+[INFO] [1794314038.665839765] [compute_right_edge_path_action_server]:  [shortest_path_search] parent : 1
+[INFO] [1794314038.665844834] [compute_right_edge_path_action_server]:  [shortest_path_search] current: 0
+[INFO] [1794314038.665848319] [compute_right_edge_path_action_server]:  [shortest_path_search] child  : 1
+[INFO] [1794314038.665852778] [compute_right_edge_path_action_server]:  [shortest_path_search] leaf: 0
+[INFO] [1794314038.665948290] [compute_right_edge_path_action_server]:  [shortest_path_search] *** get_sub_path(1, 0) ***
+[INFO] [1794314038.665959661] [compute_right_edge_path_action_server]:  [shortest_path_search] distance record: (init: 0) => (0+=14.6013*2=29.2026) => 
+[INFO] [1794314038.665966159] [compute_right_edge_path_action_server]:  [shortest_path_search] distance: 29.203
+[INFO] [1794314038.665971694] [compute_right_edge_path_action_server]:  [shortest_path_search] path    : [ 0 1 ]
+[INFO] [1794314038.665990910] [compute_right_edge_path_action_server]:  [shortest_path_search] *** get_sub_path(-1, 1) ***
+[INFO] [1794314038.665995225] [compute_right_edge_path_action_server]:  [shortest_path_search] distance record: (init: 0) => (0+=29.2026=29.2026) => 
+[INFO] [1794314038.666000878] [compute_right_edge_path_action_server]:  [shortest_path_search] distance: 29.203
+[INFO] [1794314038.666012844] [compute_right_edge_path_action_server]:  [shortest_path_search] path    : [ 1 0 1 1 ]
+[INFO] [1794314038.666024249] [compute_right_edge_path_action_server]: filtered path : [ 1 0 ]
+[INFO] [1794314038.666045825] [compute_right_edge_path_action_server]: order: 1
+[INFO] [1794314038.666054457] [compute_right_edge_path_action_server]: points => index: 1, coord: (29.601286, 20.000000)
+[INFO] [1794314038.666064207] [compute_right_edge_path_action_server]: order: 0
+[INFO] [1794314038.666067853] [compute_right_edge_path_action_server]: points => index: 0, coord: (15.000000, 20.000000)
+[INFO] [1794314038.666078164] [compute_right_edge_path_action_server]:  [generate_path] Begin to generating path...
+[INFO] [1794314038.666104864] [compute_right_edge_path_action_server]:  [generate_path] 
+[INFO] [1794314038.666108881] [compute_right_edge_path_action_server]:  [generate_path] segment 0->1
+[INFO] [1794314038.666115924] [compute_right_edge_path_action_server]:  [generate_path] Begin to find rect index
+[INFO] [1794314038.666120075] [compute_right_edge_path_action_server]:  [generate_path] pt1 => (29.601286, 20.000000)
+[INFO] [1794314038.666124547] [compute_right_edge_path_action_server]:  [generate_path] pt2 => (15.000000, 20.000000)
+[INFO] [1794314038.666129375] [compute_right_edge_path_action_server]:  [generate_path] px => 22.300643
+[INFO] [1794314038.666133670] [compute_right_edge_path_action_server]:  [generate_path] py => 20.000000
+[INFO] [1794314038.666208462] [compute_right_edge_path_action_server]:  [generate_path] result => rect index: 0, [ (15.000000, 18.500000), (29.601286, 18.500000), (29.601286, 21.500000), (15.000000, 21.500000) ]
+[INFO] [1794314038.666227649] [compute_right_edge_path_action_server]:  [generate_path] Begin to generating path for one segment.
+[INFO] [1794314038.666242726] [compute_right_edge_path_action_server]:  [generate_path] Begin to find edge.
+[INFO] [1794314038.666247402] [compute_right_edge_path_action_server]:  [generate_path] pt1 => (29.601286, 20.000000)
+[INFO] [1794314038.666252533] [compute_right_edge_path_action_server]:  [generate_path] pt2 => (15.000000, 20.000000)
+[INFO] [1794314038.666256935] [compute_right_edge_path_action_server]:  [generate_path] rect => [ [15.000000, 18.500000), (29.601286, 18.500000), (29.601286, 21.500000), (15.000000, 21.500000)
+[INFO] [1794314038.666264226] [compute_right_edge_path_action_server]:  [generate_path] result edge => (29.601286, 21.500000), (15.000000, 21.500000)
+[INFO] [1794314038.666270389] [compute_right_edge_path_action_server]:  [generate_path] find_neareast_point
+[INFO] [1794314038.666274335] [compute_right_edge_path_action_server]:  [generate_path] result => x: 29.601286, y: 21.500000
+[INFO] [1794314038.666281253] [compute_right_edge_path_action_server]:  [generate_path] find_neareast_point
+[INFO] [1794314038.666286071] [compute_right_edge_path_action_server]:  [generate_path] result => x: 15.000000, y: 21.500000
+[INFO] [1794314038.666325927] [compute_right_edge_path_action_server]:  [generate_path] path_start: (29.601286, 20.700000)
+[INFO] [1794314038.666336813] [compute_right_edge_path_action_server]:  [generate_path] path_end  : (15.000000, 20.700000)
+[INFO] [1794314038.666355900] [compute_right_edge_path_action_server]:  [generate_path] ***** path *****
+[INFO] [1794314038.666412227] [compute_right_edge_path_action_server]:  [generate_path] pose: (29.601286, 20.700000)
+[INFO] [1794314038.666454217] [compute_right_edge_path_action_server]:  [generate_path] pose: (28.601286, 20.700000)
+[INFO] [1794314038.666465528] [compute_right_edge_path_action_server]:  [generate_path] pose: (27.601286, 20.700000)
+[INFO] [1794314038.666470845] [compute_right_edge_path_action_server]:  [generate_path] pose: (26.601286, 20.700000)
+[INFO] [1794314038.666475781] [compute_right_edge_path_action_server]:  [generate_path] pose: (25.601286, 20.700000)
+[INFO] [1794314038.666480349] [compute_right_edge_path_action_server]:  [generate_path] pose: (24.601286, 20.700000)
+[INFO] [1794314038.666535472] [compute_right_edge_path_action_server]:  [generate_path] pose: (23.601286, 20.700000)
+[INFO] [1794314038.666549071] [compute_right_edge_path_action_server]:  [generate_path] pose: (22.601286, 20.700000)
+[INFO] [1794314038.666557898] [compute_right_edge_path_action_server]:  [generate_path] pose: (21.601286, 20.700000)
+[INFO] [1794314038.666563053] [compute_right_edge_path_action_server]:  [generate_path] pose: (20.601286, 20.700000)
+[INFO] [1794314038.666567735] [compute_right_edge_path_action_server]:  [generate_path] pose: (19.601286, 20.700000)
+[INFO] [1794314038.666572121] [compute_right_edge_path_action_server]:  [generate_path] pose: (18.601286, 20.700000)
+[INFO] [1794314038.666577688] [compute_right_edge_path_action_server]:  [generate_path] pose: (17.601286, 20.700000)
+[INFO] [1794314038.666582073] [compute_right_edge_path_action_server]:  [generate_path] pose: (16.601286, 20.700000)
+[INFO] [1794314038.666586318] [compute_right_edge_path_action_server]:  [generate_path] pose: (15.601286, 20.700000)
+[INFO] [1794314038.666590878] [compute_right_edge_path_action_server]:  [generate_path] end => x: 15.000000, y: 20.700000
+[INFO] [1794314038.666648936] [compute_right_edge_path_action_server]: delete 0 pose(s).
+[INFO] [1794314038.669246490] [compute_right_edge_path_action_server]: ----- print path's poses -----
+[INFO] [1794314038.669280749] [compute_right_edge_path_action_server]: poses: (29.6, 20.7)
+[INFO] [1794314038.669288049] [compute_right_edge_path_action_server]: poses: (28.6, 20.7)
+[INFO] [1794314038.669292916] [compute_right_edge_path_action_server]: poses: (27.6, 20.7)
+[INFO] [1794314038.669296990] [compute_right_edge_path_action_server]: poses: (26.6, 20.7)
+[INFO] [1794314038.669301057] [compute_right_edge_path_action_server]: poses: (25.6, 20.7)
+[INFO] [1794314038.669305190] [compute_right_edge_path_action_server]: poses: (24.6, 20.7)
+[INFO] [1794314038.669309065] [compute_right_edge_path_action_server]: poses: (23.6, 20.7)
+[INFO] [1794314038.669312886] [compute_right_edge_path_action_server]: poses: (22.6, 20.7)
+[INFO] [1794314038.669316701] [compute_right_edge_path_action_server]: poses: (21.6, 20.7)
+[INFO] [1794314038.669326232] [compute_right_edge_path_action_server]: poses: (20.6, 20.7)
+[INFO] [1794314038.669330760] [compute_right_edge_path_action_server]: poses: (19.6, 20.7)
+[INFO] [1794314038.669334541] [compute_right_edge_path_action_server]: poses: (18.6, 20.7)
+[INFO] [1794314038.669338375] [compute_right_edge_path_action_server]: poses: (17.6, 20.7)
+[INFO] [1794314038.669342187] [compute_right_edge_path_action_server]: poses: (16.6, 20.7)
+[INFO] [1794314038.669345910] [compute_right_edge_path_action_server]: poses: (15.6, 20.7)
+[INFO] [1794314038.669349822] [compute_right_edge_path_action_server]: poses: (15.0, 20.7)
+[INFO] [1794314038.669950016] [compute_right_edge_path_action_server]: Goal succeed
+[INFO] [1794314085.788753277] [rclcpp]: signal_handler(signum=2)

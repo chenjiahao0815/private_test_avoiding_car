@@ -1,0 +1,96 @@
+{
+  "case": "S接U",
+  "title": "S 形接 U 形掉头，再沿平行车道返回",
+  "mode": "auto",
+  "定位": {
+    "map_pose": [
+      9.654,
+      9.755,
+      0.345
+    ],
+    "gazebo_error": 0.0
+  },
+  "拟合": {
+    "vertices": 388,
+    "samples": [
+      127,
+      108
+    ],
+    "lengths": [
+      62.52,
+      53.18
+    ]
+  },
+  "行驶": {
+    "trigger_s": 24.0,
+    "length": 57.9
+  },
+  "来车": {
+    "robot": [
+      29.616,
+      9.834,
+      0.575
+    ],
+    "robot_s": 24.53,
+    "robot_offset_from_center": 0.38,
+    "car": [
+      33.268,
+      14.255,
+      4.413
+    ],
+    "car_s": 30.52
+  },
+  "通过性": {
+    "passable": false
+  },
+  "找点": {
+    "target": [
+      26.686,
+      7.538,
+      -0.209
+    ],
+    "z": 10.0,
+    "where": {
+      "along": -2.35,
+      "lateral": -2.6,
+      "side": "右",
+      "in_corridor": false
+    }
+  },
+  "停靠": {
+    "robot": [
+      26.838,
+      7.505,
+      -0.237
+    ],
+    "distance": 0.155,
+    "yaw_vs_target": "一致",
+    "yaw_vs_corridor_tangent_deg": 2.4,
+    "heading": "顺行驶方向",
+    "where": {
+      "along": -2.2,
+      "lateral": -2.6,
+      "side": "右",
+      "in_corridor": false
+    },
+    "seconds": 27.3
+  },
+  "避车结束": {
+    "wait_seconds": 15.0,
+    "feedback_states": [
+      0,
+      1,
+      2
+    ],
+    "reason": "goal completed."
+  },
+  "恢复行驶": {
+    "robot": [
+      13.843,
+      22.53,
+      3.136
+    ],
+    "distance": 0.344
+  },
+  "result": "PASS"
+}

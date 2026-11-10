@@ -1,0 +1,12 @@
+用例：T形_右到左（T 形路口（支路朝下），沿横路行驶，右到左），模式：自搜索停靠点
+[定位] 机器人在通道起点  {"map_pose": [43.499, 20.55, -3.141], "gazebo_error": 0.0}
+[拟合] 通道拟合成功  {"vertices": 8, "samples": [99, 61], "lengths": [49.0, 30.0]}
+[行驶] 沿通道右侧车道向前开  {"trigger_s": 18.0, "length": 30.0}
+[来车] 前方来车，上位机取消导航  {"robot": [26.315, 20.55, 3.141], "robot_s": 18.69, "robot_offset_from_center": 0.55, "car": [20.48, 19.55, 6.283], "car_s": 24.52}
+[通过性] 机器人原地挡路  {"passable": false}
+[找点] 行为树自搜索到停靠点  {"target": [29.315, 22.6, 0.0], "z": 10.0, "where": {"along": -3.0, "lateral": -2.6, "side": "右", "in_corridor": false}}
+[停靠] 机器人已停在停靠点  {"robot": [29.179, 22.658, -0.029], "distance": 0.148, "yaw_vs_target": "一致", "yaw_vs_corridor_tangent_deg": 1.7, "heading": "逆行驶方向", "where": {"along": -2.86, "lateral": -2.66, "side": "右", "in_corridor": false}, "seconds": 30.5}
+[车离开] 车开出通道，上位机不再发车辆
+[避车结束] 避车动作成功  {"wait_seconds": 15.0, "feedback_states": [0, 1, 2], "reason": "goal completed."}
+[恢复行驶] 到达终点  {"robot": [16.606, 20.553, -2.953], "distance": 0.106}
+PASS 避车全流程完成

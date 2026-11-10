@@ -1,0 +1,12 @@
+用例：原地图弧形_左到右（原地图 corner_world 缓弯，从左到右），模式：外部停靠点
+[定位] 机器人在通道起点  {"map_pose": [19.461, -2.762, -0.098], "gazebo_error": 0.0}
+[拟合] 通道拟合成功  {"vertices": 76, "samples": [39, 38], "lengths": [18.76, 18.3]}
+[行驶] 沿通道右侧车道向前开  {"trigger_s": 8.8, "length": 18.5}
+[来车] 前方来车，上位机取消导航  {"robot": [27.4, -3.084, 0.007], "robot_s": 9.41, "robot_offset_from_center": 0.53, "car": [33.267, -1.884, 3.207], "car_s": 15.31}
+[通过性] 机器人原地挡路  {"passable": false}
+[找点] 上位机下发外部停靠点  {"target": [23.785, -5.277, -1.612], "external_in_corridor": false, "where": {"along": -3.5, "lateral": -2.8, "side": "右", "in_corridor": false}}
+[停靠] 机器人已停在停靠点  {"robot": [23.931, -5.323, -1.583], "distance": 0.154, "yaw_vs_target": "一致", "where": {"along": -3.36, "lateral": -2.84, "side": "右", "in_corridor": false}, "seconds": 28.7}
+[车离开] 车开出通道，上位机不再发车辆
+[避车结束] 避车动作成功  {"wait_seconds": 14.9, "feedback_states": [0, 1, 2], "reason": "goal completed."}
+[恢复行驶] 到达终点  {"robot": [34.98, -2.765, 0.068], "distance": 0.065}
+PASS 避车全流程完成

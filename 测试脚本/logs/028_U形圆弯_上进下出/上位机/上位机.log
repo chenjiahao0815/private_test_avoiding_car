@@ -1,0 +1,12 @@
+用例：U形圆弯_上进下出（U 形掉头弯（开口朝右，半径 6 m），上进下出），模式：自搜索停靠点
+[定位] 机器人在通道起点  {"map_pose": [40.499, 26.55, -3.141], "gazebo_error": 0.0}
+[拟合] 通道拟合成功  {"vertices": 474, "samples": [110, 129], "lengths": [54.14, 63.56]}
+[行驶] 沿通道右侧车道向前开  {"trigger_s": 25.0, "length": 58.8}
+[来车] 前方来车，上位机取消导航  {"robot": [16.861, 23.806, -2.274], "robot_s": 25.6, "robot_offset_from_center": 0.4, "car": [16.785, 18.105, 1.922], "car_s": 31.52}
+[通过性] 机器人原地挡路  {"passable": false}
+[找点] 行为树自搜索到停靠点  {"target": [17.643, 27.411, 0.543], "z": 10.0, "where": {"along": -2.38, "lateral": -2.6, "side": "右", "in_corridor": false}}
+[停靠] 机器人已停在停靠点  {"robot": [17.519, 27.349, 0.56], "distance": 0.139, "yaw_vs_target": "一致", "yaw_vs_corridor_tangent_deg": 0.1, "heading": "逆行驶方向", "where": {"along": -2.34, "lateral": -2.61, "side": "右", "in_corridor": false}, "seconds": 29.1}
+[车离开] 车开出通道，上位机不再发车辆
+[避车结束] 避车动作成功  {"wait_seconds": 15.0, "feedback_states": [0, 1, 2], "reason": "goal completed."}
+[恢复行驶] 到达终点  {"robot": [40.381, 13.46, -0.1], "distance": 0.119}
+PASS 避车全流程完成

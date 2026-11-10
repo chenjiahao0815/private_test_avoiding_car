@@ -1,0 +1,45 @@
+[INFO] [1794311509.036331183] [find_free_space_action_server]: find_free_space_action_server started.
+[INFO] [1794311509.054858196] [find_free_space_action_server]: topic_name_global_costmap: /global_costmap/costmap_raw
+[INFO] [1794311509.055127971] [find_free_space_action_server]: service_name_check_car_passble: /check_car_passable
+[INFO] [1794311509.055314176] [find_free_space_action_server]: topic_name_footprint: /global_costmap/published_footprint
+[INFO] [1794311509.055488707] [find_free_space_action_server]: search_interval: 0.5
+[INFO] [1794311509.055664223] [find_free_space_action_server]: search_radius_min: 3.0
+[INFO] [1794311509.055834640] [find_free_space_action_server]: search_radius_max: 3.3
+[INFO] [1794311509.058923394] [find_free_space_action_server]: search_radius_extra_dis: 2.0
+[INFO] [1794311509.059238900] [find_free_space_action_server]: outside_min: 1.1
+[INFO] [1794311509.059411378] [find_free_space_action_server]: outside_max: 1.4
+[INFO] [1794311509.059597301] [find_free_space_action_server]: inside_step: 0.1
+[INFO] [1794311509.059767442] [find_free_space_action_server]: check_service_max_time: 1.0
+[INFO] [1794311509.063726076] [find_free_space_action_server]: show_global_costmap_raw_cv2: False
+[INFO] [1794311509.067141582] [find_free_space_action_server]: show_global_costmap_raw_colored_cv2: False
+[INFO] [1794311509.067644243] [find_free_space_action_server]: inward_offset: 0.0
+[INFO] [1794311509.067827676] [find_free_space_action_server]: max_inward_offset: 1.5
+[INFO] [1794311509.067985197] [find_free_space_action_server]: search_point_interval: 0.15
+[INFO] [1794311509.068148965] [find_free_space_action_server]: footprint_sweep_long_step: 999.0  # 默认999.0=不启用扫掠检查
+[INFO] [1794311509.068368524] [find_free_space_action_server]: footprint_sweep_short_step: 999.0 # 默认999.0=只扫两条长边
+[INFO] [1794311509.068844578] [find_free_space_action_server]: external_point_max_distance: 8.0
+[INFO] [1794311509.069075878] [find_free_space_action_server]: point_free_check_radius: 0.2
+[INFO] [1794311509.069260811] [find_free_space_action_server]: stop_in_place_min_dist: 2.0
+[INFO] [1794311509.069480781] [find_free_space_action_server]: max_robot_pose_age: 1.0
+[INFO] [1794311509.069675257] [find_free_space_action_server]: robot_pose_wait_timeout: 1.5
+[INFO] [1794311509.069885268] [find_free_space_action_server]: enable_dual_side: True
+/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/qos.py:307: UserWarning: DurabilityPolicy.RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL is deprecated. Use DurabilityPolicy.TRANSIENT_LOCAL instead.
+  warnings.warn(
+[INFO] [1794311509.289381347] [find_free_space_action_server]: robot_width: 1.320, footprint_vertices (local): [(0.925, 0.660), (0.925, -0.660), (-0.925, -0.660), (-0.925, 0.660)]
+Traceback (most recent call last):
+  File "/root/avoid_ws/install/find_free_space/lib/find_free_space/find_parking_space", line 33, in <module>
+    sys.exit(load_entry_point('find-free-space==0.0.0', 'console_scripts', 'find_parking_space')())
+  File "/root/avoid_ws/install/find_free_space/lib/python3.10/site-packages/find_free_space/find_car_avoidance_point.py", line 2217, in main
+    rclpy.spin(car_avoidance_action_server,executor=executor_)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 222, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 794, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 775, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 584, in _wait_for_ready_callbacks
+    wait_set = _rclpy.WaitSet(
+rclpy._rclpy_pybind11.RCLError: failed to initialize wait set: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/wait.c:130
+[ros2run]: Process exited with failure 1

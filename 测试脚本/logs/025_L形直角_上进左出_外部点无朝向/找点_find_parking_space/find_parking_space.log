@@ -1,0 +1,41 @@
+[INFO] [1794244130.914082723] [find_free_space_action_server]: find_free_space_action_server started.
+[INFO] [1794244130.914244995] [find_free_space_action_server]: topic_name_global_costmap: /global_costmap/costmap_raw
+[INFO] [1794244130.914251705] [find_free_space_action_server]: topic_name_footprint: /global_costmap/published_footprint
+[INFO] [1794244130.914255284] [find_free_space_action_server]: search_radius_min: 3.000000
+[INFO] [1794244130.914262450] [find_free_space_action_server]: search_radius_max: 3.300000
+[INFO] [1794244130.914265815] [find_free_space_action_server]: search_radius_extra_dis: 2.000000
+[INFO] [1794244130.914269318] [find_free_space_action_server]: search_point_interval: 0.150000
+[INFO] [1794244130.914272901] [find_free_space_action_server]: outside_min: 1.100000
+[INFO] [1794244130.914277272] [find_free_space_action_server]: outside_max: 1.400000
+[INFO] [1794244130.914280478] [find_free_space_action_server]: check_service_max_time: 1.000000
+[INFO] [1794244130.914283801] [find_free_space_action_server]: show_global_costmap_raw_cv2: 0
+[INFO] [1794244130.914287212] [find_free_space_action_server]: show_global_costmap_raw_colored_cv2: 0
+[INFO] [1794244130.914290287] [find_free_space_action_server]: external_point_max_distance: 8.000000
+[INFO] [1794244130.914293673] [find_free_space_action_server]: point_free_check_radius: 0.200000
+[INFO] [1794244130.914296864] [find_free_space_action_server]: footprint_sweep_long_step: 999.000000
+[INFO] [1794244130.914300541] [find_free_space_action_server]: footprint_sweep_short_step: 999.000000
+[INFO] [1794244130.914303833] [find_free_space_action_server]: max_robot_pose_age: 1.000000
+[INFO] [1794244130.914306994] [find_free_space_action_server]: robot_pose_wait_timeout: 1.500000
+[INFO] [1794244131.048803160] [find_free_space_action_server]: robot_width: 1.020, footprint_vertices (local): [(0.935, 0.510), (0.935, -0.510), (-0.935, -0.510), (-0.935, 0.510)]
+[INFO] [1794244139.554020755] [find_free_space_action_server]: 收到 /garage_road_models，revision 1，数量 1
+[INFO] [1794244139.554909626] [find_free_space_action_server]: 收到 /garage_road_models，revision 1，数量 1
+[INFO] [1794244162.734949706] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794244162.738757865] [find_free_space_action_server]: 收到避车停车点: 1个
+[INFO] [1794244162.738851413] [find_free_space_action_server]: 外部停车点没有发 yaw，将使用避让方向自行计算
+[WARN] [1794244165.491833154] [find_free_space_action_server]: 等待禁扫区超时，本次任务不拦截禁扫区
+[INFO] [1794244165.491913256] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794244165.491939370] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794244165.491954078] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(14.000, 13.500), (36.500, 13.500), (36.500, 34.000), (39.500, 34.000), (39.500, 10.500), (14.000, 10.500)]
+[INFO] [1794244165.491965558] [find_free_space_action_server]: 当前通行区域: [(14.000, 13.500), (36.500, 13.500), (36.500, 34.000), (39.500, 34.000), (39.500, 10.500), (14.000, 10.500)]
+[INFO] [1794244165.491989635] [find_free_space_action_server]: 选用避车长边 B，垂足弧长 23.322，距离 0.738
+[INFO] [1794244165.491995883] [find_free_space_action_server]: robot: (37.238, 14.322)
+[INFO] [1794244165.492000395] [find_free_space_action_server]: car: (33.413, 11.550)
+[INFO] [1794244165.492083979] [find_free_space_action_server]: 搜索沿弧长增大远离来车，车头沿侧边从 start 到 end
+[INFO] [1794244165.493517597] [find_free_space_action_server]: 外部停车点过滤后剩余: 1个
+[INFO] [1794244165.493553164] [find_free_space_action_server]: 尝试外部停车点，共1个
+[INFO] [1794244165.493570150] [find_free_space_action_server]: 外部停车点(35.20, 17.71) 在通道外，将跳过服务检查
+[INFO] [1794244165.493581625] [find_free_space_action_server]: 外部停车点(35.20, 17.71) 没有 yaw，车头取侧边切线 90.0°
+[INFO] [1794244165.493614370] [find_free_space_action_server]: 候选点(35.20,17.71) 为通道外外部停车点，跳过 /check_car_passable 服务检查，直接通过
+[INFO] [1794244165.493645415] [find_free_space_action_server]: 外部停车点通过校验共1个，选择最贴近长边: (35.20, 17.71)，该点在通道外，方向保持不变，z = 30.0
+[INFO] [1794244165.493766693] [find_free_space_action_server]: 优先使用通道外外部停靠点，保留上位机朝向，z=30
+[INFO] [1794244269.735153251] [rclcpp]: signal_handler(signum=2)

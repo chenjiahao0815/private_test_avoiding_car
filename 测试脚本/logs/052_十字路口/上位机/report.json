@@ -1,0 +1,96 @@
+{
+  "case": "十字路口",
+  "title": "十字路口，沿横路穿过上下支路",
+  "mode": "auto",
+  "定位": {
+    "map_pose": [
+      11.501,
+      21.45,
+      0.001
+    ],
+    "gazebo_error": 0.0
+  },
+  "拟合": {
+    "vertices": 12,
+    "samples": [
+      139,
+      139
+    ],
+    "lengths": [
+      69.0,
+      69.0
+    ]
+  },
+  "行驶": {
+    "trigger_s": 16.0,
+    "length": 44.0
+  },
+  "来车": {
+    "robot": [
+      26.541,
+      21.45,
+      0.002
+    ],
+    "robot_s": 16.54,
+    "robot_offset_from_center": 0.55,
+    "car": [
+      32.507,
+      22.45,
+      3.142
+    ],
+    "car_s": 22.51
+  },
+  "通过性": {
+    "passable": false
+  },
+  "找点": {
+    "target": [
+      23.541,
+      19.4,
+      0.0
+    ],
+    "z": 10.0,
+    "where": {
+      "along": -3.0,
+      "lateral": -2.6,
+      "side": "右",
+      "in_corridor": false
+    }
+  },
+  "停靠": {
+    "robot": [
+      23.69,
+      19.363,
+      0.005
+    ],
+    "distance": 0.153,
+    "yaw_vs_target": "一致",
+    "yaw_vs_corridor_tangent_deg": 0.3,
+    "heading": "顺行驶方向",
+    "where": {
+      "along": -2.85,
+      "lateral": -2.64,
+      "side": "右",
+      "in_corridor": false
+    },
+    "seconds": 28.1
+  },
+  "避车结束": {
+    "wait_seconds": 15.0,
+    "feedback_states": [
+      0,
+      1,
+      2
+    ],
+    "reason": "goal completed."
+  },
+  "恢复行驶": {
+    "robot": [
+      52.157,
+      21.433,
+      0.014
+    ],
+    "distance": 0.343
+  },
+  "result": "PASS"
+}

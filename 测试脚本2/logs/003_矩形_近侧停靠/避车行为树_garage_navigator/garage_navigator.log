@@ -1,0 +1,131 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-11-10-11-53-37-106926-DESKTOP-230CIAL-56086
+[INFO] [launch]: Default logging verbosity is set to INFO
+/root/avoid_ws/install/garage_navigator/share/garage_navigator/params/dsf_nav2_for_ad_4_exhibition.yaml
+[INFO] [bt_garage_navigator-1]: process started with pid [56091]
+[INFO] [lifecycle_manager-2]: process started with pid [56093]
+[bt_garage_navigator-1] [INFO] [1794311617.756110149] [bt_garage_navigator]: 
+[bt_garage_navigator-1] 	bt_garage_navigator lifecycle node launched. 
+[bt_garage_navigator-1] 	Waiting on external lifecycle transitions to activate
+[bt_garage_navigator-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_garage_navigator-1] [INFO] [1794311617.756250718] [bt_garage_navigator]: Creating
+[lifecycle_manager-2] [INFO] [1794311617.786034086] [lifecycle_manager_garage_avoidance]: Creating
+[lifecycle_manager-2] [INFO] [1794311617.820610882] [lifecycle_manager_garage_avoidance]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-2] [INFO] [1794311618.795387100] [lifecycle_manager_garage_avoidance]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-2] [INFO] [1794311618.795446668] [lifecycle_manager_garage_avoidance]: [34m[1mConfiguring bt_garage_navigator[0m[0m
+[bt_garage_navigator-1] [INFO] [1794311618.796838786] [bt_garage_navigator]: Configuring
+[bt_garage_navigator-1] [INFO] [1794311618.818106213] [bt_garage_navigator]: GARAGE_ENABLE_DUAL_SIDE_AVOIDANCE=true xml=/root/avoid_ws/install/garage_navigator/share/garage_navigator/behavior_trees/garage_vehicle_avoidance_dual_side.xml clear=3 busy=4 max_wait=15 suppress=5
+[bt_garage_navigator-1] [INFO] [1794311619.033278077] [bt_garage_navigator]: Action /find_car_avoidance_point_action is on line.
+[bt_garage_navigator-1] [INFO] [1794311619.033424592] [bt_garage_navigator]: Action /compute_right_edge_path_action_server is on line.
+[bt_garage_navigator-1] [INFO] [1794311619.033508525] [bt_garage_navigator]: Action  /welt_model_node is on line.
+[bt_garage_navigator-1] [INFO] [1794311619.033591936] [bt_garage_navigator]: Action /wait is on line.
+[lifecycle_manager-2] [INFO] [1794311619.099385566] [lifecycle_manager_garage_avoidance]: [34m[1mActivating bt_garage_navigator[0m[0m
+[bt_garage_navigator-1] [INFO] [1794311619.101126460] [bt_garage_navigator]: Activating
+[bt_garage_navigator-1] [INFO] [1794311619.101464735] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: action name: welt_model_node
+[bt_garage_navigator-1] [INFO] [1794311619.102251747] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: WaitForCarsGone: topic=/car_information, idle_timeout=15.0, max_wait=60.0
+[bt_garage_navigator-1] [INFO] [1794311619.102441034] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: WaitForFarSide: topic=/car_information_all clear=3.0 busy=4.0 max_wait=15.0 stale=1.0
+[bt_garage_navigator-1] [INFO] [1794311619.102655370] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: action name: find_car_avoidance_point_action
+[bt_garage_navigator-1] [INFO] [1794311619.124118351] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: action name: find_car_avoidance_point_action
+[bt_garage_navigator-1] [INFO] [1794311619.138943691] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: action name: find_car_avoidance_point_action
+[bt_garage_navigator-1] [INFO] [1794311619.139717473] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: action name: compute_right_edge_path_action_server
+[bt_garage_navigator-1] [WARN] [1794311619.195353283] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794311619.246814026] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794311619.248047609] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794311619.291395679] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794311619.335373142] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794311619.354636329] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794311619.355752982] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [WARN] [1794311619.392077639] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: Wait duration is negative or zero (0). Setting to positive.
+[bt_garage_navigator-1] [INFO] [1794311619.392480033] [bt_garage_navigator]: Creating bond (bt_garage_navigator) to lifecycle manager.
+[lifecycle_manager-2] [INFO] [1794311619.512164377] [lifecycle_manager_garage_avoidance]: Server bt_garage_navigator connected with bond.
+[lifecycle_manager-2] [INFO] [1794311619.512223889] [lifecycle_manager_garage_avoidance]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-2] [INFO] [1794311619.512233077] [lifecycle_manager_garage_avoidance]: [34m[1mCreating bond timer...[0m[0m
+[bt_garage_navigator-1] [INFO] [1794311647.589371665] [bt_garage_navigator]: Loading BT from file: 
+[bt_garage_navigator-1] [INFO] [1794311647.589425190] [bt_garage_navigator]: Begin to execute garage_vehicle_avoidance program.
+[bt_garage_navigator-1] [INFO] [1794311648.770003516] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 进入靠右路径，先屏蔽远侧找点
+[bt_garage_navigator-1] [INFO] [1794311650.420127365] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: path size: 16
+[bt_garage_navigator-1] [INFO] [1794311650.420571597] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: goal size: 16
+[bt_garage_navigator-1] [INFO] [1794311650.423276391] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: teb plan received, poses=78 length=15.400 m
+[bt_garage_navigator-1] [INFO] [1794311650.423318403] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: odom vx=-0.0000 m/s
+[bt_garage_navigator-1] [INFO] [1794311650.423361309] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: mission changed (tail_fp=35e2aa2ec0fb8ca), reload queue size=16
+[bt_garage_navigator-1] [INFO] [1794311650.423715631] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: enable_backward=false (forward)
+[bt_garage_navigator-1] [INFO] [1794311650.423869406] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: init gpp window z=[0,15] mission_goals=16
+[bt_garage_navigator-1] [INFO] [1794311650.423887477] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: terminal goal z=15 entered gpp window, freeze stamps
+[bt_garage_navigator-1] [INFO] [1794311650.489674169] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 靠右跟踪开始，5.0 秒内不采纳远侧点
+[bt_garage_navigator-1] [INFO] [1794311650.489826985] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: FollowPathAction: input_goals not provided, using path poses as goals
+[bt_garage_navigator-1] [INFO] [1794311650.529795908] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=0
+[bt_garage_navigator-1] [INFO] [1794311650.634466895] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=1
+[bt_garage_navigator-1] [INFO] [1794311655.462125111] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: teb plan received, poses=79 length=15.390 m
+[bt_garage_navigator-1] [INFO] [1794311655.462348114] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: odom vx=-0.0008 m/s
+[bt_garage_navigator-1] [INFO] [1794311655.769637160] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: 远侧屏蔽结束，恢复远侧找点
+[bt_garage_navigator-1] [INFO] [1794311660.486519207] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: teb plan received, poses=74 length=14.441 m
+[bt_garage_navigator-1] [INFO] [1794311660.488374196] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: odom vx=-0.0008 m/s
+[bt_garage_navigator-1] [INFO] [1794311662.814958235] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=2
+[bt_garage_navigator-1] [INFO] [1794311664.930934994] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=3
+[bt_garage_navigator-1] [INFO] [1794311665.579929945] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: teb plan received, poses=72 length=14.041 m
+[bt_garage_navigator-1] [INFO] [1794311665.579983462] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: odom vx=1.0006 m/s
+[bt_garage_navigator-1] [INFO] [1794311666.230910468] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=4
+[bt_garage_navigator-1] [INFO] [1794311667.492170678] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=5
+[bt_garage_navigator-1] [INFO] [1794311668.891900033] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=6
+[bt_garage_navigator-1] [INFO] [1794311670.152431466] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=7
+[bt_garage_navigator-1] [INFO] [1794311670.682326788] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: teb plan received, poses=53 length=10.241 m
+[bt_garage_navigator-1] [INFO] [1794311670.682378500] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: odom vx=1.0000 m/s
+[bt_garage_navigator-1] [INFO] [1794311671.430589689] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=8
+[bt_garage_navigator-1] [INFO] [1794311672.810021045] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=9
+[bt_garage_navigator-1] [INFO] [1794311674.079933830] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=10
+[bt_garage_navigator-1] [INFO] [1794311675.380750808] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=11
+[bt_garage_navigator-1] [INFO] [1794311675.710108777] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: teb plan received, poses=34 length=6.441 m
+[bt_garage_navigator-1] [INFO] [1794311675.710158565] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: odom vx=1.0000 m/s
+[bt_garage_navigator-1] [INFO] [1794311676.670467976] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=12
+[bt_garage_navigator-1] [INFO] [1794311677.620715524] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: advance gpp window, teb_len=4.841 m <= 5.000 m -> z=[13,15]
+[bt_garage_navigator-1] [INFO] [1794311678.065118165] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=13
+[bt_garage_navigator-1] [INFO] [1794311679.350122407] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=14
+[bt_garage_navigator-1] [INFO] [1794311680.222762987] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: tail pass, record index=15
+[bt_garage_navigator-1] [INFO] [1794311680.222801844] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: init gpp window z=[15,15] mission_goals=0
+[bt_garage_navigator-1] [WARN] [1794311680.222810310] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311680.330166884] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311680.433778197] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311680.542385920] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311680.650290332] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [INFO] [1794311680.759908380] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: teb plan received, poses=14 length=2.441 m
+[bt_garage_navigator-1] [INFO] [1794311680.759996448] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: odom vx=1.0000 m/s
+[bt_garage_navigator-1] [WARN] [1794311680.760103789] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311680.870012469] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311680.980517403] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311681.081826331] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311681.182321748] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311681.299718924] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311681.399909004] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311681.511293403] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311681.619809863] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311681.730135433] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311681.830635944] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311681.940764261] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311682.042464501] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311682.150631920] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [WARN] [1794311682.263952611] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_garage_navigator-1] [INFO] [1794311682.329587307] [bt_garage_navigator]: goalCompleted callback
+[bt_garage_navigator-1] [INFO] [1794311682.329765154] [bt_garage_navigator]: Goal succeeded
+[lifecycle_manager-2] [INFO] [1794311683.758582548] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-2] [INFO] [1794311683.758788095] [lifecycle_manager_garage_avoidance]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_garage_avoidance)
+[lifecycle_manager-2] [INFO] [1794311683.758836719] [lifecycle_manager_garage_avoidance]: [34m[1mTerminating bond timer...[0m[0m
+[bt_garage_navigator-1] [INFO] [1794311683.764900653] [rclcpp]: signal_handler(signum=2)
+[bt_garage_navigator-1] [INFO] [1794311683.764960572] [bt_garage_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_garage_navigator)
+[bt_garage_navigator-1] [INFO] [1794311683.765017627] [bt_garage_navigator]: Deactivating
+[bt_garage_navigator-1] [INFO] [1794311683.765033860] [bt_garage_navigator]: Destroying bond (bt_garage_navigator) to lifecycle manager.
+[bt_garage_navigator-1] [INFO] [1794311683.796984569] [bt_garage_navigator]: Cleaning up
+[bt_garage_navigator-1] [WARN] [1794311683.821708336] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() called for welt_model_node - forcing immediate cancellation
+[bt_garage_navigator-1] [INFO] [1794311683.821752841] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() completed for welt_model_node
+[bt_garage_navigator-1] [WARN] [1794311683.821778063] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() called for find_car_avoidance_point_action - forcing immediate cancellation
+[bt_garage_navigator-1] [INFO] [1794311683.821786284] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() completed for find_car_avoidance_point_action
+[bt_garage_navigator-1] [WARN] [1794311683.821796179] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() called for find_car_avoidance_point_action - forcing immediate cancellation
+[bt_garage_navigator-1] [INFO] [1794311683.821801774] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() completed for find_car_avoidance_point_action
+[bt_garage_navigator-1] [WARN] [1794311683.821811429] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() called for find_car_avoidance_point_action - forcing immediate cancellation
+[bt_garage_navigator-1] [INFO] [1794311683.821816722] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() completed for find_car_avoidance_point_action
+[bt_garage_navigator-1] [WARN] [1794311683.821829559] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() called for compute_right_edge_path_action_server - forcing immediate cancellation
+[bt_garage_navigator-1] [INFO] [1794311683.821835772] [bt_garage_navigator_garage_vehicle_avoidance_rclcpp_node]: BtActionNode::halt() completed for compute_right_edge_path_action_server
+[lifecycle_manager-2] [INFO] [1794311683.964663394] [lifecycle_manager_garage_avoidance]: Destroying lifecycle_manager_garage_avoidance
+[bt_garage_navigator-1] [INFO] [1794311684.900906999] [bt_garage_navigator]: Completed Cleaning up
+[bt_garage_navigator-1] [INFO] [1794311684.900955038] [bt_garage_navigator]: Destroying bond (bt_garage_navigator) to lifecycle manager.
+[bt_garage_navigator-1] [INFO] [1794311684.920149992] [bt_garage_navigator]: Destroying
+[INFO] [lifecycle_manager-2]: process has finished cleanly [pid 56093]
+[INFO] [bt_garage_navigator-1]: process has finished cleanly [pid 56091]

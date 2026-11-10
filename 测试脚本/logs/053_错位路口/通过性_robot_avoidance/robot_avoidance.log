@@ -1,0 +1,8 @@
+[INFO] [1794274522.990199218] [robot_avoidance_node]: robot_avoidance_node started...
+[INFO] [1794274523.049346499] [robot_avoidance_node]: car_avoidance_demonstration: false
+[INFO] [1794274523.049385212] [robot_avoidance_node]: nearest_side_search_radius: 10.000000
+[ERROR] [1794274523.198692812] [robot_avoidance_node]: Failed to get robot footprint
+[ERROR] [1794274523.198729501] [robot_avoidance_node]: Failed to get robot footprint, Using default robot width: 1.200000
+[INFO] [1794274533.746935295] [robot_avoidance_node]: 收到/garage_polygons，通道数量: 1
+[INFO] [1794274533.752871917] [robot_avoidance_node]: 收到/garage_road_models，revision 1，数量 1，frame map
+[INFO] [1794274536.447771488] [rclcpp]: signal_handler(signum=2)

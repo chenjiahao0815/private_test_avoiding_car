@@ -1,0 +1,94 @@
+{
+  "case": "直线_右到左",
+  "title": "直线通道（对照），右到左",
+  "mode": "external",
+  "定位": {
+    "map_pose": [
+      43.499,
+      20.55,
+      -3.141
+    ],
+    "gazebo_error": 0.0
+  },
+  "拟合": {
+    "vertices": 122,
+    "samples": [
+      61,
+      61
+    ],
+    "lengths": [
+      30.0,
+      30.0
+    ]
+  },
+  "行驶": {
+    "trigger_s": 14.0,
+    "length": 30.0
+  },
+  "来车": {
+    "robot": [
+      30.348,
+      20.55,
+      -3.142
+    ],
+    "robot_s": 14.65,
+    "robot_offset_from_center": 0.55,
+    "car": [
+      24.484,
+      19.55,
+      6.283
+    ],
+    "car_s": 20.52
+  },
+  "通过性": {
+    "passable": false
+  },
+  "找点": {
+    "target": [
+      33.848,
+      22.8,
+      1.571
+    ],
+    "external_in_corridor": false,
+    "where": {
+      "along": -3.5,
+      "lateral": -2.8,
+      "side": "右",
+      "in_corridor": false
+    }
+  },
+  "停靠": {
+    "robot": [
+      33.719,
+      22.855,
+      1.58
+    ],
+    "distance": 0.141,
+    "yaw_vs_target": "一致",
+    "where": {
+      "along": -3.37,
+      "lateral": -2.86,
+      "side": "右",
+      "in_corridor": false
+    },
+    "seconds": 29.4
+  },
+  "避车结束": {
+    "wait_seconds": 15.0,
+    "feedback_states": [
+      0,
+      1,
+      2
+    ],
+    "reason": "goal completed."
+  },
+  "恢复行驶": {
+    "robot": [
+      16.628,
+      20.558,
+      3.106
+    ],
+    "distance": 0.128
+  },
+  "result": "PASS"
+}

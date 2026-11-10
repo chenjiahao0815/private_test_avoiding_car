@@ -1,0 +1,2 @@
+[INFO] [1794274533.751361051] [garage_road_model]: 道路 0 失败 端口识别 端口歧义，候选得分接近 用时 0.5 ms
+[INFO] [1794274536.441562416] [rclcpp]: signal_handler(signum=2)

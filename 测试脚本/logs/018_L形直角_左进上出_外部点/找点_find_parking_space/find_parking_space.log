@@ -1,0 +1,39 @@
+[INFO] [1794242892.809892620] [find_free_space_action_server]: find_free_space_action_server started.
+[INFO] [1794242892.810185718] [find_free_space_action_server]: topic_name_global_costmap: /global_costmap/costmap_raw
+[INFO] [1794242892.810200297] [find_free_space_action_server]: topic_name_footprint: /global_costmap/published_footprint
+[INFO] [1794242892.810205814] [find_free_space_action_server]: search_radius_min: 3.000000
+[INFO] [1794242892.810216684] [find_free_space_action_server]: search_radius_max: 3.300000
+[INFO] [1794242892.810222172] [find_free_space_action_server]: search_radius_extra_dis: 2.000000
+[INFO] [1794242892.810227075] [find_free_space_action_server]: search_point_interval: 0.150000
+[INFO] [1794242892.810232737] [find_free_space_action_server]: outside_min: 1.100000
+[INFO] [1794242892.810241463] [find_free_space_action_server]: outside_max: 1.400000
+[INFO] [1794242892.810246316] [find_free_space_action_server]: check_service_max_time: 1.000000
+[INFO] [1794242892.810251905] [find_free_space_action_server]: show_global_costmap_raw_cv2: 0
+[INFO] [1794242892.810257136] [find_free_space_action_server]: show_global_costmap_raw_colored_cv2: 0
+[INFO] [1794242892.810262124] [find_free_space_action_server]: external_point_max_distance: 8.000000
+[INFO] [1794242892.810267621] [find_free_space_action_server]: point_free_check_radius: 0.200000
+[INFO] [1794242892.810272904] [find_free_space_action_server]: footprint_sweep_long_step: 999.000000
+[INFO] [1794242892.810277981] [find_free_space_action_server]: footprint_sweep_short_step: 999.000000
+[INFO] [1794242892.810283008] [find_free_space_action_server]: max_robot_pose_age: 1.000000
+[INFO] [1794242892.810287611] [find_free_space_action_server]: robot_pose_wait_timeout: 1.500000
+[INFO] [1794242892.947423555] [find_free_space_action_server]: robot_width: 1.020, footprint_vertices (local): [(0.935, 0.510), (0.935, -0.510), (-0.935, -0.510), (-0.935, 0.510)]
+[INFO] [1794242901.436556334] [find_free_space_action_server]: 收到 /garage_road_models，revision 1，数量 1
+[INFO] [1794242901.437247450] [find_free_space_action_server]: 收到 /garage_road_models，revision 1，数量 1
+[INFO] [1794242926.404009956] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794242926.408596419] [find_free_space_action_server]: 收到避车停车点: 1个
+[WARN] [1794242928.610657980] [find_free_space_action_server]: 等待禁扫区超时，本次任务不拦截禁扫区
+[INFO] [1794242928.610732060] [find_free_space_action_server]: polygons: 1个通道
+[INFO] [1794242928.610760894] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794242928.610778448] [find_free_space_action_server]: 机器人在通道内，使用当前通道: [(14.000, 13.500), (36.500, 13.500), (36.500, 34.000), (39.500, 34.000), (39.500, 10.500), (14.000, 10.500)]
+[INFO] [1794242928.610785431] [find_free_space_action_server]: 当前通行区域: [(14.000, 13.500), (36.500, 13.500), (36.500, 34.000), (39.500, 34.000), (39.500, 10.500), (14.000, 10.500)]
+[INFO] [1794242928.610835133] [find_free_space_action_server]: 选用避车长边 A，垂足弧长 21.601，距离 1.173
+[INFO] [1794242928.610844977] [find_free_space_action_server]: robot: (35.601, 11.673)
+[INFO] [1794242928.610851452] [find_free_space_action_server]: car: (37.550, 16.591)
+[INFO] [1794242928.610915049] [find_free_space_action_server]: 搜索沿弧长减小远离来车，车头沿侧边从 start 到 end
+[INFO] [1794242928.612481759] [find_free_space_action_server]: 外部停车点过滤后剩余: 1个
+[INFO] [1794242928.612508467] [find_free_space_action_server]: 尝试外部停车点，共1个
+[INFO] [1794242928.612513284] [find_free_space_action_server]: 外部停车点(32.08, 9.20) 在通道外，将跳过服务检查
+[INFO] [1794242928.612541902] [find_free_space_action_server]: 候选点(32.08,9.20) 为通道外外部停车点，跳过 /check_car_passable 服务检查，直接通过
+[INFO] [1794242928.612548343] [find_free_space_action_server]: 外部停车点通过校验共1个，选择最贴近长边: (32.08, 9.20)，该点在通道外，方向保持不变，z = 30.0
+[INFO] [1794242928.612680490] [find_free_space_action_server]: 优先使用通道外外部停靠点，保留上位机朝向，z=30
+[INFO] [1794243027.280254934] [rclcpp]: signal_handler(signum=2)

@@ -1,0 +1,12 @@
+用例：L形直角_左进上出（L 形直角弯，左进上出），模式：自搜索停靠点
+[定位] 机器人在通道起点  {"map_pose": [15.501, 11.45, 0.001], "gazebo_error": 0.0}
+[拟合] 通道拟合成功  {"vertices": 6, "samples": [99, 87], "lengths": [49.0, 43.0]}
+[行驶] 沿通道右侧车道向前开  {"trigger_s": 21.0, "length": 44.9}
+[来车] 前方来车，上位机取消导航  {"robot": [35.633, 11.665, 0.198], "robot_s": 21.62, "robot_offset_from_center": 0.34, "car": [37.55, 16.584, 4.712], "car_s": 27.51}
+[通过性] 机器人原地挡路  {"passable": false}
+[找点] 行为树自搜索到停靠点  {"target": [32.634, 9.4, 0.0], "z": 10.0, "where": {"along": -2.98, "lateral": -2.6, "side": "右", "in_corridor": false}}
+[停靠] 机器人已停在停靠点  {"robot": [32.779, 9.368, 0.005], "distance": 0.149, "yaw_vs_target": "一致", "where": {"along": -2.84, "lateral": -2.63, "side": "右", "in_corridor": false}, "seconds": 20.1}
+[车离开] 车开出通道，上位机不再发车辆
+[避车结束] 避车动作成功  {"wait_seconds": 15.0, "feedback_states": [0, 1, 2], "reason": "goal completed."}
+[恢复行驶] 到达终点  {"robot": [38.555, 32.356, 1.591], "distance": 0.145}
+PASS 避车全流程完成

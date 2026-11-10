@@ -1,0 +1,777 @@
+[INFO] [1794243486.183450684] [welt_model_node]: 贴边action started.
+[INFO] [1794243486.194151692] [welt_model_node]: =========== LIST PARAMS ===========
+[INFO] [1794243486.194181721] [welt_model_node]: width_extend: 0.150000
+[INFO] [1794243486.194190155] [welt_model_node]: move_predict_far: 1.500000
+[INFO] [1794243486.194195543] [welt_model_node]: move_predict_near: 0.300000
+[INFO] [1794243486.194214447] [welt_model_node]: welt_timeout: 60.000000
+[INFO] [1794243486.194221278] [welt_model_node]: moving_timeout: 30.000000
+[INFO] [1794243486.194226707] [welt_model_node]: stop_timeout: 2.000000
+[INFO] [1794243486.194239022] [welt_model_node]: linear_velocity_far: 0.500000
+[INFO] [1794243486.194244229] [welt_model_node]: linear_velocity_near: 0.300000
+[INFO] [1794243486.194249370] [welt_model_node]: angular_velocity: 0.200000
+[INFO] [1794243486.194254617] [welt_model_node]: angular_velocity_min: 0.030000
+[INFO] [1794243486.194259737] [welt_model_node]: goal_tolerance: 0.200000
+[INFO] [1794243486.194264670] [welt_model_node]: angle_tolerance: 0.050000
+[INFO] [1794243486.194269542] [welt_model_node]: moving_to_goal_angle_threshold: 0.200000
+[INFO] [1794243486.194274685] [welt_model_node]: collision_check_resolution: 0.100000
+[INFO] [1794243486.194279962] [welt_model_node]: fix_inside_goal_rotation_threshold: 15.000000
+[INFO] [1794243486.194286980] [welt_model_node]: check_collision_rotation_threshold: 15.000000
+[INFO] [1794243523.317054927] [welt_model_node]: 开始执行贴边action
+[INFO] [1794243523.317108492] [welt_model_node]: goal_type: fix_outside_chanel
+[INFO] [1794243523.317139572] [welt_model_node]: The goal received: (32.12, 9.20, 30.00), goal_yaw: -1.55
+[INFO] [1794243523.317326832] [welt_model_node]: footprint param:1.209999,0.659999,0.510000
+[INFO] [1794243523.317363379] [welt_test]: moving mode: back.
+[INFO] [1794243523.317367939] [welt_model_node]: welt mode: BACK
+[INFO] [1794243523.317371967] [welt_model_node]: Starting control sequence
+[INFO] [1794243523.317377884] [welt_test]: 进入第一次旋转程序
+[INFO] [1794243523.317380350] [welt_test]: theta_rotate_to_goal_old: 0.791106
+[INFO] [1794243523.317384667] [welt_test]: theta_rotate_to_goal_new: 0.791106
+[INFO] [1794243523.317388561] [welt_test]: 开始第一次旋转
+[INFO] [1794243524.419240290] [welt_test]: 完成并退出第一次旋转
+[INFO] [1794243524.419334904] [welt_test]: 进入前往goal程序
+[INFO] [1794243536.340278001] [welt_test]: 完成并退出前往目标点程序
+[INFO] [1794243536.340394386] [welt_test]: 进入最后旋转程序
+[INFO] [1794243536.340404307] [welt_test]: 开始最后旋转程序
+[INFO] [1794243536.340408960] [welt_model_node]: nearest angle => difference: -2.13, rotation_sign: -
+[INFO] [1794243536.340424085] [welt_model_node]: diff_abs: 2.13, 
+[INFO] [1794243536.340428333] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243536.340449032] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243536.340457611] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243536.340461903] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243536.440610828] [welt_model_node]: nearest angle => difference: -2.14, rotation_sign: -
+[INFO] [1794243536.440664164] [welt_model_node]: diff_abs: 2.14, 
+[INFO] [1794243536.440669326] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243536.440693247] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243536.440701793] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243536.440706117] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243536.540887031] [welt_model_node]: nearest angle => difference: -2.16, rotation_sign: -
+[INFO] [1794243536.540937653] [welt_model_node]: diff_abs: 2.16, 
+[INFO] [1794243536.540942612] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243536.540955654] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243536.540964392] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243536.540994995] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243536.641149595] [welt_model_node]: nearest angle => difference: -2.19, rotation_sign: -
+[INFO] [1794243536.641198303] [welt_model_node]: diff_abs: 2.19, 
+[INFO] [1794243536.641202598] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243536.641223275] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243536.641231821] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243536.641235796] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243536.741434135] [welt_model_node]: nearest angle => difference: -2.20, rotation_sign: -
+[INFO] [1794243536.741479848] [welt_model_node]: diff_abs: 2.20, 
+[INFO] [1794243536.741484347] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243536.741496719] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243536.741512379] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243536.741516119] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243536.841655411] [welt_model_node]: nearest angle => difference: -2.19, rotation_sign: -
+[INFO] [1794243536.841701835] [welt_model_node]: diff_abs: 2.19, 
+[INFO] [1794243536.841706201] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243536.841719079] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243536.841727074] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243536.841730717] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243536.941895499] [welt_model_node]: nearest angle => difference: -2.17, rotation_sign: -
+[INFO] [1794243536.941944838] [welt_model_node]: diff_abs: 2.17, 
+[INFO] [1794243536.941950215] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243536.941963304] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243536.941971904] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243536.941976139] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243537.042122634] [welt_model_node]: nearest angle => difference: -2.15, rotation_sign: -
+[INFO] [1794243537.042169355] [welt_model_node]: diff_abs: 2.15, 
+[INFO] [1794243537.042174304] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243537.042195191] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243537.042203697] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243537.042207798] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243537.142365359] [welt_model_node]: nearest angle => difference: -2.13, rotation_sign: -
+[INFO] [1794243537.142417473] [welt_model_node]: diff_abs: 2.13, 
+[INFO] [1794243537.142422523] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243537.142436753] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243537.142445693] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243537.142450281] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243537.242603904] [welt_model_node]: nearest angle => difference: -2.12, rotation_sign: -
+[INFO] [1794243537.242655340] [welt_model_node]: diff_abs: 2.12, 
+[INFO] [1794243537.242660482] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243537.242674278] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243537.242683013] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243537.242687373] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243537.342872931] [welt_model_node]: nearest angle => difference: -2.10, rotation_sign: -
+[INFO] [1794243537.342945315] [welt_model_node]: diff_abs: 2.10, 
+[INFO] [1794243537.342949965] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243537.342971620] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243537.342979905] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243537.342986247] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243537.443169386] [welt_model_node]: nearest angle => difference: -2.08, rotation_sign: -
+[INFO] [1794243537.443220137] [welt_model_node]: diff_abs: 2.08, 
+[INFO] [1794243537.443224771] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243537.443246929] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243537.443255217] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243537.443259240] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243537.543425102] [welt_model_node]: nearest angle => difference: -2.06, rotation_sign: -
+[INFO] [1794243537.543480426] [welt_model_node]: diff_abs: 2.06, 
+[INFO] [1794243537.543484844] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243537.543498220] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243537.543516627] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243537.543520766] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243537.643653909] [welt_model_node]: nearest angle => difference: -2.04, rotation_sign: -
+[INFO] [1794243537.643720167] [welt_model_node]: diff_abs: 2.04, 
+[INFO] [1794243537.643731115] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243537.643758453] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243537.643780765] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243537.643791000] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243537.744048263] [welt_model_node]: nearest angle => difference: -2.02, rotation_sign: -
+[INFO] [1794243537.744120578] [welt_model_node]: diff_abs: 2.02, 
+[INFO] [1794243537.744132289] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243537.744173336] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243537.744202073] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243537.744213215] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243537.844441528] [welt_model_node]: nearest angle => difference: -2.00, rotation_sign: -
+[INFO] [1794243537.844500165] [welt_model_node]: diff_abs: 2.00, 
+[INFO] [1794243537.844507173] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243537.844526045] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243537.844545064] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243537.844550668] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243537.944716845] [welt_model_node]: nearest angle => difference: -1.99, rotation_sign: -
+[INFO] [1794243537.944757631] [welt_model_node]: diff_abs: 1.99, 
+[INFO] [1794243537.944762049] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243537.944793975] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243537.944808754] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243537.944813166] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243538.044984718] [welt_model_node]: nearest angle => difference: -1.97, rotation_sign: -
+[INFO] [1794243538.045042920] [welt_model_node]: diff_abs: 1.97, 
+[INFO] [1794243538.045052857] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243538.045100213] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243538.045112579] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243538.045116572] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243538.145281134] [welt_model_node]: nearest angle => difference: -1.95, rotation_sign: -
+[INFO] [1794243538.145383088] [welt_model_node]: diff_abs: 1.95, 
+[INFO] [1794243538.145396866] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243538.145461898] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243538.145493767] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243538.145505837] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243538.245696809] [welt_model_node]: nearest angle => difference: -1.93, rotation_sign: -
+[INFO] [1794243538.245744753] [welt_model_node]: diff_abs: 1.93, 
+[INFO] [1794243538.245749222] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243538.245763049] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243538.245771188] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243538.245775104] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243538.345955783] [welt_model_node]: nearest angle => difference: -1.92, rotation_sign: -
+[INFO] [1794243538.346030336] [welt_model_node]: diff_abs: 1.92, 
+[INFO] [1794243538.346036728] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243538.346051335] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243538.346059402] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243538.346063527] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243538.446265576] [welt_model_node]: nearest angle => difference: -1.90, rotation_sign: -
+[INFO] [1794243538.446367313] [welt_model_node]: diff_abs: 1.90, 
+[INFO] [1794243538.446375897] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243538.446408545] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243538.446424308] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243538.446431967] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243538.546632056] [welt_model_node]: nearest angle => difference: -1.88, rotation_sign: -
+[INFO] [1794243538.546678716] [welt_model_node]: diff_abs: 1.88, 
+[INFO] [1794243538.546683601] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243538.546697276] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243538.546705450] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243538.546709117] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243538.646921906] [welt_model_node]: nearest angle => difference: -1.86, rotation_sign: -
+[INFO] [1794243538.646969214] [welt_model_node]: diff_abs: 1.86, 
+[INFO] [1794243538.646973539] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243538.646989141] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243538.647010772] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243538.647020016] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243538.747188731] [welt_model_node]: nearest angle => difference: -1.84, rotation_sign: -
+[INFO] [1794243538.747234248] [welt_model_node]: diff_abs: 1.84, 
+[INFO] [1794243538.747238681] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243538.747250496] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243538.747258655] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243538.747312430] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243538.847471662] [welt_model_node]: nearest angle => difference: -1.83, rotation_sign: -
+[INFO] [1794243538.847539681] [welt_model_node]: diff_abs: 1.83, 
+[INFO] [1794243538.847544732] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243538.847593785] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243538.847613193] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243538.847617537] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243538.947786332] [welt_model_node]: nearest angle => difference: -1.81, rotation_sign: -
+[INFO] [1794243538.947843658] [welt_model_node]: diff_abs: 1.81, 
+[INFO] [1794243538.947847856] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243538.947871247] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243538.947879211] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243538.947908366] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243539.048068430] [welt_model_node]: nearest angle => difference: -1.79, rotation_sign: -
+[INFO] [1794243539.048114477] [welt_model_node]: diff_abs: 1.79, 
+[INFO] [1794243539.048119002] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243539.048132663] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243539.048141164] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243539.048144813] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243539.148321726] [welt_model_node]: nearest angle => difference: -1.77, rotation_sign: -
+[INFO] [1794243539.148366639] [welt_model_node]: diff_abs: 1.77, 
+[INFO] [1794243539.148371095] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243539.148392372] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243539.148400529] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243539.148404250] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243539.248579118] [welt_model_node]: nearest angle => difference: -1.75, rotation_sign: -
+[INFO] [1794243539.248653640] [welt_model_node]: diff_abs: 1.75, 
+[INFO] [1794243539.248658663] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243539.248726022] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243539.248741566] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243539.248747842] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243539.348941870] [welt_model_node]: nearest angle => difference: -1.73, rotation_sign: -
+[INFO] [1794243539.349000903] [welt_model_node]: diff_abs: 1.73, 
+[INFO] [1794243539.349005748] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243539.349020347] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243539.349029159] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243539.349033160] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243539.449255073] [welt_model_node]: nearest angle => difference: -1.72, rotation_sign: -
+[INFO] [1794243539.449303403] [welt_model_node]: diff_abs: 1.72, 
+[INFO] [1794243539.449308354] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243539.449320138] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243539.449327880] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243539.449331465] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243539.549434770] [welt_model_node]: nearest angle => difference: -1.70, rotation_sign: -
+[INFO] [1794243539.549481915] [welt_model_node]: diff_abs: 1.70, 
+[INFO] [1794243539.549501318] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243539.549519099] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243539.549527230] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243539.549531685] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243539.649703254] [welt_model_node]: nearest angle => difference: -1.68, rotation_sign: -
+[INFO] [1794243539.649754624] [welt_model_node]: diff_abs: 1.68, 
+[INFO] [1794243539.649759193] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243539.649771216] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243539.649779847] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243539.649783581] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243539.749994845] [welt_model_node]: nearest angle => difference: -1.66, rotation_sign: -
+[INFO] [1794243539.750039969] [welt_model_node]: diff_abs: 1.66, 
+[INFO] [1794243539.750044142] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243539.750056055] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243539.750063899] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243539.750067644] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243539.850269056] [welt_model_node]: nearest angle => difference: -1.65, rotation_sign: -
+[INFO] [1794243539.850315974] [welt_model_node]: diff_abs: 1.65, 
+[INFO] [1794243539.850320675] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243539.850348413] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243539.850357044] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243539.850361370] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243539.950631196] [welt_model_node]: nearest angle => difference: -1.63, rotation_sign: -
+[INFO] [1794243539.950752989] [welt_model_node]: diff_abs: 1.63, 
+[INFO] [1794243539.950764839] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243539.950807861] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243539.950838794] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243539.950849862] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243540.051071711] [welt_model_node]: nearest angle => difference: -1.61, rotation_sign: -
+[INFO] [1794243540.051120883] [welt_model_node]: diff_abs: 1.61, 
+[INFO] [1794243540.051125161] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243540.051137328] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243540.051145249] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243540.051149165] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243540.151291605] [welt_model_node]: nearest angle => difference: -1.59, rotation_sign: -
+[INFO] [1794243540.151334725] [welt_model_node]: diff_abs: 1.59, 
+[INFO] [1794243540.151339649] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243540.151365215] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243540.151373778] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243540.151378226] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243540.251511817] [welt_model_node]: nearest angle => difference: -1.57, rotation_sign: -
+[INFO] [1794243540.251557227] [welt_model_node]: diff_abs: 1.57, 
+[INFO] [1794243540.251562065] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243540.251594580] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243540.251605333] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243540.251623810] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243540.351769627] [welt_model_node]: nearest angle => difference: -1.55, rotation_sign: -
+[INFO] [1794243540.351815063] [welt_model_node]: diff_abs: 1.55, 
+[INFO] [1794243540.351819389] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243540.351831670] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243540.351839812] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243540.351843897] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243540.451984872] [welt_model_node]: nearest angle => difference: -1.53, rotation_sign: -
+[INFO] [1794243540.452027499] [welt_model_node]: diff_abs: 1.53, 
+[INFO] [1794243540.452031858] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243540.452056465] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243540.452064676] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243540.452069169] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243540.552214239] [welt_model_node]: nearest angle => difference: -1.51, rotation_sign: -
+[INFO] [1794243540.552260359] [welt_model_node]: diff_abs: 1.51, 
+[INFO] [1794243540.552264679] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243540.552276568] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243540.552284557] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243540.552329479] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243540.652472937] [welt_model_node]: nearest angle => difference: -1.49, rotation_sign: -
+[INFO] [1794243540.652518434] [welt_model_node]: diff_abs: 1.49, 
+[INFO] [1794243540.652522915] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243540.652535119] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243540.652543561] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243540.652547329] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243540.752781953] [welt_model_node]: nearest angle => difference: -1.47, rotation_sign: -
+[INFO] [1794243540.752849813] [welt_model_node]: diff_abs: 1.47, 
+[INFO] [1794243540.752854731] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243540.752868276] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243540.752877310] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243540.752882200] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243540.853051383] [welt_model_node]: nearest angle => difference: -1.45, rotation_sign: -
+[INFO] [1794243540.853111762] [welt_model_node]: diff_abs: 1.45, 
+[INFO] [1794243540.853116544] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243540.853128967] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243540.853152026] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243540.853156407] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243540.953485640] [welt_model_node]: nearest angle => difference: -1.43, rotation_sign: -
+[INFO] [1794243540.953545980] [welt_model_node]: diff_abs: 1.43, 
+[INFO] [1794243540.953551076] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243540.953563506] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243540.953571767] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243540.953575521] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243541.053723884] [welt_model_node]: nearest angle => difference: -1.41, rotation_sign: -
+[INFO] [1794243541.053785420] [welt_model_node]: diff_abs: 1.41, 
+[INFO] [1794243541.053789845] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243541.053826254] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243541.053865205] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243541.053873594] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243541.154058709] [welt_model_node]: nearest angle => difference: -1.39, rotation_sign: -
+[INFO] [1794243541.154112884] [welt_model_node]: diff_abs: 1.39, 
+[INFO] [1794243541.154117362] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243541.154130824] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243541.154153578] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243541.154157395] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243541.254295639] [welt_model_node]: nearest angle => difference: -1.37, rotation_sign: -
+[INFO] [1794243541.254347279] [welt_model_node]: diff_abs: 1.37, 
+[INFO] [1794243541.254352073] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243541.254364862] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243541.254372983] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243541.254376800] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243541.354513954] [welt_model_node]: nearest angle => difference: -1.35, rotation_sign: -
+[INFO] [1794243541.354556295] [welt_model_node]: diff_abs: 1.35, 
+[INFO] [1794243541.354560854] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243541.354585241] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243541.354593597] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243541.354597626] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243541.454822391] [welt_model_node]: nearest angle => difference: -1.33, rotation_sign: -
+[INFO] [1794243541.454882709] [welt_model_node]: diff_abs: 1.33, 
+[INFO] [1794243541.454894166] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243541.454927794] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243541.454961808] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243541.454975901] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243541.555201831] [welt_model_node]: nearest angle => difference: -1.31, rotation_sign: -
+[INFO] [1794243541.555323988] [welt_model_node]: diff_abs: 1.31, 
+[INFO] [1794243541.555336662] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243541.555366968] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243541.555390671] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243541.555401460] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243541.655637201] [welt_model_node]: nearest angle => difference: -1.29, rotation_sign: -
+[INFO] [1794243541.655698331] [welt_model_node]: diff_abs: 1.29, 
+[INFO] [1794243541.655709642] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243541.655735708] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243541.655757872] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243541.655769236] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243541.755983222] [welt_model_node]: nearest angle => difference: -1.27, rotation_sign: -
+[INFO] [1794243541.756025079] [welt_model_node]: diff_abs: 1.27, 
+[INFO] [1794243541.756029674] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243541.756068100] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243541.756076899] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243541.756080631] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243541.856185878] [welt_model_node]: nearest angle => difference: -1.25, rotation_sign: -
+[INFO] [1794243541.856228857] [welt_model_node]: diff_abs: 1.25, 
+[INFO] [1794243541.856233354] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243541.856244400] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243541.856252309] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243541.856256058] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243541.956386333] [welt_model_node]: nearest angle => difference: -1.23, rotation_sign: -
+[INFO] [1794243541.956449447] [welt_model_node]: diff_abs: 1.23, 
+[INFO] [1794243541.956455794] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243541.956469207] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243541.956477965] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243541.956482284] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243542.056623331] [welt_model_node]: nearest angle => difference: -1.20, rotation_sign: -
+[INFO] [1794243542.056670505] [welt_model_node]: diff_abs: 1.20, 
+[INFO] [1794243542.056675705] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243542.056701701] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243542.056711010] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243542.056715340] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243542.156862361] [welt_model_node]: nearest angle => difference: -1.18, rotation_sign: -
+[INFO] [1794243542.156912038] [welt_model_node]: diff_abs: 1.18, 
+[INFO] [1794243542.156917423] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243542.156929156] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243542.156937694] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243542.156942072] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243542.257095859] [welt_model_node]: nearest angle => difference: -1.16, rotation_sign: -
+[INFO] [1794243542.257147755] [welt_model_node]: diff_abs: 1.16, 
+[INFO] [1794243542.257152964] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243542.257165807] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243542.257188932] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243542.257195156] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243542.357336104] [welt_model_node]: nearest angle => difference: -1.14, rotation_sign: -
+[INFO] [1794243542.357393183] [welt_model_node]: diff_abs: 1.14, 
+[INFO] [1794243542.357398423] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243542.357422496] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243542.357432214] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243542.357436822] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243542.457565662] [welt_model_node]: nearest angle => difference: -1.12, rotation_sign: -
+[INFO] [1794243542.457610533] [welt_model_node]: diff_abs: 1.12, 
+[INFO] [1794243542.457615494] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243542.457626653] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243542.457635258] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243542.457653824] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243542.557801748] [welt_model_node]: nearest angle => difference: -1.10, rotation_sign: -
+[INFO] [1794243542.557851010] [welt_model_node]: diff_abs: 1.10, 
+[INFO] [1794243542.557855666] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243542.557867752] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243542.557876434] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243542.557881254] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243542.658023844] [welt_model_node]: nearest angle => difference: -1.07, rotation_sign: -
+[INFO] [1794243542.658069860] [welt_model_node]: diff_abs: 1.07, 
+[INFO] [1794243542.658074363] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243542.658103519] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243542.658112051] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243542.658115783] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243542.758271329] [welt_model_node]: nearest angle => difference: -1.05, rotation_sign: -
+[INFO] [1794243542.758319609] [welt_model_node]: diff_abs: 1.05, 
+[INFO] [1794243542.758324246] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243542.758335715] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243542.758343944] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243542.758347780] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243542.858497326] [welt_model_node]: nearest angle => difference: -1.03, rotation_sign: -
+[INFO] [1794243542.858540206] [welt_model_node]: diff_abs: 1.03, 
+[INFO] [1794243542.858544649] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243542.858555118] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243542.858563557] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243542.858567629] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243542.958704504] [welt_model_node]: nearest angle => difference: -1.01, rotation_sign: -
+[INFO] [1794243542.958748879] [welt_model_node]: diff_abs: 1.01, 
+[INFO] [1794243542.958754969] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243542.958782430] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243542.958794992] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243542.958799205] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243543.058972403] [welt_model_node]: nearest angle => difference: -0.99, rotation_sign: -
+[INFO] [1794243543.059028029] [welt_model_node]: diff_abs: 0.99, 
+[INFO] [1794243543.059032783] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243543.059044238] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243543.059052754] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243543.059056637] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243543.159227048] [welt_model_node]: nearest angle => difference: -0.97, rotation_sign: -
+[INFO] [1794243543.159277346] [welt_model_node]: diff_abs: 0.97, 
+[INFO] [1794243543.159282040] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243543.159293013] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243543.159301658] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243543.159305949] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243543.259458130] [welt_model_node]: nearest angle => difference: -0.95, rotation_sign: -
+[INFO] [1794243543.259504089] [welt_model_node]: diff_abs: 0.95, 
+[INFO] [1794243543.259526061] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243543.259548280] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243543.259556994] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243543.259560776] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243543.359715718] [welt_model_node]: nearest angle => difference: -0.92, rotation_sign: -
+[INFO] [1794243543.359764015] [welt_model_node]: diff_abs: 0.92, 
+[INFO] [1794243543.359768707] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243543.359779345] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243543.359787328] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243543.359791165] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243543.459966476] [welt_model_node]: nearest angle => difference: -0.90, rotation_sign: -
+[INFO] [1794243543.460024402] [welt_model_node]: diff_abs: 0.90, 
+[INFO] [1794243543.460029709] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243543.460041035] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243543.460049332] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243543.460053593] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243543.560203050] [welt_model_node]: nearest angle => difference: -0.88, rotation_sign: -
+[INFO] [1794243543.560243145] [welt_model_node]: diff_abs: 0.88, 
+[INFO] [1794243543.560247553] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243543.560268658] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243543.560277097] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243543.560280787] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243543.660377924] [welt_model_node]: nearest angle => difference: -0.86, rotation_sign: -
+[INFO] [1794243543.660419907] [welt_model_node]: diff_abs: 0.86, 
+[INFO] [1794243543.660424652] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243543.660435439] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243543.660454340] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243543.660458071] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243543.760596698] [welt_model_node]: nearest angle => difference: -0.84, rotation_sign: -
+[INFO] [1794243543.760642314] [welt_model_node]: diff_abs: 0.84, 
+[INFO] [1794243543.760647053] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243543.760657750] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243543.760666206] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243543.760670869] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243543.860802620] [welt_model_node]: nearest angle => difference: -0.82, rotation_sign: -
+[INFO] [1794243543.860855441] [welt_model_node]: diff_abs: 0.82, 
+[INFO] [1794243543.860860489] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243543.860885449] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243543.860894127] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243543.860897929] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243543.961039822] [welt_model_node]: nearest angle => difference: -0.81, rotation_sign: -
+[INFO] [1794243543.961160220] [welt_model_node]: diff_abs: 0.81, 
+[INFO] [1794243543.961166199] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243543.961179311] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243543.961217828] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243543.961221714] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243544.061360267] [welt_model_node]: nearest angle => difference: -0.79, rotation_sign: -
+[INFO] [1794243544.061406881] [welt_model_node]: diff_abs: 0.79, 
+[INFO] [1794243544.061411628] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243544.061421944] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243544.061430421] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243544.061434643] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243544.161589661] [welt_model_node]: nearest angle => difference: -0.77, rotation_sign: -
+[INFO] [1794243544.161635332] [welt_model_node]: diff_abs: 0.77, 
+[INFO] [1794243544.161640030] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243544.161662834] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243544.161671315] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243544.161675061] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243544.261811195] [welt_model_node]: nearest angle => difference: -0.75, rotation_sign: -
+[INFO] [1794243544.261854159] [welt_model_node]: diff_abs: 0.75, 
+[INFO] [1794243544.261858831] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243544.261875787] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243544.261890232] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243544.261893971] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243544.362032369] [welt_model_node]: nearest angle => difference: -0.73, rotation_sign: -
+[INFO] [1794243544.362079297] [welt_model_node]: diff_abs: 0.73, 
+[INFO] [1794243544.362083779] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243544.362094074] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243544.362102538] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243544.362107156] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243544.462274567] [welt_model_node]: nearest angle => difference: -0.71, rotation_sign: -
+[INFO] [1794243544.462340279] [welt_model_node]: diff_abs: 0.71, 
+[INFO] [1794243544.462347128] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243544.462373521] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243544.462382403] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243544.462386178] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243544.562549354] [welt_model_node]: nearest angle => difference: -0.70, rotation_sign: -
+[INFO] [1794243544.562624100] [welt_model_node]: diff_abs: 0.70, 
+[INFO] [1794243544.562629257] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243544.562655084] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243544.562663841] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243544.562668039] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243544.662843917] [welt_model_node]: nearest angle => difference: -0.68, rotation_sign: -
+[INFO] [1794243544.662968472] [welt_model_node]: diff_abs: 0.68, 
+[INFO] [1794243544.662974878] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243544.662987834] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243544.662996445] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243544.663000901] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243544.763185389] [welt_model_node]: nearest angle => difference: -0.66, rotation_sign: -
+[INFO] [1794243544.763244781] [welt_model_node]: diff_abs: 0.66, 
+[INFO] [1794243544.763250258] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243544.763261965] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243544.763299726] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243544.763303674] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243544.863449325] [welt_model_node]: nearest angle => difference: -0.64, rotation_sign: -
+[INFO] [1794243544.863540543] [welt_model_node]: diff_abs: 0.64, 
+[INFO] [1794243544.863547681] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243544.863561231] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243544.863597116] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243544.863604994] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243544.963754364] [welt_model_node]: nearest angle => difference: -0.63, rotation_sign: -
+[INFO] [1794243544.963797464] [welt_model_node]: diff_abs: 0.63, 
+[INFO] [1794243544.963803367] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243544.963813914] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243544.963822141] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243544.963826490] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243545.063946847] [welt_model_node]: nearest angle => difference: -0.61, rotation_sign: -
+[INFO] [1794243545.063992621] [welt_model_node]: diff_abs: 0.61, 
+[INFO] [1794243545.063997313] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243545.064007575] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243545.064016068] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243545.064019802] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243545.164167717] [welt_model_node]: nearest angle => difference: -0.59, rotation_sign: -
+[INFO] [1794243545.164213791] [welt_model_node]: diff_abs: 0.59, 
+[INFO] [1794243545.164218046] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243545.164241753] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243545.164250076] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243545.164253684] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243545.264415100] [welt_model_node]: nearest angle => difference: -0.58, rotation_sign: -
+[INFO] [1794243545.264466525] [welt_model_node]: diff_abs: 0.58, 
+[INFO] [1794243545.264471418] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243545.264482720] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243545.264491885] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243545.264495629] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243545.364648655] [welt_model_node]: nearest angle => difference: -0.56, rotation_sign: -
+[INFO] [1794243545.364690793] [welt_model_node]: diff_abs: 0.56, 
+[INFO] [1794243545.364695410] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243545.364705301] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243545.364713477] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243545.364717340] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243545.464874823] [welt_model_node]: nearest angle => difference: -0.55, rotation_sign: -
+[INFO] [1794243545.464922141] [welt_model_node]: diff_abs: 0.55, 
+[INFO] [1794243545.464926522] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243545.464963253] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243545.464971875] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243545.464975509] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243545.565119692] [welt_model_node]: nearest angle => difference: -0.53, rotation_sign: -
+[INFO] [1794243545.565177954] [welt_model_node]: diff_abs: 0.53, 
+[INFO] [1794243545.565182782] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243545.565194002] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243545.565202029] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243545.565206434] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243545.665407855] [welt_model_node]: nearest angle => difference: -0.51, rotation_sign: -
+[INFO] [1794243545.665481830] [welt_model_node]: diff_abs: 0.51, 
+[INFO] [1794243545.665486843] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243545.665500464] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243545.665509611] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243545.665513328] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243545.765687335] [welt_model_node]: nearest angle => difference: -0.50, rotation_sign: -
+[INFO] [1794243545.765737742] [welt_model_node]: diff_abs: 0.50, 
+[INFO] [1794243545.765742413] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243545.765768076] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243545.765776460] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243545.765780296] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243545.865954919] [welt_model_node]: nearest angle => difference: -0.48, rotation_sign: -
+[INFO] [1794243545.865995138] [welt_model_node]: diff_abs: 0.48, 
+[INFO] [1794243545.865999826] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243545.866010044] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243545.866018149] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243545.866021974] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243545.966187310] [welt_model_node]: nearest angle => difference: -0.47, rotation_sign: -
+[INFO] [1794243545.966248661] [welt_model_node]: diff_abs: 0.47, 
+[INFO] [1794243545.966253804] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243545.966265174] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243545.966273633] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243545.966290039] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243546.066462911] [welt_model_node]: nearest angle => difference: -0.45, rotation_sign: -
+[INFO] [1794243546.066518702] [welt_model_node]: diff_abs: 0.45, 
+[INFO] [1794243546.066523426] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243546.066551544] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243546.066560021] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243546.066563958] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243546.166725100] [welt_model_node]: nearest angle => difference: -0.44, rotation_sign: -
+[INFO] [1794243546.166771667] [welt_model_node]: diff_abs: 0.44, 
+[INFO] [1794243546.166776040] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243546.166786098] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243546.166806290] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243546.166823122] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243546.266970035] [welt_model_node]: nearest angle => difference: -0.42, rotation_sign: -
+[INFO] [1794243546.267017299] [welt_model_node]: diff_abs: 0.42, 
+[INFO] [1794243546.267021850] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243546.267031470] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243546.267039670] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243546.267043377] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243546.367192343] [welt_model_node]: nearest angle => difference: -0.41, rotation_sign: -
+[INFO] [1794243546.367259876] [welt_model_node]: diff_abs: 0.41, 
+[INFO] [1794243546.367267879] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243546.367314537] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243546.367330193] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243546.367335933] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243546.467523491] [welt_model_node]: nearest angle => difference: -0.39, rotation_sign: -
+[INFO] [1794243546.467652656] [welt_model_node]: diff_abs: 0.39, 
+[INFO] [1794243546.467671452] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243546.467697280] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243546.467721008] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243546.467732118] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243546.567932653] [welt_model_node]: nearest angle => difference: -0.38, rotation_sign: -
+[INFO] [1794243546.567988655] [welt_model_node]: diff_abs: 0.38, 
+[INFO] [1794243546.567993893] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243546.568005145] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243546.568014120] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243546.568018232] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243546.668159652] [welt_model_node]: nearest angle => difference: -0.36, rotation_sign: -
+[INFO] [1794243546.668204811] [welt_model_node]: diff_abs: 0.36, 
+[INFO] [1794243546.668209288] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243546.668218568] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243546.668227011] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243546.668230676] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243546.768381890] [welt_model_node]: nearest angle => difference: -0.35, rotation_sign: -
+[INFO] [1794243546.768438304] [welt_model_node]: diff_abs: 0.35, 
+[INFO] [1794243546.768442724] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243546.768451023] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243546.768461425] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243546.768465917] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243546.868622241] [welt_model_node]: nearest angle => difference: -0.33, rotation_sign: -
+[INFO] [1794243546.868669461] [welt_model_node]: diff_abs: 0.33, 
+[INFO] [1794243546.868674166] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243546.868681415] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243546.868691180] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243546.868695024] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243546.968899566] [welt_model_node]: nearest angle => difference: -0.32, rotation_sign: -
+[INFO] [1794243546.968958009] [welt_model_node]: diff_abs: 0.32, 
+[INFO] [1794243546.968962655] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243546.968971136] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243546.968980541] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243546.968984608] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243547.069126827] [welt_model_node]: nearest angle => difference: -0.30, rotation_sign: -
+[INFO] [1794243547.069180543] [welt_model_node]: diff_abs: 0.30, 
+[INFO] [1794243547.069185118] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243547.069193148] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243547.069203371] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243547.069207172] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243547.169356504] [welt_model_node]: nearest angle => difference: -0.29, rotation_sign: -
+[INFO] [1794243547.169410741] [welt_model_node]: diff_abs: 0.29, 
+[INFO] [1794243547.169415877] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243547.169424203] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243547.169434780] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243547.169439449] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243547.269603236] [welt_model_node]: nearest angle => difference: -0.27, rotation_sign: -
+[INFO] [1794243547.269682687] [welt_model_node]: diff_abs: 0.27, 
+[INFO] [1794243547.269688824] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243547.269700323] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243547.269712220] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243547.269716587] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243547.369879942] [welt_model_node]: nearest angle => difference: -0.26, rotation_sign: -
+[INFO] [1794243547.369932926] [welt_model_node]: diff_abs: 0.26, 
+[INFO] [1794243547.369937919] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243547.369946614] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243547.369956736] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243547.369961546] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243547.470106220] [welt_model_node]: nearest angle => difference: -0.24, rotation_sign: -
+[INFO] [1794243547.470152710] [welt_model_node]: diff_abs: 0.24, 
+[INFO] [1794243547.470158060] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243547.470166097] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243547.470176506] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243547.470181079] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243547.570331195] [welt_model_node]: nearest angle => difference: -0.23, rotation_sign: -
+[INFO] [1794243547.570381089] [welt_model_node]: diff_abs: 0.23, 
+[INFO] [1794243547.570386181] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243547.570394720] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243547.570404607] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243547.570408926] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243547.670559076] [welt_model_node]: nearest angle => difference: -0.21, rotation_sign: -
+[INFO] [1794243547.670605847] [welt_model_node]: diff_abs: 0.21, 
+[INFO] [1794243547.670610891] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243547.670619787] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243547.670643107] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243547.670646989] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243547.770781050] [welt_model_node]: nearest angle => difference: -0.19, rotation_sign: -
+[INFO] [1794243547.770821923] [welt_model_node]: diff_abs: 0.19, 
+[INFO] [1794243547.770826285] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243547.770833890] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243547.770843653] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243547.770847307] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243547.870985060] [welt_model_node]: nearest angle => difference: -0.18, rotation_sign: -
+[INFO] [1794243547.871029861] [welt_model_node]: diff_abs: 0.18, 
+[INFO] [1794243547.871034501] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243547.871042158] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243547.871052066] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243547.871055774] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243547.971201222] [welt_model_node]: nearest angle => difference: -0.16, rotation_sign: -
+[INFO] [1794243547.971244495] [welt_model_node]: diff_abs: 0.16, 
+[INFO] [1794243547.971248799] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243547.971256645] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243547.971266127] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243547.971270144] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243548.071413130] [welt_model_node]: nearest angle => difference: -0.14, rotation_sign: -
+[INFO] [1794243548.071461200] [welt_model_node]: diff_abs: 0.14, 
+[INFO] [1794243548.071465839] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243548.071473523] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243548.071483555] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243548.071487415] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243548.171684960] [welt_model_node]: nearest angle => difference: -0.13, rotation_sign: -
+[INFO] [1794243548.171755334] [welt_model_node]: diff_abs: 0.13, 
+[INFO] [1794243548.171767107] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243548.171787586] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243548.171813386] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243548.171823936] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243548.272064597] [welt_model_node]: nearest angle => difference: -0.11, rotation_sign: -
+[INFO] [1794243548.272140744] [welt_model_node]: diff_abs: 0.11, 
+[INFO] [1794243548.272145554] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243548.272154046] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243548.272166571] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243548.272170546] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243548.372347319] [welt_model_node]: nearest angle => difference: -0.09, rotation_sign: -
+[INFO] [1794243548.372404555] [welt_model_node]: diff_abs: 0.09, 
+[INFO] [1794243548.372409125] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243548.372417211] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243548.372427242] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243548.372430974] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243548.472649021] [welt_model_node]: nearest angle => difference: -0.07, rotation_sign: -
+[INFO] [1794243548.472725955] [welt_model_node]: diff_abs: 0.07, 
+[INFO] [1794243548.472730550] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243548.472739686] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243548.472751312] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243548.472755575] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243548.572928412] [welt_model_node]: nearest angle => difference: -0.06, rotation_sign: -
+[INFO] [1794243548.572986198] [welt_model_node]: diff_abs: 0.06, 
+[INFO] [1794243548.572991051] [welt_model_node]: check collision for nearest angle
+[INFO] [1794243548.573000175] [welt_model_node]: check collision for fastest angle
+[INFO] [1794243548.573010709] [welt_model_node]: rotation_original: true, rotation_oppsite: true, allow_opposite_rotation: false
+[INFO] [1794243548.573015289] [welt_model_node]: rotate to nearest angle, rotation_sign: -
+[INFO] [1794243548.673112943] [welt_model_node]: nearest angle => difference: -0.04, rotation_sign: -
+[INFO] [1794243548.673159579] [welt_test]: 完成并退出最后旋转程序
+[INFO] [1794243548.673206185] [welt_model_node]: goal succeed. current robot_pose: 32.270382, 9.177828, -1.511517
+[INFO] [1794243621.565848837] [rclcpp]: signal_handler(signum=2)
+[WARN] [1794243621.579143489] [tf2_buffer]: Detected time source change. Clearing TF buffer.

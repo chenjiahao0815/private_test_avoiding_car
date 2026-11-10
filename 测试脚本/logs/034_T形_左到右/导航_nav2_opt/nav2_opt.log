@@ -1,0 +1,1227 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-11-09-17-29-53-435693-DESKTOP-GNILBFM-226014
+[INFO] [launch]: Default logging verbosity is set to INFO
+============================================================
+环境变量配置:
+============================================================
+  ROBOT_VERSION = mk33
+  ROBOT_LOCALIZER_MODE = 3D
+  DABAI_DCW_NUMBER = (未设置)
+  USE_AURORA_CAMERA = (未设置)
+  USE_GARAGE_AVOIDANCE = (未设置)
+  MAX_LINEAR_VEL = 0.5
+  MAX_LINEAR_ACC = (未设置)
+  LAUNCH_RGB_CAMERA_FRONT = false
+  IGNORE_HEIGHT_ABOVE = 0.2
+  COLLISION_MONITOR_CMD_VEL_OUT_TOPIC = cmd_vel_nav
+  TB3_WORLD = /tmp/avoid_field/avoid_field.world
+  GAZEBO_OR_FAKE = gazebo
+============================================================
+GAZEBO_MODEL_PATH=/opt/ros/humble/share/turtlebot3_gazebo/models:/root/.gazebo/models
+GAZEBO_MODEL_DATABASE_URI=''
+根据ROBOT_VERSION (mk33) 选择参数文件：outdoor_cleaner_qp_2.yaml
+根据ROBOT_VERSION (mk33) 版本名称：outdoor_robot_qp_2
+配置已更新！设置最大线速度、最大减速度为：0.5
+未设置MAX_LINEAR_ACC，使用默认配置。
+配置已更新！设置贴边参考线点云裁剪高度为：0.2
+配置已更新！设置cmd_vel_nav_ctr话题名称为：cmd_vel_nav
+使用 Gazebo 仿真！
+使用3D定位！
+Not set MULTI_ROBOT_MODE: True/False ! Use collision_monitor_cmd_vel_nav_topic default value cmd_vel_nav !
+Not set MULTI_ROBOT_MODE: True/False ! Use collision_monitor_cmd_vel_nav_topic default value cmd_vel_nav !
+Not set MULTI_ROBOT_MODE: True/False ! Use collision_monitor_cmd_vel_nav_topic default value cmd_vel_nav !
+============================================================
+环境变量配置:
+============================================================
+  ROBOT_VERSION = mk33
+  LASER_MIN_ANGLE = (未设置)
+  LASER_MAX_ANGLE = (未设置)
+  LASER_MIN_RANGE = (未设置)
+  LASER_MAX_RANGE = (未设置)
+  WR_LIDAR_IP = 192.168.0.10
+  LINEAR_SCALE = (未设置)
+  ANGLE_SCALE = (未设置)
+  ROBOT_LOCALIZATION_PUBLISH_TRANSFORM = True
+  ROBOT_LOCALIZITION_USE_2D_MODE = True
+  LASER_SCAN = (未设置)
+  USE_CURB_OR_WALL = (未设置)
+  MULTI_ROBOT_MODE = (未设置)
+  FRONT_DEPTH_CAMERA_SERIAL_PORT = (未设置)
+  RIGHT_DEPTH_CAMERA_SERIAL_PORT = (未设置)
+  BACK_DEPTH_CAMERA_SERIAL_PORT = (未设置)
+  LEFT_DEPTH_CAMERA_SERIAL_PORT = (未设置)
+  OPTIMIZE_DEPTH_CAMERA_POSE = False
+============================================================
+param_use_sim_time 参数值为: True，使用仿真时间
+使用默认2D激光雷达IP：192.168.0.10
+根据ROBOT_VERSION (mk33) 选择URDF：mk33.urdf, 串口型号：S1
+URDF 模型路径: /capella/share/capella_ros_launcher/urdf/turtlebot3_waffle.urdf
+URDF 模型 本地已存在，跳过等待：/capella/share/capella_ros_launcher/urdf/turtlebot3_waffle.urdf，大小：8515 字节
+[INFO] [map_server-1]: process started with pid [226029]
+[INFO] [amcl-2]: process started with pid [226031]
+[INFO] [lifecycle_manager-3]: process started with pid [226033]
+[INFO] [controller_server-4]: process started with pid [226035]
+[INFO] [smoother_server-5]: process started with pid [226037]
+[INFO] [planner_server-6]: process started with pid [226039]
+[INFO] [behavior_server-7]: process started with pid [226041]
+[INFO] [bt_navigator-8]: process started with pid [226063]
+[INFO] [waypoint_follower-9]: process started with pid [226065]
+[INFO] [velocity_smoother-10]: process started with pid [226068]
+[INFO] [collision_monitor-11]: process started with pid [226070]
+[INFO] [lifecycle_manager-12]: process started with pid [226073]
+[INFO] [collision_recover_node-13]: process started with pid [226076]
+[INFO] [path_check-14]: process started with pid [226092]
+[INFO] [robot_state_publisher-15]: process started with pid [226095]
+[INFO] [joint_state_publisher-16]: process started with pid [226099]
+[INFO] [search_poses_near_edge_node-17]: process started with pid [226122]
+[INFO] [gzserver-18]: process started with pid [226151]
+[INFO] [gzclient-19]: process started with pid [226194]
+[INFO] [spawn_entity.py-20]: process started with pid [226209]
+[INFO] [static_transform_publisher-21]: process started with pid [226216]
+[INFO] [bash-22]: process started with pid [226226]
+[INFO] [rviz2-23]: process started with pid [226229]
+[map_server-1] [INFO] [1794245394.674122523] [map_server]: 
+[map_server-1] 	map_server lifecycle node launched. 
+[map_server-1] 	Waiting on external lifecycle transitions to activate
+[map_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-1] [INFO] [1794245394.674191053] [map_server]: Creating
+[map_server-1] [INFO] [1794245394.693713551] [map_server]: Configuring
+[map_server-1] [INFO] [1794245394.693765704] [map_io]: Loading yaml file: /tmp/avoid_field/avoid_field.yaml
+[map_server-1] [INFO] [1794245394.693952720] [map_io]: resolution: 0.05
+[map_server-1] [INFO] [1794245394.693961634] [map_io]: origin[0]: -5
+[map_server-1] [INFO] [1794245394.693964814] [map_io]: origin[1]: -5
+[map_server-1] [INFO] [1794245394.693967465] [map_io]: origin[2]: 0
+[map_server-1] [INFO] [1794245394.693970351] [map_io]: free_thresh: 0.25
+[map_server-1] [INFO] [1794245394.693973121] [map_io]: occupied_thresh: 0.65
+[map_server-1] [INFO] [1794245394.693976009] [map_io]: mode: trinary
+[map_server-1] [INFO] [1794245394.693979317] [map_io]: negate: 0
+[map_server-1] [INFO] [1794245394.694115077] [map_io]: Loading image_file: /tmp/avoid_field/avoid_field.pgm
+[amcl-2] [INFO] [1794245394.658639418] [amcl]: 
+[amcl-2] 	amcl lifecycle node launched. 
+[amcl-2] 	Waiting on external lifecycle transitions to activate
+[amcl-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-2] [INFO] [1794245394.658933789] [amcl]: Creating
+[lifecycle_manager-3] [INFO] [1794245394.658023055] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-3] [INFO] [1794245394.659006975] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-3] [INFO] [1794245394.689347071] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-3] [INFO] [1794245394.689393085] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[controller_server-4] [INFO] [1794245394.668927480] [controller_server]: 
+[controller_server-4] 	controller_server lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-4] [INFO] [1794245394.675024914] [controller_server]: Creating controller server
+[controller_server-4] [INFO] [1794245394.685033784] [local_costmap.local_costmap]: 
+[controller_server-4] 	local_costmap lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-4] [INFO] [1794245394.685686449] [local_costmap.local_costmap]: Creating Costmap
+[smoother_server-5] [INFO] [1794245394.666812530] [smoother_server]: 
+[smoother_server-5] 	smoother_server lifecycle node launched. 
+[smoother_server-5] 	Waiting on external lifecycle transitions to activate
+[smoother_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-5] [INFO] [1794245394.668748807] [smoother_server]: Creating smoother server
+[planner_server-6] [INFO] [1794245394.677378552] [planner_server]: 
+[planner_server-6] 	planner_server lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1794245394.678699739] [planner_server]: Creating
+[planner_server-6] [INFO] [1794245394.681924967] [global_costmap.global_costmap]: 
+[planner_server-6] 	global_costmap lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1794245394.682452917] [global_costmap.global_costmap]: Creating Costmap
+[behavior_server-7] [INFO] [1794245394.669682696] [behavior_server]: 
+[behavior_server-7] 	behavior_server lifecycle node launched. 
+[behavior_server-7] 	Waiting on external lifecycle transitions to activate
+[behavior_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-8] [INFO] [1794245394.677392961] [bt_navigator]: 
+[bt_navigator-8] 	bt_navigator lifecycle node launched. 
+[bt_navigator-8] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-8] [INFO] [1794245394.677486090] [bt_navigator]: Creating
+[waypoint_follower-9] [INFO] [1794245394.679944286] [waypoint_follower]: 
+[waypoint_follower-9] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-9] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-9] [INFO] [1794245394.680481579] [waypoint_follower]: Creating
+[velocity_smoother-10] [INFO] [1794245394.679552445] [velocity_smoother]: 
+[velocity_smoother-10] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-10] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-12] [INFO] [1794245394.672391202] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-12] [INFO] [1794245394.673802313] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[collision_recover_node-13] [INFO] [1794245394.692632184] [collision_recover_node]: collision_recover_node (teb_costmap_obstacles-based) initialized
+[robot_state_publisher-15] [INFO] [1794245394.694482141] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-15] [INFO] [1794245394.694534924] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-15] [INFO] [1794245394.694541685] [robot_state_publisher]: got segment base_scan
+[robot_state_publisher-15] [INFO] [1794245394.694545570] [robot_state_publisher]: got segment camera_depth_frame
+[robot_state_publisher-15] [INFO] [1794245394.694549422] [robot_state_publisher]: got segment camera_depth_optical_frame
+[robot_state_publisher-15] [INFO] [1794245394.694553565] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-15] [INFO] [1794245394.694557703] [robot_state_publisher]: got segment camera_rgb_frame
+[robot_state_publisher-15] [INFO] [1794245394.694561752] [robot_state_publisher]: got segment camera_rgb_optical_frame
+[robot_state_publisher-15] [INFO] [1794245394.694565704] [robot_state_publisher]: got segment caster_back_left_link
+[robot_state_publisher-15] [INFO] [1794245394.694569851] [robot_state_publisher]: got segment caster_back_right_link
+[robot_state_publisher-15] [INFO] [1794245394.694573652] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-15] [INFO] [1794245394.694577551] [robot_state_publisher]: got segment ultrasonic_sensor_link
+[robot_state_publisher-15] [INFO] [1794245394.694581165] [robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-15] [INFO] [1794245394.694585125] [robot_state_publisher]: got segment wheel_right_link
+[search_poses_near_edge_node-17] [INFO] [1794245394.678793916] [search_poses_near_edge]: ---------- show all the parameters ----------
+[search_poses_near_edge_node-17] [INFO] [1794245394.678844460] [search_poses_near_edge]: mission_poses_topic_: mission_poses
+[search_poses_near_edge_node-17] [INFO] [1794245394.678851414] [search_poses_near_edge]: edge_reference_paths_topic_: /edge_reference_paths
+[search_poses_near_edge_node-17] [INFO] [1794245394.678856480] [search_poses_near_edge]: edge_reference_paths_no_collision_check_topic_: /edge_reference_paths_no_collision_check
+[search_poses_near_edge_node-17] [INFO] [1794245394.678861644] [search_poses_near_edge]: paired_mission_and_reference_path_topic_: paired_mission_and_reference_path
+[search_poses_near_edge_node-17] [INFO] [1794245394.678866054] [search_poses_near_edge]: paired_paths_marker_topic_: paired_mission_and_reference_markers
+[search_poses_near_edge_node-17] [INFO] [1794245394.678870341] [search_poses_near_edge]: all_edge_reference_paths_marker_topic_: all_edge_reference_paths_markers
+[search_poses_near_edge_node-17] [INFO] [1794245394.678874269] [search_poses_near_edge]: marker_line_width_m_: 0.080000
+[search_poses_near_edge_node-17] [INFO] [1794245394.678882605] [search_poses_near_edge]: split_angle_threshold_deg_: 15.000000
+[search_poses_near_edge_node-17] [INFO] [1794245394.678887896] [search_poses_near_edge]: match_angle_threshold_deg_: 15.000000
+[search_poses_near_edge_node-17] [INFO] [1794245394.678892465] [search_poses_near_edge]: match_distance_threshold_m_: 1.300000
+[search_poses_near_edge_node-17] [INFO] [1794245394.678897046] [search_poses_near_edge]: min_segment_length_m_: 1.000000
+[search_poses_near_edge_node-17] [INFO] [1794245394.678901880] [search_poses_near_edge]: sample_step_m_: 0.300000
+[search_poses_near_edge_node-17] [INFO] [1794245394.678906662] [search_poses_near_edge]: min_match_arc_length_m_: 0.800000
+[search_poses_near_edge_node-17] [INFO] [1794245394.678910595] [search_poses_near_edge]: min_coverage_ratio_: 0.700000
+[search_poses_near_edge_node-17] [INFO] [1794245394.678915044] [search_poses_near_edge]: match_expand_m_: 0.600000
+[search_poses_near_edge_node-17] [INFO] [1794245394.678919876] [search_poses_near_edge]: overlap_epsilon_m_: 0.300000
+[search_poses_near_edge_node-17] [INFO] [1794245394.678924269] [search_poses_near_edge]: ---------- show all the parameters ----------
+[collision_monitor-11] [INFO] [1794245394.699317885] [collision_monitor]: 
+[collision_monitor-11] 	collision_monitor lifecycle node launched. 
+[collision_monitor-11] 	Waiting on external lifecycle transitions to activate
+[collision_monitor-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[static_transform_publisher-21] [INFO] [1794245394.710866979] [base_scan_to_laser_link]: Spinning until stopped - publishing transform
+[static_transform_publisher-21] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-21] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-21] from 'base_scan' to 'laser_link'
+[rviz2-23] QStandardPaths: runtime directory '/mnt/wslg/runtime-dir' is not owned by UID 0, but a directory permissions 0777 owned by UID 1000 GID 1000
+[map_server-1] [INFO] [1794245394.773799936] [map_io]: Read map /tmp/avoid_field/avoid_field.pgm: 1400 X 1000 map @ 0.05 m/cell
+[lifecycle_manager-3] [INFO] [1794245394.779054944] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-2] [INFO] [1794245394.779273468] [amcl]: Configuring
+[amcl-2] [INFO] [1794245394.779362321] [amcl]: initTransforms
+[amcl-2] [INFO] [1794245394.784386134] [amcl]: initPubSub
+[amcl-2] [INFO] [1794245394.786278996] [amcl]: Subscribed to map topic.
+[lifecycle_manager-3] [INFO] [1794245394.788783352] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-1] [INFO] [1794245394.789024692] [map_server]: Activating
+[map_server-1] [INFO] [1794245394.790657255] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-2] [INFO] [1794245394.792964910] [amcl]: Received a 1400 X 1000 map @ 0.050 m/pix
+[lifecycle_manager-12] [INFO] [1794245394.804199011] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-12] [INFO] [1794245394.804247011] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-4] [INFO] [1794245394.804515659] [controller_server]: Configuring controller interface
+[controller_server-4] [INFO] [1794245394.805181445] [controller_server]: getting goal checker plugins..
+[controller_server-4] [INFO] [1794245394.805782602] [controller_server]: Controller frequency set to 10.0000Hz
+[controller_server-4] [INFO] [1794245394.805850757] [local_costmap.local_costmap]: Configuring
+[controller_server-4] [INFO] [1794245394.809524024] [local_costmap.local_costmap]: Using plugin "static_layer"
+[controller_server-4] [INFO] [1794245394.813412657] [local_costmap.local_costmap]: Subscribing to the map topic (/map) with transient local durability
+[controller_server-4] [INFO] [1794245394.814102587] [local_costmap.local_costmap]: Initialized plugin "static_layer"
+[controller_server-4] [INFO] [1794245394.814194381] [local_costmap.local_costmap]: Using plugin "spatio_temporal_voxel_layer"
+[controller_server-4] [INFO] [1794245394.833316133] [local_costmap.local_costmap]: StaticLayer: Resizing static layer to 1400 X 1000 at 0.050000 m/pix
+[controller_server-4] [INFO] [1794245394.839552655] [local_costmap.local_costmap]: spatio_temporal_voxel_layer being initialized as SpatioTemporalVoxelLayer!
+[controller_server-4] [INFO] [1794245394.839624986] [local_costmap.local_costmap]: spatio_temporal_voxel_layer's global frame is map.
+[controller_server-4] [INFO] [1794245394.842346523] [local_costmap.local_costmap]: spatio_temporal_voxel_layer loaded parameters from parameter server.
+[controller_server-4] [INFO] [1794245394.843758474] [local_costmap.local_costmap]: spatio_temporal_voxel_layer created underlying voxel grid.
+[controller_server-4] [INFO] [1794245394.844390303] [ignore_polygon_manager]: ignore_width=50, ignore_range=5.20, debug_mode=1, ignore_height_above=0.20
+[controller_server-4] [INFO] [1794245394.845090028] [ignore_polygon_manager]: Subscribed to edge_reference_paths_no_collision_check
+[controller_server-4] [INFO] [1794245394.845403462] [ignore_polygon_manager]: Debug mode enabled: publishing collision points to 'local_costmap/spatio_temporal_voxel_layer/collision_points' topic
+[controller_server-4] [INFO] [1794245394.845417977] [local_costmap.local_costmap]: spatio_temporal_voxel_layer ignore polygon manager created.
+[controller_server-4] [INFO] [1794245394.849456096] [local_costmap.local_costmap]: Passthough filter activated.
+[controller_server-4] [INFO] [1794245394.850064302] [local_costmap.local_costmap]: spatio_temporal_voxel_layer initialization complete!
+[controller_server-4] [INFO] [1794245394.850091057] [local_costmap.local_costmap]: Initialized plugin "spatio_temporal_voxel_layer"
+[controller_server-4] [INFO] [1794245394.850097929] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-4] [INFO] [1794245394.851292954] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-4] [INFO] [1794245394.856006087] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-4] [INFO] [1794245394.857262299] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-4] [INFO] [1794245394.857807917] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-4] [INFO] [1794245394.864658293] [controller_server]: Created controller : FollowPath of type teb_local_planner::TebLocalPlannerROS
+[spawn_entity.py-20] [INFO] [1794245394.866756218] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-20] [INFO] [1794245394.867113215] [spawn_entity]: Loading entity XML from file /capella/share/capella_ros_launcher/worlds/model.sdf
+[spawn_entity.py-20] [INFO] [1794245394.867846820] [spawn_entity]: Waiting for service /spawn_entity, timeout = 180
+[spawn_entity.py-20] [INFO] [1794245394.868082919] [spawn_entity]: Waiting for service /spawn_entity
+[lifecycle_manager-3] [INFO] [1794245394.893170893] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-3] [INFO] [1794245394.893855467] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-2] [INFO] [1794245394.894050265] [amcl]: Activating
+[amcl-2] [INFO] [1794245394.894093607] [amcl]: Creating bond (amcl) to lifecycle manager.
+[controller_server-4] [INFO] [1794245394.910372125] [TEBLocalPlanner]: Footprint model 'polygon' loaded for trajectory optimization.
+[controller_server-4] [INFO] [1794245394.910415133] [controller_server]: max_global_plan_lookahead_dist 5.00, max_vel_x: 1.00! In initialize!
+[controller_server-4] [INFO] [1794245394.910454787] [controller_server]: Parallel planning in distinctive topologies enabled.
+[controller_server-4] [INFO] [1794245394.962717215] [controller_server]: library path : /capella/lib/libcostmap_converter.so
+[controller_server-4] [INFO] [1794245394.964183279] [controller_server]: CostmapToPolygonsDBSMCCH parameters loaded: cluster_max_distance=0.20, cluster_min_pts=1, cluster_max_pts=100, convex_hull_min_pt_separation=0.10, global_frame=map
+[controller_server-4] [INFO] [1794245394.966251794] [controller_server]: Costmap conversion plugin costmap_converter::CostmapToPolygonsDBSMCCH loaded.
+[controller_server-4] [INFO] [1794245394.968510223] [controller_server]: TEB 已订阅 /vehicle_poses_around 话题
+[controller_server-4] [INFO] [1794245394.968949776] [controller_server]: TEB 已订阅 /nav/speed_limit 话题
+[controller_server-4] [INFO] [1794245394.975056911] [controller_server]: 狭窄通道: TEB 已订阅 /narrow_passages，forward_drive 正常=100.00，窄通道=1.00，Marker 话题 teb_narrow_passages_markers
+[controller_server-4] [INFO] [1794245394.975872225] [controller_server]: TEB 已订阅 /enable_backward，true 时强制倒车友好参数
+[controller_server-4] [INFO] [1794245394.976229861] [controller_server]: /backward_mode published: false (forward)
+[controller_server-4] [INFO] [1794245394.976265059] [controller_server]: TEB 已发布 /backward_mode（几何倒车检测），arc_length_ratio=0.30 backward_check_duration=1.00 backward_check_num=2
+[controller_server-4] [INFO] [1794245394.976923494] [controller_server]: TEB 订阅前向 LaserScan 贴边 protrusion 检测，话题：/front_scan
+[controller_server-4] [INFO] [1794245394.977242106] [controller_server]: TEB 创建 /teb_vehicle_scan_grid 话题
+[controller_server-4] [INFO] [1794245394.980110629] [controller_server]: TEB 创建发布话题 /teb_selected_wall_line、/teb_monitor_corridor_markers、/teb_protruding_obstacle_markers、/teb_corner_approach_footprint_markers、/teb_collision_footprint_markers、/teb_near_horizon_debug、/edge_distance、/teb_transformed_path、/teb_global_plan
+[controller_server-4] [INFO] [1794245394.980636412] [controller_server]: static_layer client created.
+[controller_server-4] [INFO] [1794245394.981789405] [controller_server]: Footprint clients created for local and global costmaps.
+[controller_server-4] [INFO] [1794245394.988953778] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-3] [INFO] [1794245394.997191365] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-3] [INFO] [1794245394.997271334] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-3] [INFO] [1794245394.997288222] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[controller_server-4] [INFO] [1794245394.997671148] [controller_server]: Subscribed velocity gate topics: /is_pipes_and_wires_in_path, /backward_mode, /cleaning_tool_fully_retracted
+[controller_server-4] [INFO] [1794245394.997956928] [controller_server]: /backward_mode: false (forward)
+[lifecycle_manager-12] [INFO] [1794245394.998469131] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[controller_server-4] [INFO] [1794245394.998668864] [controller_server]: Local costmap footprint stored: [[1.20, 0.55], [1.20, -0.55], [-0.65, -0.55], [-0.65, 0.55]]
+[smoother_server-5] [INFO] [1794245394.999392652] [smoother_server]: Configuring smoother server
+[smoother_server-5] [INFO] [1794245395.007069376] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-5] [INFO] [1794245395.008621412] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-12] [INFO] [1794245395.014250129] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-6] [INFO] [1794245395.014526183] [planner_server]: Configuring
+[planner_server-6] [INFO] [1794245395.053806706] [ignore_polygon_manager]: ignore_width=50, ignore_range=5.20, debug_mode=1, ignore_height_above=0.20
+[planner_server-6] [INFO] [1794245395.054518188] [ignore_polygon_manager]: Subscribed to edge_reference_paths_no_collision_check
+[planner_server-6] [INFO] [1794245395.055129369] [ignore_polygon_manager]: Debug mode enabled: publishing collision points to 'global_costmap/spatio_temporal_voxel_layer/collision_points' topic
+[planner_server-6] [INFO] [1794245395.078968612] [planner_server]: Created global planner plugin GridBased of type nav2_smac_planner/SmacPlannerHybrid
+[planner_server-6] [INFO] [1794245395.079053528] [planner_server]: Configuring GridBased of type SmacPlannerHybrid
+[controller_server-4] [INFO] [1794245395.079728598] [controller_server]: Global costmap footprint stored: [[1.20, 0.5], [1.20, -0.5], [-0.65, -0.5], [-0.65, 0.5]]
+[planner_server-6] [INFO] [1794245395.086223236] [planner_server]: Even sized heuristic lookup table size set 400.000000, increasing size by 1 to make odd
+[rviz2-23] [INFO] [1794245395.655973374] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-23] [INFO] [1794245395.656053671] [rviz2]: OpenGl version: 4.2 (GLSL 4.2)
+[rviz2-23] [INFO] [1794245395.680813469] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-23] [INFO] [1794245395.942335279] [rviz2]: Trying to create a map of size 1400 x 1000 using 1 swatches
+[rviz2-23] [ERROR] [1794245395.956426168] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-23] active samplers with a different type refer to the same texture image unit
+[gzserver-18] XDG_RUNTIME_DIR (/mnt/wslg/runtime-dir) is not owned by us (uid 0), but by uid 1000! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+[gzserver-18] ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+[gzserver-18] ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+[gzserver-18] ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+[gzserver-18] ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+[gzserver-18] ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+[gzserver-18] ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+[gzserver-18] ALSA lib conf.c:5705:(snd_config_expand) Evaluate error: No such file or directory
+[gzserver-18] ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+[gzserver-18] AL lib: (EE) ALCplaybackAlsa_open: Could not open playback device 'default': No such file or directory
+[gzserver-18] [INFO] [1794245396.007360043] [gazebo_ros_state]: Publishing states of gazebo models at [/model_states]
+[gzserver-18] [INFO] [1794245396.008140648] [gazebo_ros_state]: Publishing states of gazebo links at [/link_states]
+[spawn_entity.py-20] [INFO] [1794245396.122563420] [spawn_entity]: Calling service /spawn_entity
+[gzserver-18] [INFO] [1794245396.229605153] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-18] [INFO] [1794245396.966278786] [intel_realsense_r200_depth_driver]: Publishing camera info to [/intel_realsense_r200_depth/camera_info]
+[gzserver-18] [INFO] [1794245396.967421732] [intel_realsense_r200_depth_driver]: Publishing depth camera info to [/intel_realsense_r200_depth/depth/camera_info]
+[gzserver-18] [INFO] [1794245396.968340438] [intel_realsense_r200_depth_driver]: Publishing pointcloud to [/intel_realsense_r200_depth/points]
+[spawn_entity.py-20] [INFO] [1794245396.972199841] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [turtlebot3_waffle]
+[gzserver-18] [INFO] [1794245396.978974700] [range]: missing <radiation_type>, defaulting to infrared
+[gzserver-18] [INFO] [1794245397.087068790] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.287000m]
+[gzserver-18] [INFO] [1794245397.087162526] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-18] [INFO] [1794245397.087755702] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-18] [INFO] [1794245397.088562397] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-18] [INFO] [1794245397.089673004] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-18] [INFO] [1794245397.089694751] [turtlebot3_diff_drive]: Publishing wheel transforms between [base_footprint], [wheel_left_joint] and [wheel_right_joint]
+[gzserver-18] [INFO] [1794245397.099722008] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-18] [INFO] [1794245397.099775248] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[INFO] [spawn_entity.py-20]: process has finished cleanly [pid 226209]
+[amcl-2] [INFO] [1794245397.303909642] [amcl]: createLaserObject
+[bash-22] requester: making request: nav2_msgs.srv.SetInitialPose_Request(pose=geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=0.0, y=0.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)), covariance=array([0.25      , 0.        , 0.        , 0.        , 0.        ,
+[bash-22]        0.        , 0.        , 0.25      , 0.        , 0.        ,
+[bash-22]        0.        , 0.        , 0.        , 0.        , 0.        ,
+[bash-22]        0.        , 0.        , 0.        , 0.        , 0.        ,
+[bash-22]        0.        , 0.        , 0.        , 0.        , 0.        ,
+[bash-22]        0.        , 0.        , 0.        , 0.        , 0.        ,
+[bash-22]        0.        , 0.        , 0.        , 0.        , 0.        ,
+[bash-22]        0.06853892]))))
+[bash-22] 
+[amcl-2] [INFO] [1794245397.612203391] [amcl]: initialPoseReceived
+[amcl-2] [INFO] [1794245397.612277889] [amcl]: Setting pose (0.600000): -0.000 0.000 -0.000
+[bash-22] response:
+[bash-22] nav2_msgs.srv.SetInitialPose_Response()
+[bash-22] 
+[INFO] [bash-22]: process has finished cleanly [pid 226226]
+[collision_recover_node-13] [INFO] [1794245399.088082755] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245401.088065759] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245403.088061864] [collision_recover_node]: No obstacles received, do not check for collision.
+[planner_server-6] [INFO] [1794245403.124328137] [planner_server]: 狭窄通道: 已预计算 DUBIN / REEDS_SHEPP 两套距离启发式缓存 (lookup_dim=401, angle_bins=72)
+[planner_server-6] [INFO] [1794245403.131722104] [planner_server]: 狭窄通道: 已订阅 /narrow_passages，默认非窄通道模式(DUBIN)
+[planner_server-6] [INFO] [1794245403.131746063] [planner_server]: 已订阅 /enable_backward，true 时强制 REEDS_SHEPP 倒车规划
+[planner_server-6] [INFO] [1794245403.131749756] [planner_server]: Configured plugin GridBased of type SmacPlannerHybrid with maximum iterations 5000000, max on approach iterations 1000, and allowing unknown traversal. Tolerance 0.50.Using motion model: Dubin.
+[planner_server-6] [INFO] [1794245403.132415460] [planner_server]: [FastPath] configured: goal_occupied_tolerance=1.00 goal_search_resolution=0.20 footprint_extend=(back=-0.50, front=0.20, y=0.00) straight_check_length_ratio=0.50 straight_path_resolution=0.10 planner_ids=1
+[planner_server-6] [INFO] [1794245403.132475051] [planner_server]: Planner Server has GridBased  planners available. enable_straight_expand=true
+[lifecycle_manager-12] [INFO] [1794245403.138147932] [lifecycle_manager_navigation]: [34m[1mConfiguring collision_monitor[0m[0m
+[collision_monitor-11] [INFO] [1794245403.138339117] [collision_monitor]: Configuring
+[collision_monitor-11] [INFO] [1794245403.141746756] [collision_monitor]: [FootprintApproach]: Creating Polygon
+[collision_monitor-11] [INFO] [1794245403.142439838] [ignore_polygon_manager]: ignore_width=50, ignore_range=5.20, debug_mode=1, ignore_height_above=0.20
+[collision_monitor-11] [INFO] [1794245403.143997118] [ignore_polygon_manager]: Subscribed to edge_reference_paths_no_collision_check
+[collision_monitor-11] [INFO] [1794245403.144484705] [ignore_polygon_manager]: Debug mode enabled: publishing collision points to 'collision_monitor/collision_points' topic
+[collision_monitor-11] [INFO] [1794245403.145196428] [collision_monitor]: [dabai_camera1]: Creating PointCloud
+[collision_monitor-11] [INFO] [1794245403.147071087] [collision_monitor]: [dabai_camera2]: Creating PointCloud
+[collision_monitor-11] [INFO] [1794245403.148601686] [collision_monitor]: [dabai_camera3]: Creating PointCloud
+[collision_monitor-11] [INFO] [1794245403.149178523] [collision_monitor]: [dabai_camera4]: Creating PointCloud
+[collision_monitor-11] [INFO] [1794245403.149748166] [collision_monitor]: [scan_close_filter_points]: Creating PointCloud
+[lifecycle_manager-12] [INFO] [1794245403.152741594] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-7] [INFO] [1794245403.153099652] [behavior_server]: Configuring
+[behavior_server-7] [INFO] [1794245403.156806551] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-7] [INFO] [1794245403.157303128] [behavior_server]: Configuring spin
+[behavior_server-7] [INFO] [1794245403.159452487] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-7] [INFO] [1794245403.159929463] [behavior_server]: Configuring backup
+[behavior_server-7] [INFO] [1794245403.162222418] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-7] [INFO] [1794245403.162766537] [behavior_server]: Configuring drive_on_heading
+[behavior_server-7] [INFO] [1794245403.165627418] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-7] [INFO] [1794245403.166830193] [behavior_server]: Configuring assisted_teleop
+[behavior_server-7] [INFO] [1794245403.170823384] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-7] [INFO] [1794245403.171428439] [behavior_server]: Configuring wait
+[lifecycle_manager-12] [INFO] [1794245403.174316425] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-8] [INFO] [1794245403.174491205] [bt_navigator]: Configuring
+[lifecycle_manager-12] [INFO] [1794245403.224394087] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-9] [INFO] [1794245403.224591840] [waypoint_follower]: Configuring
+[waypoint_follower-9] [INFO] [1794245403.229653713] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-12] [INFO] [1794245403.230402780] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-10] [INFO] [1794245403.230804850] [velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-12] [INFO] [1794245403.234014541] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-4] [INFO] [1794245403.234286137] [controller_server]: Activating
+[controller_server-4] [INFO] [1794245403.234316972] [local_costmap.local_costmap]: Activating
+[controller_server-4] [INFO] [1794245403.234328497] [local_costmap.local_costmap]: Checking transform
+[controller_server-4] [INFO] [1794245403.234417519] [local_costmap.local_costmap]: start
+[controller_server-4] [INFO] [1794245403.234428505] [local_costmap.local_costmap]: spatio_temporal_voxel_layer was activated.
+[rviz2-23] [INFO] [1794245403.451135689] [rviz2]: Trying to create a map of size 200 x 200 using 1 swatches
+[controller_server-4] [INFO] [1794245403.484606097] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794245403.588060270] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-12] [INFO] [1794245403.588104048] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-5] [INFO] [1794245403.588347568] [smoother_server]: Activating
+[smoother_server-5] [INFO] [1794245403.588447633] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794245403.689899820] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-12] [INFO] [1794245403.689944977] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-6] [INFO] [1794245403.690211852] [planner_server]: Activating
+[rviz2-23] [INFO] [1794245403.739789453] [rviz2]: Trying to create a map of size 1400 x 1000 using 1 swatches
+[planner_server-6] [INFO] [1794245403.740449846] [planner_server]: Activating plugin GridBased of type SmacPlannerHybrid
+[planner_server-6] [INFO] [1794245403.740985121] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794245403.842497186] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-12] [INFO] [1794245403.842542005] [lifecycle_manager_navigation]: [34m[1mActivating collision_monitor[0m[0m
+[collision_monitor-11] [INFO] [1794245403.842785192] [collision_monitor]: Activating
+[collision_monitor-11] [INFO] [1794245403.842828575] [collision_monitor]: Creating bond (collision_monitor) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794245403.944756281] [lifecycle_manager_navigation]: Server collision_monitor connected with bond.
+[lifecycle_manager-12] [INFO] [1794245403.944801478] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-7] [INFO] [1794245403.945049020] [behavior_server]: Activating
+[behavior_server-7] [INFO] [1794245403.945083288] [behavior_server]: Activating spin
+[behavior_server-7] [INFO] [1794245403.945099202] [behavior_server]: Activating backup
+[behavior_server-7] [INFO] [1794245403.945112196] [behavior_server]: Activating drive_on_heading
+[behavior_server-7] [INFO] [1794245403.945124202] [behavior_server]: Activating assisted_teleop
+[behavior_server-7] [INFO] [1794245403.945135812] [behavior_server]: Activating wait
+[behavior_server-7] [INFO] [1794245403.945151649] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794245404.047037674] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-12] [INFO] [1794245404.047083780] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-8] [INFO] [1794245404.047361436] [bt_navigator]: Activating
+[bt_navigator-8] [INFO] [1794245404.105499200] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794245404.208120890] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-12] [INFO] [1794245404.208160201] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-9] [INFO] [1794245404.208380076] [waypoint_follower]: Activating
+[waypoint_follower-9] [INFO] [1794245404.208406662] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794245404.310119575] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-12] [INFO] [1794245404.310172988] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-10] [INFO] [1794245404.310588876] [velocity_smoother]: Activating
+[velocity_smoother-10] [INFO] [1794245404.310652447] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794245404.413094495] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-12] [INFO] [1794245404.413144553] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-12] [INFO] [1794245404.413152291] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[collision_recover_node-13] [INFO] [1794245405.088108082] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245407.088110985] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245409.088094329] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245411.288166871] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245413.288072557] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245415.288069782] [collision_recover_node]: No obstacles received, do not check for collision.
+[bt_navigator-8] [INFO] [1794245416.832787001] [bt_navigator]: Begin navigating from current location through 14 poses to (43.50, 19.45)
+[bt_navigator-8] [INFO] [1794245416.832852391] [bt_navigator]: Mission generation id=1: cleared stale path until planner completes
+[search_poses_near_edge_node-17] [INFO] [1794245416.832960128] [search_poses_near_edge]: [onMissionPoses] Received mission poses: 14
+[search_poses_near_edge_node-17] [WARN] [1794245416.832991395] [search_poses_near_edge]: No edge reference paths from either edge_reference_paths or edge_reference_paths_no_collision_check
+[search_poses_near_edge_node-17] [INFO] [1794245416.832996279] [search_poses_near_edge]: [publishEmptyOutputs] empty edge reference paths
+[search_poses_near_edge_node-17] [INFO] [1794245416.833045319] [search_poses_near_edge]: [publishPairedPathsMarkers] 发布 0 对 mission/reference 可视化 marker
+[search_poses_near_edge_node-17] [INFO] [1794245416.833066812] [search_poses_near_edge]: [publishAllEdgeReferencePathsMarkers] 发布全部贴边参考线 marker: normal=0, no_collision=0
+[bt_navigator-8] [INFO] [1794245416.833266949] [bt_navigator_navigate_through_poses_rclcpp_node]: InsertGarbagePose: tick
+[bt_navigator-8] [INFO] [1794245416.833943366] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: odom vx=-0.0000 m/s
+[bt_navigator-8] [INFO] [1794245416.833976280] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: mission changed (tail_fp=be1e08c45144738f), reload queue size=14
+[planner_server-6] [INFO] [1794245416.834205677] [planner_server]: /enable_backward: false（回退窄通道判断）
+[planner_server-6] [INFO] [1794245416.834234749] [planner_server]: [FastPath] /enable_backward=false（允许倒车=false，前进直线失败后可试后退直线）
+[bt_navigator-8] [INFO] [1794245416.834242278] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: enable_backward=false (forward)
+[bt_navigator-8] [INFO] [1794245416.834295953] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: init gpp window z=[0,13] mission_goals=14
+[bt_navigator-8] [INFO] [1794245416.834309403] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: terminal goal z=13 entered gpp window, freeze stamps
+[bt_navigator-8] [INFO] [1794245416.834317042] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 18.500000, 19.450000, 0.000000
+[bt_navigator-8] [INFO] [1794245416.834321834] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 20.500000, 19.450000, 1.000000
+[bt_navigator-8] [INFO] [1794245416.834325558] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 22.500000, 19.450000, 2.000000
+[bt_navigator-8] [INFO] [1794245416.834329079] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245416.834332462] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245416.834335768] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245416.834340606] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245416.834344066] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245416.834347487] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245416.834350874] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245416.834354192] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245416.834357891] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245416.834361514] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245416.834365218] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[controller_server-4] [INFO] [1794245416.834239786] [controller_server]: /enable_backward: false（回退窄通道/倒车段判断）
+[collision_recover_node-13] [WARN] [1794245416.834561414] [collision_recover_node]: No obstacles received, cannot check collision.
+[path_check-14] [INFO] [1794245416.837290970] [path_check_node]: PathCheck done,  poses length before check is, 14, poses length after check is : 14 !
+[planner_server-6] [INFO] [1794245417.037803106] [planner_server]: Robot footprint cost at current pose (16.50, 19.45) is 0.000000
+[planner_server-6] [INFO] [1794245417.097977560] [planner_server]: [FastPath] compute start=(16.501, 19.450, yaw=0.001) goal=(18.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.098043787] [planner_server]: [FastPath] try forward straight-line dist=1.999 m line_yaw=-0.000 heading=-0.000 start_yaw=0.001 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.098063380] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=1.999 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.098067973] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(18.500, 19.450)
+[planner_server-6] [INFO] [1794245417.098072761] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.098079826] [planner_server]: Totally poses: 14, planned poses: 0, successfully generate path to goal (18.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.098086500] [planner_server]: [FastPath] compute start=(18.500, 19.450, yaw=-0.000) goal=(20.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.098124287] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=-0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.098132153] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.098135784] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(20.500, 19.450)
+[planner_server-6] [INFO] [1794245417.098139362] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.098142617] [planner_server]: Totally poses: 14, planned poses: 1, successfully generate path to goal (20.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.098149507] [planner_server]: [FastPath] compute start=(20.500, 19.450, yaw=0.000) goal=(22.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.098154366] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.098160301] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.098163796] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(22.500, 19.450)
+[planner_server-6] [INFO] [1794245417.098167121] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.098171136] [planner_server]: Totally poses: 14, planned poses: 2, successfully generate path to goal (22.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.098177151] [planner_server]: [FastPath] compute start=(22.500, 19.450, yaw=0.000) goal=(24.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.098181970] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.098187570] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.098190960] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(24.500, 19.450)
+[planner_server-6] [INFO] [1794245417.098194136] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.098197043] [planner_server]: Totally poses: 14, planned poses: 3, successfully generate path to goal (24.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.098201026] [planner_server]: [FastPath] compute start=(24.500, 19.450, yaw=0.000) goal=(26.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.098205869] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.098211690] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.098214978] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(26.500, 19.450)
+[planner_server-6] [INFO] [1794245417.098218224] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.098221107] [planner_server]: Totally poses: 14, planned poses: 4, successfully generate path to goal (26.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.098228436] [planner_server]: [FastPath] compute start=(26.500, 19.450, yaw=0.000) goal=(28.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.098233206] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.098239026] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.098242400] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(28.500, 19.450)
+[planner_server-6] [INFO] [1794245417.098245706] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.098248598] [planner_server]: Totally poses: 14, planned poses: 5, successfully generate path to goal (28.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.098261422] [planner_server]: [FastPath] compute start=(28.500, 19.450, yaw=0.000) goal=(30.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.098266934] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.098272637] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.098275974] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(30.500, 19.450)
+[planner_server-6] [INFO] [1794245417.098279276] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.098283216] [planner_server]: Totally poses: 14, planned poses: 6, successfully generate path to goal (30.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.098286967] [planner_server]: [FastPath] compute start=(30.500, 19.450, yaw=0.000) goal=(32.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.098291754] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.098297353] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.098300677] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(32.500, 19.450)
+[planner_server-6] [INFO] [1794245417.098303929] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.098307692] [planner_server]: Totally poses: 14, planned poses: 7, successfully generate path to goal (32.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.098311559] [planner_server]: [FastPath] compute start=(32.500, 19.450, yaw=0.000) goal=(34.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.098316423] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.098321983] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.098325369] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(34.500, 19.450)
+[planner_server-6] [INFO] [1794245417.098328571] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.098331462] [planner_server]: Totally poses: 14, planned poses: 8, successfully generate path to goal (34.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.098340894] [planner_server]: [FastPath] compute start=(34.500, 19.450, yaw=0.000) goal=(36.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.098345609] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.098351525] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.098354900] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(36.500, 19.450)
+[planner_server-6] [INFO] [1794245417.098358139] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.098361079] [planner_server]: Totally poses: 14, planned poses: 9, successfully generate path to goal (36.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.098366629] [planner_server]: [FastPath] compute start=(36.500, 19.450, yaw=0.000) goal=(38.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.098371360] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.098377558] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.098381027] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(38.500, 19.450)
+[planner_server-6] [INFO] [1794245417.098386305] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.098389868] [planner_server]: Totally poses: 14, planned poses: 10, successfully generate path to goal (38.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.098393903] [planner_server]: [FastPath] compute start=(38.500, 19.450, yaw=0.000) goal=(40.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.098398486] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.098404373] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.098407707] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(40.500, 19.450)
+[planner_server-6] [INFO] [1794245417.098410945] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.098413843] [planner_server]: Totally poses: 14, planned poses: 11, successfully generate path to goal (40.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.098418573] [planner_server]: [FastPath] compute start=(40.500, 19.450, yaw=0.000) goal=(42.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.098423181] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.098428787] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.098432087] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(42.500, 19.450)
+[planner_server-6] [INFO] [1794245417.098435290] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.098438133] [planner_server]: Totally poses: 14, planned poses: 12, successfully generate path to goal (42.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.098441780] [planner_server]: [FastPath] compute start=(42.500, 19.450, yaw=0.000) goal=(43.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.098446300] [planner_server]: [FastPath] try forward straight-line dist=1.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.098451595] [planner_server]: [FastPath] forward straight-line clear, poses=10 dist=1.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.098454976] [planner_server]: [FastPath] StraightOk forward poses=10 snapped_goal=(43.500, 19.450)
+[planner_server-6] [INFO] [1794245417.098458092] [planner_server]: FastPathPlanner returned a straight-line path with 10 poses.
+[planner_server-6] [INFO] [1794245417.098460876] [planner_server]: Totally poses: 14, planned poses: 13, successfully generate path to goal (43.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.098465388] [planner_server]: Total path size through 14 poses is 270
+[planner_server-6] [INFO] [1794245417.098468463] [planner_server]: PlanThroughPoses summary: success=14, failed=0, total=14
+[planner_server-6] [WARN] [1794245417.098650299] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.0000 Hz
+[planner_server-6] [INFO] [1794245417.099679138] [planner_server]: Total path size through 14 poses is 270
+[controller_server-4] [INFO] [1794245417.234504853] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [WARN] [1794245417.234559121] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-4] [INFO] [1794245417.234589175] [controller_server]: TEB 设置全局路径，路径点数：270
+[controller_server-4] [INFO] [1794245417.234934206] [controller_server]: [transformGlobalPlan]: transformed look forward distance: 5.000
+[controller_server-4] [INFO] [1794245417.235066028] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 enable=否 forward_drive=100.00
+[controller_server-4] [INFO] [1794245417.235099454] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.000 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[controller_server-4] [INFO] [1794245417.238595672] [controller_server]: [ControllerServer] publishing velocity: (linear.x:0.608349, angular.z:-0.001334)
+[collision_monitor-11] [INFO] [1794245417.238741851] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 0.608349, -0.001334
+[collision_recover_node-13] [INFO] [1794245417.288099662] [collision_recover_node]: No obstacles received, do not check for collision.
+[velocity_smoother-10] [INFO] [1794245417.310720952] [velocity_smoother]: [VelocitySmoother] publishing velocity: (linear.x:0.050000, angular.z:-0.001334)!
+[planner_server-6] [INFO] [1794245417.337631859] [planner_server]: Robot footprint cost at current pose (16.50, 19.45) is 0.000000
+[bt_navigator-8] [INFO] [1794245417.434251898] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: teb plan received, poses=270 length=26.899 m
+[bt_navigator-8] [INFO] [1794245417.434342374] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: advance gpp window, teb_len=26.899 m <= 100.000 m -> z=[0,13]
+[bt_navigator-8] [INFO] [1794245417.434359343] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 18.500000, 19.450000, 0.000000
+[bt_navigator-8] [INFO] [1794245417.434365104] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 20.500000, 19.450000, 1.000000
+[bt_navigator-8] [INFO] [1794245417.434397617] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 22.500000, 19.450000, 2.000000
+[bt_navigator-8] [INFO] [1794245417.434401924] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245417.434405420] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245417.434409080] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245417.434412432] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245417.434416030] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245417.434419442] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245417.434422920] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245417.434426431] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245417.434430753] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245417.434434311] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245417.434437819] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[planner_server-6] [INFO] [1794245417.497820977] [planner_server]: [FastPath] compute start=(16.510, 19.450, yaw=0.001) goal=(18.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.497877370] [planner_server]: [FastPath] try forward straight-line dist=1.990 m line_yaw=-0.000 heading=-0.000 start_yaw=0.001 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.497894160] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=1.990 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.497898918] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(18.500, 19.450)
+[planner_server-6] [INFO] [1794245417.497903598] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.497935134] [planner_server]: Totally poses: 14, planned poses: 0, successfully generate path to goal (18.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.497942142] [planner_server]: [FastPath] compute start=(18.500, 19.450, yaw=-0.000) goal=(20.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.497947786] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=-0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.497954707] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.497958307] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(20.500, 19.450)
+[planner_server-6] [INFO] [1794245417.497961759] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.497965117] [planner_server]: Totally poses: 14, planned poses: 1, successfully generate path to goal (20.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.497969528] [planner_server]: [FastPath] compute start=(20.500, 19.450, yaw=0.000) goal=(22.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.497974628] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.497980769] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.497991905] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(22.500, 19.450)
+[planner_server-6] [INFO] [1794245417.497997817] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.498001853] [planner_server]: Totally poses: 14, planned poses: 2, successfully generate path to goal (22.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.498008088] [planner_server]: [FastPath] compute start=(22.500, 19.450, yaw=0.000) goal=(24.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.498013940] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.498020207] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.498023674] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(24.500, 19.450)
+[planner_server-6] [INFO] [1794245417.498027049] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.498029941] [planner_server]: Totally poses: 14, planned poses: 3, successfully generate path to goal (24.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.498033956] [planner_server]: [FastPath] compute start=(24.500, 19.450, yaw=0.000) goal=(26.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.498038857] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.498044992] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.498048533] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(26.500, 19.450)
+[planner_server-6] [INFO] [1794245417.498051979] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.498054895] [planner_server]: Totally poses: 14, planned poses: 4, successfully generate path to goal (26.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.498059301] [planner_server]: [FastPath] compute start=(26.500, 19.450, yaw=0.000) goal=(28.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.498064300] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.498070392] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.498076409] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(28.500, 19.450)
+[planner_server-6] [INFO] [1794245417.498079800] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.498082641] [planner_server]: Totally poses: 14, planned poses: 5, successfully generate path to goal (28.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.498108265] [planner_server]: [FastPath] compute start=(28.500, 19.450, yaw=0.000) goal=(30.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.498116457] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.498124144] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.498128166] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(30.500, 19.450)
+[planner_server-6] [INFO] [1794245417.498132338] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.498136622] [planner_server]: Totally poses: 14, planned poses: 6, successfully generate path to goal (30.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.498140989] [planner_server]: [FastPath] compute start=(30.500, 19.450, yaw=0.000) goal=(32.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.498145622] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.498151788] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.498155200] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(32.500, 19.450)
+[planner_server-6] [INFO] [1794245417.498158540] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.498161412] [planner_server]: Totally poses: 14, planned poses: 7, successfully generate path to goal (32.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.498165398] [planner_server]: [FastPath] compute start=(32.500, 19.450, yaw=0.000) goal=(34.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.498169912] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.498175757] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.498179284] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(34.500, 19.450)
+[planner_server-6] [INFO] [1794245417.498182665] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.498185737] [planner_server]: Totally poses: 14, planned poses: 8, successfully generate path to goal (34.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.498200107] [planner_server]: [FastPath] compute start=(34.500, 19.450, yaw=0.000) goal=(36.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.498205103] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.498210989] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.498214359] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(36.500, 19.450)
+[planner_server-6] [INFO] [1794245417.498217569] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.498220457] [planner_server]: Totally poses: 14, planned poses: 9, successfully generate path to goal (36.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.498224377] [planner_server]: [FastPath] compute start=(36.500, 19.450, yaw=0.000) goal=(38.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.498231364] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.498237360] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.498240758] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(38.500, 19.450)
+[planner_server-6] [INFO] [1794245417.498243913] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.498246749] [planner_server]: Totally poses: 14, planned poses: 10, successfully generate path to goal (38.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.498251807] [planner_server]: [FastPath] compute start=(38.500, 19.450, yaw=0.000) goal=(40.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.498256322] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.498262171] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.498265961] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(40.500, 19.450)
+[planner_server-6] [INFO] [1794245417.498269155] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.498271918] [planner_server]: Totally poses: 14, planned poses: 11, successfully generate path to goal (40.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.498275554] [planner_server]: [FastPath] compute start=(40.500, 19.450, yaw=0.000) goal=(42.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.498280088] [planner_server]: [FastPath] try forward straight-line dist=2.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.498285673] [planner_server]: [FastPath] forward straight-line clear, poses=20 dist=2.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.498289010] [planner_server]: [FastPath] StraightOk forward poses=20 snapped_goal=(42.500, 19.450)
+[planner_server-6] [INFO] [1794245417.498292333] [planner_server]: FastPathPlanner returned a straight-line path with 20 poses.
+[planner_server-6] [INFO] [1794245417.498295196] [planner_server]: Totally poses: 14, planned poses: 12, successfully generate path to goal (42.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.498299798] [planner_server]: [FastPath] compute start=(42.500, 19.450, yaw=0.000) goal=(43.500, 19.450, yaw=0.000) allow_straight=true allow_reverse=false
+[planner_server-6] [INFO] [1794245417.498304343] [planner_server]: [FastPath] try forward straight-line dist=1.000 m line_yaw=0.000 heading=0.000 start_yaw=0.000 check_step=0.935 path_step=0.100 ratio=0.50
+[planner_server-6] [INFO] [1794245417.498309691] [planner_server]: [FastPath] forward straight-line clear, poses=10 dist=1.000 m check_step=0.935 path_step=0.100
+[planner_server-6] [INFO] [1794245417.498313377] [planner_server]: [FastPath] StraightOk forward poses=10 snapped_goal=(43.500, 19.450)
+[planner_server-6] [INFO] [1794245417.498316521] [planner_server]: FastPathPlanner returned a straight-line path with 10 poses.
+[planner_server-6] [INFO] [1794245417.498319217] [planner_server]: Totally poses: 14, planned poses: 13, successfully generate path to goal (43.50, 19.45)!
+[planner_server-6] [INFO] [1794245417.498322677] [planner_server]: Total path size through 14 poses is 270
+[planner_server-6] [INFO] [1794245417.498325626] [planner_server]: PlanThroughPoses summary: success=14, failed=0, total=14
+[planner_server-6] [WARN] [1794245417.498531564] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 5.0000 Hz
+[planner_server-6] [INFO] [1794245417.499235539] [planner_server]: Total path size through 14 poses is 270
+[controller_server-4] [WARN] [1794245417.634691593] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1794245417.635422273] [controller_server]: TEB 设置全局路径，路径点数：270
+[collision_recover_node-13] [WARN] [1794245417.933569361] [collision_recover_node]: No obstacles received, cannot check collision.
+[bt_navigator-8] [INFO] [1794245418.033502686] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 18.500000, 19.450000, 0.000000
+[bt_navigator-8] [INFO] [1794245418.033546281] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 20.500000, 19.450000, 1.000000
+[bt_navigator-8] [INFO] [1794245418.033551702] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 22.500000, 19.450000, 2.000000
+[bt_navigator-8] [INFO] [1794245418.033555734] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245418.033559331] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245418.033562885] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245418.033566360] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245418.033570088] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245418.033573697] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245418.033577429] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245418.033580845] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245418.033584975] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245418.033588688] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245418.033593326] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[controller_server-4] [INFO] [1794245418.235178977] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=-0.022 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[bt_navigator-8] [INFO] [1794245418.634302171] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 18.500000, 19.450000, 0.000000
+[bt_navigator-8] [INFO] [1794245418.634351439] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 20.500000, 19.450000, 1.000000
+[bt_navigator-8] [INFO] [1794245418.634389708] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 22.500000, 19.450000, 2.000000
+[bt_navigator-8] [INFO] [1794245418.634394285] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245418.634397891] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245418.634401845] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245418.634405737] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245418.634409182] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245418.634412938] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245418.634416505] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245418.634420004] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245418.634424099] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245418.634427987] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245418.634432204] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[collision_recover_node-13] [WARN] [1794245419.033761793] [collision_recover_node]: No obstacles received, cannot check collision.
+[path_check-14] [INFO] [1794245419.035474597] [path_check_node]: PathCheck done,  poses length before check is, 14, poses length after check is : 14 !
+[bt_navigator-8] [INFO] [1794245419.233686569] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 18.500000, 19.450000, 0.000000
+[bt_navigator-8] [INFO] [1794245419.233731735] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 20.500000, 19.450000, 1.000000
+[bt_navigator-8] [INFO] [1794245419.233737056] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 22.500000, 19.450000, 2.000000
+[bt_navigator-8] [INFO] [1794245419.233740842] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245419.233744543] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245419.233748252] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245419.233751737] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245419.233755238] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245419.233758686] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245419.233762155] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245419.233765615] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245419.233769746] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245419.233773497] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245419.233776972] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[controller_server-4] [INFO] [1794245419.234929486] [controller_server]: [transformGlobalPlan]: transformed look forward distance: 5.000
+[controller_server-4] [INFO] [1794245419.235005647] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 enable=否 forward_drive=100.00
+[controller_server-4] [INFO] [1794245419.235019512] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.007 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[collision_monitor-11] [INFO] [1794245419.238490526] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, 0.001332
+[velocity_smoother-10] [INFO] [1794245419.310722598] [velocity_smoother]: [VelocitySmoother] publishing velocity: (linear.x:1.000000, angular.z:0.001332)!
+[controller_server-4] [INFO] [1794245419.338468904] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.000611)
+[collision_recover_node-13] [INFO] [1794245419.488113227] [collision_recover_node]: No obstacles received, do not check for collision.
+[bt_navigator-8] [INFO] [1794245419.834208184] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 18.500000, 19.450000, 0.000000
+[bt_navigator-8] [INFO] [1794245419.834248049] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 20.500000, 19.450000, 1.000000
+[bt_navigator-8] [INFO] [1794245419.834280391] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 22.500000, 19.450000, 2.000000
+[bt_navigator-8] [INFO] [1794245419.834284805] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245419.834288842] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245419.834292430] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245419.834296054] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245419.834299535] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245419.834303205] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245419.834306854] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245419.834310450] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245419.834314340] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245419.834318062] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245419.834321613] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[collision_recover_node-13] [WARN] [1794245420.133589207] [collision_recover_node]: No obstacles received, cannot check collision.
+[controller_server-4] [INFO] [1794245420.234943411] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.000 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[bt_navigator-8] [INFO] [1794245420.433454834] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=0
+[bt_navigator-8] [INFO] [1794245420.433535154] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 20.500000, 19.450000, 1.000000
+[bt_navigator-8] [INFO] [1794245420.433544862] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 22.500000, 19.450000, 2.000000
+[bt_navigator-8] [INFO] [1794245420.433549633] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245420.433553451] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245420.433557043] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245420.433560568] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245420.433564246] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245420.433567749] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245420.433571250] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245420.433574721] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245420.433578996] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245420.433582893] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245420.433586649] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[bt_navigator-8] [INFO] [1794245421.033865834] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 20.500000, 19.450000, 1.000000
+[bt_navigator-8] [INFO] [1794245421.033915026] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 22.500000, 19.450000, 2.000000
+[bt_navigator-8] [INFO] [1794245421.033920824] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245421.034034962] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245421.034043783] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245421.034048714] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245421.034053082] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245421.034056725] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245421.034060354] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245421.034063831] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245421.034069254] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245421.034073654] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245421.034077495] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[collision_recover_node-13] [WARN] [1794245421.233498596] [collision_recover_node]: No obstacles received, cannot check collision.
+[controller_server-4] [INFO] [1794245421.235018194] [controller_server]: [transformGlobalPlan]: transformed look forward distance: 5.000
+[controller_server-4] [INFO] [1794245421.235092295] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 enable=否 forward_drive=100.00
+[controller_server-4] [INFO] [1794245421.235108094] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=-0.001 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[collision_monitor-11] [INFO] [1794245421.239035476] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, -0.001208
+[path_check-14] [INFO] [1794245421.335108386] [path_check_node]: PathCheck done,  poses length before check is, 14, poses length after check is : 14 !
+[controller_server-4] [INFO] [1794245421.338961293] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:-0.001096)
+[velocity_smoother-10] [INFO] [1794245421.410720867] [velocity_smoother]: [VelocitySmoother] publishing velocity: (linear.x:1.000000, angular.z:-0.001096)!
+[collision_recover_node-13] [INFO] [1794245421.488079678] [collision_recover_node]: No obstacles received, do not check for collision.
+[bt_navigator-8] [INFO] [1794245421.633621260] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 20.500000, 19.450000, 1.000000
+[bt_navigator-8] [INFO] [1794245421.633664178] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 22.500000, 19.450000, 2.000000
+[bt_navigator-8] [INFO] [1794245421.633670043] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245421.633673958] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245421.633688841] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245421.633693981] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245421.633698198] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245421.633702094] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245421.633705897] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245421.633709679] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245421.633717310] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245421.633721090] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245421.633724905] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[bt_navigator-8] [INFO] [1794245422.233706529] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: odom vx=1.0000 m/s
+[bt_navigator-8] [INFO] [1794245422.233805126] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 20.500000, 19.450000, 1.000000
+[bt_navigator-8] [INFO] [1794245422.233815996] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 22.500000, 19.450000, 2.000000
+[bt_navigator-8] [INFO] [1794245422.233820586] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245422.233824404] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245422.233853591] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245422.233857441] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245422.233861114] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245422.233864698] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245422.233868218] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245422.233871610] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245422.233875799] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245422.233879498] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245422.233883253] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[collision_recover_node-13] [WARN] [1794245422.234143501] [collision_recover_node]: No obstacles received, cannot check collision.
+[controller_server-4] [INFO] [1794245422.334986631] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.000 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[bt_navigator-8] [INFO] [1794245422.833426142] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: teb plan received, poses=237 length=23.600 m
+[bt_navigator-8] [INFO] [1794245422.833484924] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=1
+[bt_navigator-8] [INFO] [1794245422.833523658] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: advance gpp window, teb_len=23.600 m <= 100.000 m -> z=[2,13]
+[bt_navigator-8] [INFO] [1794245422.833538533] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 22.500000, 19.450000, 2.000000
+[bt_navigator-8] [INFO] [1794245422.833543627] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245422.833547509] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245422.833550919] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245422.833554419] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245422.833558073] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245422.833561448] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245422.833564916] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245422.833579059] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245422.833585108] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245422.833589524] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245422.833593526] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[bt_navigator-8] [INFO] [1794245423.333944363] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 22.500000, 19.450000, 2.000000
+[bt_navigator-8] [INFO] [1794245423.333988202] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245423.333994114] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245423.333998232] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245423.334036280] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245423.334040523] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245423.334044032] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245423.334047661] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245423.334051421] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245423.334055672] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245423.334059531] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245423.334063268] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[collision_recover_node-13] [WARN] [1794245423.334321028] [collision_recover_node]: No obstacles received, cannot check collision.
+[controller_server-4] [INFO] [1794245423.334959868] [controller_server]: [transformGlobalPlan]: transformed look forward distance: 5.000
+[controller_server-4] [INFO] [1794245423.335034388] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 enable=否 forward_drive=100.00
+[controller_server-4] [INFO] [1794245423.335050098] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.000 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[collision_monitor-11] [INFO] [1794245423.338826040] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, -0.000128
+[velocity_smoother-10] [INFO] [1794245423.410719704] [velocity_smoother]: [VelocitySmoother] publishing velocity: (linear.x:1.000000, angular.z:-0.000128)!
+[controller_server-4] [INFO] [1794245423.438535907] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:-0.000100)
+[collision_recover_node-13] [INFO] [1794245423.488072955] [collision_recover_node]: No obstacles received, do not check for collision.
+[path_check-14] [INFO] [1794245423.635190275] [path_check_node]: PathCheck done,  poses length before check is, 14, poses length after check is : 14 !
+[bt_navigator-8] [INFO] [1794245423.933713623] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 22.500000, 19.450000, 2.000000
+[bt_navigator-8] [INFO] [1794245423.933762897] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245423.933769095] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245423.933772864] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245423.933776351] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245423.933779962] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245423.933783506] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245423.933786963] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245423.933790799] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245423.933795302] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245423.933799370] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245423.933803046] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[controller_server-4] [INFO] [1794245424.335007742] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.000 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[collision_recover_node-13] [WARN] [1794245424.433517924] [collision_recover_node]: No obstacles received, cannot check collision.
+[bt_navigator-8] [INFO] [1794245424.533758310] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=2
+[bt_navigator-8] [INFO] [1794245424.533843735] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245424.533853906] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245424.533858412] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245424.533861983] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245424.533865650] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245424.533869375] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245424.533872912] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245424.533913164] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245424.533918221] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245424.533922329] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245424.533926080] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[bt_navigator-8] [INFO] [1794245425.133598103] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245425.133635825] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245425.133641104] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245425.133645171] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245425.133648746] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245425.133652482] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245425.133656209] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245425.133659631] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245425.133664002] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245425.133668006] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245425.133671901] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[controller_server-4] [INFO] [1794245425.334974218] [controller_server]: [transformGlobalPlan]: transformed look forward distance: 5.000
+[controller_server-4] [INFO] [1794245425.335098290] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 enable=否 forward_drive=100.00
+[controller_server-4] [INFO] [1794245425.335116941] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.000 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[collision_monitor-11] [INFO] [1794245425.339561231] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, 0.000301
+[velocity_smoother-10] [INFO] [1794245425.410723697] [velocity_smoother]: [VelocitySmoother] publishing velocity: (linear.x:1.000000, angular.z:0.000301)!
+[controller_server-4] [INFO] [1794245425.439062452] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.000266)
+[collision_recover_node-13] [INFO] [1794245425.488025536] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [WARN] [1794245425.533472180] [collision_recover_node]: No obstacles received, cannot check collision.
+[bt_navigator-8] [INFO] [1794245425.733752044] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245425.733791863] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245425.733797125] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245425.733801070] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245425.733804817] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245425.733808368] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245425.733812003] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245425.733815722] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245425.733819765] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245425.733823478] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245425.733827961] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[path_check-14] [INFO] [1794245425.835133939] [path_check_node]: PathCheck done,  poses length before check is, 14, poses length after check is : 14 !
+[bt_navigator-8] [INFO] [1794245426.333456446] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 24.500000, 19.450000, 3.000000
+[bt_navigator-8] [INFO] [1794245426.333499362] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245426.333529457] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245426.333533948] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245426.333538159] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245426.333542015] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245426.333545822] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245426.333549689] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245426.333554068] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245426.333557998] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245426.333561752] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[controller_server-4] [INFO] [1794245426.335002566] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.000 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[collision_recover_node-13] [WARN] [1794245426.633624045] [collision_recover_node]: No obstacles received, cannot check collision.
+[bt_navigator-8] [INFO] [1794245426.933664315] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=3
+[bt_navigator-8] [INFO] [1794245426.933747912] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245426.933757718] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245426.933762079] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245426.933766057] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245426.933770245] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245426.933775005] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245426.933778957] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245426.933783437] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245426.933787250] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245426.933791170] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[controller_server-4] [INFO] [1794245427.335060754] [controller_server]: [transformGlobalPlan]: transformed look forward distance: 5.000
+[controller_server-4] [INFO] [1794245427.335143431] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 enable=否 forward_drive=100.00
+[controller_server-4] [INFO] [1794245427.335190734] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.000 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[collision_monitor-11] [INFO] [1794245427.338723106] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, -0.000111
+[velocity_smoother-10] [INFO] [1794245427.510714467] [velocity_smoother]: [VelocitySmoother] publishing velocity: (linear.x:1.000000, angular.z:-0.000179)!
+[bt_navigator-8] [INFO] [1794245427.533568376] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: odom vx=1.0000 m/s
+[bt_navigator-8] [INFO] [1794245427.533666858] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245427.533676660] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245427.533681300] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245427.533685016] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245427.533688849] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245427.533692703] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245427.533696403] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245427.533700835] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245427.533736427] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245427.533741331] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[controller_server-4] [INFO] [1794245427.537905744] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:-0.000134)
+[collision_recover_node-13] [INFO] [1794245427.688073276] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [WARN] [1794245427.733594972] [collision_recover_node]: No obstacles received, cannot check collision.
+[bt_navigator-8] [INFO] [1794245428.133750996] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: teb plan received, poses=185 length=18.400 m
+[bt_navigator-8] [INFO] [1794245428.133848770] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: advance gpp window, teb_len=18.400 m <= 100.000 m -> z=[4,13]
+[bt_navigator-8] [INFO] [1794245428.133865030] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 26.500000, 19.450000, 4.000000
+[bt_navigator-8] [INFO] [1794245428.133870515] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245428.133874632] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245428.133878703] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245428.133882550] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245428.133886328] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245428.133890249] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245428.133894309] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245428.133898334] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245428.133902271] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[path_check-14] [INFO] [1794245428.135704301] [path_check_node]: PathCheck done,  poses length before check is, 14, poses length after check is : 14 !
+[controller_server-4] [INFO] [1794245428.334870264] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.000 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[bt_navigator-8] [INFO] [1794245428.733552355] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=4
+[bt_navigator-8] [INFO] [1794245428.733618709] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245428.733625836] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245428.733629990] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245428.733633725] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245428.733637330] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245428.733641037] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245428.733645187] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245428.733810803] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245428.733838117] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[collision_recover_node-13] [WARN] [1794245428.833731061] [collision_recover_node]: No obstacles received, cannot check collision.
+[bt_navigator-8] [INFO] [1794245429.333853989] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245429.333898318] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245429.333904160] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245429.333908153] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245429.333941556] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245429.333945479] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245429.333949773] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245429.333953931] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245429.333957728] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[collision_monitor-11] [INFO] [1794245429.349386289] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, -0.000068
+[controller_server-4] [INFO] [1794245429.435075054] [controller_server]: [transformGlobalPlan]: transformed look forward distance: 5.000
+[controller_server-4] [INFO] [1794245429.435209085] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 enable=否 forward_drive=100.00
+[controller_server-4] [INFO] [1794245429.435240151] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.000 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[velocity_smoother-10] [INFO] [1794245429.510717366] [velocity_smoother]: [VelocitySmoother] publishing velocity: (linear.x:1.000000, angular.z:-0.000068)!
+[controller_server-4] [INFO] [1794245429.538146215] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:-0.000053)
+[collision_recover_node-13] [INFO] [1794245429.688053316] [collision_recover_node]: No obstacles received, do not check for collision.
+[bt_navigator-8] [INFO] [1794245429.933459238] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245429.933500988] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245429.933506548] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245429.933510588] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245429.933514939] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245429.933518868] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245429.933523207] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245429.933527390] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245429.933531122] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[collision_recover_node-13] [WARN] [1794245429.933732787] [collision_recover_node]: No obstacles received, cannot check collision.
+[bt_navigator-8] [INFO] [1794245430.433934073] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 28.500000, 19.450000, 5.000000
+[bt_navigator-8] [INFO] [1794245430.433974238] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245430.433980071] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245430.433983896] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245430.433987817] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245430.433991426] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245430.433996010] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245430.434000007] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245430.434003783] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[controller_server-4] [INFO] [1794245430.435045565] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.000 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[path_check-14] [INFO] [1794245430.435941639] [path_check_node]: PathCheck done,  poses length before check is, 14, poses length after check is : 14 !
+[bt_navigator-8] [INFO] [1794245431.033552467] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=5
+[bt_navigator-8] [INFO] [1794245431.033635781] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245431.033645314] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245431.033649847] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245431.033653741] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245431.033684652] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245431.033689202] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245431.033693044] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245431.033697036] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[collision_recover_node-13] [WARN] [1794245431.033937878] [collision_recover_node]: No obstacles received, cannot check collision.
+[controller_server-4] [INFO] [1794245431.434893379] [controller_server]: [transformGlobalPlan]: transformed look forward distance: 5.000
+[controller_server-4] [INFO] [1794245431.435005534] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 enable=否 forward_drive=100.00
+[controller_server-4] [INFO] [1794245431.435024376] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.000 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[collision_monitor-11] [INFO] [1794245431.438210165] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, -0.000076
+[velocity_smoother-10] [INFO] [1794245431.510712583] [velocity_smoother]: [VelocitySmoother] publishing velocity: (linear.x:1.000000, angular.z:-0.000076)!
+[controller_server-4] [INFO] [1794245431.539087613] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:-0.000089)
+[bt_navigator-8] [INFO] [1794245431.633689128] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245431.633724846] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245431.633730346] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245431.633756380] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245431.633763148] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245431.633768281] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245431.633772205] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245431.633775813] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[collision_recover_node-13] [INFO] [1794245431.688076401] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [WARN] [1794245432.133660227] [collision_recover_node]: No obstacles received, cannot check collision.
+[bt_navigator-8] [INFO] [1794245432.233627248] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 30.500000, 19.450000, 6.000000
+[bt_navigator-8] [INFO] [1794245432.233669387] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245432.233674802] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245432.233678989] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245432.233682962] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245432.233688147] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245432.233692054] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245432.233696209] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[controller_server-4] [INFO] [1794245432.434936226] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.000 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[path_check-14] [INFO] [1794245432.735247040] [path_check_node]: PathCheck done,  poses length before check is, 14, poses length after check is : 14 !
+[bt_navigator-8] [INFO] [1794245432.833836088] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: odom vx=1.0000 m/s
+[bt_navigator-8] [INFO] [1794245432.833898679] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=6
+[bt_navigator-8] [INFO] [1794245432.833947141] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245432.833956153] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245432.833960628] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245432.833964386] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245432.833969212] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245432.833973598] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245432.833977465] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[collision_recover_node-13] [WARN] [1794245433.233543652] [collision_recover_node]: No obstacles received, cannot check collision.
+[bt_navigator-8] [INFO] [1794245433.433752682] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: teb plan received, poses=132 length=13.100 m
+[bt_navigator-8] [INFO] [1794245433.433848296] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: advance gpp window, teb_len=13.100 m <= 100.000 m -> z=[7,13]
+[bt_navigator-8] [INFO] [1794245433.433865474] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245433.433870884] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245433.433874801] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245433.433878573] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245433.433882600] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245433.433886406] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245433.433890256] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[controller_server-4] [INFO] [1794245433.435122385] [controller_server]: [transformGlobalPlan]: transformed look forward distance: 5.000
+[controller_server-4] [INFO] [1794245433.435222738] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 enable=否 forward_drive=100.00
+[controller_server-4] [INFO] [1794245433.435240724] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.000 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[collision_monitor-11] [INFO] [1794245433.438779987] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, -0.000087
+[velocity_smoother-10] [INFO] [1794245433.510720916] [velocity_smoother]: [VelocitySmoother] publishing velocity: (linear.x:1.000000, angular.z:-0.000087)!
+[controller_server-4] [INFO] [1794245433.638093654] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:-0.000043)
+[collision_recover_node-13] [INFO] [1794245433.888086255] [collision_recover_node]: No obstacles received, do not check for collision.
+[bt_navigator-8] [INFO] [1794245434.033792769] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 32.500000, 19.450000, 7.000000
+[bt_navigator-8] [INFO] [1794245434.033834147] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245434.033839576] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245434.033843384] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245434.033847637] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245434.033851746] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245434.033856063] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[collision_recover_node-13] [WARN] [1794245434.333557686] [collision_recover_node]: No obstacles received, cannot check collision.
+[controller_server-4] [INFO] [1794245434.434953334] [controller_server]: [NearHorizon] mode=1 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=no_threat omega_ref=0.000 delta=0.180 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=1.00 hold=0.30)
+[bt_navigator-8] [INFO] [1794245434.633583902] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=7
+[bt_navigator-8] [INFO] [1794245434.633663102] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 34.500000, 19.450000, 8.000000
+[bt_navigator-8] [INFO] [1794245434.633672453] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 36.500000, 19.450000, 9.000000
+[bt_navigator-8] [INFO] [1794245434.633677046] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 38.500000, 19.450000, 10.000000
+[bt_navigator-8] [INFO] [1794245434.633682047] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 40.500000, 19.450000, 11.000000
+[bt_navigator-8] [INFO] [1794245434.633686330] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 42.500000, 19.450000, 12.000000
+[bt_navigator-8] [INFO] [1794245434.633690411] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: output_goals: 43.500000, 19.450000, 13.000000
+[path_check-14] [INFO] [1794245435.035947168] [path_check_node]: PathCheck done,  poses length before check is, 14, poses length after check is : 14 !
+[bt_navigator-8] [INFO] [1794245435.133935814] [bt_navigator]: Navigate through poses completed with status 2, publishing empty mission_poses
+[bt_navigator-8] [INFO] [1794245435.134070432] [bt_navigator]: Goal canceled
+[bt_navigator-8] [INFO] [1794245435.134092769] [bt_navigator]: [navigate_through_poses] [ActionServer] Client requested to cancel the goal. Cancelling.
+[search_poses_near_edge_node-17] [INFO] [1794245435.134177987] [search_poses_near_edge]: [onMissionPoses] Received mission poses: 0
+[search_poses_near_edge_node-17] [WARN] [1794245435.134207861] [search_poses_near_edge]: No mission poses or mission poses has less than 2 poses
+[search_poses_near_edge_node-17] [INFO] [1794245435.134212815] [search_poses_near_edge]: [publishEmptyOutputs] invalid mission_poses
+[search_poses_near_edge_node-17] [INFO] [1794245435.134272133] [search_poses_near_edge]: [publishPairedPathsMarkers] 发布 0 对 mission/reference 可视化 marker
+[search_poses_near_edge_node-17] [INFO] [1794245435.134296988] [search_poses_near_edge]: [publishAllEdgeReferencePathsMarkers] 发布全部贴边参考线 marker: normal=0, no_collision=0
+[controller_server-4] [INFO] [1794245435.134729563] [controller_server]: Goal was canceled. Stopping the robot.
+[controller_server-4] [INFO] [1794245435.134783629] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[velocity_smoother-10] [INFO] [1794245435.210719485] [velocity_smoother]: [VelocitySmoother] publishing zero velocity for input command is zero, (linear.x:0.000000, angular.z:0.000000)!
+[collision_recover_node-13] [INFO] [1794245435.888061427] [collision_recover_node]: No obstacles received, do not check for collision.
+[velocity_smoother-10] [INFO] [1794245436.310726813] [velocity_smoother]: [VelocitySmoother] publishing zero velocity for velocity timeout, (linear.x:0.000000, angular.z:0.000000)!
+[collision_recover_node-13] [INFO] [1794245437.888118436] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245439.888084427] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245442.088033274] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245444.088104962] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245446.088072180] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245448.088089081] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245450.288068854] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245452.288093091] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245454.288070608] [collision_recover_node]: No obstacles received, do not check for collision.
+[collision_recover_node-13] [INFO] [1794245456.288049018] [collision_recover_node]: No obstacles received, do not check for collision.
+[rviz2-23] [INFO] [1794245458.411891994] [rclcpp]: signal_handler(signum=2)
+[static_transform_publisher-21] [INFO] [1794245458.411901210] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-12] [INFO] [1794245458.411951502] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-12] [INFO] [1794245458.412106775] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-12] [INFO] [1794245458.412132057] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[planner_server-6] [INFO] [1794245458.411951796] [rclcpp]: signal_handler(signum=2)
+[collision_monitor-11] [INFO] [1794245458.411957521] [rclcpp]: signal_handler(signum=2)
+[collision_monitor-11] [INFO] [1794245458.412036678] [collision_monitor]: Running Nav2 LifecycleNode rcl preshutdown (collision_monitor)
+[collision_monitor-11] [INFO] [1794245458.412122219] [collision_monitor]: Deactivating
+[collision_monitor-11] [INFO] [1794245458.412153565] [collision_monitor]: Destroying bond (collision_monitor) to lifecycle manager.
+[path_check-14] [INFO] [1794245458.411954962] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-10] [INFO] [1794245458.411962146] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-10] [INFO] [1794245458.412045993] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-10] [INFO] [1794245458.412124305] [velocity_smoother]: Deactivating
+[velocity_smoother-10] [INFO] [1794245458.412158036] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[map_server-1] [INFO] [1794245458.411966948] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-9] [INFO] [1794245458.411999843] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-9] [INFO] [1794245458.412088203] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-9] [INFO] [1794245458.412161099] [waypoint_follower]: Deactivating
+[waypoint_follower-9] [INFO] [1794245458.412190363] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[amcl-2] [INFO] [1794245458.412019028] [rclcpp]: signal_handler(signum=2)
+[amcl-2] [INFO] [1794245458.412542426] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[amcl-2] [INFO] [1794245458.412589503] [amcl]: Deactivating
+[amcl-2] [INFO] [1794245458.412600180] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[joint_state_publisher-16] Traceback (most recent call last):
+[joint_state_publisher-16]   File "/opt/ros/humble/lib/joint_state_publisher/joint_state_publisher", line 33, in <module>
+[joint_state_publisher-16]     sys.exit(load_entry_point('joint-state-publisher==2.4.0', 'console_scripts', 'joint_state_publisher')())
+[joint_state_publisher-16]   File "/opt/ros/humble/lib/python3.10/site-packages/joint_state_publisher/joint_state_publisher.py", line 466, in main
+[joint_state_publisher-16]     rclpy.spin(jsp)
+[joint_state_publisher-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 222, in spin
+[joint_state_publisher-16]     executor.spin_once()
+[joint_state_publisher-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+[joint_state_publisher-16]     self._spin_once_impl(timeout_sec)
+[joint_state_publisher-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+[joint_state_publisher-16]     handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+[joint_state_publisher-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+[joint_state_publisher-16]     return next(self._cb_iter)
+[joint_state_publisher-16]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 612, in _wait_for_ready_callbacks
+[lifecycle_manager-3] [INFO] [1794245458.412323572] [rclcpp]: signal_handler(signum=2)
+[controller_server-4] [INFO] [1794245458.412385369] [rclcpp]: signal_handler(signum=2)
+[controller_server-4] [INFO] [1794245458.412581815] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[robot_state_publisher-15] [INFO] [1794245458.412410136] [rclcpp]: signal_handler(signum=2)
+[smoother_server-5] [INFO] [1794245458.412442484] [rclcpp]: signal_handler(signum=2)
+[search_poses_near_edge_node-17] [INFO] [1794245458.412449487] [rclcpp]: signal_handler(signum=2)
+[joint_state_publisher-16]     raise ExternalShutdownException()
+[joint_state_publisher-16] rclpy.executors.ExternalShutdownException
+[collision_recover_node-13] [INFO] [1794245458.412561303] [rclcpp]: signal_handler(signum=2)
+[behavior_server-7] [INFO] [1794245458.412591362] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-8] [INFO] [1794245458.412660863] [rclcpp]: signal_handler(signum=2)
+[controller_server-4] [INFO] [1794245458.412669145] [controller_server]: Deactivating
+[controller_server-4] [INFO] [1794245458.412733354] [local_costmap.local_costmap]: Deactivating
+[controller_server-4] [INFO] [1794245458.412773448] [local_costmap.local_costmap]: spatio_temporal_voxel_layer was deactivated.
+[smoother_server-5] [INFO] [1794245458.412674264] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-5] [INFO] [1794245458.412727391] [smoother_server]: Deactivating
+[smoother_server-5] [INFO] [1794245458.412740844] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[planner_server-6] [INFO] [1794245458.412716432] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-6] [INFO] [1794245458.412813157] [planner_server]: Deactivating
+[bt_navigator-8] [INFO] [1794245458.413106106] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[map_server-1] [INFO] [1794245458.412922313] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[map_server-1] [INFO] [1794245458.413000641] [map_server]: Deactivating
+[lifecycle_manager-3] [INFO] [1794245458.412935844] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+[bt_navigator-8] [INFO] [1794245458.413205379] [bt_navigator]: Deactivating
+[bt_navigator-8] [INFO] [1794245458.413245861] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[map_server-1] [INFO] [1794245458.413622990] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[lifecycle_manager-3] [INFO] [1794245458.413758901] [lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
+[behavior_server-7] [INFO] [1794245458.415266911] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-7] [INFO] [1794245458.415351037] [behavior_server]: Deactivating
+[behavior_server-7] [INFO] [1794245458.415389631] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[path_check-14] [WARN] [1794245458.420043537] [tf2_buffer]: Detected time source change. Clearing TF buffer.
+[collision_monitor-11] [INFO] [1794245458.422624188] [collision_monitor]: Cleaning up
+[collision_monitor-11] [INFO] [1794245458.422677195] [collision_monitor]: [FootprintApproach]: Destroying Polygon
+[collision_monitor-11] [INFO] [1794245458.422687899] [collision_monitor]: [dabai_camera1]: Destroying PointCloud
+[collision_monitor-11] [INFO] [1794245458.422698828] [collision_monitor]: [dabai_camera2]: Destroying PointCloud
+[collision_monitor-11] [INFO] [1794245458.422704970] [collision_monitor]: [dabai_camera3]: Destroying PointCloud
+[collision_monitor-11] [INFO] [1794245458.422710152] [collision_monitor]: [dabai_camera4]: Destroying PointCloud
+[collision_monitor-11] [INFO] [1794245458.422714967] [collision_monitor]: [scan_close_filter_points]: Destroying PointCloud
+[amcl-2] [INFO] [1794245458.423043144] [amcl]: Cleaning up
+[velocity_smoother-10] [INFO] [1794245458.424795224] [velocity_smoother]: Cleaning up
+[velocity_smoother-10] [INFO] [1794245458.424860143] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[bt_navigator-8] [INFO] [1794245458.424827872] [bt_navigator]: Cleaning up
+[map_server-1] [INFO] [1794245458.425225871] [map_server]: Cleaning up
+[map_server-1] [INFO] [1794245458.425365137] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[waypoint_follower-9] [INFO] [1794245458.426501240] [waypoint_follower]: Cleaning up
+[smoother_server-5] [INFO] [1794245458.426758441] [smoother_server]: Cleaning up
+[behavior_server-7] [INFO] [1794245458.429982474] [behavior_server]: Cleaning up
+[collision_monitor-11] [INFO] [1794245458.430099119] [collision_monitor]: Destroying bond (collision_monitor) to lifecycle manager.
+[controller_server-4] [INFO] [1794245458.434716236] [controller_server]: [ControllerServer] publishing velocity: (linear.x:0.000000, angular.z:0.000000)
+[controller_server-4] [INFO] [1794245458.434894695] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[amcl-2] [INFO] [1794245458.435364576] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[waypoint_follower-9] [INFO] [1794245458.437417182] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[controller_server-4] [INFO] [1794245458.445297972] [controller_server]: Cleaning up
+[smoother_server-5] [INFO] [1794245458.449974481] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[behavior_server-7] [INFO] [1794245458.451246363] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[planner_server-6] [INFO] [1794245458.490487742] [planner_server]: Deactivating plugin GridBased of type SmacPlannerHybrid
+[planner_server-6] [INFO] [1794245458.490532856] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-6] [INFO] [1794245458.500718471] [planner_server]: Cleaning up
+[controller_server-4] [INFO] [1794245458.518816496] [local_costmap.local_costmap]: Cleaning up
+[planner_server-6] [INFO] [1794245458.529654223] [planner_server]: Cleaning up plugin GridBased of type SmacPlannerHybrid
+[planner_server-6] [INFO] [1794245458.530123873] [planner_server]: Destroying plugin GridBased of type SmacPlannerHybrid
+[planner_server-6] [INFO] [1794245458.531806549] [planner_server]: [FastPath] cleanup
+[collision_monitor-11] [INFO] [1794245458.546308533] [collision_monitor]: Destroying
+[behavior_server-7] [INFO] [1794245458.550787210] [behavior_server]: Destroying
+[planner_server-6] [INFO] [1794245458.552549846] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[controller_server-4] [INFO] [1794245458.569595843] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[smoother_server-5] [INFO] [1794245458.592250121] [smoother_server]: Destroying
+[controller_server-4] [INFO] [1794245458.592409079] [local_costmap.local_costmap]: Destroying
+[map_server-1] [INFO] [1794245458.595516778] [map_server]: Destroying
+[amcl-2] [INFO] [1794245458.599641913] [amcl]: Destroying
+[lifecycle_manager-3] [INFO] [1794245458.602182455] [lifecycle_manager_localization]: Destroying lifecycle_manager_localization
+[waypoint_follower-9] [INFO] [1794245458.613211149] [waypoint_follower]: Destroying
+[velocity_smoother-10] [INFO] [1794245458.617073306] [velocity_smoother]: Destroying
+[controller_server-4] [INFO] [1794245458.621878934] [controller_server]: Destroying
+[INFO] [collision_recover_node-13]: process has finished cleanly [pid 226076]
+[INFO] [static_transform_publisher-21]: process has finished cleanly [pid 226216]
+[INFO] [search_poses_near_edge_node-17]: process has finished cleanly [pid 226122]
+[INFO] [path_check-14]: process has finished cleanly [pid 226092]
+[lifecycle_manager-12] [INFO] [1794245458.664490679] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[planner_server-6] [INFO] [1794245458.696288401] [planner_server]: Destroying
+[INFO] [gzclient-19]: process has finished cleanly [pid 226194]
+[bt_navigator-8] [INFO] [1794245458.751411231] [bt_navigator]: Completed Cleaning up
+[bt_navigator-8] [INFO] [1794245458.751472443] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[bt_navigator-8] [INFO] [1794245458.765606129] [bt_navigator]: Destroying
+[ERROR] [joint_state_publisher-16]: process has died [pid 226099, exit code 1, cmd '/opt/ros/humble/lib/joint_state_publisher/joint_state_publisher /capella/share/capella_ros_launcher/urdf/turtlebot3_waffle.urdf --ros-args --params-file /tmp/launch_params_az9zg0z6'].
+[INFO] [robot_state_publisher-15]: process has finished cleanly [pid 226095]
+[INFO] [collision_monitor-11]: process has finished cleanly [pid 226070]
+[INFO] [behavior_server-7]: process has finished cleanly [pid 226041]
+[INFO] [map_server-1]: process has finished cleanly [pid 226029]
+[INFO] [smoother_server-5]: process has finished cleanly [pid 226037]
+[INFO] [lifecycle_manager-3]: process has finished cleanly [pid 226033]
+[INFO] [amcl-2]: process has finished cleanly [pid 226031]
+[INFO] [velocity_smoother-10]: process has finished cleanly [pid 226068]
+[INFO] [waypoint_follower-9]: process has finished cleanly [pid 226065]
+[INFO] [controller_server-4]: process has finished cleanly [pid 226035]
+[INFO] [lifecycle_manager-12]: process has finished cleanly [pid 226073]
+[INFO] [planner_server-6]: process has finished cleanly [pid 226039]
+[INFO] [bt_navigator-8]: process has finished cleanly [pid 226063]
+[INFO] [gzserver-18]: process has finished cleanly [pid 226151]
+[ERROR] [rviz2-23]: process has died [pid 226229, exit code -11, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /capella/避车测试/logs/034_T形_左到右/运行信息/view.rviz --ros-args'].

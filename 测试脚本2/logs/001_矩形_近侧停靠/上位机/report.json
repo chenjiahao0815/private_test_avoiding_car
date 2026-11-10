@@ -1,0 +1,16 @@
+{
+  "case": "矩形_近侧停靠",
+  "title": "矩形通道，近侧没堵，直接停近侧",
+  "expect": "near",
+  "dynamic": "none",
+  "no_go": false,
+  "定位": {
+    "map_pose": [
+      16.501,
+      19.45,
+      0.001
+    ],
+    "gazebo_error": 0.0
+  },
+  "result": "FAIL 30 秒内没有等到：道路模型 /garage_road_models"
+}
