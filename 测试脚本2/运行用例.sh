@@ -38,13 +38,36 @@ exec 9>&-
 TTY=(-i)
 [ -t 0 ] && [ -t 1 ] && TTY=(-it)
 echo "[$ID] 开始"
-# Ctrl+C 交给容器里的脚本清理，这里继续往下拷日志。
+# 保留画面时也把已完成的日志拷回 WSL，Ctrl+C 后再同步一次最终日志。
+sync_logs() (
+  flock 8
+  docker cp "$CTR:/capella/避车测试2/logs/$ID/." "$LOGS/$ID/" > /dev/null 2>&1
+) 8> "$LOGS/$ID/.日志同步锁"
+(
+  until docker exec "$CTR" test -f "/capella/避车测试2/logs/$ID/运行信息/completed"; do
+    sleep 2
+  done
+  if sync_logs; then echo "[$ID] 本轮结果及日志已同步：$LOGS/$ID"; fi
+) &
+watcher=$!
+finish_logs() {
+  kill "$watcher" 2>/dev/null || true
+  wait "$watcher" 2>/dev/null || true
+  sync_logs || echo "日志拷回失败，容器日志仍在 /capella/避车测试2/logs/$ID"
+}
+trap finish_logs EXIT
+# Ctrl+C 交给容器里的脚本清理，这里继续往下汇总。
 trap ':' INT
 docker exec "${TTY[@]}" "$CTR" bash /capella/避车测试2/一键避车测试.sh --case "$CASE" --run-id "$ID" "${EXTRA[@]}"
+run_code=$?
 trap - INT
-docker cp "$CTR:/capella/避车测试2/logs/$ID/." "$LOGS/$ID/" > /dev/null
+finish_logs
+trap - EXIT
 result=$(python3 -c 'import json, sys; print(json.load(open(sys.argv[1])).get("result", "无结果"))' \
   "$LOGS/$ID/上位机/report.json" 2> /dev/null || echo "无结果（看 $LOGS/$ID 各程序日志）")
+if [[ "$result" == PASS* ]] && [ "$run_code" -ne 0 ] && [ "$run_code" -ne 130 ]; then
+  result="FAIL 容器执行退出码 $run_code（报告为 PASS，检查清理日志）"
+fi
 echo "[$ID] $result"
 echo "日志：$LOGS/$ID"
 SUMMARY="$LOGS/汇总.md"

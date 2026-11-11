@@ -1,0 +1,153 @@
+{
+  "case": "矩形_等待中近侧放开",
+  "title": "等待中近侧放开，仍保存原远侧点，无车满 3 秒直接停远侧",
+  "expect": {
+    "park": "left",
+    "approve_side": 2,
+    "right_edge": false,
+    "give_up": null,
+    "far_wait": true,
+    "find_log": null,
+    "min_wait": 3.0
+  },
+  "no_go": [
+    "near"
+  ],
+  "timeline": [
+    [
+      "point",
+      1.0,
+      "no_go",
+      []
+    ]
+  ],
+  "dual": true,
+  "定位": {
+    "map_pose": [
+      16.501,
+      19.75,
+      0.001
+    ],
+    "gazebo_error": 0.0
+  },
+  "通道": {
+    "vertices": 4,
+    "no_go": [
+      "near"
+    ]
+  },
+  "行驶": {
+    "trigger_s": 14.0,
+    "length": 30.0
+  },
+  "来车": {
+    "robot": [
+      29.621,
+      19.753,
+      0.002
+    ],
+    "robot_s": 14.62,
+    "robot_offset_from_center": 0.25,
+    "car": [
+      35.506,
+      20.45,
+      3.142
+    ],
+    "car_s": 20.51
+  },
+  "通过性": {
+    "passable": false
+  },
+  "找点": {
+    "target": [
+      26.621,
+      22.6,
+      -0.0
+    ],
+    "z": 10.0,
+    "where": {
+      "along": -3.0,
+      "lateral": 2.6,
+      "side": "左",
+      "in_corridor": false
+    }
+  },
+  "时间线动作": [
+    [
+      2.89,
+      "point",
+      "no_go",
+      []
+    ]
+  ],
+  "停靠": {
+    "robot": [
+      26.765,
+      22.616,
+      -0.0
+    ],
+    "target": [
+      26.621,
+      22.6,
+      -0.0
+    ],
+    "distance": 0.145,
+    "yaw_vs_corridor_tangent_deg": 0.0,
+    "where": {
+      "along": -2.86,
+      "lateral": 2.62,
+      "side": "左",
+      "in_corridor": false
+    },
+    "heading": "顺行驶方向",
+    "seconds": 32.2
+  },
+  "行为树时间线": [
+    [
+      1.82,
+      "far_found"
+    ],
+    [
+      1.82,
+      "far_start"
+    ],
+    [
+      4.83,
+      "clear"
+    ],
+    [
+      4.83,
+      "approve"
+    ]
+  ],
+  "批准时 side": 2,
+  "时间线": {
+    "first": {
+      "far_found": 1.82,
+      "far_start": 1.82,
+      "clear": 4.83,
+      "approve": 4.83
+    },
+    "approve_side": 2,
+    "problems": [],
+    "policy": "保存远侧点，等待后直接导航"
+  },
+  "避车结束": {
+    "wait_seconds": 14.9,
+    "feedback_states": [
+      0,
+      1,
+      2
+    ],
+    "reason": "goal completed."
+  },
+  "恢复行驶": {
+    "robot": [
+      43.193,
+      19.747,
+      0.025
+    ],
+    "distance": 0.307
+  },
+  "result": "PASS"
+}

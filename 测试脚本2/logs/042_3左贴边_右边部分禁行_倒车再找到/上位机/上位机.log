@@ -1,0 +1,10 @@
+用例：3左贴边_右边部分禁行_倒车再找到（左边整段禁行，右边近处禁、远处空，倒车确认后再停右边）
+[定位] 机器人在通道起点  {"map_pose": [16.5, 20.25, 0.001], "gazebo_error": 0.0}
+[通道] 已发布矩形通道和禁扫区  {"vertices": 4, "no_go": ["左全", "右近处"]}
+[行驶] 沿通道左侧车道向前开  {"trigger_s": 14.0, "length": 30.0}
+[来车] 前方来车，上位机取消导航  {"robot": [29.581, 20.254, 0.002], "robot_s": 14.58, "robot_offset_from_center": 0.25, "car": [35.506, 19.55, 3.142], "car_s": 20.51}
+[通过性] 机器人原地挡路  {"passable": false}
+[靠右] 行为树发出靠右路径  {"seconds_after_avoid": 2.9, "poses": 16}
+[停靠] 机器人已停在停靠点  {"robot": [21.787, 17.202, -3.133], "target": [21.644, 17.25, 3.142], "distance": 0.151, "yaw_vs_corridor_tangent_deg": 0.5, "where": {"along": -7.79, "lateral": -2.8, "side": "右", "in_corridor": false}, "heading": "逆行驶方向", "seconds": 49.2}
+[时间线] 行为树关键事件（相对避车开始的秒数）  {"first": {"commit": 1.33, "arm": 3.08, "unsuppress": 8.65, "far_found": 16.94, "far_start": 16.94, "clear": 19.95, "confirm": 21.29, "approve": 21.29}, "approve_side": 2, "problems": []}
+[车离开] 车开出通道，上位机不再发车辆

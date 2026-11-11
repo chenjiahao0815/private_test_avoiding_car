@@ -1,0 +1,149 @@
+{
+  "case": "4左贴边_右边车位_倒车找到",
+  "title": "右边车位更靠后，近处找不到，返回途中找到并等待后停进车位",
+  "expect": {
+    "park": "right",
+    "approve_side": 2,
+    "right_edge": true,
+    "give_up": null,
+    "far_wait": true,
+    "find_log": null,
+    "min_wait": 3.0
+  },
+  "no_go": [
+    "左全",
+    "右后车位前",
+    "右后车位后"
+  ],
+  "timeline": [],
+  "dual": true,
+  "定位": {
+    "map_pose": [
+      16.501,
+      20.25,
+      0.001
+    ],
+    "gazebo_error": 0.0
+  },
+  "通道": {
+    "vertices": 4,
+    "no_go": [
+      "左全",
+      "右后车位前",
+      "右后车位后"
+    ]
+  },
+  "行驶": {
+    "trigger_s": 14.0,
+    "length": 30.0
+  },
+  "来车": {
+    "robot": [
+      29.601,
+      20.251,
+      0.0
+    ],
+    "robot_s": 14.6,
+    "robot_offset_from_center": 0.25,
+    "car": [
+      35.506,
+      19.55,
+      3.142
+    ],
+    "car_s": 20.51
+  },
+  "通过性": {
+    "passable": false
+  },
+  "靠右": {
+    "seconds_after_avoid": 2.8,
+    "poses": 16
+  },
+  "停靠": {
+    "robot": [
+      22.686,
+      17.214,
+      -3.135
+    ],
+    "target": [
+      22.553,
+      17.25,
+      3.142
+    ],
+    "distance": 0.138,
+    "yaw_vs_corridor_tangent_deg": 0.4,
+    "where": {
+      "along": -6.92,
+      "lateral": -2.79,
+      "side": "右",
+      "in_corridor": false
+    },
+    "heading": "逆行驶方向",
+    "seconds": 51.1
+  },
+  "行为树时间线": [
+    [
+      1.25,
+      "commit"
+    ],
+    [
+      2.95,
+      "arm"
+    ],
+    [
+      8.55,
+      "unsuppress"
+    ],
+    [
+      17.77,
+      "far_found"
+    ],
+    [
+      17.77,
+      "far_start"
+    ],
+    [
+      20.78,
+      "clear"
+    ],
+    [
+      20.78,
+      "approve"
+    ]
+  ],
+  "批准时 side": 2,
+  "时间线": {
+    "first": {
+      "commit": 1.25,
+      "arm": 2.95,
+      "unsuppress": 8.55,
+      "far_found": 17.77,
+      "far_start": 17.77,
+      "clear": 20.78,
+      "approve": 20.78
+    },
+    "approve_side": 2,
+    "problems": [],
+    "policy": "保存远侧点，等待后直接导航"
+  },
+  "避车结束": {
+    "wait_seconds": 14.9,
+    "feedback_states": [
+      0,
+      1,
+      3,
+      1,
+      2
+    ],
+    "reason": "goal completed."
+  },
+  "恢复行驶": {
+    "robot": [
+      43.31,
+      20.255,
+      0.244
+    ],
+    "distance": 0.19
+  },
+  "result": "PASS"
+}

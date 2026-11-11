@@ -37,8 +37,7 @@ DEFAULT_CASE = "矩形_远侧无车"
 BT_EVENTS = {
     "far_start": "记下远侧等待起点",
     "far_found": "找点返回 side=2",
-    "clear": "等下一次找点确认远侧点",
-    "confirm": "远侧点确认通过",
+    "clear": "秒没有动态车，直接使用已保存的远侧点",
     "approve": "批准停靠点",
     "busy": "秒检测到动态车",
     "timeout": "远侧等待达到",
@@ -76,6 +75,179 @@ def read_events(path):
     events.sort(key=lambda e: e[0])
     return events
 
+
+
+def event_point(text):
+    match = re.search(r"\(([-+\d.eE]+),\s*([-+\d.eE]+)\)", text)
+    return tuple(map(float, match.groups())) if match else None
+
+
+def evaluate_timeline(events, expect, dual, has_right_edge, find_text, bt_text):
+    """按保存远侧点、等待后直接放行的规则检查日志，不要求再次找点。"""
+    first = {}
+    for stamp, name, _ in events:
+        first.setdefault(name, stamp)
+    problems = []
+    approvals = [event for event in events if event[1] == "approve"]
+    approval = approvals[-1] if approvals else None
+    approve_side = None
+    if approval:
+        match = re.search(r"side=(\d+)", approval[2])
+        approve_side = int(match.group(1)) if match else None
+
+    def last_before(name, stamp, since=float("-inf")):
+        return next((event for event in reversed(events)
+                     if event[1] == name and since <= event[0] <= stamp), None)
+
+    def require_events(*names):
+        missing = [name for name in names if name not in first]
+        problems.extend(f"行为树日志里没有 {BT_EVENTS[name]}" for name in missing)
+        return not missing
+
+    if dual and not events:
+        problems.append("没有读取到本轮行为树事件，检查日志路径和节点运行情况")
+    if expect["approve_side"] != "any" and approve_side != expect["approve_side"]:
+        problems.append(f"批准的 side 应为 {expect['approve_side']}，实际 {approve_side}")
+    if expect["park"] in ("left", "right") and not approval:
+        problems.append("应停车却没有批准停靠点")
+    if expect["park"] == "none" and approval:
+        problems.append("期望不停靠，却批准了停靠点")
+    if expect["far_wait"] is True and "far_start" not in first:
+        problems.append("应该进入远侧等待却没有")
+    if expect["far_wait"] is False and "far_start" in first:
+        problems.append("不应进入远侧等待却进入了")
+    if expect["right_edge"] != has_right_edge:
+        problems.append("应该走靠右却没有靠右路径" if expect["right_edge"]
+                        else "不应走靠右却走了")
+
+    if approval and approve_side == 2:
+        stamp = approval[0]
+        start = last_before("far_start", stamp)
+        commit = last_before("commit", stamp)
+        if start is None or (commit and start[0] < commit[0]):
+            problems.append("批准远侧点之前没有本轮远侧等待起点")
+        else:
+            wait = stamp - start[0]
+            if wait < expect["min_wait"] - 0.3:
+                problems.append(f"远侧点等了 {wait:.1f} 秒就批准，应 ≥{expect['min_wait']} 秒")
+            if wait >= 15.0 * 2.5 + 2.0:
+                problems.append(f"远侧点等待 {wait:.1f} 秒仍被批准，超过总等待上限")
+            clear = last_before("clear", stamp, start[0])
+            if clear is None:
+                problems.append("批准远侧点前没有连续无车放行事件")
+            if any(start[0] <= t <= stamp and name in ("busy", "timeout")
+                   for t, name, _ in events):
+                problems.append("本轮远侧已被放弃，却仍批准了该点")
+            found = last_before("far_found", start[0])
+            found_point = event_point(found[2]) if found else None
+            approved_point = event_point(approval[2])
+            if found_point is None or approved_point is None:
+                problems.append("日志缺少首次远侧点或批准点坐标")
+            elif math.dist(found_point, approved_point) > 0.02:
+                problems.append(f"批准点 {approved_point} 与首次保存的远侧点 {found_point} 不一致")
+            for line in find_text.splitlines():
+                match = LOG_LINE.search(line)
+                if match and start[0] < float(match.group(2)) < stamp and \
+                        "开始寻找避让点" in match.group(3):
+                    problems.append("保存远侧点后等待期间仍重新调用 find")
+                    break
+
+    if expect["give_up"] in ("busy", "timeout"):
+        reason = expect["give_up"]
+        if require_events("far_start", reason):
+            event = next(event for event in events if event[1] == reason)
+            start = last_before("far_start", event[0])
+            if start is None:
+                problems.append("远侧放弃事件之前没有等待起点")
+            else:
+                wait = event[0] - start[0]
+                seconds = 4.0 if reason == "busy" else 15.0
+                if not seconds - 0.3 <= wait <= seconds * 2.5 + 2.0:
+                    problems.append(f"远侧放弃用了 {wait:.1f} 秒，应约 {seconds:g} 秒")
+            other = "timeout" if reason == "busy" else "busy"
+            if other in first and first[other] < event[0]:
+                problems.append(f"远侧应由 {reason} 放弃，却先出现 {other}")
+    elif expect["give_up"] is None and ("busy" in first or "timeout" in first):
+        problems.append("不应放弃远侧却放弃了")
+
+    if dual:
+        for stamp, name, _ in events:
+            if name in ("arm", "unsuppress"):
+                commit = last_before("commit", stamp)
+                if commit is None:
+                    problems.append(f"{name} 之前没有进入靠右事件")
+                    continue
+                if name == "unsuppress":
+                    arm = last_before("arm", stamp, commit[0])
+                    if arm is None:
+                        problems.append("靠右跟踪尚未开始就解除远侧屏蔽")
+                    elif stamp - arm[0] < 5.0 - 0.3:
+                        problems.append(f"靠右跟踪 {stamp - arm[0]:.1f} 秒就解除远侧屏蔽，应 ≥5 秒")
+            elif name == "far_start":
+                commit = last_before("commit", stamp)
+                if commit:
+                    arm = last_before("arm", stamp, commit[0])
+                    if arm is None or stamp < arm[0] + 5.0 - 0.3:
+                        problems.append("靠右规划期间或 5 秒保护期内就采纳了远侧点")
+    else:
+        if "GARAGE_ENABLE_DUAL_SIDE_AVOIDANCE=false" not in bt_text or "dual_side.xml" in bt_text:
+            problems.append("双侧开关关了，行为树却没有退回老 XML")
+        if "找点结果 side=2" in find_text or "far_found" in first:
+            problems.append("双侧开关关了，找点却返回了远侧点")
+
+    if expect["find_log"] and expect["find_log"] not in find_text:
+        problems.append(f"找点日志里没有“{expect['find_log']}”")
+    return {"first": first, "approve_side": approve_side, "problems": list(dict.fromkeys(problems))}
+
+
+def check_interface():
+    """在启动仿真前验证实际导入的接口和序列化。"""
+    import capella_ros_msg
+    from capella_ros_msg.action import FindCarAvoidancePoint
+    from rclpy.serialization import deserialize_message, serialize_message
+
+    goal_fields = FindCarAvoidancePoint.Goal.get_fields_and_field_types()
+    result_fields = FindCarAvoidancePoint.Result.get_fields_and_field_types()
+    if "enable_far_side" not in goal_fields or "side" not in result_fields:
+        raise RuntimeError(
+            f"加载了旧找点接口 {capella_ros_msg.__file__}，缺少 enable_far_side 或 side。"
+            "请先加载 avoid_msg_ws 新接口，再重新编译 avoid_ws，不能继续双侧测试。")
+    goal = FindCarAvoidancePoint.Goal()
+    goal.enable_far_side = True
+    result = FindCarAvoidancePoint.Result()
+    result.side = 2
+    if not deserialize_message(serialize_message(goal), type(goal)).enable_far_side or \
+            deserialize_message(serialize_message(result), type(result)).side != 2:
+        raise RuntimeError("找点接口序列化失败")
+    print(f"接口检查通过：{capella_ros_msg.__file__}，enable_far_side=True，side=2", flush=True)
+
+
+def review_log_dir(path):
+    """只重评已有日志的时间线，保留历史 report.json 和完整流程结论。"""
+    with open(os.path.join(path, "上位机", "report.json")) as handle:
+        report = json.load(handle)
+    case = cases.CASES.get(report["case"])
+    expect = case["expect"] if case else report["expect"]
+    dual = case["dual"] if case else report.get("dual", True)
+    bt_path = os.path.join(path, "避车行为树_garage_navigator", "garage_navigator.log")
+    find_path = os.path.join(path, "找点_find_parking_space", "find_parking_space.log")
+    with open(bt_path, errors="replace") as handle:
+        bt_text = handle.read()
+    with open(find_path, errors="replace") as handle:
+        find_text = handle.read()
+    begin = next((float(match.group(2)) for line in bt_text.splitlines()
+                  if (match := LOG_LINE.search(line)) and
+                  "Begin to execute garage_vehicle_avoidance program." in match.group(3)), None)
+    if begin is None:
+        raise RuntimeError("日志没有本轮避车开始时间")
+    events = [event for event in read_events(bt_path) if event[0] >= begin]
+    checked = evaluate_timeline(events, expect, dual, bool(report.get("靠右")),
+                                find_text, bt_text)
+    checked["first"] = {name: round(stamp - begin, 2) for name, stamp in checked["first"].items()}
+    checked["时间线判定"] = "FAIL" if checked["problems"] else "PASS"
+    checked["原始完整流程结果"] = report.get("result", "未完成")
+    print(json.dumps(checked, ensure_ascii=False, indent=2))
+    return 1 if checked["problems"] else 0
 
 class Scene:
     """一个用例的几何：通道多边形、机器人车道、来车车道、禁扫区。"""
@@ -275,8 +447,10 @@ def run_ros(args):
             self.save()
 
         def save(self):
-            with open(self.report_path, "w") as handle:
+            temporary = self.report_path + ".tmp"
+            with open(temporary, "w") as handle:
                 json.dump(self.report, handle, ensure_ascii=False, indent=2)
+            os.replace(temporary, self.report_path)
 
         def spin_for(self, seconds):
             end = time.monotonic() + seconds
@@ -712,90 +886,25 @@ def run_ros(args):
             return result, states
 
         def check_timeline(self):
-            """从行为树、找点日志核对时间关系（墙钟，仿真比实时慢时只会更长）。"""
+            """检查本轮时间线，保存的远侧点等待无车后直接批准。"""
             self.spin_for(0.5)
-            expect = self.scene.expect
-            events = [e for e in read_events(self.bt_log) if e[0] >= self.avoid_wall - 1.0]
-            first = {}
-            for stamp, name, _ in events:
-                first.setdefault(name, stamp)
-            rel = {k: round(v - self.avoid_wall, 2) for k, v in first.items()}
-            self.report["行为树时间线"] = [[round(s - self.avoid_wall, 2), n] for s, n, _ in events if n != "far_found"]
-            problems = []
-
-            def need(*names):
-                missing = [n for n in names if n not in first]
-                problems.extend(f"行为树日志里没有 {BT_EVENTS[n]}" for n in missing)
-                return not missing
-
-            def last_before(name, limit):
-                stamps = [s for s, n, _ in events if n == name and s <= limit]
-                return stamps[-1] if stamps else None
-
-            approvals = [(s, t) for s, n, t in events if n == "approve"]
-            approve, approve_side = None, None
-            if approvals:
-                approve = approvals[-1][0]
-                m = re.search(r"side=(\d+)", approvals[-1][1])
-                approve_side = int(m.group(1)) if m else None
-            self.report["批准时 side"] = approve_side
-
-            if expect["approve_side"] != "any" and approve_side != expect["approve_side"]:
-                problems.append(f"批准的 side 应为 {expect['approve_side']}，实际 {approve_side}")
-            if expect["far_wait"] is True and "far_start" not in first:
-                problems.append("应该进入远侧等待却没有")
-            if expect["far_wait"] is False and "far_start" in first:
-                problems.append("不应进入远侧等待却进入了")
-            if approve_side == 2:
-                start = last_before("far_start", approve)
-                if last_before("confirm", approve) is None:
-                    problems.append("远侧点没有经过确认就批准了")
-                if start is not None and approve - start < expect["min_wait"] - 0.3:
-                    problems.append(f"远侧点等了 {approve - start:.1f} 秒就批准，应 ≥{expect['min_wait']} 秒")
-            if expect["right_edge"] and self.right_edge_path is None:
-                problems.append("应该走靠右却没有靠右路径")
-            if not expect["right_edge"] and self.right_edge_path is not None:
-                problems.append("不应走靠右却走了")
-            if expect["give_up"] == "busy" and need("far_start", "busy"):
-                wait = first["busy"] - first["far_start"]
-                if not 4.0 - 0.3 <= wait <= 4.0 * 2.5 + 2.0:
-                    problems.append(f"连续有车到放弃用了 {wait:.1f} 秒，应约 4 秒")
-                if "timeout" in first and first["timeout"] < first["busy"]:
-                    problems.append("持续有车却是 15 秒超时放弃的")
-            if expect["give_up"] == "timeout" and need("far_start", "timeout"):
-                wait = first["timeout"] - first["far_start"]
-                if not 15.0 - 0.3 <= wait <= 15.0 * 2.5:
-                    problems.append(f"放弃用了 {wait:.1f} 秒，应约 15 秒")
-                if "busy" in first and first["busy"] < first["timeout"]:
-                    problems.append("应 15 秒超时放弃，却是连续 4 秒有车放弃的")
-            if expect["give_up"] is None and ("busy" in first or "timeout" in first):
-                problems.append("不应放弃远侧却放弃了")
-            if self.scene.dual and "arm" in first:
-                arm = first["arm"]
-                if "unsuppress" in first and first["unsuppress"] - arm < 5.0 - 0.3:
-                    problems.append(f"靠右跟踪 {first['unsuppress'] - arm:.1f} 秒就解除远侧屏蔽，应 ≥5 秒")
-                early = [s for s, n, _ in events if n == "far_start" and first["commit"] <= s < arm + 5.0 - 0.3]
-                if early:
-                    problems.append(f"靠右后 {early[0] - arm:.1f} 秒就采纳了远侧点")
-            try:
-                find_text = open(self.find_log, errors="replace").read()
-            except OSError:
-                find_text = ""
-            if expect["find_log"] and expect["find_log"] not in find_text:
-                problems.append(f"找点日志里没有“{expect['find_log']}”")
-            if not self.scene.dual:
-                try:
-                    bt_text = open(self.bt_log, errors="replace").read()
-                except OSError:
-                    bt_text = ""
-                if "GARAGE_ENABLE_DUAL_SIDE_AVOIDANCE=false" not in bt_text or "dual_side.xml" in bt_text:
-                    problems.append("双侧开关关了，行为树却没有退回老 XML")
-                if "找点结果 side=2" in find_text:
-                    problems.append("双侧开关关了，找点却返回了远侧点")
-            self.log("时间线", "行为树关键事件（相对避车开始的秒数）", first=rel, approve_side=approve_side,
-                     problems=problems)
-            if problems:
-                raise Fail("；".join(problems))
+            with open(self.bt_log, errors="replace") as handle:
+                bt_text = handle.read()
+            with open(self.find_log, errors="replace") as handle:
+                find_text = handle.read()
+            events = [event for event in read_events(self.bt_log) if event[0] >= self.avoid_wall - 1.0]
+            checked = evaluate_timeline(events, self.scene.expect, self.scene.dual,
+                                        self.right_edge_path is not None, find_text, bt_text)
+            relative = {name: round(stamp - self.avoid_wall, 2)
+                        for name, stamp in checked["first"].items()}
+            self.report["行为树时间线"] = [[round(stamp - self.avoid_wall, 2), name]
+                                         for stamp, name, _ in events]
+            self.report["批准时 side"] = checked["approve_side"]
+            self.log("时间线", "行为树关键事件（相对避车开始的秒数）", first=relative,
+                     approve_side=checked["approve_side"], problems=checked["problems"],
+                     policy="保存远侧点，等待后直接导航")
+            if checked["problems"]:
+                raise Fail("；".join(checked["problems"]))
 
         def car_passes(self, result, states):
             self.status = "6/7 car passing"
@@ -861,9 +970,10 @@ def run_ros(args):
     try:
         node.run()
         print("PASS 避车全流程完成", flush=True)
-    except Fail as error:
+    except Exception as error:
         node.status = "FAIL (see log)"
         node.report["result"] = f"FAIL {error}"
+        node.report["error_type"] = type(error).__name__
         node.save()
         node.spin_for(1.0)
         print(f"FAIL {error}", flush=True)
@@ -882,7 +992,16 @@ def main():
                         help="打印 Gazebo 生成位姿、map -> odom、world、map")
     parser.add_argument("--rviz-template")
     parser.add_argument("--rviz-out")
-    args, _ = parser.parse_known_args()
+    parser.add_argument("--check-interface", action="store_true",
+                        help="检查当前加载的找点接口，不启动机器人")
+    parser.add_argument("--review-log-dir",
+                        help="按当前策略只重评已有日志的时间线，不改历史报告")
+    args = parser.parse_args()
+    if args.check_interface:
+        check_interface()
+        return
+    if args.review_log_dir:
+        raise SystemExit(review_log_dir(args.review_log_dir))
     if args.print_launch_args:
         main_prepare(args)
         return

@@ -1,0 +1,14 @@
+用例：矩形_等待中近侧放开（等待中近侧放开，仍保存原远侧点，无车满 3 秒直接停远侧）
+[定位] 机器人在通道起点  {"map_pose": [16.501, 19.75, 0.001], "gazebo_error": 0.0}
+[通道] 已发布矩形通道和禁扫区  {"vertices": 4, "no_go": ["near"]}
+[行驶] 沿通道右侧车道向前开  {"trigger_s": 14.0, "length": 30.0}
+[来车] 前方来车，上位机取消导航  {"robot": [29.621, 19.753, 0.002], "robot_s": 14.62, "robot_offset_from_center": 0.25, "car": [35.506, 20.45, 3.142], "car_s": 20.51}
+[通过性] 机器人原地挡路  {"passable": false}
+[找点] 第一次找到停靠点  {"target": [26.621, 22.6, -0.0], "z": 10.0, "where": {"along": -3.0, "lateral": 2.6, "side": "左", "in_corridor": false}}
+[禁扫区] 换成 无
+[停靠] 机器人已停在停靠点  {"robot": [26.765, 22.616, -0.0], "target": [26.621, 22.6, -0.0], "distance": 0.145, "yaw_vs_corridor_tangent_deg": 0.0, "where": {"along": -2.86, "lateral": 2.62, "side": "左", "in_corridor": false}, "heading": "顺行驶方向", "seconds": 32.2}
+[时间线] 行为树关键事件（相对避车开始的秒数）  {"first": {"far_found": 1.82, "far_start": 1.82, "clear": 4.83, "approve": 4.83}, "approve_side": 2, "problems": [], "policy": "保存远侧点，等待后直接导航"}
+[车离开] 车开出通道，上位机不再发车辆
+[避车结束] 避车动作成功  {"wait_seconds": 14.9, "feedback_states": [0, 1, 2], "reason": "goal completed."}
+[恢复行驶] 到达终点  {"robot": [43.193, 19.747, 0.025], "distance": 0.307}
+PASS 避车全流程完成

@@ -1,0 +1,173 @@
+[INFO] [1794360607.028454970] [find_free_space_action_server]: find_free_space_action_server started.
+[INFO] [1794360607.040716284] [find_free_space_action_server]: topic_name_global_costmap: /global_costmap/costmap_raw
+[INFO] [1794360607.040947146] [find_free_space_action_server]: service_name_check_car_passble: /check_car_passable
+[INFO] [1794360607.041881814] [find_free_space_action_server]: topic_name_footprint: /global_costmap/published_footprint
+[INFO] [1794360607.042099666] [find_free_space_action_server]: search_interval: 0.5
+[INFO] [1794360607.043174128] [find_free_space_action_server]: search_radius_min: 3.0
+[INFO] [1794360607.043447237] [find_free_space_action_server]: search_radius_max: 3.3
+[INFO] [1794360607.043672200] [find_free_space_action_server]: search_radius_extra_dis: 2.0
+[INFO] [1794360607.043844881] [find_free_space_action_server]: outside_min: 1.1
+[INFO] [1794360607.044002964] [find_free_space_action_server]: outside_max: 1.4
+[INFO] [1794360607.044160237] [find_free_space_action_server]: inside_step: 0.1
+[INFO] [1794360607.044316919] [find_free_space_action_server]: check_service_max_time: 1.0
+[INFO] [1794360607.044475983] [find_free_space_action_server]: show_global_costmap_raw_cv2: False
+[INFO] [1794360607.044638585] [find_free_space_action_server]: show_global_costmap_raw_colored_cv2: False
+[INFO] [1794360607.044794121] [find_free_space_action_server]: inward_offset: 0.0
+[INFO] [1794360607.044950400] [find_free_space_action_server]: max_inward_offset: 1.5
+[INFO] [1794360607.045104024] [find_free_space_action_server]: search_point_interval: 0.15
+[INFO] [1794360607.045262490] [find_free_space_action_server]: footprint_sweep_long_step: 999.0  # 默认999.0=不启用扫掠检查
+[INFO] [1794360607.045417655] [find_free_space_action_server]: footprint_sweep_short_step: 999.0 # 默认999.0=只扫两条长边
+[INFO] [1794360607.045592982] [find_free_space_action_server]: external_point_max_distance: 8.0
+[INFO] [1794360607.045769010] [find_free_space_action_server]: point_free_check_radius: 0.2
+[INFO] [1794360607.046706976] [find_free_space_action_server]: stop_in_place_min_dist: 2.0
+[INFO] [1794360607.047336743] [find_free_space_action_server]: max_robot_pose_age: 1.0
+[INFO] [1794360607.047832296] [find_free_space_action_server]: robot_pose_wait_timeout: 1.5
+[INFO] [1794360607.048032152] [find_free_space_action_server]: enable_dual_side: True
+/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/qos.py:307: UserWarning: DurabilityPolicy.RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL is deprecated. Use DurabilityPolicy.TRANSIENT_LOCAL instead.
+  warnings.warn(
+[INFO] [1794360607.298484570] [find_free_space_action_server]: robot_width: 1.320, footprint_vertices (local): [(0.925, 0.660), (0.925, -0.660), (-0.925, -0.660), (-0.925, 0.660)]
+[INFO] [1794360640.904250388] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794360640.937604685] [find_free_space_action_server]: 禁扫区[0]: (13.000, 21.550), (47.000, 21.550), (47.000, 25.100), (13.000, 25.100)
+[INFO] [1794360640.938596887] [find_free_space_action_server]: 收到禁扫区: 1个区域
+[INFO] [1794360640.945812176] [find_free_space_action_server]: 收到避车停车点: 0个
+[INFO] [1794360642.150048567] [find_free_space_action_server]: enable_dual_side=True, enable_far_side=True
+[INFO] [1794360642.158992607] [find_free_space_action_server]: polygons: [geometry_msgs.msg.Polygon(points=[geometry_msgs.msg.Point32(x=15.0, y=18.5, z=0.0), geometry_msgs.msg.Point32(x=45.0, y=18.5, z=0.0), geometry_msgs.msg.Point32(x=45.0, y=21.5, z=0.0), geometry_msgs.msg.Point32(x=15.0, y=21.5, z=0.0)])]
+[INFO] [1794360642.160430893] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794360642.162826827] [find_free_space_action_server]: 机器人在通道内，使用当前通道: 
+[[15.  18.5]
+ [45.  18.5]
+ [45.  21.5]
+ [15.  21.5]]
+[INFO] [1794360642.163066431] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500),(45.000, 18.500),(45.000, 21.500),(15.000, 21.500)]
+[INFO] [1794360642.163250753] [find_free_space_action_server]: 寻找停靠点...
+[INFO] [1794360642.170964192] [find_free_space_action_server]: origin_x: -5.000
+[INFO] [1794360642.172820168] [find_free_space_action_server]: origin_y: -5.000
+[INFO] [1794360642.178709799] [find_free_space_action_server]: resolution: 0.050
+[INFO] [1794360642.190835260] [find_free_space_action_server]: width: 1400
+[INFO] [1794360642.191093890] [find_free_space_action_server]: height: 1000
+[INFO] [1794360642.204589566] [find_free_space_action_server]: 寻找最近的边界...
+[INFO] [1794360642.205952096] [find_free_space_action_server]: nearest_boundary: [(45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794360642.208338494] [find_free_space_action_server]: k_radian: 0.000, k_degree: 0.000
+[INFO] [1794360642.208780375] [find_free_space_action_server]: robot: (29.521, 20.254)
+[INFO] [1794360642.209071961] [find_free_space_action_server]: car: (35.506, 19.550)
+[INFO] [1794360642.223222705] [find_free_space_action_server]: 获取当前格子数量和地图的边长 footprint 覆盖栅格数=1064, 分辨率=0.050m, footprint_vertices=[(0.925, 0.660), (0.925, -0.660), (-0.925, -0.660), (-0.925, 0.660)]
+[INFO] [1794360642.223552289] [find_free_space_action_server]: k: 0.000, car_robot_k: 3.025, k_diff: 3.025
+[INFO] [1794360642.223941131] [find_free_space_action_server]: k: 3.142, k_robot: 0.001, k_diff2: 3.141
+[INFO] [1794360642.224131832] [find_free_space_action_server]: 话题无有效外部停车点，使用自搜索
+[INFO] [1794360642.224449079] [find_free_space_action_server]: 近侧：沿边 3.00~6.60 m，k=3.142，k_diff2=3.141
+[INFO] [1794360642.224613373] [find_free_space_action_server]: 近侧：在机器人后方避车
+[INFO] [1794360642.224802856] [find_free_space_action_server]: 近侧：通道宽度 3.000
+[INFO] [1794360642.227648400] [find_free_space_action_server]: 近侧：搜索偏移 offset_min=1.10, offset_max=1.40
+[INFO] [1794360642.228282788] [find_free_space_action_server]: 近侧 find_vertices: [(22.921, 22.600),(26.521, 22.600),(26.521, 22.900),(22.921, 22.900)]
+[INFO] [1794360642.238388606] [find_free_space_action_server]: 近侧：候选点 48 个
+[INFO] [1794360642.267429214] [find_free_space_action_server]: 候选点(26.37,22.60) 在禁扫区内
+[INFO] [1794360642.280711302] [find_free_space_action_server]: 候选点(26.37,22.75) 在禁扫区内
+[INFO] [1794360642.282912432] [find_free_space_action_server]: 候选点(26.22,22.60) 在禁扫区内
+[INFO] [1794360642.283576584] [find_free_space_action_server]: 候选点(26.22,22.75) 在禁扫区内
+[INFO] [1794360642.283958390] [find_free_space_action_server]: 候选点(26.07,22.60) 在禁扫区内
+[INFO] [1794360642.284338337] [find_free_space_action_server]: 候选点(26.07,22.75) 在禁扫区内
+[INFO] [1794360642.286186701] [find_free_space_action_server]: 候选点(25.92,22.60) 在禁扫区内
+[INFO] [1794360642.288429532] [find_free_space_action_server]: 候选点(25.92,22.75) 在禁扫区内
+[INFO] [1794360642.289103277] [find_free_space_action_server]: 候选点(25.77,22.60) 在禁扫区内
+[INFO] [1794360642.289807404] [find_free_space_action_server]: 候选点(25.77,22.75) 在禁扫区内
+[INFO] [1794360642.290635860] [find_free_space_action_server]: 候选点(25.62,22.60) 在禁扫区内
+[INFO] [1794360642.291289357] [find_free_space_action_server]: 候选点(25.62,22.75) 在禁扫区内
+[INFO] [1794360642.291848935] [find_free_space_action_server]: 候选点(25.47,22.60) 在禁扫区内
+[INFO] [1794360642.292801099] [find_free_space_action_server]: 候选点(25.47,22.75) 在禁扫区内
+[INFO] [1794360642.295154377] [find_free_space_action_server]: 候选点(25.32,22.60) 在禁扫区内
+[INFO] [1794360642.295788739] [find_free_space_action_server]: 候选点(25.32,22.75) 在禁扫区内
+[INFO] [1794360642.296477501] [find_free_space_action_server]: 候选点(25.17,22.60) 在禁扫区内
+[INFO] [1794360642.301407108] [find_free_space_action_server]: 候选点(25.17,22.75) 在禁扫区内
+[INFO] [1794360642.306793859] [find_free_space_action_server]: 候选点(25.02,22.60) 在禁扫区内
+[INFO] [1794360642.307426724] [find_free_space_action_server]: 候选点(25.02,22.75) 在禁扫区内
+[INFO] [1794360642.307829224] [find_free_space_action_server]: 候选点(24.87,22.60) 在禁扫区内
+[INFO] [1794360642.308487791] [find_free_space_action_server]: 候选点(24.87,22.75) 在禁扫区内
+[INFO] [1794360642.309291525] [find_free_space_action_server]: 候选点(24.72,22.60) 在禁扫区内
+[INFO] [1794360642.309698470] [find_free_space_action_server]: 候选点(24.72,22.75) 在禁扫区内
+[INFO] [1794360642.310029964] [find_free_space_action_server]: 候选点(24.57,22.60) 在禁扫区内
+[INFO] [1794360642.311228515] [find_free_space_action_server]: 候选点(24.57,22.75) 在禁扫区内
+[INFO] [1794360642.311841051] [find_free_space_action_server]: 候选点(24.42,22.60) 在禁扫区内
+[INFO] [1794360642.312410313] [find_free_space_action_server]: 候选点(24.42,22.75) 在禁扫区内
+[INFO] [1794360642.313010375] [find_free_space_action_server]: 候选点(24.27,22.60) 在禁扫区内
+[INFO] [1794360642.313507605] [find_free_space_action_server]: 候选点(24.27,22.75) 在禁扫区内
+[INFO] [1794360642.313869713] [find_free_space_action_server]: 候选点(24.12,22.60) 在禁扫区内
+[INFO] [1794360642.314188423] [find_free_space_action_server]: 候选点(24.12,22.75) 在禁扫区内
+[INFO] [1794360642.314568416] [find_free_space_action_server]: 候选点(23.97,22.60) 在禁扫区内
+[INFO] [1794360642.314911873] [find_free_space_action_server]: 候选点(23.97,22.75) 在禁扫区内
+[INFO] [1794360642.315610097] [find_free_space_action_server]: 候选点(23.82,22.60) 在禁扫区内
+[INFO] [1794360642.316153824] [find_free_space_action_server]: 候选点(23.82,22.75) 在禁扫区内
+[INFO] [1794360642.316684889] [find_free_space_action_server]: 候选点(23.67,22.60) 在禁扫区内
+[INFO] [1794360642.317206903] [find_free_space_action_server]: 候选点(23.67,22.75) 在禁扫区内
+[INFO] [1794360642.317812992] [find_free_space_action_server]: 候选点(23.52,22.60) 在禁扫区内
+[INFO] [1794360642.318401327] [find_free_space_action_server]: 候选点(23.52,22.75) 在禁扫区内
+[INFO] [1794360642.319077447] [find_free_space_action_server]: 候选点(23.37,22.60) 在禁扫区内
+[INFO] [1794360642.319603550] [find_free_space_action_server]: 候选点(23.37,22.75) 在禁扫区内
+[INFO] [1794360642.319989463] [find_free_space_action_server]: 候选点(23.22,22.60) 在禁扫区内
+[INFO] [1794360642.320348981] [find_free_space_action_server]: 候选点(23.22,22.75) 在禁扫区内
+[INFO] [1794360642.328273301] [find_free_space_action_server]: 候选点(23.07,22.60) 在禁扫区内
+[INFO] [1794360642.330656853] [find_free_space_action_server]: 候选点(23.07,22.75) 在禁扫区内
+[INFO] [1794360642.351582734] [find_free_space_action_server]: 候选点(22.92,22.60) 在禁扫区内
+[INFO] [1794360642.356301975] [find_free_space_action_server]: 候选点(22.92,22.75) 在禁扫区内
+[INFO] [1794360642.359216520] [find_free_space_action_server]: 近侧：这个搜索区域没有找到避让点
+[INFO] [1794360642.359617777] [find_free_space_action_server]: 近侧没找到，开始搜远侧长边
+[INFO] [1794360642.361959602] [find_free_space_action_server]: 远侧：沿边 3.00~3.30 m，k=3.142，k_diff2=3.141
+[INFO] [1794360642.362170644] [find_free_space_action_server]: 远侧：在机器人后方避车
+[INFO] [1794360642.373760608] [find_free_space_action_server]: 远侧：通道宽度 3.000
+[INFO] [1794360642.376851660] [find_free_space_action_server]: 远侧：搜索偏移 offset_min=1.10, offset_max=1.40
+[INFO] [1794360642.377380375] [find_free_space_action_server]: 远侧 find_vertices: [(26.221, 17.100),(26.521, 17.100),(26.521, 17.400),(26.221, 17.400)]
+[INFO] [1794360642.379206834] [find_free_space_action_server]: 远侧：候选点 6 个
+[INFO] [1794360642.405442003] [find_free_space_action_server]: 服务检查 result=True, time=0.011s
+[INFO] [1794360642.405707419] [find_free_space_action_server]: 远侧找到避让点 (26.52, 17.25)，side=2
+[INFO] [1794360642.406021493] [find_free_space_action_server]: 成功找到避让点: x=26.521, y=17.250, z=10.000, yaw=-0.000°
+[INFO] [1794360642.410443721] [find_free_space_action_server]: 找点结果 side=2
+[INFO] [1794360642.411478844] [find_free_space_action_server]: 成功找到避让点*****: x=26.521, y=17.250, z=10.000, yaw=-0.000°
+[INFO] [1794360642.450705219] [find_free_space_action_server]: 开始寻找避让点...
+[INFO] [1794360643.373102339] [find_free_space_action_server]: enable_dual_side=True, enable_far_side=True
+[INFO] [1794360643.373398231] [find_free_space_action_server]: polygons: [geometry_msgs.msg.Polygon(points=[geometry_msgs.msg.Point32(x=15.0, y=18.5, z=0.0), geometry_msgs.msg.Point32(x=45.0, y=18.5, z=0.0), geometry_msgs.msg.Point32(x=45.0, y=21.5, z=0.0), geometry_msgs.msg.Point32(x=15.0, y=21.5, z=0.0)])]
+[INFO] [1794360643.373888723] [find_free_space_action_server]: 寻找当前通行区域...
+[INFO] [1794360643.380274950] [find_free_space_action_server]: 机器人在通道内，使用当前通道: 
+[[15.  18.5]
+ [45.  18.5]
+ [45.  21.5]
+ [15.  21.5]]
+[INFO] [1794360643.390500646] [find_free_space_action_server]: 当前通行区域: [(15.000, 18.500),(45.000, 18.500),(45.000, 21.500),(15.000, 21.500)]
+[INFO] [1794360643.391312957] [find_free_space_action_server]: 寻找停靠点...
+[INFO] [1794360643.408655513] [find_free_space_action_server]: 寻找最近的边界...
+[INFO] [1794360643.409062321] [find_free_space_action_server]: nearest_boundary: [(45.000, 21.500), (15.000, 21.500)]
+[INFO] [1794360643.409317101] [find_free_space_action_server]: k_radian: 0.000, k_degree: 0.000
+[INFO] [1794360643.409519515] [find_free_space_action_server]: robot: (29.521, 20.254)
+[INFO] [1794360643.409680065] [find_free_space_action_server]: car: (35.506, 19.550)
+[INFO] [1794360643.410479671] [find_free_space_action_server]: k: 0.000, car_robot_k: 3.025, k_diff: 3.025
+[INFO] [1794360643.410747081] [find_free_space_action_server]: k: 3.142, k_robot: 0.001, k_diff2: 3.140
+[INFO] [1794360643.410921982] [find_free_space_action_server]: 话题无有效外部停车点，使用自搜索
+[INFO] [1794360643.411194371] [find_free_space_action_server]: 近侧：沿边 3.00~6.60 m，k=3.142，k_diff2=3.140
+[INFO] [1794360643.411390690] [find_free_space_action_server]: 近侧：在机器人后方避车
+[INFO] [1794360643.411570758] [find_free_space_action_server]: 近侧：通道宽度 3.000
+[INFO] [1794360643.411730182] [find_free_space_action_server]: 近侧：搜索偏移 offset_min=1.10, offset_max=1.40
+[INFO] [1794360643.421629529] [find_free_space_action_server]: 近侧 find_vertices: [(22.921, 22.600),(26.521, 22.600),(26.521, 22.900),(22.921, 22.900)]
+[INFO] [1794360643.428302138] [find_free_space_action_server]: 近侧：候选点 48 个
+[INFO] [1794360643.442822919] [find_free_space_action_server]: 候选点(26.37,22.60) 在禁扫区内
+[INFO] [1794360643.443418746] [find_free_space_action_server]: 候选点(26.37,22.75) 在禁扫区内
+[INFO] [1794360643.443806247] [find_free_space_action_server]: 候选点(26.22,22.60) 在禁扫区内
+[INFO] [1794360643.444129872] [find_free_space_action_server]: 候选点(26.22,22.75) 在禁扫区内
+[INFO] [1794360643.444443727] [find_free_space_action_server]: 候选点(26.07,22.60) 在禁扫区内
+[INFO] [1794360643.444759103] [find_free_space_action_server]: 候选点(26.07,22.75) 在禁扫区内
+[INFO] [1794360643.463530510] [find_free_space_action_server]: 候选点(25.92,22.60) 在禁扫区内
+[INFO] [1794360643.465511923] [find_free_space_action_server]: 候选点(25.92,22.75) 在禁扫区内
+[INFO] [1794360643.466153910] [find_free_space_action_server]: 候选点(25.77,22.60) 在禁扫区内
+[INFO] [1794360643.495227547] [find_free_space_action_server]: 候选点(25.77,22.75) 在禁扫区内
+[INFO] [1794360643.496040617] [find_free_space_action_server]: 候选点(25.62,22.60) 在禁扫区内
+[INFO] [1794360643.496420893] [find_free_space_action_server]: 候选点(25.62,22.75) 在禁扫区内
+[INFO] [1794360643.496783328] [find_free_space_action_server]: 候选点(25.47,22.60) 在禁扫区内
+[INFO] [1794360643.497124032] [find_free_space_action_server]: 候选点(25.47,22.75) 在禁扫区内
+[INFO] [1794360643.497509353] [find_free_space_action_server]: 候选点(25.32,22.60) 在禁扫区内
+[INFO] [1794360643.504475530] [find_free_space_action_server]: 候选点(25.32,22.75) 在禁扫区内
+[INFO] [1794360643.508533786] [find_free_space_action_server]: 候选点(25.17,22.60) 在禁扫区内
+[INFO] [1794360643.509418332] [find_free_space_action_server]: 候选点(25.17,22.75) 在禁扫区内
+[INFO] [1794360643.510092426] [find_free_space_action_server]: 候选点(25.02,22.60) 在禁扫区内
+[INFO] [1794360643.517508769] [find_free_space_action_server]: 候选点(25.02,22.75) 在禁扫区内
+[INFO] [1794360643.549539738] [find_free_space_action_server]: 服务检查 result=True, time=0.017s
+[INFO] [1794360643.549854523] [find_free_space_action_server]: 近侧找到避让点 (24.87, 22.60)，side=1
+[INFO] [1794360643.552516159] [find_free_space_action_server]: 成功找到避让点: x=24.871, y=22.600, z=10.000, yaw=-0.000°
+[INFO] [1794360643.568727282] [find_free_space_action_server]: 找点结果 side=1
+[INFO] [1794360643.569266880] [find_free_space_action_server]: 成功找到避让点*****: x=24.871, y=22.600, z=10.000, yaw=-0.000°

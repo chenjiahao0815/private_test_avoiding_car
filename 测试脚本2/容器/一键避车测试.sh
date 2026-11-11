@@ -127,6 +127,18 @@ else
 fi
 echo "双侧避车：$DUAL_FIND"
 
+# 在启动仿真前用与找点进程相同的环境检查接口，避免旧接口把远侧请求读成 false。
+RECT_WS=/root/avoid_rect_ws
+if [ ! -f "$RECT_WS/install/setup.bash" ]; then
+  RECT_WS=/root/avoid_ws
+  echo "没有 /root/avoid_rect_ws，找点和行为树改用 /root/avoid_ws"
+fi
+(
+  source /root/avoid_ws/install/setup.bash
+  source "$RECT_WS/install/setup.bash"
+  python3 "$DIR/上位机场景.py" --check-interface
+) 2>&1 | tee "$INFO/interface_check.log"
+
 echo "[启动 1/3] nav2_opt.launch.py：Gazebo（不开窗口）、完整导航、RViz"
 cp "$PARAM" "$INFO/nav_param_before.yaml"
 # 仿真 /odom 就是 Gazebo 世界坐标。容器里的 map.pbstream 不是仿真地图，
@@ -158,11 +170,11 @@ start 右边沿路径_compute_right_edge_path compute_right_edge_path ros2 run g
   --params-file /root/avoid_ws/install/garage_utils/share/garage_utils/params/config.yaml \
   -p use_sim_time:=true
 start 贴边_welt_model welt_model ros2 run welt_model welt_model --ros-args -p use_sim_time:=true
-# 矩形双侧找点和行为树单独编在 avoid_rect_ws，盖住容器里的曲线版。
+# 矩形双侧找点和行为树：有 avoid_rect_ws 时用它盖住曲线版；这台容器没单独编，就用 avoid_ws。
 # 通过性、右边沿、贴边已经按原来的环境拉起来，不再换它们的消息库。
-source /root/avoid_rect_ws/install/setup.bash
+source "$RECT_WS/install/setup.bash"
 start 找点_find_parking_space find_parking_space ros2 run find_free_space find_parking_space --ros-args \
-  --params-file /root/avoid_rect_ws/install/find_free_space/share/find_free_space/params/config.yaml \
+  --params-file "$RECT_WS/install/find_free_space/share/find_free_space/params/config.yaml" \
   -p use_sim_time:=true -p outside_min:=1.1 -p outside_max:=1.4 -p enable_dual_side:=$DUAL_FIND
 sleep 3
 start 避车行为树_garage_navigator garage_navigator ros2 launch garage_navigator navigation_launch.py use_sim_time:=true
@@ -181,6 +193,7 @@ if [ "$code" = 0 ]; then
 else
   echo "结果：FAIL。报告 $RUN/上位机/report.json，各程序日志在 $RUN"
 fi
+printf '%s\n' "$code" > "$INFO/completed"
 if [ "$HOLD" = 1 ]; then
   echo "画面保留中，Ctrl+C 结束并清理。"
   while true; do sleep 1; done

@@ -1,0 +1,1253 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-11-11-01-29-30-741679-DESKTOP-230CIAL-1073
+[INFO] [launch]: Default logging verbosity is set to INFO
+============================================================
+环境变量配置:
+============================================================
+  ROBOT_VERSION = mk33
+  ROBOT_LOCALIZER_MODE = 3D
+  DABAI_DCW_NUMBER = (未设置)
+  USE_AURORA_CAMERA = (未设置)
+  USE_GARAGE_AVOIDANCE = (未设置)
+  MAX_LINEAR_VEL = 1.0
+  MAX_LINEAR_ACC = (未设置)
+  LAUNCH_RGB_CAMERA_FRONT = false
+  IGNORE_HEIGHT_ABOVE = 0.2
+  COLLISION_MONITOR_CMD_VEL_OUT_TOPIC = cmd_vel
+  TB3_WORLD = /tmp/avoid_field/avoid_field.world
+  GAZEBO_OR_FAKE = gazebo
+============================================================
+根据ROBOT_VERSION (mk33) 选择参数文件：outdoor_cleaner_qp_2.yaml
+根据ROBOT_VERSION (mk33) 版本名称：outdoor_robot_qp_2
+GAZEBO_OR_FAKE=gazebo，默认 use_sim_time=True
+配置已更新！设置最大线速度、最大减速度为：1.0
+未设置MAX_LINEAR_ACC，使用默认配置。
+配置已更新！设置贴边参考线点云裁剪高度为：0.2
+配置已更新！设置cmd_vel_nav_ctr话题名称为：cmd_vel
+使用 Gazebo 仿真 + fake_sensor_publisher 定位！use_sim_time=True，publish_clock=False，Gazebo 不发布 odom/odom_tf
+Not set MULTI_ROBOT_MODE: True/False ! Use collision_monitor_cmd_vel_nav_topic default value cmd_vel_nav !
+Not set MULTI_ROBOT_MODE: True/False ! Use collision_monitor_cmd_vel_nav_topic default value cmd_vel_nav !
+Not set MULTI_ROBOT_MODE: True/False ! Use collision_monitor_cmd_vel_nav_topic default value cmd_vel_nav !
+============================================================
+环境变量配置:
+============================================================
+  ROBOT_VERSION = mk33
+  LASER_MIN_ANGLE = (未设置)
+  LASER_MAX_ANGLE = (未设置)
+  LASER_MIN_RANGE = (未设置)
+  LASER_MAX_RANGE = (未设置)
+  WR_LIDAR_IP = 192.168.0.10
+  LINEAR_SCALE = (未设置)
+  ANGLE_SCALE = (未设置)
+  ROBOT_LOCALIZATION_PUBLISH_TRANSFORM = True
+  ROBOT_LOCALIZITION_USE_2D_MODE = True
+  LASER_SCAN = (未设置)
+  USE_CURB_OR_WALL = (未设置)
+  MULTI_ROBOT_MODE = (未设置)
+  FRONT_DEPTH_CAMERA_SERIAL_PORT = (未设置)
+  RIGHT_DEPTH_CAMERA_SERIAL_PORT = (未设置)
+  BACK_DEPTH_CAMERA_SERIAL_PORT = (未设置)
+  LEFT_DEPTH_CAMERA_SERIAL_PORT = (未设置)
+  OPTIMIZE_DEPTH_CAMERA_POSE = False
+============================================================
+param_use_sim_time 参数值为: True，使用仿真时间
+使用默认2D激光雷达IP：192.168.0.10
+根据ROBOT_VERSION (mk33) 选择URDF：mk33.urdf, 串口型号：S1
+URDF 模型路径: /capella/share/capella_ros_launcher/urdf/turtlebot3_waffle.urdf
+URDF 模型 文件大小发生变化，当前大小：8515 字节，继续观察...
+URDF 模型 文件大小稳定第 1/3 次，当前大小：8515 字节
+URDF 模型 文件大小稳定第 2/3 次，当前大小：8515 字节
+URDF 模型 文件大小稳定第 3/3 次，当前大小：8515 字节
+URDF 模型 文件已存在且大小稳定：/capella/share/capella_ros_launcher/urdf/turtlebot3_waffle.urdf，大小：8515 字节
+[INFO] [map_server-1]: process started with pid [1096]
+[INFO] [amcl-2]: process started with pid [1098]
+[INFO] [lifecycle_manager-3]: process started with pid [1100]
+[INFO] [controller_server-4]: process started with pid [1104]
+[INFO] [smoother_server-5]: process started with pid [1114]
+[INFO] [planner_server-6]: process started with pid [1116]
+[INFO] [behavior_server-7]: process started with pid [1118]
+[INFO] [bt_navigator-8]: process started with pid [1120]
+[INFO] [waypoint_follower-9]: process started with pid [1124]
+[INFO] [velocity_smoother-10]: process started with pid [1143]
+[INFO] [collision_monitor-11]: process started with pid [1147]
+[INFO] [lifecycle_manager-12]: process started with pid [1150]
+[INFO] [collision_recover_node-13]: process started with pid [1152]
+[INFO] [path_check-14]: process started with pid [1166]
+[INFO] [robot_state_publisher-15]: process started with pid [1192]
+[INFO] [joint_state_publisher-16]: process started with pid [1200]
+[INFO] [search_poses_near_edge_node-17]: process started with pid [1217]
+[INFO] [gzserver-18]: process started with pid [1221]
+[INFO] [spawn_entity.py-19]: process started with pid [1235]
+[INFO] [fake_sensor_publisher-20]: process started with pid [1247]
+[INFO] [rviz2-21]: process started with pid [1252]
+[map_server-1] [INFO] [1794360576.139407557] [map_server]: 
+[map_server-1] 	map_server lifecycle node launched. 
+[map_server-1] 	Waiting on external lifecycle transitions to activate
+[map_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-1] [INFO] [1794360576.139477172] [map_server]: Creating
+[map_server-1] [INFO] [1794360576.150367500] [map_server]: Configuring
+[map_server-1] [INFO] [1794360576.150441378] [map_io]: Loading yaml file: /tmp/avoid_field/avoid_field.yaml
+[map_server-1] [INFO] [1794360576.150633660] [map_io]: resolution: 0.05
+[map_server-1] [INFO] [1794360576.150638190] [map_io]: origin[0]: -5
+[map_server-1] [INFO] [1794360576.150640446] [map_io]: origin[1]: -5
+[map_server-1] [INFO] [1794360576.150642374] [map_io]: origin[2]: 0
+[map_server-1] [INFO] [1794360576.150644617] [map_io]: free_thresh: 0.25
+[map_server-1] [INFO] [1794360576.150646732] [map_io]: occupied_thresh: 0.65
+[map_server-1] [INFO] [1794360576.150649069] [map_io]: mode: trinary
+[map_server-1] [INFO] [1794360576.150651491] [map_io]: negate: 0
+[map_server-1] [INFO] [1794360576.150800635] [map_io]: Loading image_file: /tmp/avoid_field/avoid_field.pgm
+[amcl-2] [INFO] [1794360576.090250008] [amcl]: 
+[amcl-2] 	amcl lifecycle node launched. 
+[amcl-2] 	Waiting on external lifecycle transitions to activate
+[amcl-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-2] [INFO] [1794360576.094034993] [amcl]: Creating
+[lifecycle_manager-3] [INFO] [1794360576.114163299] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-3] [INFO] [1794360576.123691448] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-3] [INFO] [1794360576.145012746] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-3] [INFO] [1794360576.145070895] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[controller_server-4] [INFO] [1794360576.213208859] [controller_server]: 
+[controller_server-4] 	controller_server lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-4] [INFO] [1794360576.244020383] [controller_server]: Creating controller server
+[controller_server-4] [INFO] [1794360576.322823745] [local_costmap.local_costmap]: 
+[controller_server-4] 	local_costmap lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-4] [INFO] [1794360576.323166930] [local_costmap.local_costmap]: Creating Costmap
+[smoother_server-5] [INFO] [1794360576.208346527] [smoother_server]: 
+[smoother_server-5] 	smoother_server lifecycle node launched. 
+[smoother_server-5] 	Waiting on external lifecycle transitions to activate
+[smoother_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-5] [INFO] [1794360576.211277279] [smoother_server]: Creating smoother server
+[planner_server-6] [INFO] [1794360576.187864237] [planner_server]: 
+[planner_server-6] 	planner_server lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1794360576.188671151] [planner_server]: Creating
+[planner_server-6] [INFO] [1794360576.269338505] [global_costmap.global_costmap]: 
+[planner_server-6] 	global_costmap lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1794360576.283396894] [global_costmap.global_costmap]: Creating Costmap
+[behavior_server-7] [INFO] [1794360576.300118689] [behavior_server]: 
+[behavior_server-7] 	behavior_server lifecycle node launched. 
+[behavior_server-7] 	Waiting on external lifecycle transitions to activate
+[behavior_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-8] [INFO] [1794360576.261495834] [bt_navigator]: 
+[bt_navigator-8] 	bt_navigator lifecycle node launched. 
+[bt_navigator-8] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-8] [INFO] [1794360576.264546686] [bt_navigator]: Creating
+[waypoint_follower-9] [INFO] [1794360576.274846675] [waypoint_follower]: 
+[waypoint_follower-9] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-9] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-9] [INFO] [1794360576.275179417] [waypoint_follower]: Creating
+[lifecycle_manager-12] [INFO] [1794360576.309458161] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-12] [INFO] [1794360576.342660788] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[search_poses_near_edge_node-17] [INFO] [1794360576.365214548] [search_poses_near_edge]: ---------- show all the parameters ----------
+[search_poses_near_edge_node-17] [INFO] [1794360576.365319632] [search_poses_near_edge]: mission_poses_topic_: mission_poses
+[search_poses_near_edge_node-17] [INFO] [1794360576.365326237] [search_poses_near_edge]: edge_reference_paths_topic_: /edge_reference_paths
+[search_poses_near_edge_node-17] [INFO] [1794360576.365329807] [search_poses_near_edge]: edge_reference_paths_no_collision_check_topic_: /edge_reference_paths_no_collision_check
+[search_poses_near_edge_node-17] [INFO] [1794360576.365333369] [search_poses_near_edge]: paired_mission_and_reference_path_topic_: paired_mission_and_reference_path
+[search_poses_near_edge_node-17] [INFO] [1794360576.365336552] [search_poses_near_edge]: paired_paths_marker_topic_: paired_mission_and_reference_markers
+[search_poses_near_edge_node-17] [INFO] [1794360576.365339707] [search_poses_near_edge]: all_edge_reference_paths_marker_topic_: all_edge_reference_paths_markers
+[search_poses_near_edge_node-17] [INFO] [1794360576.365342661] [search_poses_near_edge]: marker_line_width_m_: 0.080000
+[search_poses_near_edge_node-17] [INFO] [1794360576.365350361] [search_poses_near_edge]: split_angle_threshold_deg_: 15.000000
+[search_poses_near_edge_node-17] [INFO] [1794360576.365354547] [search_poses_near_edge]: match_angle_threshold_deg_: 15.000000
+[search_poses_near_edge_node-17] [INFO] [1794360576.365357689] [search_poses_near_edge]: match_distance_threshold_m_: 1.300000
+[search_poses_near_edge_node-17] [INFO] [1794360576.365360962] [search_poses_near_edge]: min_segment_length_m_: 1.000000
+[search_poses_near_edge_node-17] [INFO] [1794360576.365364107] [search_poses_near_edge]: sample_step_m_: 0.300000
+[search_poses_near_edge_node-17] [INFO] [1794360576.365367385] [search_poses_near_edge]: min_match_arc_length_m_: 0.800000
+[search_poses_near_edge_node-17] [INFO] [1794360576.365375011] [search_poses_near_edge]: min_coverage_ratio_: 0.700000
+[search_poses_near_edge_node-17] [INFO] [1794360576.365378142] [search_poses_near_edge]: match_expand_m_: 0.600000
+[search_poses_near_edge_node-17] [INFO] [1794360576.365385554] [search_poses_near_edge]: overlap_epsilon_m_: 0.300000
+[search_poses_near_edge_node-17] [INFO] [1794360576.365391833] [search_poses_near_edge]: ---------- show all the parameters ----------
+[velocity_smoother-10] [INFO] [1794360576.378965512] [velocity_smoother]: 
+[velocity_smoother-10] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-10] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[collision_monitor-11] [INFO] [1794360576.421261854] [collision_monitor]: 
+[collision_monitor-11] 	collision_monitor lifecycle node launched. 
+[collision_monitor-11] 	Waiting on external lifecycle transitions to activate
+[collision_monitor-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[robot_state_publisher-15] [INFO] [1794360576.450373302] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-15] [INFO] [1794360576.450440746] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-15] [INFO] [1794360576.450447015] [robot_state_publisher]: got segment base_scan
+[robot_state_publisher-15] [INFO] [1794360576.450450325] [robot_state_publisher]: got segment camera_depth_frame
+[robot_state_publisher-15] [INFO] [1794360576.450453477] [robot_state_publisher]: got segment camera_depth_optical_frame
+[robot_state_publisher-15] [INFO] [1794360576.450456899] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-15] [INFO] [1794360576.450459969] [robot_state_publisher]: got segment camera_rgb_frame
+[robot_state_publisher-15] [INFO] [1794360576.450463045] [robot_state_publisher]: got segment camera_rgb_optical_frame
+[robot_state_publisher-15] [INFO] [1794360576.450466373] [robot_state_publisher]: got segment caster_back_left_link
+[robot_state_publisher-15] [INFO] [1794360576.450469474] [robot_state_publisher]: got segment caster_back_right_link
+[robot_state_publisher-15] [INFO] [1794360576.450472396] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-15] [INFO] [1794360576.450475403] [robot_state_publisher]: got segment ultrasonic_sensor_link
+[robot_state_publisher-15] [INFO] [1794360576.450478339] [robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-15] [INFO] [1794360576.450481371] [robot_state_publisher]: got segment wheel_right_link
+[lifecycle_manager-12] [INFO] [1794360576.508316325] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-12] [INFO] [1794360576.508383289] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-4] [INFO] [1794360576.510730684] [controller_server]: Configuring controller interface
+[controller_server-4] [INFO] [1794360576.510933380] [controller_server]: getting goal checker plugins..
+[controller_server-4] [INFO] [1794360576.510984232] [controller_server]: Controller frequency set to 10.0000Hz
+[controller_server-4] [INFO] [1794360576.511015053] [local_costmap.local_costmap]: Configuring
+[controller_server-4] [INFO] [1794360576.552090997] [local_costmap.local_costmap]: Using plugin "static_layer"
+[collision_recover_node-13] [INFO] [1794360576.553548804] [collision_recover_node]: collision_recover_node (teb_costmap_obstacles-based) initialized
+[fake_sensor_publisher-20] [INFO] [1794360576.560966192] [fake_sensor_publisher]: Virtual localization started: frames map->odom->base_footprint | odom_rate=50.0Hz cmd_vel_timeout=0.25s max_integration_dt=0.20s publish_clock=false publish_odom_tf=false publish_map_odom_tf=false publish_odom_topic=false status_log_period=5.0s jump_warn(xy=0.50m yaw=0.50rad)
+[fake_sensor_publisher-20] [INFO] [1794360576.561038231] [fake_sensor_publisher]: Subscribed: /cmd_vel, /initialpose | Publishing: /odom + TF (map->odom co-published with odom->base, same stamp). Integration dt and cmd_vel timeout use steady_clock (immune to ROS time jumps).
+[controller_server-4] [INFO] [1794360576.573244433] [local_costmap.local_costmap]: Subscribing to the map topic (/map) with transient local durability
+[controller_server-4] [INFO] [1794360576.578447656] [local_costmap.local_costmap]: Initialized plugin "static_layer"
+[controller_server-4] [INFO] [1794360576.578491184] [local_costmap.local_costmap]: Using plugin "spatio_temporal_voxel_layer"
+[fake_sensor_publisher-20] [INFO] [1794360576.581056354] [fake_sensor_publisher]: [status] stamp=0.000 steady_dt_raw=0.0200 dt_used=0.0200 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=1 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=0 jump_warn=0
+[rviz2-21] QStandardPaths: runtime directory '/mnt/wslg/runtime-dir' is not owned by UID 0, but a directory permissions 0777 owned by UID 1000 GID 1000
+[controller_server-4] [INFO] [1794360576.663245612] [local_costmap.local_costmap]: spatio_temporal_voxel_layer being initialized as SpatioTemporalVoxelLayer!
+[controller_server-4] [INFO] [1794360576.663973636] [local_costmap.local_costmap]: spatio_temporal_voxel_layer's global frame is map.
+[controller_server-4] [INFO] [1794360576.670464778] [local_costmap.local_costmap]: spatio_temporal_voxel_layer loaded parameters from parameter server.
+[controller_server-4] [INFO] [1794360576.676322493] [local_costmap.local_costmap]: spatio_temporal_voxel_layer created underlying voxel grid.
+[controller_server-4] [INFO] [1794360576.680522927] [ignore_polygon_manager]: ignore_width=50, ignore_range=5.20, debug_mode=1, ignore_height_above=0.20
+[controller_server-4] [INFO] [1794360576.686492758] [ignore_polygon_manager]: Subscribed to edge_reference_paths_no_collision_check
+[controller_server-4] [INFO] [1794360576.687171501] [ignore_polygon_manager]: Debug mode enabled: publishing collision points to 'local_costmap/spatio_temporal_voxel_layer/collision_points' topic
+[controller_server-4] [INFO] [1794360576.687190618] [local_costmap.local_costmap]: spatio_temporal_voxel_layer ignore polygon manager created.
+[controller_server-4] [INFO] [1794360576.694358887] [local_costmap.local_costmap]: Voxel filter activated.
+[controller_server-4] [INFO] [1794360576.703857220] [local_costmap.local_costmap]: Voxel filter activated.
+[controller_server-4] [INFO] [1794360576.712450044] [local_costmap.local_costmap]: Voxel filter activated.
+[controller_server-4] [INFO] [1794360576.726695144] [local_costmap.local_costmap]: Voxel filter activated.
+[controller_server-4] [INFO] [1794360576.732723622] [local_costmap.local_costmap]: Voxel filter activated.
+[controller_server-4] [INFO] [1794360576.737956866] [local_costmap.local_costmap]: Voxel filter activated.
+[controller_server-4] [INFO] [1794360576.748999848] [local_costmap.local_costmap]: Voxel filter activated.
+[controller_server-4] [INFO] [1794360576.754718723] [local_costmap.local_costmap]: spatio_temporal_voxel_layer initialization complete!
+[controller_server-4] [INFO] [1794360576.754753757] [local_costmap.local_costmap]: Initialized plugin "spatio_temporal_voxel_layer"
+[controller_server-4] [INFO] [1794360576.754759375] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-4] [INFO] [1794360576.757463460] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-4] [INFO] [1794360576.757490646] [local_costmap.local_costmap]: Using costmap filter "keepout_filter"
+[controller_server-4] [INFO] [1794360576.768229686] [local_costmap.local_costmap]: Initialized costmap filter "keepout_filter"
+[controller_server-4] [INFO] [1794360576.768800886] [local_costmap.local_costmap]: Using costmap filter "inflation_layer"
+[controller_server-4] [INFO] [1794360576.769369518] [local_costmap.local_costmap]: Initialized costmap filter "inflation_layer"
+[controller_server-4] [INFO] [1794360576.784468565] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-4] [INFO] [1794360576.784960174] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-4] [INFO] [1794360576.785214243] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-4] [INFO] [1794360576.816044677] [controller_server]: Created controller : FollowPath of type teb_local_planner::TebLocalPlannerROS
+[map_server-1] [INFO] [1794360576.825491178] [map_io]: Read map /tmp/avoid_field/avoid_field.pgm: 1400 X 1000 map @ 0.05 m/cell
+[lifecycle_manager-3] [INFO] [1794360576.858254824] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-2] [INFO] [1794360576.859108975] [amcl]: Configuring
+[amcl-2] [INFO] [1794360576.859175772] [amcl]: initTransforms
+[controller_server-4] [INFO] [1794360576.864290274] [TEBLocalPlanner]: Footprint model 'polygon' loaded for trajectory optimization.
+[controller_server-4] [INFO] [1794360576.864341554] [controller_server]: 初始化: 全局路径前视距离 (max_global_plan_lookahead_dist) 5.00 m, max_vel_x: 1.00
+[controller_server-4] [INFO] [1794360576.864386140] [controller_server]: 已启用多拓扑并行规划 (distinctive topologies)
+[amcl-2] [INFO] [1794360576.890555642] [amcl]: initPubSub
+[amcl-2] [INFO] [1794360576.891718017] [amcl]: Subscribed to map topic.
+[lifecycle_manager-3] [INFO] [1794360576.897663324] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-1] [INFO] [1794360576.901906461] [map_server]: Activating
+[controller_server-4] [INFO] [1794360576.929164044] [local_costmap.local_costmap]: StaticLayer: Resizing static layer to 1400 X 1000 at 0.050000 m/pix
+[amcl-2] [INFO] [1794360576.929150182] [amcl]: Received a 1400 X 1000 map @ 0.050 m/pix
+[map_server-1] [INFO] [1794360576.930386608] [map_server]: Creating bond (map_server) to lifecycle manager.
+[lifecycle_manager-3] [INFO] [1794360577.042025732] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-3] [INFO] [1794360577.042071121] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-2] [INFO] [1794360577.042225611] [amcl]: Activating
+[amcl-2] [INFO] [1794360577.042259516] [amcl]: Creating bond (amcl) to lifecycle manager.
+[lifecycle_manager-3] [INFO] [1794360577.146785040] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-3] [INFO] [1794360577.146821938] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-3] [INFO] [1794360577.146830398] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[controller_server-4] [INFO] [1794360577.161357278] [controller_server]: 代价地图转换插件库路径: /capella/lib/libcostmap_converter.so
+[controller_server-4] [INFO] [1794360577.162391799] [controller_server]: CostmapToPolygonsDBSMCCH parameters loaded: cluster_max_distance=0.20, cluster_min_pts=1, cluster_max_pts=100, convex_hull_min_pt_separation=0.10, global_frame=map
+[spawn_entity.py-19] [INFO] [1794360577.168270114] [spawn_entity]: Spawn Entity started
+[controller_server-4] [INFO] [1794360577.172792902] [controller_server]: 已加载代价地图转换插件: costmap_converter::CostmapToPolygonsDBSMCCH
+[spawn_entity.py-19] [INFO] [1794360577.173126183] [spawn_entity]: Loading entity XML from file /capella/share/capella_ros_launcher/worlds/model.sdf
+[spawn_entity.py-19] [INFO] [1794360577.174142947] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[controller_server-4] [INFO] [1794360577.179212717] [controller_server]: TEB 独立订阅动态障碍话题 /dynamic_obstacles（PATH 停车门控，不并入 obstacles）
+[spawn_entity.py-19] [INFO] [1794360577.181975332] [spawn_entity]: Waiting for service /spawn_entity
+[controller_server-4] [INFO] [1794360577.182244957] [controller_server]: TEB 已订阅 /vehicle_poses_around 话题
+[controller_server-4] [INFO] [1794360577.185083223] [controller_server]: TEB 已订阅 /nav/speed_limit 话题
+[controller_server-4] [INFO] [1794360577.193989655] [controller_server]: 狭窄通道: TEB 已订阅 /narrow_passages，forward_drive 正常=100.00，窄通道=1.00，Marker 话题 teb_narrow_passages_markers
+[controller_server-4] [INFO] [1794360577.200071816] [controller_server]: TEB 已订阅 /enable_backward，true 时强制倒车友好参数
+[controller_server-4] [INFO] [1794360577.206241583] [controller_server]: /backward_mode 已发布: false (前进)
+[controller_server-4] [INFO] [1794360577.206382748] [controller_server]: TEB 已发布 /backward_mode（几何倒车检测 / 双弧失败 latch），arc_length_ratio=0.30 backward_check_duration=1.00 backward_check_num=2 dual_arc_publish=0
+[controller_server-4] [INFO] [1794360577.212600472] [controller_server]: TEB 订阅前向 LaserScan 贴边 protrusion 检测，话题：/front_scan
+[controller_server-4] [INFO] [1794360577.217025980] [controller_server]: TEB 创建 /teb_vehicle_scan_grid 话题
+[controller_server-4] [INFO] [1794360577.248637482] [controller_server]: TEB 创建发布话题 /teb_selected_wall_line、/teb_monitor_corridor_markers、/teb_protruding_obstacle_markers、/teb_corner_approach_footprint_markers、/teb_collision_footprint_markers、/teb_near_horizon_debug、/teb_path_wait_debug、/edge_distance、/teb_transformed_path、/teb_global_plan
+[controller_server-4] [INFO] [1794360577.248873599] [controller_server]: 已创建 static_layer 参数客户端
+[controller_server-4] [INFO] [1794360577.249160617] [controller_server]: 已创建局部/全局代价地图 footprint 参数客户端
+[controller_server-4] [INFO] [1794360577.274105185] [controller_server]: Controller Server has FollowPath  controllers available.
+[controller_server-4] [INFO] [1794360577.300407633] [controller_server]: Subscribed velocity gate topics: /is_pipes_and_wires_in_path, /backward_mode, /cleaning_tool_fully_retracted
+[controller_server-4] [INFO] [1794360577.300771580] [controller_server]: /backward_mode: false (forward)
+[controller_server-4] [INFO] [1794360577.306675343] [controller_server]: 已保存局部代价地图 footprint: [[1.15, 0.7], [1.15, -0.7], [-0.68, -0.7], [-0.68, 0.7]]
+[lifecycle_manager-12] [INFO] [1794360577.316383526] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-5] [INFO] [1794360577.317553326] [smoother_server]: Configuring smoother server
+[smoother_server-5] [INFO] [1794360577.364476516] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-5] [INFO] [1794360577.366562279] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-12] [INFO] [1794360577.383384903] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-6] [INFO] [1794360577.386644296] [planner_server]: Configuring
+[planner_server-6] [INFO] [1794360577.577861515] [ignore_polygon_manager]: ignore_width=50, ignore_range=5.20, debug_mode=1, ignore_height_above=0.20
+[planner_server-6] [INFO] [1794360577.584636834] [ignore_polygon_manager]: Subscribed to edge_reference_paths_no_collision_check
+[planner_server-6] [INFO] [1794360577.590020642] [ignore_polygon_manager]: Debug mode enabled: publishing collision points to 'global_costmap/spatio_temporal_voxel_layer/collision_points' topic
+[planner_server-6] [INFO] [1794360577.740471355] [planner_server]: Created global planner plugin GridBased of type nav2_smac_planner/SmacPlannerHybrid
+[planner_server-6] [INFO] [1794360577.742633976] [planner_server]: Configuring GridBased of type SmacPlannerHybrid
+[planner_server-6] [INFO] [1794360577.758459931] [planner_server]: Even sized heuristic lookup table size set 400.000000, increasing size by 1 to make odd
+[controller_server-4] [INFO] [1794360577.760975521] [controller_server]: 已保存全局代价地图 footprint: [[1.15, 0.65], [1.15, -0.65], [-0.68, -0.65], [-0.68, 0.65]]
+[rviz2-21] [INFO] [1794360578.719820284] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-21] [INFO] [1794360578.722050383] [rviz2]: OpenGl version: 4.2 (GLSL 4.2)
+[rviz2-21] [INFO] [1794360578.783377644] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-21] [INFO] [1794360579.754061911] [rviz2]: Trying to create a map of size 1400 x 1000 using 1 swatches
+[gzserver-18] XDG_RUNTIME_DIR (/mnt/wslg/runtime-dir) is not owned by us (uid 0), but by uid 1000! (This could e.g. happen if you try to connect to a non-root PulseAudio as a root user, over the native protocol. Don't do that.)
+[gzserver-18] ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+[gzserver-18] ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+[gzserver-18] ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+[gzserver-18] ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+[gzserver-18] ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+[gzserver-18] ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+[gzserver-18] ALSA lib conf.c:5705:(snd_config_expand) Evaluate error: No such file or directory
+[gzserver-18] ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+[gzserver-18] AL lib: (EE) ALCplaybackAlsa_open: Could not open playback device 'default': No such file or directory
+[rviz2-21] [ERROR] [1794360579.785624107] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-21] active samplers with a different type refer to the same texture image unit
+[gzserver-18] [INFO] [1794360579.886787297] [gazebo_ros_state]: Publishing states of gazebo models at [/model_states]
+[gzserver-18] [INFO] [1794360579.890887922] [gazebo_ros_state]: Publishing states of gazebo links at [/link_states]
+[spawn_entity.py-19] [INFO] [1794360579.962568168] [spawn_entity]: Calling service /spawn_entity
+[gzserver-18] [INFO] [1794360580.328974553] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[fake_sensor_publisher-20] [INFO] [1794360581.581060424] [fake_sensor_publisher]: [status] stamp=0.200 steady_dt_raw=0.0200 dt_used=0.0200 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=251 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=248 jump_warn=0
+[gzserver-18] [INFO] [1794360582.471461149] [intel_realsense_r200_depth_driver]: Publishing camera info to [/intel_realsense_r200_depth/camera_info]
+[gzserver-18] [INFO] [1794360582.471823091] [intel_realsense_r200_depth_driver]: Publishing depth camera info to [/intel_realsense_r200_depth/depth/camera_info]
+[gzserver-18] [INFO] [1794360582.474498758] [intel_realsense_r200_depth_driver]: Publishing pointcloud to [/intel_realsense_r200_depth/points]
+[spawn_entity.py-19] [INFO] [1794360582.490972941] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [turtlebot3_waffle]
+[gzserver-18] [INFO] [1794360582.516571939] [range]: missing <radiation_type>, defaulting to infrared
+[gzserver-18] [INFO] [1794360582.672911112] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.287000m]
+[gzserver-18] [INFO] [1794360582.673015925] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-18] [INFO] [1794360582.685596592] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-18] [INFO] [1794360582.695936758] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-18] [INFO] [1794360582.708531291] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-18] [INFO] [1794360582.708572745] [turtlebot3_diff_drive]: Publishing wheel transforms between [base_footprint], [wheel_left_joint] and [wheel_right_joint]
+[gzserver-18] [INFO] [1794360582.742756287] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-18] [INFO] [1794360582.742810548] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[INFO] [spawn_entity.py-19]: process has finished cleanly [pid 1235]
+[amcl-2] [INFO] [1794360582.924407256] [amcl]: createLaserObject
+[fake_sensor_publisher-20] [WARN] [1794360585.061721158] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=2.000 last_pub=2.000; bump publish stamp. count=404
+[collision_recover_node-13] [INFO] [1794360585.145000771] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360585.161403313] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [INFO] [1794360586.581179315] [fake_sensor_publisher]: [status] stamp=3.200 steady_dt_raw=0.0201 dt_used=0.0201 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=501 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=468 jump_warn=0
+[fake_sensor_publisher-20] [WARN] [1794360587.581035666] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=4.000 last_pub=4.000; bump publish stamp. count=510
+[collision_recover_node-13] [INFO] [1794360587.744956288] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360587.860845461] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [WARN] [1794360590.201098299] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=6.000 last_pub=6.000; bump publish stamp. count=621
+[collision_recover_node-13] [INFO] [1794360590.344923156] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360590.672016828] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [INFO] [1794360591.601144316] [fake_sensor_publisher]: [status] stamp=7.100 steady_dt_raw=0.0201 dt_used=0.0201 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=752 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=680 jump_warn=0
+[fake_sensor_publisher-20] [WARN] [1794360592.742243024] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=8.000 last_pub=8.000; bump publish stamp. count=728
+[collision_recover_node-13] [INFO] [1794360592.944935131] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360593.233083678] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [WARN] [1794360595.181076148] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=10.000 last_pub=10.000; bump publish stamp. count=830
+[collision_recover_node-13] [INFO] [1794360595.345124984] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360595.842759006] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1794360596.112214733] [planner_server]: 狭窄通道: 已预计算 DUBIN / REEDS_SHEPP 两套距离启发式缓存 (lookup_dim=401, angle_bins=72)
+[planner_server-6] [INFO] [1794360596.122774927] [planner_server]: 狭窄通道: 已订阅 /narrow_passages，默认非窄通道模式(DUBIN)
+[planner_server-6] [INFO] [1794360596.123327602] [planner_server]: 已订阅 /enable_backward，true 时强制 REEDS_SHEPP 倒车规划
+[planner_server-6] [INFO] [1794360596.123351485] [planner_server]: Configured plugin GridBased of type SmacPlannerHybrid with maximum iterations 5000000, max on approach iterations 1000, and allowing unknown traversal. Tolerance 0.50.Using motion model: Dubin.
+[planner_server-6] [INFO] [1794360596.124296395] [planner_server]: [FastPath] configured: goal_occupied_tolerance=1.00 goal_search_resolution=0.20 straight_check_length_ratio=1.00 straight_path_resolution=0.20 stretch=true rotate=true corridor_intrusion_tol=0.300 corner_sweep_scale=1.20 corner_snap_tol=1.50 corner_snap=true planner_ids=1
+[planner_server-6] [INFO] [1794360596.126779761] [planner_server]: [PlanDbg] configured publish_planning_debug=false keep_mode=session footprint_stride=0
+[planner_server-6] [INFO] [1794360596.126809796] [planner_server]: Planner Server has GridBased  planners available. enable_straight_expand=true near_dist=5.00 near_yaw=1.57 via_heading_tol=0.79 via_trim_len=1.00 via_span=2 colinear_deg=135.0 corner_deg=135.0 short_edge=2.00 sweep_k=1.20 corner_snap_tol=1.50 corner_snap=true stretch=true rotate=true debug=false
+[lifecycle_manager-12] [INFO] [1794360596.150408167] [lifecycle_manager_navigation]: [34m[1mConfiguring collision_monitor[0m[0m
+[collision_monitor-11] [INFO] [1794360596.151012193] [collision_monitor]: Configuring
+[collision_monitor-11] [INFO] [1794360596.172994848] [collision_monitor]: [FootprintApproach]: Creating Polygon
+[collision_monitor-11] [INFO] [1794360596.173448903] [ignore_polygon_manager]: ignore_width=50, ignore_range=5.20, debug_mode=1, ignore_height_above=0.20
+[collision_monitor-11] [INFO] [1794360596.184604696] [ignore_polygon_manager]: Subscribed to edge_reference_paths_no_collision_check
+[collision_monitor-11] [INFO] [1794360596.190154570] [ignore_polygon_manager]: Debug mode enabled: publishing collision points to 'collision_monitor/collision_points' topic
+[collision_monitor-11] [INFO] [1794360596.193062195] [collision_monitor]: [dabai_camera1]: Creating PointCloud
+[collision_monitor-11] [INFO] [1794360596.201183466] [collision_monitor]: [dabai_camera2]: Creating PointCloud
+[collision_monitor-11] [INFO] [1794360596.201759627] [collision_monitor]: [dabai_camera3]: Creating PointCloud
+[collision_monitor-11] [INFO] [1794360596.201986071] [collision_monitor]: [dabai_camera4]: Creating PointCloud
+[collision_monitor-11] [INFO] [1794360596.202183186] [collision_monitor]: [scan_close_filter_points]: Creating PointCloud
+[lifecycle_manager-12] [INFO] [1794360596.218476361] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-7] [INFO] [1794360596.221050035] [behavior_server]: Configuring
+[behavior_server-7] [INFO] [1794360596.255333049] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-7] [INFO] [1794360596.255989051] [behavior_server]: Configuring spin
+[behavior_server-7] [INFO] [1794360596.265850449] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-7] [INFO] [1794360596.266481136] [behavior_server]: Configuring backup
+[behavior_server-7] [INFO] [1794360596.284593420] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-7] [INFO] [1794360596.285572654] [behavior_server]: Configuring drive_on_heading
+[behavior_server-7] [INFO] [1794360596.304024647] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-7] [INFO] [1794360596.312502026] [behavior_server]: Configuring assisted_teleop
+[behavior_server-7] [INFO] [1794360596.325247119] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-7] [INFO] [1794360596.327457395] [behavior_server]: Configuring wait
+[lifecycle_manager-12] [INFO] [1794360596.342952529] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-8] [INFO] [1794360596.344171049] [bt_navigator]: Configuring
+[lifecycle_manager-12] [INFO] [1794360596.556817834] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-9] [INFO] [1794360596.558201303] [waypoint_follower]: Configuring
+[fake_sensor_publisher-20] [INFO] [1794360596.601307878] [fake_sensor_publisher]: [status] stamp=11.000 steady_dt_raw=0.0196 dt_used=0.0196 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=1002 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=891 jump_warn=0
+[waypoint_follower-9] [INFO] [1794360596.613449410] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-12] [INFO] [1794360596.619145724] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-10] [INFO] [1794360596.619595831] [velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-12] [INFO] [1794360596.637875459] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-4] [INFO] [1794360596.638471294] [controller_server]: Activating
+[controller_server-4] [INFO] [1794360596.638531705] [local_costmap.local_costmap]: Activating
+[controller_server-4] [INFO] [1794360596.638546244] [local_costmap.local_costmap]: Checking transform
+[controller_server-4] [INFO] [1794360596.638702228] [local_costmap.local_costmap]: start
+[controller_server-4] [INFO] [1794360596.638721148] [local_costmap.local_costmap]: spatio_temporal_voxel_layer was activated.
+[controller_server-4] [INFO] [1794360596.645397935] [local_costmap.local_costmap]: KeepoutFilter: Subscribing to "/nav/keepout/info" topic for filter info...
+[controller_server-4] [WARN] [1794360596.847561046] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360596.855676183] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[rviz2-21] [INFO] [1794360596.876187993] [rviz2]: Trying to create a map of size 200 x 200 using 1 swatches
+[lifecycle_manager-12] [INFO] [1794360596.973145522] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-12] [INFO] [1794360596.973198111] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-5] [INFO] [1794360596.973502474] [smoother_server]: Activating
+[smoother_server-5] [INFO] [1794360596.973540371] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794360597.088151678] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-12] [INFO] [1794360597.088206334] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-6] [INFO] [1794360597.088575751] [planner_server]: Activating
+[planner_server-6] [WARN] [1794360597.309862459] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[planner_server-6] [INFO] [1794360597.347432297] [planner_server]: Activating plugin GridBased of type SmacPlannerHybrid
+[planner_server-6] [INFO] [1794360597.350099076] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[rviz2-21] [INFO] [1794360597.414302564] [rviz2]: Trying to create a map of size 1400 x 1000 using 1 swatches
+[lifecycle_manager-12] [INFO] [1794360597.466113209] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-12] [INFO] [1794360597.466182678] [lifecycle_manager_navigation]: [34m[1mActivating collision_monitor[0m[0m
+[collision_monitor-11] [INFO] [1794360597.467939012] [collision_monitor]: Activating
+[collision_monitor-11] [INFO] [1794360597.468026401] [collision_monitor]: Creating bond (collision_monitor) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794360597.579260377] [lifecycle_manager_navigation]: Server collision_monitor connected with bond.
+[lifecycle_manager-12] [INFO] [1794360597.579314243] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-7] [INFO] [1794360597.581717913] [behavior_server]: Activating
+[behavior_server-7] [INFO] [1794360597.581747962] [behavior_server]: Activating spin
+[behavior_server-7] [INFO] [1794360597.581758998] [behavior_server]: Activating backup
+[behavior_server-7] [INFO] [1794360597.581766607] [behavior_server]: Activating drive_on_heading
+[behavior_server-7] [INFO] [1794360597.582008119] [behavior_server]: Activating assisted_teleop
+[behavior_server-7] [INFO] [1794360597.582031016] [behavior_server]: Activating wait
+[behavior_server-7] [INFO] [1794360597.582043542] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[fake_sensor_publisher-20] [WARN] [1794360597.681684820] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=12.000 last_pub=12.000; bump publish stamp. count=935
+[lifecycle_manager-12] [INFO] [1794360597.691403729] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-12] [INFO] [1794360597.691449446] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-8] [INFO] [1794360597.692948420] [bt_navigator]: Activating
+[collision_recover_node-13] [INFO] [1794360597.946467011] [collision_recover_node]: No obstacles received, do not check for collision.
+[bt_navigator-8] [INFO] [1794360597.951047532] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794360598.063044584] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-12] [INFO] [1794360598.063087827] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-9] [INFO] [1794360598.063399955] [waypoint_follower]: Activating
+[waypoint_follower-9] [INFO] [1794360598.063436661] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794360598.174925810] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-12] [INFO] [1794360598.175028642] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-10] [INFO] [1794360598.175920944] [velocity_smoother]: Activating
+[velocity_smoother-10] [INFO] [1794360598.176054100] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1794360598.285988901] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-12] [INFO] [1794360598.286052440] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-12] [INFO] [1794360598.286062811] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[amcl-2] [WARN] [1794360598.503628108] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794360599.242682232] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[planner_server-6] [WARN] [1794360599.889450339] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360600.121088097] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=14.000 last_pub=14.000; bump publish stamp. count=1037
+[collision_recover_node-13] [INFO] [1794360600.345468138] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360601.021719305] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [INFO] [1794360601.621847272] [fake_sensor_publisher]: [status] stamp=15.200 steady_dt_raw=0.0208 dt_used=0.0208 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=1253 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=1100 jump_warn=0
+[controller_server-4] [WARN] [1794360601.842767788] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[planner_server-6] [WARN] [1794360602.494007917] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360602.641065167] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=16.000 last_pub=16.000; bump publish stamp. count=1143
+[collision_recover_node-13] [INFO] [1794360602.747919667] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360603.695872582] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794360604.444066139] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[planner_server-6] [WARN] [1794360605.691647334] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360605.721064546] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=18.000 last_pub=18.000; bump publish stamp. count=1277
+[collision_recover_node-13] [INFO] [1794360605.944886575] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [INFO] [1794360606.641907331] [fake_sensor_publisher]: [status] stamp=18.700 steady_dt_raw=0.0206 dt_used=0.0206 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=1504 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=1316 jump_warn=0
+[amcl-2] [WARN] [1794360606.942545520] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794360607.641843993] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360608.202050860] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=20.000 last_pub=20.000; bump publish stamp. count=1381
+[planner_server-6] [WARN] [1794360608.289450107] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360608.545051944] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360609.631931855] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794360610.242098745] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360610.942793507] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=22.000 last_pub=22.000; bump publish stamp. count=1498
+[planner_server-6] [WARN] [1794360611.101108113] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360611.347851121] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [INFO] [1794360611.661082759] [fake_sensor_publisher]: [status] stamp=22.500 steady_dt_raw=0.0200 dt_used=0.0200 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=1755 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=1529 jump_warn=0
+[amcl-2] [WARN] [1794360612.565498674] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794360613.042787666] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360613.565023475] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=24.000 last_pub=24.000; bump publish stamp. count=1609
+[planner_server-6] [WARN] [1794360613.696479082] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360614.145471342] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360615.413209752] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794360615.841364614] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360616.201161340] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=26.000 last_pub=26.000; bump publish stamp. count=1721
+[planner_server-6] [WARN] [1794360616.490636985] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [INFO] [1794360616.661089233] [fake_sensor_publisher]: [status] stamp=26.300 steady_dt_raw=0.0200 dt_used=0.0200 | odom=(0.000,0.000,0.000) map->odom=(0.000,0.000,0.000) map->base=(0.000,0.000,0.000) | cmd=(0.00,0.00,0.00) age=n/a timed_out=false | ticks=2005 cmd_msgs=0 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=1741 jump_warn=0
+[collision_recover_node-13] [INFO] [1794360616.745905961] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360618.097934159] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794360618.443481100] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[bt_navigator-8] [INFO] [1794360618.512777339] [bt_navigator]: Begin navigating from current location through 14 poses to (43.50, 20.25)
+[bt_navigator-8] [INFO] [1794360618.512979655] [bt_navigator]: Mission generation id=1: cleared stale path until planner completes
+[bt_navigator-8] [INFO] [1794360618.513901842] [bt_navigator_navigate_through_poses_rclcpp_node]: IsMoving: not moving (rolling ratio below threshold), ratio=0.00 (0/251), start rearm for 5.00 s
+[bt_navigator-8] [INFO] [1794360618.522433026] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: odom vx=-0.0000 m/s
+[bt_navigator-8] [INFO] [1794360618.522601787] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: mission changed (tail_fp=afd9d69043741e37), reload queue size=14
+[bt_navigator-8] [INFO] [1794360618.523986411] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: enable_backward=false (forward)
+[search_poses_near_edge_node-17] [INFO] [1794360618.519459740] [search_poses_near_edge]: [onMissionPoses] Received mission poses: 14
+[collision_recover_node-13] [WARN] [1794360618.520076379] [collision_recover_node]: No obstacles received, cannot check collision.
+[controller_server-4] [INFO] [1794360618.523199593] [controller_server]: /enable_backward: false（回退窄通道/倒车段判断）
+[planner_server-6] [INFO] [1794360618.523599547] [planner_server]: /enable_backward: false（回退窄通道判断）
+[planner_server-6] [INFO] [1794360618.523699229] [planner_server]: [FastPath] /enable_backward=false（允许倒车=false，前进直线失败后可试后退直线）
+[search_poses_near_edge_node-17] [WARN] [1794360618.524199406] [search_poses_near_edge]: No edge reference paths from either edge_reference_paths or edge_reference_paths_no_collision_check
+[search_poses_near_edge_node-17] [INFO] [1794360618.524217465] [search_poses_near_edge]: [publishEmptyOutputs] empty edge reference paths
+[search_poses_near_edge_node-17] [INFO] [1794360618.524330843] [search_poses_near_edge]: [publishPairedPathsMarkers] 发布 0 对 mission/reference 可视化 marker
+[search_poses_near_edge_node-17] [INFO] [1794360618.524385122] [search_poses_near_edge]: [publishAllEdgeReferencePathsMarkers] 发布全部贴边参考线 marker: normal=0, no_collision=0
+[bt_navigator-8] [INFO] [1794360618.524447048] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: init gpp window z=[0,13] mission_goals=14
+[bt_navigator-8] [INFO] [1794360618.524672175] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: terminal goal z=13 entered gpp window, freeze stamps
+[path_check-14] [INFO] [1794360618.530571075] [path_check_node]: PathCheck done,  poses length before check is, 14, poses length after check is : 14 !
+[behavior_server-7] [INFO] [1794360618.728093368] [behavior_server]: Running wait
+[fake_sensor_publisher-20] [WARN] [1794360618.741544126] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=28.000 last_pub=28.000; bump publish stamp. count=1828
+[planner_server-6] [WARN] [1794360619.107185796] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360619.345002153] [collision_recover_node]: No obstacles received, do not check for collision.
+[bt_navigator-8] [INFO] [1794360619.615663914] [bt_navigator_navigate_through_poses_rclcpp_node]: IsMoving: rearm 0.80/5.00 s, ratio=0.00 (0/40), hold SUCCESS until window completes
+[behavior_server-7] [INFO] [1794360620.128578566] [behavior_server]: wait completed successfully
+[planner_server-6] [INFO] [1794360620.418101138] [planner_server]: Robot footprint cost at current pose (16.50, 20.25) is 0.000000
+[planner_server-6] [INFO] [1794360620.418206986] [planner_server]: [ThroughPoses] start=(16.501, 20.250, yaw=0.002) goals=14 enable_straight=true
+[planner_server-6] [INFO] [1794360620.418240255] [planner_server]: [ThroughPoses] via=0/14 start=(16.501, 20.250, yaw=0.002) goal=(18.500, 20.250, yaw=0.000) dist=1.999 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=25.00 sweep=false concat_poses=0
+[planner_server-6] [INFO] [1794360620.418261341] [planner_server]: [FastPath] compute start=(16.501, 20.250, yaw=0.002) goal=(18.500, 20.250, yaw=0.000) approach=-0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360620.418388431] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(18.500, 20.250)
+[planner_server-6] [INFO] [1794360620.418401499] [planner_server]: [getPlan] StraightOk poses=10 start=(16.50, 20.25, yaw=0.002) goal=(18.50, 20.25) snapped=(18.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360620.418417083] [planner_server]: [ThroughPoses] via=0 OK poses=10 goal=(18.50, 20.25) concat=10
+[planner_server-6] [INFO] [1794360620.418424057] [planner_server]: [ThroughPoses] via=1/14 start=(18.500, 20.250, yaw=-0.000) goal=(20.500, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=25.00 sweep=false concat_poses=10
+[planner_server-6] [INFO] [1794360620.418433180] [planner_server]: [FastPath] compute start=(18.500, 20.250, yaw=-0.000) goal=(20.500, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360620.418442034] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(20.500, 20.250)
+[planner_server-6] [INFO] [1794360620.418449082] [planner_server]: [getPlan] StraightOk poses=10 start=(18.50, 20.25, yaw=-0.000) goal=(20.50, 20.25) snapped=(20.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360620.418455868] [planner_server]: [ThroughPoses] via=1 OK poses=10 goal=(20.50, 20.25) concat=20
+[planner_server-6] [INFO] [1794360620.418461797] [planner_server]: [ThroughPoses] via=2/14 start=(20.500, 20.250, yaw=0.000) goal=(22.500, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=25.00 sweep=false concat_poses=20
+[planner_server-6] [INFO] [1794360620.418469051] [planner_server]: [FastPath] compute start=(20.500, 20.250, yaw=0.000) goal=(22.500, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360620.418477922] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(22.500, 20.250)
+[planner_server-6] [INFO] [1794360620.418482612] [planner_server]: [getPlan] StraightOk poses=10 start=(20.50, 20.25, yaw=0.000) goal=(22.50, 20.25) snapped=(22.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360620.418488696] [planner_server]: [ThroughPoses] via=2 OK poses=10 goal=(22.50, 20.25) concat=30
+[planner_server-6] [INFO] [1794360620.418494826] [planner_server]: [ThroughPoses] via=3/14 start=(22.500, 20.250, yaw=0.000) goal=(24.500, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=25.00 sweep=false concat_poses=30
+[planner_server-6] [INFO] [1794360620.418502462] [planner_server]: [FastPath] compute start=(22.500, 20.250, yaw=0.000) goal=(24.500, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360620.418535964] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(24.500, 20.250)
+[planner_server-6] [INFO] [1794360620.418540576] [planner_server]: [getPlan] StraightOk poses=10 start=(22.50, 20.25, yaw=0.000) goal=(24.50, 20.25) snapped=(24.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360620.418547633] [planner_server]: [ThroughPoses] via=3 OK poses=10 goal=(24.50, 20.25) concat=40
+[planner_server-6] [INFO] [1794360620.418552331] [planner_server]: [ThroughPoses] via=4/14 start=(24.500, 20.250, yaw=0.000) goal=(26.500, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=25.00 sweep=false concat_poses=40
+[planner_server-6] [INFO] [1794360620.418559569] [planner_server]: [FastPath] compute start=(24.500, 20.250, yaw=0.000) goal=(26.500, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360620.418566827] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(26.500, 20.250)
+[planner_server-6] [INFO] [1794360620.418571391] [planner_server]: [getPlan] StraightOk poses=10 start=(24.50, 20.25, yaw=0.000) goal=(26.50, 20.25) snapped=(26.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360620.418578801] [planner_server]: [ThroughPoses] via=4 OK poses=10 goal=(26.50, 20.25) concat=50
+[planner_server-6] [INFO] [1794360620.418584882] [planner_server]: [ThroughPoses] via=5/14 start=(26.500, 20.250, yaw=0.000) goal=(28.500, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=25.00 sweep=false concat_poses=50
+[planner_server-6] [INFO] [1794360620.418592052] [planner_server]: [FastPath] compute start=(26.500, 20.250, yaw=0.000) goal=(28.500, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360620.418599392] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(28.500, 20.250)
+[planner_server-6] [INFO] [1794360620.418603918] [planner_server]: [getPlan] StraightOk poses=10 start=(26.50, 20.25, yaw=0.000) goal=(28.50, 20.25) snapped=(28.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360620.418610838] [planner_server]: [ThroughPoses] via=5 OK poses=10 goal=(28.50, 20.25) concat=60
+[planner_server-6] [INFO] [1794360620.418615422] [planner_server]: [ThroughPoses] via=6/14 start=(28.500, 20.250, yaw=0.000) goal=(30.500, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=25.00 sweep=false concat_poses=60
+[planner_server-6] [INFO] [1794360620.418622672] [planner_server]: [FastPath] compute start=(28.500, 20.250, yaw=0.000) goal=(30.500, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360620.418631088] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(30.500, 20.250)
+[planner_server-6] [INFO] [1794360620.418636093] [planner_server]: [getPlan] StraightOk poses=10 start=(28.50, 20.25, yaw=0.000) goal=(30.50, 20.25) snapped=(30.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360620.418642136] [planner_server]: [ThroughPoses] via=6 OK poses=10 goal=(30.50, 20.25) concat=70
+[planner_server-6] [INFO] [1794360620.418646600] [planner_server]: [ThroughPoses] via=7/14 start=(30.500, 20.250, yaw=0.000) goal=(32.500, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=25.00 sweep=false concat_poses=70
+[planner_server-6] [INFO] [1794360620.418653800] [planner_server]: [FastPath] compute start=(30.500, 20.250, yaw=0.000) goal=(32.500, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360620.418661399] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(32.500, 20.250)
+[planner_server-6] [INFO] [1794360620.418668765] [planner_server]: [getPlan] StraightOk poses=10 start=(30.50, 20.25, yaw=0.000) goal=(32.50, 20.25) snapped=(32.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360620.418677328] [planner_server]: [ThroughPoses] via=7 OK poses=10 goal=(32.50, 20.25) concat=80
+[planner_server-6] [INFO] [1794360620.418681829] [planner_server]: [ThroughPoses] via=8/14 start=(32.500, 20.250, yaw=0.000) goal=(34.500, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=25.00 sweep=false concat_poses=80
+[planner_server-6] [INFO] [1794360620.418688952] [planner_server]: [FastPath] compute start=(32.500, 20.250, yaw=0.000) goal=(34.500, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360620.418696032] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(34.500, 20.250)
+[planner_server-6] [INFO] [1794360620.418700587] [planner_server]: [getPlan] StraightOk poses=10 start=(32.50, 20.25, yaw=0.000) goal=(34.50, 20.25) snapped=(34.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360620.418706503] [planner_server]: [ThroughPoses] via=8 OK poses=10 goal=(34.50, 20.25) concat=90
+[planner_server-6] [INFO] [1794360620.418714916] [planner_server]: [ThroughPoses] via=9/14 start=(34.500, 20.250, yaw=0.000) goal=(36.500, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=25.00 sweep=false concat_poses=90
+[planner_server-6] [INFO] [1794360620.418722104] [planner_server]: [FastPath] compute start=(34.500, 20.250, yaw=0.000) goal=(36.500, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360620.418729602] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(36.500, 20.250)
+[planner_server-6] [INFO] [1794360620.418734162] [planner_server]: [getPlan] StraightOk poses=10 start=(34.50, 20.25, yaw=0.000) goal=(36.50, 20.25) snapped=(36.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360620.418740309] [planner_server]: [ThroughPoses] via=9 OK poses=10 goal=(36.50, 20.25) concat=100
+[planner_server-6] [INFO] [1794360620.418744906] [planner_server]: [ThroughPoses] via=10/14 start=(36.500, 20.250, yaw=0.000) goal=(38.500, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=25.00 sweep=false concat_poses=100
+[planner_server-6] [INFO] [1794360620.418752062] [planner_server]: [FastPath] compute start=(36.500, 20.250, yaw=0.000) goal=(38.500, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360620.418759662] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(38.500, 20.250)
+[planner_server-6] [INFO] [1794360620.418764138] [planner_server]: [getPlan] StraightOk poses=10 start=(36.50, 20.25, yaw=0.000) goal=(38.50, 20.25) snapped=(38.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360620.418770226] [planner_server]: [ThroughPoses] via=10 OK poses=10 goal=(38.50, 20.25) concat=110
+[planner_server-6] [INFO] [1794360620.418776804] [planner_server]: [ThroughPoses] via=11/14 start=(38.500, 20.250, yaw=0.000) goal=(40.500, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=25.00 sweep=false concat_poses=110
+[planner_server-6] [INFO] [1794360620.418784223] [planner_server]: [FastPath] compute start=(38.500, 20.250, yaw=0.000) goal=(40.500, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360620.418791342] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(40.500, 20.250)
+[planner_server-6] [INFO] [1794360620.418798003] [planner_server]: [getPlan] StraightOk poses=10 start=(38.50, 20.25, yaw=0.000) goal=(40.50, 20.25) snapped=(40.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360620.418805239] [planner_server]: [ThroughPoses] via=11 OK poses=10 goal=(40.50, 20.25) concat=120
+[planner_server-6] [INFO] [1794360620.418809961] [planner_server]: [ThroughPoses] via=12/14 start=(40.500, 20.250, yaw=0.000) goal=(42.500, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=25.00 sweep=false concat_poses=120
+[planner_server-6] [INFO] [1794360620.418817639] [planner_server]: [FastPath] compute start=(40.500, 20.250, yaw=0.000) goal=(42.500, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360620.418824835] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(42.500, 20.250)
+[planner_server-6] [INFO] [1794360620.418829929] [planner_server]: [getPlan] StraightOk poses=10 start=(40.50, 20.25, yaw=0.000) goal=(42.50, 20.25) snapped=(42.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360620.418838664] [planner_server]: [ThroughPoses] via=12 OK poses=10 goal=(42.50, 20.25) concat=130
+[planner_server-6] [INFO] [1794360620.418843312] [planner_server]: [ThroughPoses] via=13/14 start=(42.500, 20.250, yaw=0.000) goal=(43.500, 20.250, yaw=0.000) dist=1.000 near=true last=true rewrite_yaw=false stretch=true rotate=true footprint_corridor=true role=last ang=180.0 edge_len=25.00 sweep=false concat_poses=130
+[planner_server-6] [INFO] [1794360620.418850645] [planner_server]: [FastPath] compute start=(42.500, 20.250, yaw=0.000) goal=(43.500, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=false straight=true reverse=false stretch=true rotate=true footprint_corridor=true sweep=false exempt=true
+[planner_server-6] [INFO] [1794360620.418982136] [planner_server]: [FastPath] StraightOk kind=footprint_corridor reverse=false poses=5 goal=(43.500, 20.250)
+[planner_server-6] [INFO] [1794360620.418992644] [planner_server]: [getPlan] StraightOk poses=5 start=(42.50, 20.25, yaw=0.000) goal=(43.50, 20.25) snapped=(43.50, 20.25) stretch=true rotate=true footprint_corridor=true
+[planner_server-6] [INFO] [1794360620.419001596] [planner_server]: [ThroughPoses] via=13 OK poses=5 goal=(43.50, 20.25) concat=135
+[planner_server-6] [INFO] [1794360620.419013875] [planner_server]: [ThroughPoses] summary: goals=14 concat_poses=135 total=0.000s success=14 failed=0 straight=14 avg=0.00ms hybrid=0 avg=0.00ms
+[planner_server-6] [INFO] [1794360620.419019168] [planner_server]: [ThroughPoses] failed goals: none
+[planner_server-6] [INFO] [1794360620.419241319] [planner_server]: [PlanDbg] endSession: published 0 markers
+[controller_server-4] [INFO] [1794360620.616556749] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [WARN] [1794360620.616732273] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-4] [INFO] [1794360620.616798650] [controller_server]: TEB 设置全局路径，路径点数：135
+[controller_server-4] [INFO] [1794360620.617157790] [controller_server]: [lock_corner] 锁定角点 closest_raw=0 closest=0 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360620.617276868] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=101 最后占用=-1 窗口终点=26 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360620.617420547] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[controller_server-4] [INFO] [1794360620.617510543] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=0.000 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[controller_server-4] [INFO] [1794360620.627926260] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[collision_monitor-11] [INFO] [1794360620.630628750] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 0.728715, -0.002454
+[controller_server-4] [INFO] [1794360620.630237754] [controller_server]: [ControllerServer] publishing velocity: (linear.x:0.728715, angular.z:-0.002454)
+[fake_sensor_publisher-20] [INFO] [1794360620.631562830] [fake_sensor_publisher]: first /cmd_vel: vx=0.729 vy=0.000 wz=-0.002 (timeout tracked by steady_clock)
+[bt_navigator-8] [INFO] [1794360620.715147372] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: teb plan received, poses=135 length=26.799 m
+[bt_navigator-8] [INFO] [1794360620.715322734] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: advance gpp window, teb_len=26.799 m <= 100.000 m -> z=[0,13]
+[amcl-2] [WARN] [1794360620.934932129] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [INFO] [1794360621.019600944] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [WARN] [1794360621.242631652] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360621.325807762] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[fake_sensor_publisher-20] [WARN] [1794360621.381903887] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=30.000 last_pub=30.000; bump publish stamp. count=1940
+[controller_server-4] [INFO] [1794360621.524972609] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[fake_sensor_publisher-20] [INFO] [1794360621.681011352] [fake_sensor_publisher]: [status] stamp=30.200 steady_dt_raw=0.0200 dt_used=0.0200 | odom=(0.971,-0.001,-0.002) map->odom=(0.000,0.000,0.000) map->base=(0.971,-0.001,-0.002) | cmd=(1.00,0.00,-0.00) age=0.046s timed_out=false | ticks=2256 cmd_msgs=11 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=1953 jump_warn=0
+[bt_navigator-8] [INFO] [1794360621.720682004] [bt_navigator_navigate_through_poses_rclcpp_node]: IsMoving: motion resumed during rearm, ratio=0.29 (35/121), back to rolling check
+[planner_server-6] [WARN] [1794360621.890885693] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360622.145840155] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [INFO] [1794360622.333994287] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360622.620940872] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360622.641267001] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.028346)
+[path_check-14] [INFO] [1794360622.821684885] [path_check_node]: PathCheck done,  poses length before check is, 14, poses length after check is : 14 !
+[controller_server-4] [INFO] [1794360622.823772842] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360623.317899756] [controller_server]: [lock_corner] 锁定角点 closest_raw=4 closest=4 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360623.318155514] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=105 最后占用=-1 窗口终点=30 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360623.319374633] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[controller_server-4] [INFO] [1794360623.319421356] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=-0.003 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[collision_monitor-11] [INFO] [1794360623.339892003] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, -0.002306
+[amcl-2] [WARN] [1794360623.828082277] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794360624.044440824] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360624.101278318] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=32.000 last_pub=32.000; bump publish stamp. count=2056
+[bt_navigator-8] [INFO] [1794360624.114037205] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=0
+[controller_server-4] [INFO] [1794360624.129564280] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360624.222228556] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[planner_server-6] [WARN] [1794360624.692499628] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360624.724591001] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360624.729876837] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.000836)
+[collision_recover_node-13] [INFO] [1794360624.945101748] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [INFO] [1794360625.028704767] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[bt_navigator-8] [INFO] [1794360625.314345026] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: odom vx=1.0000 m/s
+[controller_server-4] [INFO] [1794360625.725941109] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360625.918457016] [controller_server]: [lock_corner] 锁定角点 closest_raw=4 closest=4 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360625.918626916] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=104 最后占用=-1 窗口终点=29 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360625.918748977] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[controller_server-4] [INFO] [1794360625.918772477] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=0.000 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[collision_monitor-11] [INFO] [1794360625.938382856] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, 0.000707
+[controller_server-4] [INFO] [1794360626.419407626] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [WARN] [1794360626.641890233] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360626.644962190] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [INFO] [1794360626.681025502] [fake_sensor_publisher]: [status] stamp=34.000 steady_dt_raw=0.0199 dt_used=0.0199 | odom=(5.971,-0.020,-0.005) map->odom=(0.000,0.000,0.000) map->base=(5.971,-0.020,-0.005) | cmd=(1.00,0.00,-0.00) age=0.051s timed_out=false | ticks=2506 cmd_msgs=61 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=2165 jump_warn=0
+[fake_sensor_publisher-20] [WARN] [1794360626.703655189] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=34.000 last_pub=34.000; bump publish stamp. count=2166
+[controller_server-4] [INFO] [1794360626.732003956] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.000795)
+[bt_navigator-8] [INFO] [1794360627.014840801] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=1
+[path_check-14] [INFO] [1794360627.235301328] [path_check_node]: PathCheck done,  poses length before check is, 14, poses length after check is : 14 !
+[planner_server-6] [WARN] [1794360627.290905135] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360627.320711890] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[collision_recover_node-13] [INFO] [1794360627.545538879] [collision_recover_node]: No obstacles received, do not check for collision.
+[bt_navigator-8] [INFO] [1794360627.615796056] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: teb plan received, poses=117 length=23.200 m
+[bt_navigator-8] [INFO] [1794360627.615980032] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: advance gpp window, teb_len=23.200 m <= 100.000 m -> z=[2,13]
+[controller_server-4] [INFO] [1794360628.222727753] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360628.518990088] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[controller_server-4] [INFO] [1794360628.519663593] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=0.000 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[collision_monitor-11] [INFO] [1794360628.544472533] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, 0.000264
+[controller_server-4] [INFO] [1794360628.618255101] [controller_server]: [lock_corner] 锁定角点 closest_raw=5 closest=5 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360628.618355592] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=105 最后占用=-1 窗口终点=30 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360628.621903464] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360628.733673345] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:-0.001435)
+[controller_server-4] [INFO] [1794360629.019956125] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [WARN] [1794360629.242823071] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360629.341085918] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=36.000 last_pub=36.000; bump publish stamp. count=2278
+[bt_navigator-8] [INFO] [1794360629.413590776] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=2
+[amcl-2] [WARN] [1794360629.416707763] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [INFO] [1794360629.626031245] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[planner_server-6] [WARN] [1794360629.890523806] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360630.144900515] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [INFO] [1794360630.519049391] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360630.825317581] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.001580)
+[controller_server-4] [INFO] [1794360631.217268471] [controller_server]: [lock_corner] 锁定角点 closest_raw=4 closest=4 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360631.217407963] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=102 最后占用=-1 窗口终点=29 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360631.217546854] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[controller_server-4] [INFO] [1794360631.217585370] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=0.000 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[controller_server-4] [INFO] [1794360631.220774545] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[collision_monitor-11] [INFO] [1794360631.228808069] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, -0.000763
+[controller_server-4] [INFO] [1794360631.320741864] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360631.520977881] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[path_check-14] [INFO] [1794360631.524454160] [path_check_node]: PathCheck done,  poses length before check is, 14, poses length after check is : 14 !
+[fake_sensor_publisher-20] [INFO] [1794360631.685345137] [fake_sensor_publisher]: [status] stamp=37.800 steady_dt_raw=0.0242 dt_used=0.0242 | odom=(10.975,-0.045,-0.006) map->odom=(0.000,0.000,0.000) map->base=(10.975,-0.045,-0.006) | cmd=(1.00,0.00,0.00) age=0.055s timed_out=false | ticks=2756 cmd_msgs=111 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=2377 jump_warn=0
+[bt_navigator-8] [INFO] [1794360631.814244204] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: odom vx=1.0000 m/s
+[controller_server-4] [INFO] [1794360631.827330621] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [WARN] [1794360631.843379716] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360631.941064171] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=38.000 last_pub=38.000; bump publish stamp. count=2388
+[amcl-2] [WARN] [1794360632.065928396] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [INFO] [1794360632.120615493] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[bt_navigator-8] [INFO] [1794360632.415826673] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=3
+[planner_server-6] [WARN] [1794360632.492919640] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360632.745034492] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [INFO] [1794360632.831082519] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.000644)
+[controller_server-4] [INFO] [1794360633.019705775] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360633.420802684] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360633.817264562] [controller_server]: [lock_corner] 锁定角点 closest_raw=4 closest=4 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360633.817397521] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=92 最后占用=-1 窗口终点=29 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360633.817579263] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[controller_server-4] [INFO] [1794360633.817599657] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=0.000 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[collision_monitor-11] [INFO] [1794360633.829539447] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, 0.000124
+[controller_server-4] [INFO] [1794360633.919240168] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360634.025745866] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[bt_navigator-8] [INFO] [1794360634.217944240] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: teb plan received, poses=92 length=18.200 m
+[bt_navigator-8] [INFO] [1794360634.218169913] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: advance gpp window, teb_len=18.200 m <= 100.000 m -> z=[4,13]
+[controller_server-4] [INFO] [1794360634.425229091] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [WARN] [1794360634.441291594] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360634.520232390] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[fake_sensor_publisher-20] [WARN] [1794360634.521022574] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=40.000 last_pub=40.000; bump publish stamp. count=2497
+[bt_navigator-8] [INFO] [1794360634.814214659] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=4
+[amcl-2] [WARN] [1794360634.814381153] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [INFO] [1794360634.836103737] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:-0.000733)
+[controller_server-4] [INFO] [1794360635.030040779] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[planner_server-6] [WARN] [1794360635.090382488] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360635.344957893] [collision_recover_node]: No obstacles received, do not check for collision.
+[path_check-14] [INFO] [1794360635.821746945] [path_check_node]: PathCheck done,  poses length before check is, 14, poses length after check is : 14 !
+[controller_server-4] [INFO] [1794360635.837898311] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360636.025576570] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360636.417571739] [controller_server]: [lock_corner] 锁定角点 closest_raw=4 closest=4 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360636.417652835] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=82 最后占用=-1 窗口终点=29 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360636.417743918] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[controller_server-4] [INFO] [1794360636.417759437] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=-0.004 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[collision_monitor-11] [INFO] [1794360636.431244147] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, 0.000511
+[fake_sensor_publisher-20] [INFO] [1794360636.702879649] [fake_sensor_publisher]: [status] stamp=41.600 steady_dt_raw=0.0218 dt_used=0.0218 | odom=(15.993,-0.074,-0.007) map->odom=(0.000,0.000,0.000) map->base=(15.993,-0.074,-0.007) | cmd=(1.00,0.00,-0.00) age=0.054s timed_out=false | ticks=3007 cmd_msgs=161 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=2590 jump_warn=0
+[controller_server-4] [INFO] [1794360636.928638849] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.004771)
+[controller_server-4] [WARN] [1794360637.041744594] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360637.127821166] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[fake_sensor_publisher-20] [WARN] [1794360637.202012640] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=42.000 last_pub=42.000; bump publish stamp. count=2611
+[controller_server-4] [INFO] [1794360637.328164711] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[bt_navigator-8] [INFO] [1794360637.419083573] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=5
+[amcl-2] [WARN] [1794360637.669820030] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[bt_navigator-8] [INFO] [1794360637.814862803] [bt_navigator]: Navigate through poses completed with status 2, publishing empty mission_poses
+[bt_navigator-8] [INFO] [1794360637.814946425] [bt_navigator]: Goal canceled
+[bt_navigator-8] [INFO] [1794360637.815017886] [bt_navigator]: [navigate_through_poses] [ActionServer] Client requested to cancel the goal. Cancelling.
+[search_poses_near_edge_node-17] [INFO] [1794360637.815029774] [search_poses_near_edge]: [onMissionPoses] Received mission poses: 0
+[search_poses_near_edge_node-17] [WARN] [1794360637.815072001] [search_poses_near_edge]: No mission poses or mission poses has less than 2 poses
+[search_poses_near_edge_node-17] [INFO] [1794360637.815080008] [search_poses_near_edge]: [publishEmptyOutputs] invalid mission_poses
+[search_poses_near_edge_node-17] [INFO] [1794360637.815203121] [search_poses_near_edge]: [publishPairedPathsMarkers] 发布 0 对 mission/reference 可视化 marker
+[search_poses_near_edge_node-17] [INFO] [1794360637.815632465] [search_poses_near_edge]: [publishAllEdgeReferencePathsMarkers] 发布全部贴边参考线 marker: normal=0, no_collision=0
+[controller_server-4] [INFO] [1794360637.816902922] [controller_server]: Goal was canceled. Stopping the robot.
+[controller_server-4] [INFO] [1794360637.816973579] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[planner_server-6] [WARN] [1794360637.889217991] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360638.145262925] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [WARN] [1794360639.641278945] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360639.741090611] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=44.000 last_pub=44.000; bump publish stamp. count=2719
+[amcl-2] [WARN] [1794360640.376403585] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [WARN] [1794360640.493646499] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360640.744951026] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [INFO] [1794360641.723055596] [fake_sensor_publisher]: [status] stamp=45.500 steady_dt_raw=0.0220 dt_used=0.0220 | odom=(17.091,-0.081,-0.005) map->odom=(0.000,0.000,0.000) map->base=(17.091,-0.081,-0.005) | cmd=(0.00,0.00,0.00) age=3.904s timed_out=true | ticks=3258 cmd_msgs=173 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=2803 jump_warn=0
+[controller_server-4] [WARN] [1794360642.241985615] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360642.361357587] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=46.000 last_pub=46.000; bump publish stamp. count=2830
+[planner_server-6] [WARN] [1794360643.094848432] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360643.170334710] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[collision_recover_node-13] [INFO] [1794360643.344902896] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [WARN] [1794360644.841675295] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360645.002688147] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=48.000 last_pub=48.000; bump publish stamp. count=2942
+[planner_server-6] [WARN] [1794360645.689892607] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360645.944973415] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360645.964504820] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [INFO] [1794360646.741057882] [fake_sensor_publisher]: [status] stamp=49.300 steady_dt_raw=0.0198 dt_used=0.0198 | odom=(17.016,-0.030,-0.593) map->odom=(0.000,0.000,0.000) map->base=(17.016,-0.030,-0.593) | cmd=(-0.50,0.00,0.00) age=0.057s timed_out=false | ticks=3509 cmd_msgs=205 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=3016 jump_warn=0
+[controller_server-4] [WARN] [1794360647.642597996] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360647.741658771] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=50.000 last_pub=50.000; bump publish stamp. count=3059
+[planner_server-6] [WARN] [1794360648.493355989] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360648.744905602] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360649.010123403] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794360650.244070094] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360650.421007364] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=52.000 last_pub=52.000; bump publish stamp. count=3173
+[planner_server-6] [WARN] [1794360651.089684511] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360651.344968219] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360651.727396010] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [INFO] [1794360651.741098953] [fake_sensor_publisher]: [status] stamp=53.000 steady_dt_raw=0.0196 dt_used=0.0196 | odom=(14.879,1.264,-0.522) map->odom=(0.000,0.000,0.000) map->base=(14.879,1.264,-0.522) | cmd=(-0.50,0.00,0.20) age=0.050s timed_out=false | ticks=3759 cmd_msgs=254 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=3229 jump_warn=0
+[controller_server-4] [WARN] [1794360652.841975713] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360652.941007544] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=54.000 last_pub=54.000; bump publish stamp. count=3279
+[planner_server-6] [WARN] [1794360653.693693240] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360653.944946826] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360654.542236776] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794360655.441574808] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360655.603085912] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=56.000 last_pub=56.000; bump publish stamp. count=3392
+[planner_server-6] [WARN] [1794360656.291361918] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360656.544958772] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [INFO] [1794360656.761057856] [fake_sensor_publisher]: [status] stamp=56.900 steady_dt_raw=0.0200 dt_used=0.0200 | odom=(12.600,2.261,-0.294) map->odom=(0.000,0.000,0.000) map->base=(12.600,2.261,-0.294) | cmd=(-0.40,0.00,0.00) age=0.085s timed_out=false | ticks=4010 cmd_msgs=303 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=3441 jump_warn=0
+[amcl-2] [WARN] [1794360657.303369462] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [WARN] [1794360658.242327115] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=58.000 last_pub=58.000; bump publish stamp. count=3504
+[controller_server-4] [WARN] [1794360658.243914225] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[planner_server-6] [WARN] [1794360659.095118530] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360659.345002197] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360660.215948271] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [WARN] [1794360660.881095790] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=60.000 last_pub=60.000; bump publish stamp. count=3616
+[controller_server-4] [WARN] [1794360661.052426296] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [INFO] [1794360661.762105497] [fake_sensor_publisher]: [status] stamp=60.600 steady_dt_raw=0.0210 dt_used=0.0210 | odom=(11.119,2.527,0.014) map->odom=(0.000,0.000,0.000) map->base=(11.119,2.527,0.014) | cmd=(-0.30,0.00,0.00) age=0.002s timed_out=false | ticks=4260 cmd_msgs=353 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=3654 jump_warn=0
+[planner_server-6] [WARN] [1794360661.890066722] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360661.944990217] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360663.011751447] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [WARN] [1794360663.521056336] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=62.000 last_pub=62.000; bump publish stamp. count=3728
+[controller_server-4] [WARN] [1794360663.649004660] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[planner_server-6] [WARN] [1794360664.490318492] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360664.545182134] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360665.776878665] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [WARN] [1794360666.141072261] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=64.000 last_pub=64.000; bump publish stamp. count=3839
+[controller_server-4] [WARN] [1794360666.241342924] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [INFO] [1794360666.781854072] [fake_sensor_publisher]: [status] stamp=64.500 steady_dt_raw=0.0200 dt_used=0.0200 | odom=(10.753,2.522,0.442) map->odom=(0.000,0.000,0.000) map->base=(10.753,2.522,0.442) | cmd=(0.00,0.00,0.00) age=1.648s timed_out=true | ticks=4511 cmd_msgs=387 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=3866 jump_warn=0
+[planner_server-6] [WARN] [1794360667.090789025] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360667.345877239] [collision_recover_node]: No obstacles received, do not check for collision.
+[amcl-2] [WARN] [1794360668.603566647] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [WARN] [1794360668.781096306] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=66.000 last_pub=66.000; bump publish stamp. count=3951
+[controller_server-4] [WARN] [1794360669.041361394] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[planner_server-6] [WARN] [1794360669.689258092] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360669.944939056] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [WARN] [1794360671.321038355] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=68.000 last_pub=68.000; bump publish stamp. count=4058
+[amcl-2] [WARN] [1794360671.327127122] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794360671.641500298] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [INFO] [1794360671.782672815] [fake_sensor_publisher]: [status] stamp=68.300 steady_dt_raw=0.0212 dt_used=0.0212 | odom=(10.753,2.522,0.442) map->odom=(0.000,0.000,0.000) map->base=(10.753,2.522,0.442) | cmd=(0.00,0.00,0.00) age=6.649s timed_out=true | ticks=4761 cmd_msgs=387 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=4078 jump_warn=0
+[planner_server-6] [WARN] [1794360672.289331139] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360672.545306867] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [WARN] [1794360673.861090107] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=70.000 last_pub=70.000; bump publish stamp. count=4165
+[amcl-2] [WARN] [1794360674.012266417] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794360674.242137698] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[planner_server-6] [WARN] [1794360674.891473045] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360674.946022230] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [WARN] [1794360676.401228242] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=72.000 last_pub=72.000; bump publish stamp. count=4272
+[amcl-2] [WARN] [1794360676.736225153] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [INFO] [1794360676.801090022] [fake_sensor_publisher]: [status] stamp=72.300 steady_dt_raw=0.0200 dt_used=0.0200 | odom=(10.753,2.522,0.442) map->odom=(0.000,0.000,0.000) map->base=(10.753,2.522,0.442) | cmd=(0.00,0.00,0.00) age=11.668s timed_out=true | ticks=5012 cmd_msgs=387 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=4289 jump_warn=0
+[controller_server-4] [WARN] [1794360676.841316212] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[planner_server-6] [WARN] [1794360677.493213439] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360677.745112346] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [WARN] [1794360679.001075100] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=74.000 last_pub=74.000; bump publish stamp. count=4382
+[controller_server-4] [WARN] [1794360679.441635411] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360679.511939705] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [WARN] [1794360680.093753427] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360680.345571199] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [WARN] [1794360681.481167911] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=76.000 last_pub=76.000; bump publish stamp. count=4486
+[fake_sensor_publisher-20] [INFO] [1794360681.821210887] [fake_sensor_publisher]: [status] stamp=76.200 steady_dt_raw=0.0201 dt_used=0.0201 | odom=(10.753,2.522,0.442) map->odom=(0.000,0.000,0.000) map->base=(10.753,2.522,0.442) | cmd=(0.00,0.00,0.00) age=16.688s timed_out=true | ticks=5263 cmd_msgs=387 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=4501 jump_warn=0
+[controller_server-4] [WARN] [1794360682.043590597] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360682.211568649] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [WARN] [1794360682.693028712] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360682.944927206] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [WARN] [1794360684.141190730] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=78.000 last_pub=78.000; bump publish stamp. count=4599
+[controller_server-4] [WARN] [1794360684.843397951] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360685.132051526] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [WARN] [1794360685.498595267] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360685.745761254] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [INFO] [1794360686.821386702] [fake_sensor_publisher]: [status] stamp=79.900 steady_dt_raw=0.0201 dt_used=0.0201 | odom=(10.753,2.522,0.442) map->odom=(0.000,0.000,0.000) map->base=(10.753,2.522,0.442) | cmd=(0.00,0.00,0.00) age=21.688s timed_out=true | ticks=5513 cmd_msgs=387 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=4714 jump_warn=0
+[fake_sensor_publisher-20] [WARN] [1794360686.961284403] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=80.000 last_pub=80.000; bump publish stamp. count=4720
+[controller_server-4] [WARN] [1794360687.641503200] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360688.011732712] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [WARN] [1794360688.290949010] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360688.545273794] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [WARN] [1794360689.601115811] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=82.000 last_pub=82.000; bump publish stamp. count=4832
+[controller_server-4] [WARN] [1794360690.245544334] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360690.818504854] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [WARN] [1794360690.890728458] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360691.344923356] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [INFO] [1794360691.841071816] [fake_sensor_publisher]: [status] stamp=83.700 steady_dt_raw=0.0198 dt_used=0.0198 | odom=(10.753,2.522,0.442) map->odom=(0.000,0.000,0.000) map->base=(10.753,2.522,0.442) | cmd=(0.00,0.00,0.00) age=26.708s timed_out=true | ticks=5764 cmd_msgs=387 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=4927 jump_warn=0
+[fake_sensor_publisher-20] [WARN] [1794360692.181078334] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=84.000 last_pub=84.000; bump publish stamp. count=4941
+[controller_server-4] [WARN] [1794360692.842212072] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[planner_server-6] [WARN] [1794360693.495976138] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360693.624932191] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[collision_recover_node-13] [INFO] [1794360693.948053838] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [WARN] [1794360694.861068692] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=86.000 last_pub=86.000; bump publish stamp. count=5055
+[controller_server-4] [WARN] [1794360695.643428343] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[planner_server-6] [WARN] [1794360696.294074664] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360696.420403342] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[collision_recover_node-13] [INFO] [1794360696.545845779] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [INFO] [1794360696.842146440] [fake_sensor_publisher]: [status] stamp=87.500 steady_dt_raw=0.0207 dt_used=0.0207 | odom=(10.753,2.522,0.442) map->odom=(0.000,0.000,0.000) map->base=(10.753,2.522,0.442) | cmd=(0.00,0.00,0.00) age=31.709s timed_out=true | ticks=6014 cmd_msgs=387 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=5140 jump_warn=0
+[fake_sensor_publisher-20] [WARN] [1794360697.461030434] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=88.000 last_pub=88.000; bump publish stamp. count=5166
+[controller_server-4] [WARN] [1794360698.245731213] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[bt_navigator-8] [INFO] [1794360698.356871606] [bt_navigator]: Begin navigating from current location through 9 poses to (43.50, 20.25)
+[bt_navigator-8] [INFO] [1794360698.356973682] [bt_navigator]: Mission generation id=2: cleared stale path until planner completes
+[bt_navigator-8] [INFO] [1794360698.357182340] [bt_navigator_navigate_through_poses_rclcpp_node]: IsMoving: not moving (rolling ratio below threshold), ratio=0.00 (0/251), start rearm for 5.00 s
+[search_poses_near_edge_node-17] [INFO] [1794360698.361465478] [search_poses_near_edge]: [onMissionPoses] Received mission poses: 9
+[search_poses_near_edge_node-17] [WARN] [1794360698.361521482] [search_poses_near_edge]: No edge reference paths from either edge_reference_paths or edge_reference_paths_no_collision_check
+[search_poses_near_edge_node-17] [INFO] [1794360698.361529100] [search_poses_near_edge]: [publishEmptyOutputs] empty edge reference paths
+[search_poses_near_edge_node-17] [INFO] [1794360698.364495363] [search_poses_near_edge]: [publishPairedPathsMarkers] 发布 0 对 mission/reference 可视化 marker
+[collision_recover_node-13] [WARN] [1794360698.364421221] [collision_recover_node]: No obstacles received, cannot check collision.
+[search_poses_near_edge_node-17] [INFO] [1794360698.366710863] [search_poses_near_edge]: [publishAllEdgeReferencePathsMarkers] 发布全部贴边参考线 marker: normal=0, no_collision=0
+[bt_navigator-8] [INFO] [1794360698.369086936] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: teb plan received, poses=78 length=15.400 m
+[bt_navigator-8] [INFO] [1794360698.369148377] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: odom vx=-0.0000 m/s
+[bt_navigator-8] [INFO] [1794360698.369172633] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: mission changed (tail_fp=6311d7c3e259e138), reload queue size=9
+[bt_navigator-8] [INFO] [1794360698.369252778] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: init gpp window z=[0,8] mission_goals=9
+[bt_navigator-8] [INFO] [1794360698.369265819] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: terminal goal z=8 entered gpp window, freeze stamps
+[path_check-14] [INFO] [1794360698.375433135] [path_check_node]: PathCheck done,  poses length before check is, 9, poses length after check is : 9 !
+[bt_navigator-8] [INFO] [1794360698.559111457] [bt_navigator_navigate_through_poses_rclcpp_node]: GloballyUpdatedGoalCondition goal or goals changed
+[behavior_server-7] [INFO] [1794360698.578543075] [behavior_server]: Running wait
+[planner_server-6] [WARN] [1794360698.914923424] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360699.238385212] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[collision_recover_node-13] [INFO] [1794360699.347400951] [collision_recover_node]: No obstacles received, do not check for collision.
+[bt_navigator-8] [INFO] [1794360699.458732070] [bt_navigator_navigate_through_poses_rclcpp_node]: IsMoving: rearm 0.90/5.00 s, ratio=0.00 (0/43), hold SUCCESS until window completes
+[behavior_server-7] [INFO] [1794360699.880711515] [behavior_server]: wait completed successfully
+[fake_sensor_publisher-20] [WARN] [1794360700.104578929] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=90.000 last_pub=90.000; bump publish stamp. count=5278
+[planner_server-6] [INFO] [1794360700.159395309] [planner_server]: Robot footprint cost at current pose (25.00, 22.67) is 0.000000
+[planner_server-6] [INFO] [1794360700.160204656] [planner_server]: [ThroughPoses] start=(24.999, 22.666, yaw=-0.020) goals=9 enable_straight=true
+[planner_server-6] [INFO] [1794360700.160223824] [planner_server]: [ThroughPoses] via=0/9 start=(24.999, 22.666, yaw=-0.020) goal=(27.499, 20.250, yaw=0.000) dist=3.476 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=16.00 sweep=false concat_poses=0
+[planner_server-6] [INFO] [1794360700.160238559] [planner_server]: [FastPath] compute start=(24.999, 22.666, yaw=-0.020) goal=(27.499, 20.250, yaw=0.000) approach=-0.768 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360700.160260243] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=18 goal=(27.499, 20.250)
+[planner_server-6] [INFO] [1794360700.160266683] [planner_server]: [getPlan] StraightOk poses=18 start=(25.00, 22.67, yaw=-0.020) goal=(27.50, 20.25) snapped=(27.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360700.160274886] [planner_server]: [ThroughPoses] via=0 OK poses=18 goal=(27.50, 20.25) concat=18
+[planner_server-6] [INFO] [1794360700.160281331] [planner_server]: [ThroughPoses] via=1/9 start=(27.499, 20.250, yaw=-0.768) goal=(29.499, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=16.00 sweep=false concat_poses=18
+[planner_server-6] [INFO] [1794360700.160289998] [planner_server]: [FastPath] compute start=(27.499, 20.250, yaw=-0.768) goal=(29.499, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360700.160298170] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(29.499, 20.250)
+[planner_server-6] [INFO] [1794360700.160304317] [planner_server]: [getPlan] StraightOk poses=10 start=(27.50, 20.25, yaw=-0.768) goal=(29.50, 20.25) snapped=(29.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360700.160310657] [planner_server]: [ThroughPoses] via=1 OK poses=10 goal=(29.50, 20.25) concat=28
+[planner_server-6] [INFO] [1794360700.160337939] [planner_server]: [ThroughPoses] via=2/9 start=(29.499, 20.250, yaw=0.000) goal=(31.499, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=16.00 sweep=false concat_poses=28
+[planner_server-6] [INFO] [1794360700.160346038] [planner_server]: [FastPath] compute start=(29.499, 20.250, yaw=0.000) goal=(31.499, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360700.160353787] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(31.499, 20.250)
+[planner_server-6] [INFO] [1794360700.160358535] [planner_server]: [getPlan] StraightOk poses=10 start=(29.50, 20.25, yaw=0.000) goal=(31.50, 20.25) snapped=(31.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360700.160364825] [planner_server]: [ThroughPoses] via=2 OK poses=10 goal=(31.50, 20.25) concat=38
+[planner_server-6] [INFO] [1794360700.160371100] [planner_server]: [ThroughPoses] via=3/9 start=(31.499, 20.250, yaw=0.000) goal=(33.499, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=16.00 sweep=false concat_poses=38
+[planner_server-6] [INFO] [1794360700.160378495] [planner_server]: [FastPath] compute start=(31.499, 20.250, yaw=0.000) goal=(33.499, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360700.160385798] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(33.499, 20.250)
+[planner_server-6] [INFO] [1794360700.160390267] [planner_server]: [getPlan] StraightOk poses=10 start=(31.50, 20.25, yaw=0.000) goal=(33.50, 20.25) snapped=(33.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360700.160396459] [planner_server]: [ThroughPoses] via=3 OK poses=10 goal=(33.50, 20.25) concat=48
+[planner_server-6] [INFO] [1794360700.160401929] [planner_server]: [ThroughPoses] via=4/9 start=(33.499, 20.250, yaw=0.000) goal=(35.499, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=16.00 sweep=false concat_poses=48
+[planner_server-6] [INFO] [1794360700.160409086] [planner_server]: [FastPath] compute start=(33.499, 20.250, yaw=0.000) goal=(35.499, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360700.160421320] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(35.499, 20.250)
+[planner_server-6] [INFO] [1794360700.160426032] [planner_server]: [getPlan] StraightOk poses=10 start=(33.50, 20.25, yaw=0.000) goal=(35.50, 20.25) snapped=(35.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360700.160432237] [planner_server]: [ThroughPoses] via=4 OK poses=10 goal=(35.50, 20.25) concat=58
+[planner_server-6] [INFO] [1794360700.160440489] [planner_server]: [ThroughPoses] via=5/9 start=(35.499, 20.250, yaw=0.000) goal=(37.499, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=16.00 sweep=false concat_poses=58
+[planner_server-6] [INFO] [1794360700.160447818] [planner_server]: [FastPath] compute start=(35.499, 20.250, yaw=0.000) goal=(37.499, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360700.160455133] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(37.499, 20.250)
+[planner_server-6] [INFO] [1794360700.160459530] [planner_server]: [getPlan] StraightOk poses=10 start=(35.50, 20.25, yaw=0.000) goal=(37.50, 20.25) snapped=(37.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360700.160465338] [planner_server]: [ThroughPoses] via=5 OK poses=10 goal=(37.50, 20.25) concat=68
+[planner_server-6] [INFO] [1794360700.160469861] [planner_server]: [ThroughPoses] via=6/9 start=(37.499, 20.250, yaw=0.000) goal=(39.499, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=16.00 sweep=false concat_poses=68
+[planner_server-6] [INFO] [1794360700.160479598] [planner_server]: [FastPath] compute start=(37.499, 20.250, yaw=0.000) goal=(39.499, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360700.160487062] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(39.499, 20.250)
+[planner_server-6] [INFO] [1794360700.160491425] [planner_server]: [getPlan] StraightOk poses=10 start=(37.50, 20.25, yaw=0.000) goal=(39.50, 20.25) snapped=(39.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360700.160497507] [planner_server]: [ThroughPoses] via=6 OK poses=10 goal=(39.50, 20.25) concat=78
+[planner_server-6] [INFO] [1794360700.160501904] [planner_server]: [ThroughPoses] via=7/9 start=(39.499, 20.250, yaw=0.000) goal=(41.499, 20.250, yaw=0.000) dist=2.000 near=true last=false rewrite_yaw=true stretch=true rotate=true footprint_corridor=false role=long ang=180.0 edge_len=16.00 sweep=false concat_poses=78
+[planner_server-6] [INFO] [1794360700.160509134] [planner_server]: [FastPath] compute start=(39.499, 20.250, yaw=0.000) goal=(41.499, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=true straight=true reverse=false stretch=true rotate=true footprint_corridor=false sweep=false exempt=true
+[planner_server-6] [INFO] [1794360700.160517834] [planner_server]: [FastPath] StraightOk kind=corridor reverse=false poses=10 goal=(41.499, 20.250)
+[planner_server-6] [INFO] [1794360700.160522348] [planner_server]: [getPlan] StraightOk poses=10 start=(39.50, 20.25, yaw=0.000) goal=(41.50, 20.25) snapped=(41.50, 20.25) stretch=true rotate=true footprint_corridor=false
+[planner_server-6] [INFO] [1794360700.160528239] [planner_server]: [ThroughPoses] via=7 OK poses=10 goal=(41.50, 20.25) concat=88
+[planner_server-6] [INFO] [1794360700.160533485] [planner_server]: [ThroughPoses] via=8/9 start=(41.499, 20.250, yaw=0.000) goal=(43.500, 20.250, yaw=0.000) dist=2.001 near=true last=true rewrite_yaw=false stretch=true rotate=true footprint_corridor=true role=last ang=180.0 edge_len=16.00 sweep=false concat_poses=88
+[planner_server-6] [INFO] [1794360700.160541050] [planner_server]: [FastPath] compute start=(41.499, 20.250, yaw=0.000) goal=(43.500, 20.250, yaw=0.000) approach=0.000 rewrite_yaw=false straight=true reverse=false stretch=true rotate=true footprint_corridor=true sweep=false exempt=true
+[planner_server-6] [INFO] [1794360700.161639687] [planner_server]: [FastPath] StraightOk kind=footprint_corridor reverse=false poses=11 goal=(43.500, 20.250)
+[planner_server-6] [INFO] [1794360700.161674122] [planner_server]: [getPlan] StraightOk poses=11 start=(41.50, 20.25, yaw=0.000) goal=(43.50, 20.25) snapped=(43.50, 20.25) stretch=true rotate=true footprint_corridor=true
+[planner_server-6] [INFO] [1794360700.161691430] [planner_server]: [ThroughPoses] via=8 OK poses=11 goal=(43.50, 20.25) concat=99
+[planner_server-6] [INFO] [1794360700.161706424] [planner_server]: [ThroughPoses] summary: goals=9 concat_poses=99 total=0.000s success=9 failed=0 straight=9 avg=0.00ms hybrid=0 avg=0.00ms
+[planner_server-6] [INFO] [1794360700.161712037] [planner_server]: [ThroughPoses] failed goals: none
+[planner_server-6] [INFO] [1794360700.161952275] [planner_server]: [PlanDbg] endSession: published 0 markers
+[controller_server-4] [INFO] [1794360700.358436962] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [INFO] [1794360700.358669227] [controller_server]: TEB 设置全局路径，路径点数：99
+[controller_server-4] [INFO] [1794360700.358869821] [controller_server]: [lock_corner] 锁定角点 closest_raw=0 closest=0 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360700.358943760] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=98 最后占用=-1 窗口终点=26 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360700.359067050] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[controller_server-4] [INFO] [1794360700.359198943] [controller_server]: 原地转: shouldRotateInPlace=true，碰障预检通过 |dtheta|=0.749 rad、v_xy=0.000、w_odom=0.000、forward_lookahead=0.50 m
+[controller_server-4] [INFO] [1794360700.361168005] [controller_server]: [ControllerServer] publishing velocity: (linear.x:0.000000, angular.z:-0.200000)
+[collision_monitor-11] [INFO] [1794360700.363711352] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 0.000000, -0.200000
+[bt_navigator-8] [INFO] [1794360700.659267700] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: advance gpp window, teb_len=19.278 m <= 100.000 m -> z=[0,8]
+[controller_server-4] [WARN] [1794360701.042115496] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360701.059607971] [controller_server]: 原地转: shouldRotateInPlace=true，碰障预检通过 |dtheta|=0.609 rad、v_xy=0.000、w_odom=-0.342、forward_lookahead=0.50 m
+[bt_navigator-8] [INFO] [1794360701.658700373] [bt_navigator_navigate_through_poses_rclcpp_node]: IsMoving: motion resumed during rearm, ratio=0.38 (48/127), back to rolling check
+[controller_server-4] [INFO] [1794360701.659176443] [controller_server]: 原地转: shouldRotateInPlace=true，碰障预检通过 |dtheta|=0.442 rad、v_xy=0.000、w_odom=-0.351、forward_lookahead=0.50 m
+[planner_server-6] [WARN] [1794360701.697851589] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360701.859117656] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=-0.353 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[fake_sensor_publisher-20] [INFO] [1794360701.861102973] [fake_sensor_publisher]: [status] stamp=91.300 steady_dt_raw=0.0199 dt_used=0.0199 | odom=(10.753,2.522,-0.051) map->odom=(0.000,0.000,0.000) map->base=(10.753,2.522,-0.051) | cmd=(0.00,0.00,-0.35) age=0.077s timed_out=false | ticks=6265 cmd_msgs=402 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=5353 jump_warn=0
+[collision_recover_node-13] [INFO] [1794360701.945113811] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [INFO] [1794360701.963866582] [controller_server]: 原地转: shouldRotateInPlace=false，rotation_limit 生效 (dt=0.10 <= 30.00, robot_dist=0.001 <= 0.300)
+[controller_server-4] [INFO] [1794360701.979629470] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[amcl-2] [WARN] [1794360702.030094136] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [INFO] [1794360702.173783301] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360702.380971797] [controller_server]: [ControllerServer] publishing velocity: (linear.x:0.875188, angular.z:-0.240066)
+[controller_server-4] [INFO] [1794360702.469534973] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360702.582742087] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[fake_sensor_publisher-20] [WARN] [1794360702.722999636] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=92.000 last_pub=92.000; bump publish stamp. count=5389
+[path_check-14] [INFO] [1794360702.959206914] [path_check_node]: PathCheck done,  poses length before check is, 9, poses length after check is : 9 !
+[collision_monitor-11] [INFO] [1794360703.017024869] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 0.855827, 0.178695
+[controller_server-4] [INFO] [1794360703.060060451] [controller_server]: [lock_corner] 锁定角点 closest_raw=1 closest=1 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360703.060147561] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=98 最后占用=-1 窗口终点=27 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360703.060236858] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[controller_server-4] [WARN] [1794360703.648189546] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360703.671733411] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360704.172252383] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360704.383486223] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.282343)
+[controller_server-4] [INFO] [1794360704.459824974] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=0.297 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[planner_server-6] [WARN] [1794360704.493705684] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360704.545293732] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [INFO] [1794360704.667410766] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[amcl-2] [WARN] [1794360704.673498608] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[bt_navigator-8] [INFO] [1794360705.158844647] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: teb plan received, poses=95 length=18.478 m
+[bt_navigator-8] [INFO] [1794360705.158921028] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: odom vx=0.9995 m/s
+[fake_sensor_publisher-20] [WARN] [1794360705.301145845] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=94.000 last_pub=94.000; bump publish stamp. count=5498
+[controller_server-4] [INFO] [1794360705.563579488] [controller_server]: [lock_corner] 锁定角点 closest_raw=4 closest=4 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360705.563673197] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=92 最后占用=-1 窗口终点=30 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360705.563774969] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[controller_server-4] [INFO] [1794360705.574538675] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[collision_monitor-11] [INFO] [1794360705.578067819] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, 0.246688
+[controller_server-4] [INFO] [1794360705.761736842] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360705.964132825] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [WARN] [1794360706.242782013] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360706.495241004] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.301403)
+[controller_server-4] [INFO] [1794360706.578881928] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360706.861477603] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[fake_sensor_publisher-20] [INFO] [1794360706.862550122] [fake_sensor_publisher]: [status] stamp=95.200 steady_dt_raw=0.0215 dt_used=0.0215 | odom=(15.212,3.459,0.878) map->odom=(0.000,0.000,0.000) map->base=(15.212,3.459,0.878) | cmd=(1.00,0.00,0.32) age=0.087s timed_out=false | ticks=6515 cmd_msgs=452 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=5564 jump_warn=0
+[controller_server-4] [INFO] [1794360707.059965283] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=0.254 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[planner_server-6] [WARN] [1794360707.092798670] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360707.145462352] [collision_recover_node]: No obstacles received, do not check for collision.
+[path_check-14] [INFO] [1794360707.269869707] [path_check_node]: PathCheck done,  poses length before check is, 9, poses length after check is : 9 !
+[amcl-2] [WARN] [1794360707.438749000] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[bt_navigator-8] [INFO] [1794360707.459584520] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=0
+[bt_navigator-8] [INFO] [1794360707.459864297] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: advance gpp window, teb_len=16.878 m <= 100.000 m -> z=[1,8]
+[controller_server-4] [INFO] [1794360707.570450290] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360707.871904542] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[fake_sensor_publisher-20] [WARN] [1794360707.921015259] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=96.000 last_pub=96.000; bump publish stamp. count=5609
+[controller_server-4] [INFO] [1794360708.160605584] [controller_server]: [lock_corner] 锁定角点 closest_raw=5 closest=5 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360708.160684257] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=82 最后占用=-1 窗口终点=30 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360708.160785475] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[collision_monitor-11] [INFO] [1794360708.181894392] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, 0.169848
+[controller_server-4] [INFO] [1794360708.271087146] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360708.577079008] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.102839)
+[controller_server-4] [INFO] [1794360708.670242138] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [WARN] [1794360708.841817929] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360709.265299422] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360709.664781115] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=0.044 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[planner_server-6] [WARN] [1794360709.693464353] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[bt_navigator-8] [INFO] [1794360709.765044065] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=1
+[collision_recover_node-13] [INFO] [1794360709.945622536] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [INFO] [1794360709.973935479] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360710.271884727] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[amcl-2] [WARN] [1794360710.308746490] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [INFO] [1794360710.567373136] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360710.581541981] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.008802)
+[fake_sensor_publisher-20] [WARN] [1794360710.621264059] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=98.000 last_pub=98.000; bump publish stamp. count=5724
+[controller_server-4] [INFO] [1794360710.882530371] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[collision_monitor-11] [INFO] [1794360710.927657039] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, 0.002755
+[controller_server-4] [INFO] [1794360710.959195721] [controller_server]: [lock_corner] 锁定角点 closest_raw=4 closest=4 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360710.959272142] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=71 最后占用=-1 窗口终点=29 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360710.959387814] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[controller_server-4] [INFO] [1794360710.983620428] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [WARN] [1794360711.641377256] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360711.671480458] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[fake_sensor_publisher-20] [INFO] [1794360711.862732983] [fake_sensor_publisher]: [status] stamp=98.900 steady_dt_raw=0.0198 dt_used=0.0198 | odom=(16.687,8.187,1.378) map->odom=(0.000,0.000,0.000) map->base=(16.687,8.187,1.378) | cmd=(1.00,0.00,0.01) age=0.078s timed_out=false | ticks=6765 cmd_msgs=502 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=5777 jump_warn=0
+[path_check-14] [INFO] [1794360711.873282098] [path_check_node]: PathCheck done,  poses length before check is, 9, poses length after check is : 9 !
+[controller_server-4] [INFO] [1794360711.877312306] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[bt_navigator-8] [INFO] [1794360711.959880139] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: teb plan received, poses=69 length=13.401 m
+[bt_navigator-8] [INFO] [1794360711.959926929] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: odom vx=1.0000 m/s
+[planner_server-6] [WARN] [1794360712.490425559] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[bt_navigator-8] [INFO] [1794360712.557879594] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=2
+[controller_server-4] [INFO] [1794360712.561454164] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=0.000 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[controller_server-4] [INFO] [1794360712.590962803] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.006948)
+[collision_recover_node-13] [INFO] [1794360712.745001739] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [INFO] [1794360712.868005561] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[amcl-2] [WARN] [1794360713.317533514] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [WARN] [1794360713.421079711] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=100.000 last_pub=100.000; bump publish stamp. count=5844
+[controller_server-4] [INFO] [1794360713.469924476] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360713.663847834] [controller_server]: [lock_corner] 锁定角点 closest_raw=4 closest=4 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360713.663980461] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=61 最后占用=-1 窗口终点=29 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360713.664082915] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[controller_server-4] [INFO] [1794360713.681868055] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[collision_monitor-11] [INFO] [1794360713.686562278] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, 0.014281
+[controller_server-4] [INFO] [1794360713.995076064] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360714.061305243] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[bt_navigator-8] [INFO] [1794360714.258544621] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: advance gpp window, teb_len=11.601 m <= 100.000 m -> z=[3,8]
+[controller_server-4] [WARN] [1794360714.442084978] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360714.561533250] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360714.681033084] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:-0.015382)
+[controller_server-4] [INFO] [1794360715.063356074] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=-0.002 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[planner_server-6] [WARN] [1794360715.097078808] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360715.345266561] [collision_recover_node]: No obstacles received, do not check for collision.
+[bt_navigator-8] [INFO] [1794360715.357786661] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=3
+[controller_server-4] [INFO] [1794360715.583913046] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[fake_sensor_publisher-20] [WARN] [1794360716.069503146] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=102.000 last_pub=102.000; bump publish stamp. count=5956
+[amcl-2] [WARN] [1794360716.108753354] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [INFO] [1794360716.361724296] [controller_server]: [lock_corner] 锁定角点 closest_raw=4 closest=4 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360716.361839336] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=51 最后占用=-1 窗口终点=29 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360716.361958866] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[path_check-14] [INFO] [1794360716.384264418] [path_check_node]: PathCheck done,  poses length before check is, 9, poses length after check is : 9 !
+[collision_monitor-11] [INFO] [1794360716.392729597] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, 0.000308
+[controller_server-4] [INFO] [1794360716.478547232] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360716.681623559] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:-0.005779)
+[fake_sensor_publisher-20] [INFO] [1794360716.866188658] [fake_sensor_publisher]: [status] stamp=102.600 steady_dt_raw=0.0241 dt_used=0.0241 | odom=(17.654,13.096,1.373) map->odom=(0.000,0.000,0.000) map->base=(17.654,13.096,1.373) | cmd=(1.00,0.00,0.00) age=0.078s timed_out=false | ticks=7015 cmd_msgs=552 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=5990 jump_warn=0
+[controller_server-4] [INFO] [1794360716.876492890] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360717.178260072] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [WARN] [1794360717.248184699] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360717.369926445] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360717.664921950] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360717.959420214] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=0.003 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[bt_navigator-8] [INFO] [1794360718.059332557] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=4
+[planner_server-6] [WARN] [1794360718.091477893] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360718.345100203] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [INFO] [1794360718.684970097] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.005455)
+[fake_sensor_publisher-20] [WARN] [1794360718.901043244] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=104.000 last_pub=104.000; bump publish stamp. count=6078
+[amcl-2] [WARN] [1794360719.209154514] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[collision_monitor-11] [INFO] [1794360719.217916565] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, -0.002283
+[controller_server-4] [INFO] [1794360719.259087821] [controller_server]: [lock_corner] 锁定角点 closest_raw=4 closest=4 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360719.259205758] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=41 最后占用=-1 窗口终点=29 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360719.259301124] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[bt_navigator-8] [INFO] [1794360719.259644201] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: teb plan received, poses=42 length=8.001 m
+[bt_navigator-8] [INFO] [1794360719.259690209] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: odom vx=1.0000 m/s
+[controller_server-4] [INFO] [1794360719.479357330] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [WARN] [1794360720.041947191] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360720.278136575] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360720.461485353] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360720.787995778] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:-0.007236)
+[path_check-14] [INFO] [1794360720.791137041] [path_check_node]: PathCheck done,  poses length before check is, 9, poses length after check is : 9 !
+[bt_navigator-8] [INFO] [1794360720.860231675] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=5
+[controller_server-4] [INFO] [1794360720.865685034] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=0.001 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[controller_server-4] [INFO] [1794360720.966839697] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[planner_server-6] [WARN] [1794360721.092628226] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360721.345754309] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [INFO] [1794360721.363185775] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[bt_navigator-8] [INFO] [1794360721.462818896] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: advance gpp window, teb_len=6.601 m <= 100.000 m -> z=[6,8]
+[fake_sensor_publisher-20] [WARN] [1794360721.801062503] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=106.000 last_pub=106.000; bump publish stamp. count=6203
+[fake_sensor_publisher-20] [INFO] [1794360721.881069757] [fake_sensor_publisher]: [status] stamp=106.000 steady_dt_raw=0.0153 dt_used=0.0153 | odom=(18.647,18.011,1.369) map->odom=(0.000,0.000,0.000) map->base=(18.647,18.011,1.369) | cmd=(1.00,0.00,0.00) age=0.079s timed_out=false | ticks=7266 cmd_msgs=602 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=6207 jump_warn=0
+[controller_server-4] [INFO] [1794360722.059048919] [controller_server]: [lock_corner] 锁定角点 closest_raw=4 closest=4 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360722.059124947] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=31 最后占用=-1 窗口终点=29 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360722.059225095] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[collision_monitor-11] [INFO] [1794360722.078673934] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, 0.002653
+[amcl-2] [WARN] [1794360722.230415717] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [INFO] [1794360722.675651550] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [WARN] [1794360722.846538357] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360722.864403794] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360722.874875992] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.008200)
+[controller_server-4] [INFO] [1794360723.176398986] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360723.664018846] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=0.003 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[controller_server-4] [INFO] [1794360723.772995510] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[planner_server-6] [WARN] [1794360723.895722345] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360723.965602338] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[collision_recover_node-13] [INFO] [1794360724.144989504] [collision_recover_node]: No obstacles received, do not check for collision.
+[bt_navigator-8] [INFO] [1794360724.159924059] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=6
+[fake_sensor_publisher-20] [WARN] [1794360724.561213500] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=108.000 last_pub=108.000; bump publish stamp. count=6321
+[controller_server-4] [INFO] [1794360724.571399045] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360724.859307401] [controller_server]: [lock_corner] 锁定角点 closest_raw=4 closest=4 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360724.859577759] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=21 最后占用=-1 窗口终点=21 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360724.859670926] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[controller_server-4] [INFO] [1794360724.884156843] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.002032)
+[collision_monitor-11] [INFO] [1794360724.884398671] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, 0.002032
+[amcl-2] [WARN] [1794360725.215237794] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[path_check-14] [INFO] [1794360725.264480433] [path_check_node]: PathCheck done,  poses length before check is, 9, poses length after check is : 9 !
+[controller_server-4] [INFO] [1794360725.271861286] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360725.370027871] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [WARN] [1794360725.641562485] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360726.274111506] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[bt_navigator-8] [INFO] [1794360726.358211929] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: teb plan received, poses=17 length=3.001 m
+[bt_navigator-8] [INFO] [1794360726.358334142] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: odom vx=1.0000 m/s
+[bt_navigator-8] [INFO] [1794360726.358406804] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: radius/behind/yaw pass, record index=7
+[controller_server-4] [INFO] [1794360726.359498475] [controller_server]: [NearHorizon] 近动态障碍物门控 mode=0 as_static_edges=1 cache=0 raw_threat=0 enable=0 overlap_excl=0 trig_id=-1 reason=safety_mode_off omega_ref=0.003 delta=0.080 (roi f/r/l/r=1.00/1.00/1.00/1.00 T_near=3.00 hold=0.50)
+[controller_server-4] [INFO] [1794360726.473310686] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[planner_server-6] [WARN] [1794360726.690576062] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360726.764917273] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[fake_sensor_publisher-20] [INFO] [1794360726.902101455] [fake_sensor_publisher]: [status] stamp=109.700 steady_dt_raw=0.0211 dt_used=0.0211 | odom=(19.647,22.932,1.369) map->odom=(0.000,0.000,0.000) map->base=(19.647,22.932,1.369) | cmd=(1.00,0.00,0.00) age=0.034s timed_out=false | ticks=7517 cmd_msgs=653 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=6421 jump_warn=0
+[collision_recover_node-13] [INFO] [1794360726.944953876] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [INFO] [1794360726.972151239] [controller_server]: [ControllerServer] publishing velocity: (linear.x:1.000000, angular.z:0.011230)
+[controller_server-4] [INFO] [1794360727.063029704] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[fake_sensor_publisher-20] [WARN] [1794360727.241479097] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=110.000 last_pub=110.000; bump publish stamp. count=6435
+[controller_server-4] [INFO] [1794360727.270125467] [controller_server]: [TEB cost dbg] no side-clearance samples (n_wall_side=0 n_legacy=0 wall_line=empty size=0) obst_total=0.000 (hard=0.000 infl=0.000 n_pt=0 n_inf=0 | dyn=0.000 n=0) g*=0.150 g_push=0.075 — g0/g_avg/g_min/g_max N/A
+[controller_server-4] [INFO] [1794360727.458867614] [controller_server]: [lock_corner] 锁定角点 closest_raw=4 closest=4 C=-1 角度=180.00 弧长到角点=-1.000 到达阈值=0.300 已到达=0 原因=no_corner
+[controller_server-4] [INFO] [1794360727.458924904] [controller_server]: [transformGlobalPlan]: 前视=5.000 跨度上限=20.000 裁剪长度=5.000 角点=-1 在视界内=0 锁定=0 行终点=11 最后占用=-1 窗口终点=11 裁剪剩余行=0 裁剪从=-1 裁剪到=-1
+[controller_server-4] [INFO] [1794360727.459005556] [controller_server]: TEB 倒车模式: enable_backward=否 narrow_latch=否 reverse_seg=否 dual_arc=否 fail=0/5 probe=否 enable=否 forward_drive=100.00 prefer_fwd=1 allow_back=1
+[collision_monitor-11] [INFO] [1794360727.470434211] [collision_monitor]: [CollisionMonitor] publishVelocity: publishing cmd_vel: 1.000000, -0.002600
+[amcl-2] [WARN] [1794360727.938173372] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[bt_navigator-8] [INFO] [1794360728.058304201] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: tail pass, record index=8
+[bt_navigator-8] [INFO] [1794360728.058349076] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: init gpp window z=[8,8] mission_goals=0
+[bt_navigator-8] [WARN] [1794360728.058357352] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[controller_server-4] [WARN] [1794360728.241764529] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [INFO] [1794360728.473868584] [controller_server]: Reached the goal!
+[bt_navigator-8] [INFO] [1794360728.560061415] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: advance gpp window, teb_len=1.401 m <= 100.000 m -> z=[8,8]
+[bt_navigator-8] [WARN] [1794360728.560351501] [bt_navigator_navigate_through_poses_rclcpp_node]: RemovePassedGoals: prune removed all goals (was 0), keep previous gpp_goals count=1
+[bt_navigator-8] [INFO] [1794360728.859582884] [bt_navigator]: Navigate through poses completed with status 0, publishing empty mission_poses
+[bt_navigator-8] [INFO] [1794360728.862187676] [bt_navigator]: Goal succeeded
+[search_poses_near_edge_node-17] [INFO] [1794360728.865218404] [search_poses_near_edge]: [onMissionPoses] Received mission poses: 0
+[search_poses_near_edge_node-17] [WARN] [1794360728.865263168] [search_poses_near_edge]: No mission poses or mission poses has less than 2 poses
+[search_poses_near_edge_node-17] [INFO] [1794360728.865269821] [search_poses_near_edge]: [publishEmptyOutputs] invalid mission_poses
+[search_poses_near_edge_node-17] [INFO] [1794360728.865322764] [search_poses_near_edge]: [publishPairedPathsMarkers] 发布 0 对 mission/reference 可视化 marker
+[search_poses_near_edge_node-17] [INFO] [1794360728.865411536] [search_poses_near_edge]: [publishAllEdgeReferencePathsMarkers] 发布全部贴边参考线 marker: normal=0, no_collision=0
+[planner_server-6] [WARN] [1794360729.491557226] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360729.745344129] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [WARN] [1794360729.862530066] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=112.000 last_pub=112.000; bump publish stamp. count=6546
+[amcl-2] [WARN] [1794360730.688385859] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794360731.041616681] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [INFO] [1794360731.922490216] [fake_sensor_publisher]: [status] stamp=113.400 steady_dt_raw=0.0214 dt_used=0.0214 | odom=(19.930,24.339,1.355) map->odom=(0.000,0.000,0.000) map->base=(19.930,24.339,1.355) | cmd=(0.00,0.00,0.00) age=3.445s timed_out=true | ticks=7768 cmd_msgs=670 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=6635 jump_warn=0
+[planner_server-6] [WARN] [1794360732.290234729] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360732.545356064] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [WARN] [1794360732.646688660] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=114.000 last_pub=114.000; bump publish stamp. count=6665
+[amcl-2] [WARN] [1794360733.535666138] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[controller_server-4] [WARN] [1794360733.641969677] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[planner_server-6] [WARN] [1794360734.890042722] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360734.945088230] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [WARN] [1794360735.084345344] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=116.000 last_pub=116.000; bump publish stamp. count=6767
+[controller_server-4] [WARN] [1794360736.041324160] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360736.173244684] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [INFO] [1794360736.941755992] [fake_sensor_publisher]: [status] stamp=117.400 steady_dt_raw=0.0194 dt_used=0.0194 | odom=(19.930,24.339,1.355) map->odom=(0.000,0.000,0.000) map->base=(19.930,24.339,1.355) | cmd=(0.00,0.00,0.00) age=8.464s timed_out=true | ticks=8019 cmd_msgs=670 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=6846 jump_warn=0
+[planner_server-6] [WARN] [1794360737.495642006] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360737.544993951] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [WARN] [1794360737.661258392] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=118.000 last_pub=118.000; bump publish stamp. count=6876
+[controller_server-4] [WARN] [1794360738.641712171] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360738.917932159] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [WARN] [1794360740.092493360] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360740.149241589] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [WARN] [1794360740.201383426] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=120.000 last_pub=120.000; bump publish stamp. count=6983
+[controller_server-4] [WARN] [1794360741.241706710] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360741.596084831] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [INFO] [1794360741.961049160] [fake_sensor_publisher]: [status] stamp=121.400 steady_dt_raw=0.0200 dt_used=0.0200 | odom=(19.930,24.339,1.355) map->odom=(0.000,0.000,0.000) map->base=(19.930,24.339,1.355) | cmd=(0.00,0.00,0.00) age=13.483s timed_out=true | ticks=8270 cmd_msgs=670 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=7057 jump_warn=0
+[collision_recover_node-13] [INFO] [1794360742.545748224] [collision_recover_node]: No obstacles received, do not check for collision.
+[fake_sensor_publisher-20] [WARN] [1794360742.683179706] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=122.000 last_pub=122.000; bump publish stamp. count=7087
+[planner_server-6] [WARN] [1794360742.693473041] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[controller_server-4] [WARN] [1794360743.641835298] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360744.204356517] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [WARN] [1794360745.092896751] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[fake_sensor_publisher-20] [WARN] [1794360745.101061675] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=124.000 last_pub=124.000; bump publish stamp. count=7188
+[collision_recover_node-13] [INFO] [1794360745.144991235] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [WARN] [1794360746.048054298] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360746.645608607] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [INFO] [1794360746.962842247] [fake_sensor_publisher]: [status] stamp=125.500 steady_dt_raw=0.0218 dt_used=0.0218 | odom=(19.930,24.339,1.355) map->odom=(0.000,0.000,0.000) map->base=(19.930,24.339,1.355) | cmd=(0.00,0.00,0.00) age=18.485s timed_out=true | ticks=8520 cmd_msgs=670 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=7266 jump_warn=0
+[fake_sensor_publisher-20] [WARN] [1794360747.481855245] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=126.000 last_pub=126.000; bump publish stamp. count=7287
+[planner_server-6] [WARN] [1794360747.490225560] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360747.545038559] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [WARN] [1794360748.442390688] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360749.238318024] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [WARN] [1794360749.981894551] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=128.000 last_pub=128.000; bump publish stamp. count=7392
+[planner_server-6] [WARN] [1794360750.092897746] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360750.145003991] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [WARN] [1794360751.045736103] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360751.841153491] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[fake_sensor_publisher-20] [INFO] [1794360751.981209491] [fake_sensor_publisher]: [status] stamp=129.700 steady_dt_raw=0.0191 dt_used=0.0191 | odom=(19.930,24.339,1.355) map->odom=(0.000,0.000,0.000) map->base=(19.930,24.339,1.355) | cmd=(0.00,0.00,0.00) age=23.503s timed_out=true | ticks=8771 cmd_msgs=670 initialpose=0 dt_clamp=0 dt_nonpos=0 ros_stamp_rewind=7475 jump_warn=0
+[fake_sensor_publisher-20] [WARN] [1794360752.401044567] [fake_sensor_publisher]: ROS stamp rewind/stale: candidate=130.000 last_pub=130.000; bump publish stamp. count=7493
+[planner_server-6] [WARN] [1794360752.491207015] [global_costmap.global_costmap]: KeepoutFilter: Filter mask was not received
+[collision_recover_node-13] [INFO] [1794360752.545013275] [collision_recover_node]: No obstacles received, do not check for collision.
+[controller_server-4] [WARN] [1794360753.645247083] [local_costmap.local_costmap]: KeepoutFilter: Filter mask was not received
+[amcl-2] [WARN] [1794360754.549107033] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[rviz2-21] [INFO] [1794360754.606653555] [rclcpp]: signal_handler(signum=2)
+[collision_recover_node-13] [INFO] [1794360754.606732880] [rclcpp]: signal_handler(signum=2)
+[amcl-2] [INFO] [1794360754.607257677] [rclcpp]: signal_handler(signum=2)
+[amcl-2] [INFO] [1794360754.607329054] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[amcl-2] [INFO] [1794360754.607409496] [amcl]: Deactivating
+[amcl-2] [INFO] [1794360754.607444032] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[amcl-2] [INFO] [1794360754.637726982] [amcl]: Cleaning up
+[planner_server-6] [INFO] [1794360754.609201675] [rclcpp]: signal_handler(signum=2)
+[planner_server-6] [INFO] [1794360754.609382090] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-6] [INFO] [1794360754.609531345] [planner_server]: Deactivating
+[search_poses_near_edge_node-17] [INFO] [1794360754.611043366] [rclcpp]: signal_handler(signum=2)
+[map_server-1] [INFO] [1794360754.611051860] [rclcpp]: signal_handler(signum=2)
+[map_server-1] [INFO] [1794360754.614996335] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[map_server-1] [INFO] [1794360754.615054472] [map_server]: Deactivating
+[map_server-1] [INFO] [1794360754.615065916] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[map_server-1] [INFO] [1794360754.645270859] [map_server]: Cleaning up
+[map_server-1] [INFO] [1794360754.645441841] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[collision_monitor-11] [INFO] [1794360754.611650293] [rclcpp]: signal_handler(signum=2)
+[collision_monitor-11] [INFO] [1794360754.611716496] [collision_monitor]: Running Nav2 LifecycleNode rcl preshutdown (collision_monitor)
+[collision_monitor-11] [INFO] [1794360754.611775087] [collision_monitor]: Deactivating
+[collision_monitor-11] [INFO] [1794360754.611788843] [collision_monitor]: Destroying bond (collision_monitor) to lifecycle manager.
+[smoother_server-5] [INFO] [1794360754.612138743] [rclcpp]: signal_handler(signum=2)
+[smoother_server-5] [INFO] [1794360754.612264820] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-5] [INFO] [1794360754.612336732] [smoother_server]: Deactivating
+[smoother_server-5] [INFO] [1794360754.612356006] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[velocity_smoother-10] [INFO] [1794360754.612632467] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-10] [INFO] [1794360754.612789679] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-10] [INFO] [1794360754.612934556] [velocity_smoother]: Deactivating
+[velocity_smoother-10] [INFO] [1794360754.612973238] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[bt_navigator-8] [INFO] [1794360754.614020443] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-8] [INFO] [1794360754.614196139] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-8] [INFO] [1794360754.614380777] [bt_navigator]: Deactivating
+[bt_navigator-8] [INFO] [1794360754.614413010] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-3] [INFO] [1794360754.614871963] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-3] [INFO] [1794360754.617471990] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+[lifecycle_manager-3] [INFO] [1794360754.617509305] [lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
+[waypoint_follower-9] [INFO] [1794360754.615492675] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-9] [INFO] [1794360754.615591031] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-9] [INFO] [1794360754.615670397] [waypoint_follower]: Deactivating
+[waypoint_follower-9] [INFO] [1794360754.615685947] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[controller_server-4] [INFO] [1794360754.615696703] [rclcpp]: signal_handler(signum=2)
+[controller_server-4] [INFO] [1794360754.615823981] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-4] [INFO] [1794360754.615889503] [controller_server]: Deactivating
+[controller_server-4] [INFO] [1794360754.615933198] [local_costmap.local_costmap]: Deactivating
+[controller_server-4] [INFO] [1794360754.615953434] [local_costmap.local_costmap]: spatio_temporal_voxel_layer was deactivated.
+[controller_server-4] [INFO] [1794360754.647007239] [controller_server]: [ControllerServer] publishing velocity: (linear.x:0.000000, angular.z:0.000000)
+[controller_server-4] [INFO] [1794360754.647052588] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[behavior_server-7] [INFO] [1794360754.616779393] [rclcpp]: signal_handler(signum=2)
+[behavior_server-7] [INFO] [1794360754.616829717] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-7] [INFO] [1794360754.616934248] [behavior_server]: Deactivating
+[behavior_server-7] [INFO] [1794360754.616992687] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[fake_sensor_publisher-20] [INFO] [1794360754.617123336] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-12] [INFO] [1794360754.620315012] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-12] [INFO] [1794360754.620436502] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-12] [INFO] [1794360754.620493489] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[robot_state_publisher-15] [INFO] [1794360754.622499545] [rclcpp]: signal_handler(signum=2)
+[path_check-14] [INFO] [1794360754.630715159] [rclcpp]: signal_handler(signum=2)
+[joint_state_publisher-16] Traceback (most recent call last):

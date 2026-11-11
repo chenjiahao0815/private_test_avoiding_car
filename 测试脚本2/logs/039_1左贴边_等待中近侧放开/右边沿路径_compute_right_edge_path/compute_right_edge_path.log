@@ -1,0 +1,13 @@
+[INFO] [1794360604.948474762] [compute_right_edge_path_action_server]: compute_right_edge_path_action_server constructor.
+[INFO] [1794360604.949040790] [compute_right_edge_path_action_server]: ------------ list params ------------ 
+[INFO] [1794360604.949057571] [compute_right_edge_path_action_server]: dist_thr: 4.000000
+[INFO] [1794360604.949065205] [compute_right_edge_path_action_server]: path_topic_name: garage_path
+[INFO] [1794360604.949069309] [compute_right_edge_path_action_server]: robot_x_test: -1.000000
+[INFO] [1794360604.949073364] [compute_right_edge_path_action_server]: robot_y_test: 21.500000
+[INFO] [1794360604.949078084] [compute_right_edge_path_action_server]: test: false
+[INFO] [1794360604.949082045] [compute_right_edge_path_action_server]: strict_mode: true
+[INFO] [1794360604.949086005] [compute_right_edge_path_action_server]: offset: 0.800000
+[INFO] [1794360604.949089948] [compute_right_edge_path_action_server]: resolution: 1.000000
+[INFO] [1794360604.949093554] [compute_right_edge_path_action_server]: allow_inverse: false
+[INFO] [1794360604.949096921] [compute_right_edge_path_action_server]: ------------------------------------- 
+[INFO] [1794360754.629103297] [rclcpp]: signal_handler(signum=2)

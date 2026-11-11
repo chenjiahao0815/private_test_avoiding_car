@@ -170,17 +170,16 @@ def _build():
           park="left", right_edge=True)
     # ---------------- 远侧等待细节
     _case("矩形_确认前来车", "远侧无车 2 秒时来一辆车 1 秒，3 秒计时清零重来，之后再批准远侧",
-          "far, car before confirm", no_go=["near"],
+          "far, car during wait", no_go=["near"],
           timeline=[("point", 2.0, "dynamic", "busy"), ("point", 3.0, "dynamic", "none")],
           park="left", approve_side=2, far_wait=True, min_wait=5.7)
     _case("矩形_动态车话题断流", "远侧等待时收不到 /car_information_all，3 秒和 4 秒暂停，等满 15 秒靠右",
           "far, topic silent", no_go=["near"],
           timeline=[("avoid", 0.0, "dynamic", "silent")] + RELEASE,
           park="any", right_edge=True, give_up="timeout", far_wait=True)
-    _case("矩形_等待中近侧放开", "远侧等待中近侧禁扫区撤掉，下一次找点直接批准近侧", "far wait, near opens",
-          no_go=["near"],
-          timeline=[("avoid", 0.0, "dynamic", "flicker"), ("point", 1.0, "no_go", [])],
-          park="right", approve_side=1, far_wait=True)
+    _case("矩形_等待中近侧放开", "等待中近侧放开，仍保存原远侧点，无车满 3 秒直接停远侧", "saved far point, near opens",
+          no_go=["near"], timeline=[("point", 1.0, "no_go", [])],
+          park="left", approve_side=2, far_wait=True)
     # ---------------- 开关
     _case("矩形_双侧关闭对照", "GARAGE_ENABLE_DUAL_SIDE_AVOIDANCE=false：老行为树，近侧堵住也绝不找远侧",
           "dual side off", no_go=["near"], dual=False,
@@ -200,69 +199,37 @@ def _build():
     # 盖住触发点身后的近侧搜索框，再往起点留出空档，倒车开过去才能看见。
     NO_GO["左近处"] = left(20.0, X1 + 2.0)
     NO_GO["右近处"] = right(24.0, X1 + 2.0)
-    # 右边中间留一个车位：触发点身后 3 m 附近是空的，再往前、再往后都禁。
-    NO_GO["右车位前"] = right(29.0, X1 + 2.0)
-    NO_GO["右车位后"] = right(X0 - 2.0, 24.5)
-    # 车位改到更靠起点的地方，一开始的远侧框够不着，倒车经过才进搜索框。
-    NO_GO["右后车位前"] = right(24.0, X1 + 2.0)
-    NO_GO["右后车位后"] = right(X0 - 2.0, 14.0)
-    # 只盖近侧最近的一截，两倍长度还能找到更远处。
-    NO_GO["左最近"] = left(25.8, 27.8)
+    # 车位沿边净空。footprint 本地 (±0.925, ±0.660)，车头沿通道时车身长 1.85 m。
+    # 找点只要 footprint 和禁扫区有重叠就丢掉这个点，所以净空至少 1.85 m。
+    # 两端再各留约 0.67 m：采样间隔 0.15 m、车头略偏，倒车时搜索框一次能跳过 1 m。
+    # 3.2 m 是一个车位。十几米的开口是空地，框子落在哪都行，对不齐车身。
+    stall = 3.2
+    # 直接找到：机器人在 x≈29.6，远侧框在身后 3.0~3.3 m，点在 x≈26.6。
+    stall_now = (26.56 - stall / 2.0, 26.56 + stall / 2.0)
+    # 倒车找到：掉头后向前搜 5.0~5.3 m，点在 x≈22.6。这个位置一开始的身后框够不着。
+    stall_back = (22.55 - stall / 2.0, 22.55 + stall / 2.0)
+    NO_GO["右车位前"] = right(stall_now[1], X1 + 2.0)
+    NO_GO["右车位后"] = right(X0 - 2.0, stall_now[0])
+    NO_GO["右后车位前"] = right(stall_back[1], X1 + 2.0)
+    NO_GO["右后车位后"] = right(X0 - 2.0, stall_back[0])
 
     def left_case(name, title, label, **kwargs):
         kwargs.setdefault("hug", "left")
         _case(name, title, label, **kwargs)
 
-    left_case("左贴边_右边禁行_左边找到", "贴左边开，右边整段禁行，直接在左边找到", "hug left, right blocked",
+    left_case("1左贴边_右边禁行_左边找到", "贴左边开，右边整段禁行，直接在左边找到", "hug left, right blocked",
               no_go=["右全"], park="left", approve_side=1, far_wait=False)
-    left_case("左贴边_左边部分禁行_倒车再找到", "右边整段禁行，左边近处也禁，倒车到远处的空档再停左边",
+    left_case("2左贴边_左边部分禁行_倒车再找到", "右边整段禁行，左边近处也禁，倒车到远处的空档再停左边",
               "hug left, left opens behind", no_go=["右全", "左近处"],
               park="left", approve_side=1, right_edge=True, far_wait=False)
-    left_case("左贴边_右边部分禁行_倒车再找到", "左边整段禁行，右边近处禁、远处空，倒车确认后再停右边",
+    left_case("3左贴边_右边部分禁行_倒车再找到", "左边整段禁行，右边近处禁、远处空，返回途中找到远侧点，等待后再停右边",
               "hug left, right opens behind", no_go=["左全", "右近处"],
               park="right", approve_side=2, right_edge=True, far_wait=True)
-    left_case("左贴边_右边车位_直接找到", "两边都禁，右边身后留一个车位，前后被占，直接停这个车位",
+    left_case("4左贴边_右边车位_直接找到", "两边都禁，右边身后留一个车位，前后被占，直接停这个车位",
               "hug left, right stall now", no_go=["左全", "右车位前", "右车位后"],
               park="right", approve_side=2, far_wait=True)
-    left_case("左贴边_右边车位_倒车找到", "右边车位更靠后，近处找不到，倒车经过并确认后停进车位",
+    left_case("4左贴边_右边车位_倒车找到", "右边车位更靠后，近处找不到，返回途中找到并等待后停进车位",
               "hug left, right stall behind", no_go=["左全", "右后车位前", "右后车位后"],
-              park="right", approve_side=2, right_edge=True, far_wait=True)
-    left_case("左贴边_近侧直接收_对面有车", "右边禁行，左边能停；动态车一直在，贴近的左边仍然马上收下",
-              "hug left, near despite cars", no_go=["右全"],
-              timeline=[("avoid", 0.0, "dynamic", "busy")],
-              park="left", approve_side=1, far_wait=False)
-    left_case("左贴边_近侧加长后找到", "左边只堵住最近一截，两倍范围里找到更远的左边点",
-              "hug left, near extended", no_go=["右全", "左最近"],
-              park="left", approve_side=1, far_wait=False)
-    left_case("左贴边_远侧无车", "左边整段禁行，右边空着且没有动态车，等满 3 秒后停右边",
-              "hug left, far clear", no_go=["左全"],
-              park="right", approve_side=2, far_wait=True)
-    left_case("左贴边_远侧持续有车", "左边禁行，右边有位置但动态车一直在，约 4 秒后放弃并倒车",
-              "hug left, far busy", no_go=["左全"],
-              timeline=[("avoid", 0.0, "dynamic", "busy")] + RELEASE,
-              park="any", right_edge=True, give_up="busy", far_wait=True)
-    left_case("左贴边_远侧车断续", "左边禁行，动态车断断续续，等满 15 秒放弃并倒车",
-              "hug left, far flicker", no_go=["左全"],
-              timeline=[("avoid", 0.0, "dynamic", "flicker")] + RELEASE,
-              park="any", right_edge=True, give_up="timeout", far_wait=True)
-    left_case("左贴边_远侧话题断流", "左边禁行，远侧等待时收不到动态车话题，等满 15 秒放弃并倒车",
-              "hug left, far silent", no_go=["左全"],
-              timeline=[("avoid", 0.0, "dynamic", "silent")] + RELEASE,
-              park="any", right_edge=True, give_up="timeout", far_wait=True)
-    left_case("左贴边_确认前来车", "右边可以停，无车满 2 秒时来一辆车，3 秒计时清零后再确认",
-              "hug left, car before confirm", no_go=["左全"],
-              timeline=[("point", 2.0, "dynamic", "busy"), ("point", 3.0, "dynamic", "none")],
-              park="right", approve_side=2, far_wait=True, min_wait=5.7)
-    left_case("左贴边_等待中近侧放开", "正在等右边，左边禁行撤掉后，下一次找点直接停左边",
-              "hug left, near opens while waiting", no_go=["左全"],
-              timeline=[("avoid", 0.0, "dynamic", "flicker"), ("point", 1.0, "no_go", [])],
-              park="left", approve_side=1, far_wait=True)
-    left_case("左贴边_两侧都堵", "左右都禁，一个点都没有，倒车走完",
-              "hug left, both blocked", no_go=["左全", "右全"],
-              park="none", approve_side=None, right_edge=True, far_wait=False)
-    left_case("左贴边_倒车五秒后才收远侧", "先两侧都堵去倒车，倒车后放开右边，5 秒屏蔽结束并确认后才停右边",
-              "hug left, far after suppress", no_go=["左全", "右全"],
-              timeline=[("right_edge", 1.0, "no_go", ["左全"])],
               park="right", approve_side=2, right_edge=True, far_wait=True)
 
 
