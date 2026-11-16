@@ -10,7 +10,8 @@ for arg in "$@"; do
   case "$arg" in
     --no-build) BUILD=0 ;;
     --no-hold) HOLD=0 ;;
-    *) echo "用法：$0 [--no-build] [--no-hold]"; exit 2 ;;
+    --hold) HOLD=1 ;;
+    *) echo "用法：$0 [--no-build] [--no-hold|--hold]"; exit 2 ;;
   esac
 done
 if [ "$BUILD" = 1 ]; then bash "$ROOT/编译.sh"; fi

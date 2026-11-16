@@ -1,0 +1,1 @@
+bash /home/linux/vehicle_total/tests/private_test_avoiding_car/测试脚本2/运行场景.sh --no-build
