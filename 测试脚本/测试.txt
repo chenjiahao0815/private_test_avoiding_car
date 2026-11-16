@@ -1,4 +1,4 @@
-cd /home/linux/vehicle_total/avoiding_car/测试脚本
+cd /home/linux/vehicle_total/tests/private_test_avoiding_car/测试脚本
 ./用例/U形圆弯_下进上出.sh              # 任选 用例/ 下一个，跑完保留画面，Ctrl+C 结束
 ./用例/U形圆弯_下进上出.sh --external   # 外部停靠点
 ./全部用例.sh                           # 全部跑一遍，结果看 logs/汇总.md

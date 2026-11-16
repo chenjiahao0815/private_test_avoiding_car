@@ -1,9 +1,0 @@
-用例：4左贴边_右边车位_直接找到（两边都禁，右边身后留一个车位，前后被占，直接停这个车位）
-[定位] 机器人在通道起点  {"map_pose": [16.501, 20.25, 0.001], "gazebo_error": 0.0}
-[通道] 已发布矩形通道和禁扫区  {"vertices": 4, "no_go": ["左全", "右车位前", "右车位后"]}
-[行驶] 沿通道左侧车道向前开  {"trigger_s": 14.0, "length": 30.0}
-[来车] 前方来车，上位机取消导航  {"robot": [29.581, 20.253, -0.001], "robot_s": 14.58, "robot_offset_from_center": 0.25, "car": [35.506, 19.55, 3.142], "car_s": 20.51}
-[通过性] 机器人原地挡路  {"passable": false}
-[停靠] 机器人已停在停靠点  {"robot": [26.453, 17.399, 0.033], "target": [26.48, 17.25, -0.0], "distance": 0.152, "yaw_vs_corridor_tangent_deg": 1.9, "where": {"along": -3.13, "lateral": -2.6, "side": "右", "in_corridor": false}, "heading": "顺行驶方向", "seconds": 40.0}
-[时间线] 行为树关键事件（相对避车开始的秒数）  {"first": {"commit": 2.31, "arm": 4.43, "unsuppress": 9.74, "far_found": 10.38, "far_start": 10.38, "clear": 13.42, "approve": 13.43}, "approve_side": 2, "problems": ["不应走靠右却走了"], "policy": "保存远侧点，等待后直接导航"}
-FAIL 不应走靠右却走了

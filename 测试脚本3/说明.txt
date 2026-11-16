@@ -1,0 +1,68 @@
+唯一场景：上侧两块实体障碍之间留空位，机器人向左行驶，遇车后向右后方停靠，车离开后恢复行驶。
+
+运行：
+  ./运行场景.sh                       编译当前源码，跑完保留 RViz；Ctrl+C 清理。
+  ./运行场景.sh --no-hold             编译并运行，完成后自动清理。
+  ./运行场景.sh --no-build --no-hold  复用本套测试的编译结果。
+
+文件：
+  编译.sh                 将当前 pkgs/avoiding_car 源码同步到容器独立工作区并编译。
+  运行场景.sh             宿主机入口，同步脚本、启动测试、收集日志。
+  容器/生成场景.py         一份坐标生成 PGM 地图、Gazebo 碰撞实体和本轮导航参数。
+  容器/运行场景.sh         启动完整导航、避车程序和模拟上位机，仅清理本次进程。
+  容器/场景测试.py         检查实体栅格、车身碰撞、停靠、15秒无车等待、恢复行驶。
+  容器/避车测试.rviz       RViz 显示配置，基于测试脚本2的模板。
+  绘制轨迹.py              从本轮真实轨迹生成 SVG 场景图。
+
+障碍物不是禁扫区框线：
+  /map 中障碍为占据栅格，Nav2 StaticLayer 把它们加入全局、局部代价地图。
+  同一位置还有 Gazebo static model，包含 collision 和 visual。
+  /cleaning_tool_retraction_areas 发布空列表，不用它限制找点。
+  /vehicle_avoidance_stop_points 发布空列表，要求算法自己找到停车点。
+  测试读取 /global_costmap/costmap_raw 与 /local_costmap/costmap_raw，要求障碍代价为254。
+  同时按发布的完整 footprint 检查轨迹是否穿过实体障碍，不能只看机器人中心点。
+
+布局（单位米，map 与 Gazebo 坐标一致）：
+  通道：x=15..45，y=18.5..21.5；起点(43.5,19.75)，向左开。
+  上侧左障碍：x=25.5..30，y=21.55..24.2。
+  上侧右障碍：x=36..40.5，y=21.55..24.2。
+  中间空位：x=30..36，y=21.55..24.8。
+  下侧实体墙挡住近侧搜索区，上侧实体墙限制空位深度。
+  下侧墙：y=16.8..17.5，给通道里的转向扫掠留出净空。
+  x约30.5处遇到来车，由双侧行为树找上侧空位。
+  来车用 /car_information 和 RViz 标记模拟；停车等待阶段让它经过，随后停止发布。
+
+环境：
+  使用现有 capella-ros-core-1 容器；可用 AVOID_TEST_CONTAINER 指定同环境容器名。
+  容器工作区 /root/avoid_scene3_ws，测试目录 /capella/avoid_test3。
+  ROS_DOMAIN_ID=193，Gazebo 端口11365，与其他仿真隔离。
+  Nav2 使用 /capella 原环境，避车程序使用本次编译的接口和插件。
+  导航参数、地图、world 都生成在本轮临时目录，原安装参数不改写。
+
+结果：
+  logs/<时间>_costmap_slot/上位机/report.json：PASS/FAIL 及各阶段测量值。
+  同目录 trajectory.json：实际轨迹；global_costmap.pgm、local_costmap.pgm：结束时地图快照。
+  logs/<时间>_costmap_slot/场景轨迹.svg：本轮实际轨迹图。
+  logs/<时间>_costmap_slot/运行信息：本轮地图、world、参数、接口来源。
+  各程序分别保存日志；logs/latest 指向最近结束的一轮。
+
+此场景验证实体障碍下的找点停靠全流程。靠右阶段的3秒退出、未返回找点的取消由已有9项行为树测试覆盖；
+这个直接找到车位的场景不把它们算作已完成的仿真验证。
+
+联调记录：
+  初始布局（下墙到y=18.45、x约29.5遇车）扫掠空间不足，进入靠右后车身擦过障碍角；
+  失败日志保留在 logs/20261116_163910_costmap_slot，不能把这个更窄的布局视作通过。
+  当前布局下墙到y=17.5、x约30.5遇车，给实体障碍旁的倒车转向留出空间。
+  随后发现自搜索点已给出最终停车朝向，welt_model 的 BACK 分支又加了180度，导致停车掉头。
+  已在 welt_model/src/welt_model_node.cpp 中修正 ORIGINAL_GOAL 的重复翻转；测试继续要求停车朝向与原行驶方向一致。
+  garage_navigator/params/config.yaml 的 use_sim 改为 ROS 标准参数 use_sim_time，
+  让 use_sim_time:=true 能传给行为树及其内部节点；启动时检查主节点参数和内部节点的/clock订阅，等待按仿真秒验证。
+  Humble 的参数复制跳过已声明的 use_sim_time，因此 navigation_launch.py 还通过进程参数传入，
+  使内部节点在创建时就启用仿真时钟，而不是依赖其未持续spin的默认回调组来处理参数变更。
+
+完整通过记录：logs/20261116_165919_costmap_slot
+  全局4个障碍采样均为254，局部障碍采样为254，车位中心为0。
+  自搜索目标(32.858748,22.6)，停车误差0.144m，车头方向正确。
+  从停止发车到避车成功约14.9仿真秒（最后一条车消息约在停止发布前0.1秒）。
+  恢复导航到终点，终点误差0.309m；全程 footprint 与场景实体的相交记录为0。
+  本轮为直接找到车位，right_edge_used=false。

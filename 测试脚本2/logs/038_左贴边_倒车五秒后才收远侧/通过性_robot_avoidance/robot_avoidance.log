@@ -1,4 +1,0 @@
-[INFO] [1794359933.301632055] [robot_avoidance_node]: robot_avoidance_node started...
-[INFO] [1794359933.313070101] [robot_avoidance_node]: car_avoidance_demonstration: false
-[ERROR] [1794359933.338059462] [robot_avoidance_node]: Failed to get robot footprint
-[ERROR] [1794359933.338105343] [robot_avoidance_node]: Failed to get robot footprint, Using default robot width: 1.200000

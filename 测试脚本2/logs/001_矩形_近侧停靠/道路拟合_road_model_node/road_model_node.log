@@ -1,4 +1,0 @@
-[ERROR] [1794311281.711652465] [rcl]: Failed to parse global arguments
-terminate called after throwing an instance of 'rclcpp::exceptions::RCLInvalidROSArgsError'
-  what():  failed to initialize rcl: Couldn't parse params file: '--params-file /root/avoid_ws/install/garage_road_model/share/garage_road_model/config/params.yaml'. Error: Error opening YAML file, at ./src/parser.c:270, at ./src/rcl/arguments.c:406
-[ros2run]: Aborted
